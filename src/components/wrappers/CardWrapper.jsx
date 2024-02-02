@@ -3,6 +3,7 @@ const CardWrapper = (props) => {
   return(
    <section className={` p-8 rounded + ${style}`}>
     {props.children}
+    
     </section>
 
   )

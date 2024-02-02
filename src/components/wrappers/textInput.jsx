@@ -1,6 +1,5 @@
 function TextInput(props)
 {
-
     return(
 
         <label className="form-control w-full max-w-xs">
@@ -11,5 +10,6 @@ function TextInput(props)
     </label>
 )
 }
+
 
 export default TextInput;
