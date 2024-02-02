@@ -1,9 +1,9 @@
+import { SocialIcon } from "react-social-icons"
 
 const Footer = () => {
   return (
     <>
-   <footer className="footer p-10 bg-base-200 text-base-content">
-    
+   <footer className="footer p-10 bg-slate-50 text-base-content">
   <nav>
     <h6 className="footer-title">Quick Link</h6> 
     <a className="link link-hover">Home</a>
@@ -33,22 +33,30 @@ const Footer = () => {
     <a className="link link-hover">nazrul@tsntsolutions.com</a>
   </nav>
 </footer> 
-<footer className="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300">
+
+<footer className="footer px-10 py-4 border-t-[2px] bg-slate-50 text-base-content border-base-300">
   <aside className="items-center grid-flow-col">
-    
-    <h2 className="footer-title">THN IT Solutiond Pvt Ltd. </h2><br/>
+    <img src="/logo.jpeg" alt=""  style={{height:"10vh", width:"8vw"}}/>
+    <div>
+    <h2 className="footer-title font-bold">THN IT Solutiond Pvt Ltd. </h2>
     <p>We constantly Endeavor our best to<br/>
        update our technological competence,<br/>
      introduce new products and achieve<br/> 
      excellence in our mission.</p>
-  </aside> 
-  <nav className="md:place-self-center md:justify-self-end">
-    <div className="grid grid-flow-col gap-4">
-     
     </div>
-  </nav>
+  </aside> 
+    <nav className="md:place-self-center md:justify-self-end">
+      <div className="grid grid-flow-col gap-4">
+            <SocialIcon url="https://www.instagram.com/"/>
+            <SocialIcon url="https://www.twitter.com/" />
+            <SocialIcon url="https://www.facebook.com/" />
+        </div>
+    </nav>
+  
 </footer>
-
+<footer className="text-center bg-slate-50">
+    <p style={{fontSize:"0.7rem", padding:"2vh 0"}}>Copyright © 2024 - THN IT SOLUTIONS PVT. LTD.</p>
+</footer>
     </>
   )
 }
