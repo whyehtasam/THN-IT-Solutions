@@ -8,7 +8,7 @@ const Hero = () => {
     <section className="hero p-16 h-[90vh]">
       <Container className="flex  w-full h-full shadow-md">
         <div className="title grid gap-3 h-full ">
-          <h1 className="text-6xl font-bold drop-shadow-md">THN IT Solutions Pvt Ltd</h1>
+          <h1 className="text-6xl w-max font-bold drop-shadow-md">THN IT Solutions Pvt Ltd</h1>
           <h1 className="text-5xl font-bold leading-normal drop-shadow">
             Your Vison, Our Solution,
             <br /> Infinite Posiibilties
