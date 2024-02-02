@@ -7,11 +7,10 @@ import {
 } from "react-router-dom";
 
 import Contact from "./components/contact/Contact";
-import CardWrapper from "./components/wrappers/CardWrapper";
 import SignIn from "./components/register.jsx/SignIn";
 import SignUp from "./components/register.jsx/SignUp";
 import Footer from "./components/footer/Footer";
-import TextInput from "./components/wrappers/textInput";
+import Hero from "./components/hero/Hero";
 function App() {
   return (
     <>
@@ -24,7 +23,7 @@ function App() {
             <Route path="/signUp" element={<SignUp/>} />
             <Route path="/" element={
               <>
-              <CardWrapper> <TextInput>hola</TextInput></CardWrapper>
+              <Hero/>
               </>
             } />
           </Routes>

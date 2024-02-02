@@ -2,7 +2,7 @@ function TextInput(props)
 {
     return(
 
-        <label className="form-control w-full max-w-xs">
+        <label className="form-control w-full max-w-xs" style={{margin:"0 1vw"}}>
     <div className="label">
         <span className="label-text">{props.children}</span>
     </div>
