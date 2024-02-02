@@ -35,7 +35,7 @@ const Navbar = () => {
          
           <div className="flex-1 px-2 mx-2"><span className="font-bold drop-shadow-sm p-2 border rounded tracking-wider">THN IT Solutions</span></div>
           <div className="flex-none hidden lg:block">
-            <ul className="menu menu-horizontal">
+            <ul className="menu menu-horizontal ">
               {/* Navbar menu content here */}
               <Link to='/'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider ">Home</a></li> </Link>
               
@@ -44,11 +44,13 @@ const Navbar = () => {
               <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider">Ask Expert</a></li>
               <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider">Our Associates</a></li>
               <Link to='/contact'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider">Contact</a></li></Link>
+
+              {/* Register */}
               <div className=" mx-2 dropdown dropdown-hover  no-animation w-fit">
                   <li><a className="text-sm font-medium rounded tracking-wider border  bg-black text-white hover:bg-slate-100 hover:text-gray-800">Register</a></li>
                    
-                    <ul className="dropdown-content mt-1 z-[1] menu bg-base-100 rounded-box font-poppins w-52 border">
-                     <li><Link to="/signIn">SignIn</Link></li>
+                    <ul className="dropdown-content mt-[3px] z-[1] menu bg-base-100 rounded-box font-poppins w-52 border">
+                     <li className="mb-1"><Link to="/signIn">SignIn</Link></li>
                      <li><Link to="/signUp">SignUp</Link></li>
                    </ul>
              </div>
