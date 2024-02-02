@@ -42,17 +42,17 @@ const Navbar = () => {
           <div className="basis-2/3 hidden lg:block">
             <ul className="menu menu-horizontal flex justify-around">
               {/* Navbar menu content here */}
-              <Link to='/'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider ">Home</a></li> </Link>
+              <Link to='/'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider  hover:font-semibold">Home</a></li> </Link>
               
               <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold">About Us</a></li>
-              <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider">Our Service</a></li>
-              <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider">Technology</a></li>
-              <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider">Our Associates</a></li>
-              <Link to='/contact'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider">Contact</a></li></Link>
+              <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold">Our Service</a></li>
+              <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold">Technology</a></li>
+              <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold">Our Associates</a></li>
+              <Link to='/contact'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold">Contact</a></li></Link>
 
               {/* Register */}
               <div className=" mx-2 dropdown dropdown-hover  w-fit">
-                  <li><a className="text-sm font-medium rounded tracking-wider border  bg-black text-white hover:bg-slate-100 hover:text-gray-800">Register</a></li>
+                  <li><a className="text-sm font-medium rounded tracking-wider border  bg-black text-white hover:bg-slate-100 hover:text-gray-800 hover:font-semibold">Register</a></li>
                    
                     <ul className="dropdown-content mt-[2px] z-[1] menu bg-base-100 rounded-box font-poppins w-52 border">
                      <li className="mb-1"><Link to="/signIn">SignIn</Link></li>

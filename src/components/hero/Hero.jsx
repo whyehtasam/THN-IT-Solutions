@@ -25,7 +25,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="img p-6">
-            <img src={svg} alt=""  className="h-full object-cover drop-shadow-lg"/>
+            <img src={svg} alt=""  className="h-full object-cover drop-shadow-lg duration-1000"/>
         </div>
       </Container>
     </section>
