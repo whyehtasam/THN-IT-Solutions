@@ -38,13 +38,13 @@ const Navbar = () => {
           <div className="container flex justify-between w-10/12 mx-auto">
 
          
-          <div className="flex px-2 mx-2"><span className="font-bold drop-shadow-sm p-2 border rounded tracking-wider">THN IT Solutions</span></div>
-          <div className="flex-none hidden lg:block">
-            <ul className="menu menu-horizontal ">
+          <div className="flex basis-1/3 px-2 mx-2"><span className="font-bold drop-shadow-sm p-2 border rounded tracking-wider">THN IT Solutions</span></div>
+          <div className="basis-2/3 hidden lg:block">
+            <ul className="menu menu-horizontal flex justify-around">
               {/* Navbar menu content here */}
               <Link to='/'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider ">Home</a></li> </Link>
               
-              <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider">About Us</a></li>
+              <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold">About Us</a></li>
               <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider">Our Service</a></li>
               <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider">Technology</a></li>
               <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider">Our Associates</a></li>
