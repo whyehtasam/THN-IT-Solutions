@@ -1,5 +1,5 @@
 import React from 'react'
-import TextInput from './textInput';
+import TextInput from './TextInput';
 
 
 const Contact = () => {
