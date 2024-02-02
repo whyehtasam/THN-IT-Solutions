@@ -1,6 +1,8 @@
 import Container from "../wrappers/Container";
 import Button from "../button/Button";
 import svg from '../../assets/coding-workshop-animate.svg'
+import { Link } from "react-router-dom";
+
 const Hero = () => {
   return (
     <section className="hero p-16 h-[90vh]">
@@ -18,7 +20,7 @@ const Hero = () => {
             Do you have an Idea, Let's Build it Together!
           </p>
           <div className="Buttons mt-4" >
-            <Button className="btn mr-10 btn-neutral text-white rounded px-6 hover:drop-shadow-md">Contact Us</Button>
+            <Link to='/contact'><Button className="btn mr-10 btn-neutral text-white rounded px-6 hover:drop-shadow-md">Contact Us</Button></Link>
             <Button className="btn bg-slate-100 border px-6 hover:drop-shadow-sm">Explore Our Experties</Button>
           </div>
         </div>
