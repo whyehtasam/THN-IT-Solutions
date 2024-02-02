@@ -1,5 +1,10 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+
 const Navbar = () => {
+
+  const [isShow,setIsShow] = useState(false);
+  
   return (
     <div className="drawer ">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
@@ -30,26 +35,26 @@ const Navbar = () => {
 
 
 
-          <div className="container w-10/12 mx-auto">
+          <div className="container flex justify-between w-10/12 mx-auto">
 
          
-          <div className="flex-1 px-2 mx-2"><span className="font-bold drop-shadow-sm p-2 border rounded tracking-wider">THN IT Solutions</span></div>
+          <div className="flex px-2 mx-2"><span className="font-bold drop-shadow-sm p-2 border rounded tracking-wider">THN IT Solutions</span></div>
           <div className="flex-none hidden lg:block">
             <ul className="menu menu-horizontal ">
               {/* Navbar menu content here */}
               <Link to='/'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider ">Home</a></li> </Link>
               
+              <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider">About Us</a></li>
               <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider">Our Service</a></li>
-              <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider">Products</a></li>
-              <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider">Ask Expert</a></li>
+              <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider">Technology</a></li>
               <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider">Our Associates</a></li>
               <Link to='/contact'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider">Contact</a></li></Link>
 
               {/* Register */}
-              <div className=" mx-2 dropdown dropdown-hover  no-animation w-fit">
+              <div className=" mx-2 dropdown dropdown-hover  w-fit">
                   <li><a className="text-sm font-medium rounded tracking-wider border  bg-black text-white hover:bg-slate-100 hover:text-gray-800">Register</a></li>
                    
-                    <ul className="dropdown-content mt-[3px] z-[1] menu bg-base-100 rounded-box font-poppins w-52 border">
+                    <ul className="dropdown-content mt-[2px] z-[1] menu bg-base-100 rounded-box font-poppins w-52 border">
                      <li className="mb-1"><Link to="/signIn">SignIn</Link></li>
                      <li><Link to="/signUp">SignUp</Link></li>
                    </ul>

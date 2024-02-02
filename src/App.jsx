@@ -6,10 +6,13 @@ import {
   Routes,
 } from "react-router-dom";
 
+import Hero from "./components/hero/Hero";
 import Contact from "./components/contact/contact";
 import SignIn from "./components/register.jsx/SignIn";
 import SignUp from "./components/register.jsx/SignUp";
 import Footer from "./components/footer/Footer";
+import Container from "./components/wrappers/Container";
+
 function App() {
   return (
     <>
@@ -22,7 +25,8 @@ function App() {
             <Route path="/signUp" element={<SignUp/>} />
             <Route path="/" element={
               <>
-              <div>content</div>
+              <Hero/>
+              
               </>
             } />
           </Routes>
