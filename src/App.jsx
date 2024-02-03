@@ -13,11 +13,14 @@ import Intro from "./components/landing/Intro";
 import Intro2 from "./components/landing/Intro2";
 import IntroBanner from "./components/landing/IntroBanner";
 import IntroCards from "./components/introCards/IntroCards";
-
+import Intro3 from "./components/landing/Intro3";
+import "./assets/bg.css";
+import svg from "./assets/Animated Shape.svg";
 // defining the App component
 function App() {
   return (
-    <div className="bg-gray-50">
+    <div className=" svg">
+      {/* <img src={svg} className="w-full opacity-30 object-fill h-screen absolute" alt="" /> */}
       <Router>
         {" "}
         {/* starting the routing configuration */}
@@ -40,6 +43,7 @@ function App() {
                 <Intro2 />
                 <IntroBanner />
                 <IntroCards />
+                <Intro3 />
               </>
             }
           />
