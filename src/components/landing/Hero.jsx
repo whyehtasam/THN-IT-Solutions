@@ -10,13 +10,13 @@ const Hero = () => {
       <Container className="flex  w-full h-full shadow-sm bg-white ">
         <div className="title grid gap-3 h-full p-6">
           <h1 className="text-6xl w-max font-bold drop-shadow-md">THN IT Solutions Pvt Ltd</h1>
-          <h1 className="text-5xl font-bold leading-normal text-gray-600 drop-shadow">
+          <h1 className="slogan text-5xl font-bold leading-normal text-gray-700 drop-shadow">
             Your Vison, <br/>
             Our Solution,
             <br /> Infinite Possibilities !
           </h1>
           
-          <p className="text-3xl  text-slate-300 font-semibold drop-shadow-sm">
+          <p className=" text-3xl  text-slate-300 font-semibold drop-shadow-sm">
             Do you have an Idea, Let's Build it Together !
           </p>
           <div className="Buttons mt-4" >

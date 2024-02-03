@@ -10,6 +10,9 @@ import SignUp from "./components/register.jsx/SignUp"; // importing the SignUp c
 import Footer from "./components/footer/Footer"; // importing the Footer component
 import Hero from "./components/landing/Hero"; // importing the Hero component
 import Intro from "./components/landing/Intro";
+import Intro2 from "./components/landing/Intro2";
+import IntroBanner from "./components/landing/IntroBanner";
+import IntroCards from "./components/introCards/IntroCards";
 
 // defining the App component
 function App() {
@@ -34,6 +37,9 @@ function App() {
               <>
                 <Hero /> {/* rendering the Hero component */}
                 <Intro />
+                <Intro2 />
+                <IntroBanner />
+                <IntroCards />
               </>
             }
           />
