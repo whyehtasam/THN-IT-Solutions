@@ -12,7 +12,8 @@ import Contact from "./components/contact/Contact"; // importing the Contact com
 import SignIn from "./components/register.jsx/SignIn"; // importing the SignIn component
 import SignUp from "./components/register.jsx/SignUp"; // importing the SignUp component
 import Footer from "./components/footer/Footer"; // importing the Footer component
-import Hero from "./components/hero/Hero"; // importing the Hero component
+import Hero from "./components/landing/Hero"; // importing the Hero component
+import Intro from "./components/landing/Intro";
 
 // defining the App component
 function App() {
@@ -26,9 +27,11 @@ function App() {
           <Route path="/signIn" element={<SignIn/>} /> {/* defining the route for the SignIn component */}
           <Route path="/signUp" element={<SignUp/>} /> {/* defining the route for the SignUp component */}
           <Route path="/" element={
-            <>
+            <div className="bg-gray-50">
               <Hero/> {/* rendering the Hero component */}
-            </>
+              <Intro/>
+              
+            </div>
           } /> {/* defining the route for the home page */}
         </Routes>
 

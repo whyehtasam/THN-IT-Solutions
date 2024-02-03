@@ -3,7 +3,7 @@ import { SocialIcon } from "react-social-icons"
 const Footer = () => {
   return (
     <>
-   <footer className="footer p-10 bg-slate-50 text-base-content">
+   <footer className="footer p-10 bg-white text-base-content">
   <nav>
     <h6 className="footer-title">Quick Link</h6> 
     <a className="link link-hover">Home</a>
@@ -34,14 +34,14 @@ const Footer = () => {
   </nav>
 </footer> 
 
-<footer className="footer px-10 py-4 border-t-[2px] bg-slate-50 text-base-content border-base-300">
-  <aside className="items-center grid-flow-col">
-    <img src="/logo.jpeg" alt=""  style={{height:"10vh", width:"8vw"}}/>
+<footer className="footer px-10 py-4 border-t-[2px] bg-white text-base-content border-base-300">
+  <aside className="items-center grid-flow-col w-[500px] ">
+    <img src="/logo.jpeg" alt="img" className="grayscale w-32 rounded-lg mr-8 obj" />
     <div>
-    <h2 className="footer-title font-bold">THN IT Solutiond Pvt Ltd. </h2>
-    <p>We constantly Endeavor our best to<br/>
-       update our technological competence,<br/>
-     introduce new products and achieve<br/> 
+    <h2 className="footer-title font-bold">THN IT Solutiond Pvt Ltd.</h2>
+    <p className="text-justify">We constantly Endeavor our best to
+       update our technological competence,
+     introduce new products and achieve
      excellence in our mission.</p>
     </div>
   </aside> 
@@ -54,8 +54,8 @@ const Footer = () => {
     </nav>
   
 </footer>
-<footer className="text-center bg-slate-50">
-    <p style={{fontSize:"0.7rem", padding:"2vh 0"}}>Copyright © 2024 - THN IT SOLUTIONS PVT. LTD.</p>
+<footer className="text-center bg-slate-50 ">
+    <p className="text-base text-slate-500" style={{ padding:"2vh 0"}}>Copyright © 2024 - THN IT SOLUTIONS PVT. LTD.</p>
 </footer>
     </>
   )

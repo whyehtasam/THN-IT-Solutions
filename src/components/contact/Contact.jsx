@@ -7,7 +7,7 @@ const Contact = () => {
   const NameLabels = ['First Name', 'Last Name'];
 
   return (
-    <div className='contact justify-center items-center flex m-8'>
+    <div className='contact justify-center items-center flex my-16'>
 
       <div className='flex rounded-[2vh] shadow-lg '>
 
@@ -43,7 +43,7 @@ const Contact = () => {
 
 
           <div className='rounded-[2vh] p-4'>
-            <h2 className='font-bold text-2xl my-2'>Drop you Message</h2>
+            <h2 className='font-bold text-2xl my-2'>Drop Your Message</h2>
             <div className='flex mt-4'>
               {
                 NameLabels.map((Name) =>(

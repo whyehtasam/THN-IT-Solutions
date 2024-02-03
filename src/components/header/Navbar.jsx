@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
+import logo from '../../assets/thnit.png'
 const Navbar = () => {
 
   const [isShow,setIsShow] = useState(false);
@@ -10,7 +10,7 @@ const Navbar = () => {
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
         {/* Navbar */}
-        <div className="w-full navbar bg-slate-50">
+        <div className="w-full navbar bg-white">
           <div className="flex-none lg:hidden">
             <label
               htmlFor="my-drawer-3"
@@ -38,7 +38,7 @@ const Navbar = () => {
           <div className="container flex justify-between w-10/12 mx-auto">
 
          
-          <div className="flex basis-1/3 px-2 mx-2"><span className="font-bold drop-shadow-sm p-2 border rounded tracking-wider">THN IT Solutions</span></div>
+          <div className="flex basis-1/3 px-2 mx-2"><img src={logo} className="h-16 mix-blend-multiply p-2" alt="" ></img></div>
           <div className="basis-2/3 hidden lg:block">
             <ul className="menu menu-horizontal flex justify-around">
               {/* Navbar menu content here */}
