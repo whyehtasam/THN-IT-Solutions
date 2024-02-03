@@ -32,4 +32,15 @@ export const cardDetails = [
   ];
   
 
-  
+  export const introCardData =[
+    {
+        id: 1,
+        title: "Experiential Wisdom: Navigating Digital Transformation",
+        description: "At THN IT Solutions, our insights are rooted in experiential wisdom. Navigate the complex landscape of digital transformation with confidence, guided by our industry authority."
+    },
+    {
+        id: 2,
+        title: "Credible Sources, Reliable Information",
+        description: "Our commitment to providing accurate information is unwavering. THN IT Solutions integrates credible sources to substantiate our content, ensuring you receive reliable insights."
+    }
+  ]
