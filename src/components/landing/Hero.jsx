@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <section className="hero py-16 px-28 h-[90vh]">
-      <Container className="flex  w-full h-full shadow-sm bg-white ">
+    <section className="hero pt-8 pb-16 px-28 h-[90vh]">
+      <Container className="flex  w-full h-full  drop-shadow-sm ">
         <div className="title grid gap-3 h-full p-6">
           <h1 className="text-6xl w-max font-bold drop-shadow-md">THN IT Solutions Pvt Ltd</h1>
           <h1 className="slogan text-5xl font-bold leading-normal text-gray-700 drop-shadow">
