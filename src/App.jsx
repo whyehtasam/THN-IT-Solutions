@@ -1,6 +1,6 @@
 import "./App.css"; // importing the App.css
 
-import Navbar from "./componentsheader/Navbar"; // importing the Navbar component
+import Navbar from "./components/header/Navbar"; // importing the Navbar component
 
 import {
   BrowserRouter as Router,

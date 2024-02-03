@@ -12,16 +12,16 @@ const Contact = () => {
       <div className='flex rounded-[2vh] shadow-lg '>
 
       
-    <div className='bg-slate-50 rounded-[2vh]' style={{padding:"2vh 2vw"}}>
-      <h2 className='font-bold mt-2 text-xl'>Reach Us</h2>
+    <div className='bg-slate-50 rounded-[2vh] py-[2vh] px-[2vw]' >
+      <h2 className='font-bold mt-2 text-2xl'>Reach Us</h2>
 
-                <div style={{marginTop:"3vh"}}>
+                <div className='mt-[3vh]'>
                     <h3 style={{marginTop:"3vh"}}>Corporate Address</h3>
                     <p >Uttrayan Apartment,Ground Floor,<br/> RC No. 16/3 , Raghunathpur, Kolkata – 700059</p>
                 </div>
 
-                <div className='contactus-div' style={{marginTop:"3vh"}}>
-                    <h3  style={{marginTop:"3vh"}}>Mobile Number</h3>
+                <div className='contactus-div mt-[3vh]'>
+                    <h3 >Mobile Number</h3>
                     <p >☏ +91 9674 183 723</p>
                     <p >☏ +91 9674 183 723</p>
                 </div>
@@ -33,7 +33,7 @@ const Contact = () => {
                 </div>
 
 
-                <div className='contactus-div' style={{marginTop:"3vh"}}>
+                <div className='contactus-div mt-[3vh]'>
                     <h3  style={{marginTop:"3vh"}}>Map</h3>
                   <p >Click on the Google Map </p>
                   <a href="https://maps.app.goo.gl/Bg24oyCyiZZCgraNA"
@@ -43,8 +43,8 @@ const Contact = () => {
 
 
           <div className='rounded-[2vh] p-4'>
-            <h2 className='font-bold m-2'>Drop you Message</h2>
-            <div className='flex'>
+            <h2 className='font-bold text-2xl my-2'>Drop you Message</h2>
+            <div className='flex mt-4'>
               {
                 NameLabels.map((Name) =>(
                   <TextInput>{Name}</TextInput>
