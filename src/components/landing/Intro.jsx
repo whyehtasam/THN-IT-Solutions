@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Intro = () => {
   return (
     <section className="intro pb-16 px-28 h-[90vh]">
-      <Container className="flex flex-row-reverse justify-evenly w-full h-full shadow-sm bg-white ">
+      <Container className="flex flex-row-reverse justify-evenly w-full h-full  ">
         <div className="title grid w-5/12  h-full p-6">
           <h1 className="text-4xl  h-fit font-bold drop-shadow-md leading-normal">
           Crafting Tomorrow's <br /> Digital Solutions Today !
