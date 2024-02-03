@@ -20,8 +20,8 @@ const Hero = () => {
             Do you have an Idea, Let's Build it Together !
           </p>
           <div className="Buttons mt-4" >
-            <Link to='/contact'><Button className="btn mr-10 btn-neutral text-white  px-6 hover:drop-shadow-md hover:bg-white hover:text-neutral-900 hover:border-black transition-all duration-300">Contact Us</Button></Link>
-            <Button className="btn bg-slate-100 border-black px-6 hover:drop-shadow-sm">Explore Our Experties</Button>
+            <Link to='/contact'><Button className="btn  mr-10 btn-neutral text-white  px-6 hover:drop-shadow-md hover:bg-white hover:text-neutral-900 hover:border-black transition-all duration-300">Contact Us</Button></Link>
+            <Button className="btn  bg-slate-100 border-black px-6 hover:drop-shadow-sm">Explore Our Experties</Button>
           </div>
         </div>
         <div className="img p-6">
