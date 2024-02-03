@@ -1,36 +1,41 @@
-import "./App.css";
-import Navbar from "./components/header/Navbar";
+import "./App.css"; // importing the App.css
+
+import Navbar from "./componentsheader/Navbar"; // importing the Navbar component
+
 import {
   BrowserRouter as Router,
   Route,
   Routes,
-} from "react-router-dom";
+} from "react-router-dom"; // importing the routing components from react-router-dom
 
-import Contact from "./components/contact/Contact";
-import SignIn from "./components/register.jsx/SignIn";
-import SignUp from "./components/register.jsx/SignUp";
-import Footer from "./components/footer/Footer";
-import Hero from "./components/hero/Hero";
+import Contact from "./components/contact/Contact"; // importing the Contact component
+import SignIn from "./components/register.jsx/SignIn"; // importing the SignIn component
+import SignUp from "./components/register.jsx/SignUp"; // importing the SignUp component
+import Footer from "./components/footer/Footer"; // importing the Footer component
+import Hero from "./components/hero/Hero"; // importing the Hero component
+
+// defining the App component
 function App() {
   return (
     <>
-      <Router>
-        <Navbar />
-       
-          <Routes>
-            <Route path="/contact" element={<Contact/>} />
-            <Route path="/signIn" element={<SignIn/>} />
-            <Route path="/signUp" element={<SignUp/>} />
-            <Route path="/" element={
-              <>
-              <Hero/>
-              </>
-            } />
-          </Routes>
-       <Footer />
+      <Router> {/* starting the routing configuration */}
+        <Navbar /> {/* rendering the Navbar component */}
+
+        <Routes> {/* starting the routing configuration */}
+          <Route path="/contact" element={<Contact/>} /> {/* defining the route for the Contact component */}
+          <Route path="/signIn" element={<SignIn/>} /> {/* defining the route for the SignIn component */}
+          <Route path="/signUp" element={<SignUp/>} /> {/* defining the route for the SignUp component */}
+          <Route path="/" element={
+            <>
+              <Hero/> {/* rendering the Hero component */}
+            </>
+          } /> {/* defining the route for the home page */}
+        </Routes>
+
+        <Footer /> {/* rendering the Footer component */}
       </Router>
     </>
   );
 }
 
-export default App;
+export default App; // exporting the App component
