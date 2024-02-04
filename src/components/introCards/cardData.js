@@ -71,26 +71,22 @@ export const cardDetails = [
   export const IntroServiceCardData =[
     {
         id: 1,
-        title: "Custom Software Development",
-        description:''
-       
+        title: "🚀 Custom Software Development:",
+        description: 'Our custom software development services are designed to address the unique needs of your business. We work closely with you to understand your business processes, goals, and challenges. Our team of experienced developers then designs and builds a custom software solution that aligns with your business objectives, enhances efficiency, and gives you a competitive edge. We ensure that our software solutions are scalable, secure, and easy to maintain.'
     },
     {
         id: 2,
-        title: "Data Anylytics",
-        description:''
-        
+        title: "📊 Data Analytics",
+        description: 'Our data analytics services help businesses unlock the true potential of their data. We provide end-to-end data analytics services, including data collection, data processing, data analysis, and data visualization. Our team of data scientists and analysts use advanced tools and techniques to analyze your data and derive actionable insights. These insights can help you make informed business decisions, identify new opportunities, and improve operational efficiency.'
     },
     {
         id: 3,
-        title: "Web Development",
-        description:''
-       
+        title: "🌐 Web Development",
+        description: 'Our web development services cover all aspects of website creation and maintenance. We offer front-end, back-end, and full-stack development services. Our team of skilled developers is proficient in the latest web technologies and frameworks. We build websites that are visually appealing, user-friendly, and responsive. We ensure that our websites are optimized for performance and SEO. We also provide ongoing support and maintenance services to keep your website up-to-date and secure.'
     },
     {
         id: 4,
-        title: "IT Consulting ",
-        description:''
-        
+        title: "💡 IT Consulting",
+        description: 'Our IT consulting services are designed to help businesses navigate the complex landscape of technology. We provide strategic guidance on technology selection, IT infrastructure setup, and digital transformation initiatives. Our consultants have deep industry knowledge and technical expertise. They work closely with you to understand your business needs and recommend the best technology solutions. We also provide implementation support to ensure that the technology is seamlessly integrated into your business operations.'
     }
-  ]
+]
