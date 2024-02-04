@@ -20,6 +20,7 @@ import svg from "./assets/Animated Shape.svg";
 // defining the App component
 import {IntroServiceCardData} from './components/introCards/cardData'
 import ServiceIntro from "./components/trees/ServiceIntro";
+
 function App() {
   return (
     <div className=" svg ">
@@ -54,6 +55,7 @@ function App() {
                 {/* <IntroBanner title="Our Services"/> */}
                 {/* <IntroCards data={IntroServiceCardData}/> */}
                 <ServiceIntro />
+                
 
                 
               </div>
