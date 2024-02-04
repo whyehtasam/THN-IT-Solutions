@@ -67,3 +67,30 @@ export const cardDetails = [
         description: "Our team of skilled and experienced professionals is passionate about technology. We combine expertise with creativity to develop solutions that drive success."
     }
   ]
+
+  export const IntroServiceCardData =[
+    {
+        id: 1,
+        title: "Custom Software Development",
+        description:''
+       
+    },
+    {
+        id: 2,
+        title: "Data Anylytics",
+        description:''
+        
+    },
+    {
+        id: 3,
+        title: "Web Development",
+        description:''
+       
+    },
+    {
+        id: 4,
+        title: "IT Consulting ",
+        description:''
+        
+    }
+  ]

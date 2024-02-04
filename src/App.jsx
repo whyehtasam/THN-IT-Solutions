@@ -18,6 +18,8 @@ import Intro3 from "./components/about/Intro3";
 import "./assets/bg.css";
 import svg from "./assets/Animated Shape.svg";
 // defining the App component
+import {IntroServiceCardData} from './components/introCards/cardData'
+import ServiceIntro from "./components/trees/ServiceIntro";
 function App() {
   return (
     <div className=" svg ">
@@ -49,6 +51,10 @@ function App() {
                 <IntroBanner />
                 <IntroCards />
                 <Intro3 /> */}
+                {/* <IntroBanner title="Our Services"/> */}
+                {/* <IntroCards data={IntroServiceCardData}/> */}
+                <ServiceIntro />
+
                 
               </div>
             }
