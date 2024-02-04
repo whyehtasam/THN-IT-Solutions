@@ -6,7 +6,7 @@ const Intro3 = () => {
 
   return (
     <section className="intro3 pb-16 px-28 h-[90vh]  p-0">
-        <img src={svg} className="w-full opacity-50 absolute left-0 " alt="svg" />
+        <img src={svg} className="w-full  opacity-50 absolute left-0 " alt="svg" />
         <h1 className="text-5xl pt-8 h-max text-center font-bold">
           Expert Insights and Industry Authority
         </h1>
