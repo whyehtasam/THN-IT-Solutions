@@ -2,8 +2,35 @@ import React from "react";
 import TextInput from "../wrappers/textInput";
 
 const Contact = () => {
+
+
   const inputLabels = ["Phone Number", "Email"];
   const NameLabels = ["First Name", "Last Name"];
+
+   // Lift side Address Details Area
+  const contactInfo = [
+    {
+      title: 'Office Address',
+      details: ['Rajibpur Road,Gangapur,Duttapukur-I,','Duttapukuar- 743248,West Bengal,India'],
+    },
+    {
+      title: 'Mobile Number',
+      details: ['☏ +91 9051959195', '☏ +91 9674183723', '☏ 033-2500 5025'], 
+    },
+    {
+      title: 'Email',
+      details: [
+        <a key="email2" href="mailto:info@thnitsolutions.com" style={{ textDecoration: "none" }}>✉ info@thnitsolutions.com</a>,
+      ],
+    },
+    {
+      title: 'Map',
+      details: [
+        'Click on the Google Map',
+        <a key="map" href="https://maps.app.goo.gl/Bg24oyCyiZZCgraNA" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "blue", fontSize: "40px" }}>🗺️</a>,
+      ],
+    },
+  ];
 
   return (
     <div className="contact justify-center items-center flex my-16">
@@ -11,56 +38,8 @@ const Contact = () => {
         <div className="bg-slate-50 rounded-[2vh] py-[2vh] px-[2vw]">
           <h2 className="font-bold mt-2 text-2xl">Reach Us</h2>
 
-          <div className="mt-[3vh]">
-            <h3 style={{ marginTop: "3vh" }}>Corporate Address</h3>
-            <p>
-              Uttrayan Apartment,Ground Floor,
-              <br /> RC No. 16/3 , Raghunathpur, Kolkata – 700059
-            </p>
-          </div>
-
-          <div className="contactus-div mt-[3vh]">
-            <h3>Mobile Number</h3>
-            <p>☏ +91 9674 183 723</p>
-            <p>☏ +91 9674 183 723</p>
-          </div>
-
-          <div className="contactus-div" style={{ marginTop: "3vh" }}>
-            <h3 style={{ marginTop: "3vh" }}>Email</h3>
-            <p>
-              <a
-                href="mailto:info@tsntsolutions.com"
-                style={{ textDecoration: "none" }}
-              >
-                ✉ info@tsntsolutions.com
-              </a>
-            </p>
-            <p>
-              <a
-                href="mailto:nazrul@tsntsolutions.com"
-                style={{ textDecoration: "none" }}
-              >
-                ✉ nazrul@tsntsolutions.com
-              </a>
-            </p>
-          </div>
-
-          <div className="contactus-div mt-[3vh]">
-            <h3 style={{ marginTop: "3vh" }}>Map</h3>
-            <p>Click on the Google Map </p>
-            <a
-              href="https://maps.app.goo.gl/Bg24oyCyiZZCgraNA"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                textDecoration: "none",
-                color: "blue",
-                fontSize: "40px",
-              }}
-            >
-              🗺️
-            </a>
-          </div>
+          <Contactaddress contacts={contactInfo} />
+          
         </div>
 
         <div className="rounded-[2vh] p-4 bg-white">
@@ -93,5 +72,23 @@ const Contact = () => {
     </div>
   );
 };
+
+
+const Contactaddress = ({ contacts }) => {
+  return (
+    <div>
+      {contacts.map((contact, index) => (
+        <div key={index} style={{ marginTop: "3vh" }}>
+          <h3 style={{ marginTop: "3vh" }} className='font-bold'>{contact.title}</h3>
+          {contact.details.map((detail, detailIndex) => (
+            <p key={detailIndex}>{detail}</p>
+          ))}
+        </div>
+      ))}
+    </div>
+  );
+};
+
+
 
 export default Contact;
