@@ -1,15 +1,17 @@
 import Container from "../wrappers/Container";
-
+import svg from "../../assets/lines.svg";
+import { Link } from "react-router-dom";
 const ServiceIntro = () => {
   return (
     <section className="secvice  pb-16">
-      <Container className="pt-0">
-        <h1 className="text-5xl text-center font-bold mb-16">Our Services</h1>
+      <Container className="pt-0 relative">
+        <img src={svg} alt="" className="absolute left-0 w-full"/>
+        <h1 className="text-6xl text-center font-bold mb-16">Our Services</h1>
         <ul className="timeline timeline-vertical">
           <li>
             <div className="timeline-start timeline-box text-3xl p-6 font-semibold">
               <h1>Custom Software Development</h1>
-              <button className=" link text-sm">Read more</button>
+              <button className=" link text-sm"><Link to='/ourServices'>Read more</Link></button>
             </div>
             <div className="timeline-middle">
               <svg
@@ -45,7 +47,7 @@ const ServiceIntro = () => {
             </div>
             <div className="timeline-end timeline-box text-3xl p-6  font-semibold">
               <h1>Web Development</h1>
-              <button className=" link text-sm">Read more</button>
+              <button className=" link text-sm"><Link to='/ourServices'>Read more</Link></button>
             </div>
             <hr />
           </li>
@@ -53,7 +55,7 @@ const ServiceIntro = () => {
             <hr />
             <div className="timeline-start timeline-box text-3xl p-6 font-semibold">
               <h1>Data Anylytics</h1>
-              <button className=" link text-sm">Read more</button>
+              <button className=" link text-sm"><Link to='/ourServices'>Read more</Link></button>
             </div>
             <div className="timeline-middle">
               <svg
@@ -89,7 +91,7 @@ const ServiceIntro = () => {
             </div>
             <div className="timeline-end timeline-box text-3xl p-6 font-semibold">
               <h1>IT Consulting</h1>
-              <button className=" link text-sm">Read more</button>
+              <button className=" link text-sm"><Link to='/ourServices'>Read more</Link></button>
             </div>
             
           </li>
