@@ -1,6 +1,6 @@
 import Container from "../wrappers/Container";
 import Button from "../button/Button";
-import svg from "../../assets/Intro2.svg";
+import svg from "../../assets/intro2.svg";
 
 import { Link } from "react-router-dom";
 
