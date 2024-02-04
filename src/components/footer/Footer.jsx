@@ -2,7 +2,7 @@ import { SocialIcon } from "react-social-icons"
 const Footer = () => {
   return (
     <>
-   <footer className="footer p-10 bg-slate-50 text-base-content">
+   <footer className="footer justify-evenly p-10 bg-white text-base-content">
   <nav>
     <h6 className="footer-title">Quick Link</h6> 
     <a className="link link-hover">Home</a>
@@ -34,29 +34,19 @@ const Footer = () => {
     <p className="link link-hover">THN IT Solutions, Rajibpur Road, Gangapur, <br/>
      Duttapukur-I, Duttapukur- 743248, West Bengal, India
     </p>
+    <div className="grid grid-flow-col gap-4 ">
+            <SocialIcon url="https://www.instagram.com/" />
+            <SocialIcon url="https://www.twitter.com/" />
+            <SocialIcon url="https://www.facebook.com/" />
+        </div>
     <a className="mt-4" href="https://www.google.com/maps/place/TSNT+SOLUTIONS+PVT.+LTD.+Works/@22.7820465,88.5362415,18.5z/data=!4m6!3m5!1s0x39f8a3f11aafced1:0xf7931e3ad99b5d5b!8m2!3d22.7821151!4d88.5369854!16s%2Fg%2F11t7dp5_fy?entry=ttu"
                     target="_blank" rel="noopener noreferrer" style={{textDecoration: "none",  color:"blue", fontSize:"40px"}}>🗺️</a>
   </nav>
 </footer> 
 
-<footer className="footer px-10 py-4 border-t-[2px] bg-slate-50 text-base-content border-base-300">
-  <aside className="items-center grid-flow-col">
-    <img src="/logo.jpeg" alt=""  style={{height:"10vh", width:"8vw"}}/>
-    <div>
-    <h2 className="footer-title font-bold">THN IT Solutiond Pvt Ltd. </h2>
-    </div>
-  </aside> 
-    <nav className="md:place-self-center md:justify-self-end">
-      <div className="grid grid-flow-col gap-4">
-            <SocialIcon url="https://www.instagram.com/"/>
-            <SocialIcon url="https://www.twitter.com/" />
-            <SocialIcon url="https://www.facebook.com/" />
-        </div>
-    </nav>
-  
-</footer>
-<footer className="text-center bg-slate-50 ">
-    <p className="text-base text-slate-500" style={{ padding:"2vh 0"}}>Copyright © 2024 - THN IT SOLUTIONS PVT. LTD.</p>
+
+<footer className="text-center bg-white ">
+    <p className="text-sm text-slate-500" style={{ padding:"2vh 0"}}>Copyright © 2024 - THN IT SOLUTIONS PVT. LTD.</p>
 </footer>
     </>
   )

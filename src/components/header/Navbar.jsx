@@ -1,13 +1,30 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { Link } from "react-router-dom";
 // import logo from '../../assets/thnit.png'
 import logo from '../../assets/logo.jpg'
 const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
 
-  const [isShow,setIsShow] = useState(false);
+  const handleScroll = () => {
+    const offset = window.scrollY;
+    if (offset > 70 ) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+  })
+
+  // let navbarClasses = ['drawer', 'sticky', 'top-0','z-10'];
+  // if (isScrolled) {
+  //   navbarClasses.push('blur-2');
+  // }
   
   return (
-    <div className="drawer ">
+    <div className={`drawer sticky top-0 z-10 ${isScrolled && 'bg-white '}`}>
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
         {/* Navbar */}
