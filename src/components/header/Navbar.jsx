@@ -45,9 +45,10 @@ const Navbar = () => {
               {/* Navbar menu content here */}
               <Link to='/'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider  hover:font-semibold">Home</a></li> </Link>
               <Link to='/aboutUs'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider  hover:font-semibold">About Us</a></li> </Link>
+              <Link to='/ourServices'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider  hover:font-semibold">Our Services</a></li> </Link>
               
               
-              <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold">Our Service</a></li>
+              
               <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold">Technology</a></li>
               <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold">Our Associates</a></li>
               <Link to='/contact'><li><a className="text-sm font-medium rounded tracking-wider border  bg-black text-white hover:bg-slate-100 hover:text-gray-800 hover:font-semibold">Contact</a></li></Link>
