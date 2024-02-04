@@ -1,48 +1,49 @@
 import { SocialIcon } from "react-social-icons"
-import logo from '../../assets/logo.jpg'
 const Footer = () => {
   return (
     <>
-   <footer className="footer p-10 bg-white text-base-content">
+   <footer className="footer p-10 bg-slate-50 text-base-content">
   <nav>
     <h6 className="footer-title">Quick Link</h6> 
     <a className="link link-hover">Home</a>
-    <a className="link link-hover">About</a>
-    <a className="link link-hover">Service</a>
+    <a className="link link-hover">About Us</a>
+    <a className="link link-hover">Our Service</a>
+    <a className="link link-hover">Technology</a>
+    <a className="link link-hover">Our Associates</a>
     <a className="link link-hover">Contact Us</a>
   </nav> 
   <nav>
-    <h6 className="footer-title">Our Product</h6> 
-    <a className="link link-hover">LT Electrical Panel</a>
-    <a className="link link-hover">Procection And Control relays</a>
-    <a className="link link-hover">Genset & Spares</a>
-    <a className="link link-hover">THN IT Solutions</a>
+    <h6 className="footer-title">Our Services</h6> 
+    <a className="link link-hover">Web Development</a>
+    <a className="link link-hover">Backend Development</a>
+    <a className="link link-hover">Cloud Service</a>
+    <a className="link link-hover">AI & ML Engineering</a>
+    <a className="link link-hover">DevOps</a>
+    <a className="link link-hover">Quality Engineering</a>
   </nav> 
   <nav>
     <h6 className="footer-title">Office Inquiries</h6> 
     <a className="link link-hover">033-2500 5025</a>
-    <a className="link link-hover">info@tsntsolutions.com</a>
+    <a className="link link-hover">info@thnitsolutions.com</a>
     <h6 className="footer-title">Customer Support</h6> 
-    <a className="link link-hover">+91 7044 040 384</a>
-    <a className="link link-hover">+91 9073 322 603</a>
+    <a className="link link-hover">+91 9051959195</a>
+    <a className="link link-hover">+91 9674183723</a>
   </nav>
   <nav>
-    <h6 className="footer-title">Unsatisfied Customer</h6> 
-    <a className="link link-hover">+91 9674 183 723</a>
-    <a className="link link-hover">+91 7450 990 072</a>
-    <a className="link link-hover">nazrul@tsntsolutions.com</a>
+    <h6 className="footer-title">Office Address</h6> 
+    <p className="link link-hover">THN IT Solutions, Rajibpur Road, Gangapur, <br/>
+     Duttapukur-I, Duttapukur- 743248, West Bengal, India
+    </p>
+    <a className="mt-4" href="https://www.google.com/maps/place/TSNT+SOLUTIONS+PVT.+LTD.+Works/@22.7820465,88.5362415,18.5z/data=!4m6!3m5!1s0x39f8a3f11aafced1:0xf7931e3ad99b5d5b!8m2!3d22.7821151!4d88.5369854!16s%2Fg%2F11t7dp5_fy?entry=ttu"
+                    target="_blank" rel="noopener noreferrer" style={{textDecoration: "none",  color:"blue", fontSize:"40px"}}>🗺️</a>
   </nav>
 </footer> 
 
-<footer className="footer px-10 py-4 border-t-[2px] bg-white text-base-content border-base-300">
-  <aside className="items-center grid-flow-col w-[500px] ">
-    <img src={logo} alt="img" className="grayscale  rounded-lg mr-10 obj" />
-    <div className="pl-8">
-    <h2 className="footer-title font-bold">THN IT Solutiond Pvt Ltd.</h2>
-    <p className="text-justify">We constantly Endeavor our best to
-       update our technological competence,
-     introduce new products and achieve
-     excellence in our mission.</p>
+<footer className="footer px-10 py-4 border-t-[2px] bg-slate-50 text-base-content border-base-300">
+  <aside className="items-center grid-flow-col">
+    <img src="/logo.jpeg" alt=""  style={{height:"10vh", width:"8vw"}}/>
+    <div>
+    <h2 className="footer-title font-bold">THN IT Solutiond Pvt Ltd. </h2>
     </div>
   </aside> 
     <nav className="md:place-self-center md:justify-self-end">
