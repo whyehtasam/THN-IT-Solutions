@@ -1,9 +1,8 @@
 import { SocialIcon } from "react-social-icons"
-
 const Footer = () => {
   return (
     <>
-   <footer className="footer p-10 bg-slate-50 text-base-content" style={{justifyContent:"space-between"}} >
+   <footer className="footer p-10 bg-slate-50 text-base-content">
   <nav>
     <h6 className="footer-title">Quick Link</h6> 
     <a className="link link-hover">Home</a>
@@ -19,6 +18,8 @@ const Footer = () => {
     <a className="link link-hover">Backend Development</a>
     <a className="link link-hover">Cloud Service</a>
     <a className="link link-hover">AI & ML Engineering</a>
+    <a className="link link-hover">DevOps</a>
+    <a className="link link-hover">Quality Engineering</a>
   </nav> 
   <nav>
     <h6 className="footer-title">Office Inquiries</h6> 
@@ -33,17 +34,16 @@ const Footer = () => {
     <p className="link link-hover">THN IT Solutions, Rajibpur Road, Gangapur, <br/>
      Duttapukur-I, Duttapukur- 743248, West Bengal, India
     </p>
-    <a className="mt-4" href="https://maps.app.goo.gl/Bg24oyCyiZZCgraNA"
+    <a className="mt-4" href="https://www.google.com/maps/place/TSNT+SOLUTIONS+PVT.+LTD.+Works/@22.7820465,88.5362415,18.5z/data=!4m6!3m5!1s0x39f8a3f11aafced1:0xf7931e3ad99b5d5b!8m2!3d22.7821151!4d88.5369854!16s%2Fg%2F11t7dp5_fy?entry=ttu"
                     target="_blank" rel="noopener noreferrer" style={{textDecoration: "none",  color:"blue", fontSize:"40px"}}>🗺️</a>
   </nav>
 </footer> 
 
 <footer className="footer px-10 py-4 border-t-[2px] bg-slate-50 text-base-content border-base-300">
   <aside className="items-center grid-flow-col">
-    
+    <img src="/logo.jpeg" alt=""  style={{height:"10vh", width:"8vw"}}/>
     <div>
     <h2 className="footer-title font-bold">THN IT Solutiond Pvt Ltd. </h2>
-  
     </div>
   </aside> 
     <nav className="md:place-self-center md:justify-self-end">
@@ -55,8 +55,8 @@ const Footer = () => {
     </nav>
   
 </footer>
-<footer className="text-center bg-slate-50">
-    <p style={{fontSize:"0.7rem", padding:"2vh 0"}}>Copyright © 2024 - THN IT SOLUTIONS PVT. LTD.</p>
+<footer className="text-center bg-slate-50 ">
+    <p className="text-base text-slate-500" style={{ padding:"2vh 0"}}>Copyright © 2024 - THN IT SOLUTIONS PVT. LTD.</p>
 </footer>
     </>
   )

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
+// import logo from '../../assets/thnit.png'
+import logo from '../../assets/logo.jpg'
 const Navbar = () => {
 
   const [isShow,setIsShow] = useState(false);
@@ -10,7 +11,7 @@ const Navbar = () => {
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
         {/* Navbar */}
-        <div className="w-full navbar bg-slate-50">
+        <div className="w-full navbar">
           <div className="flex-none lg:hidden">
             <label
               htmlFor="my-drawer-3"
@@ -38,21 +39,21 @@ const Navbar = () => {
           <div className="container flex justify-between w-10/12 mx-auto">
 
          
-          <div className="flex px-2 mx-2"><span className="font-bold drop-shadow-sm p-2 border rounded tracking-wider">THN IT Solutions</span></div>
-          <div className="flex-none hidden lg:block">
-            <ul className="menu menu-horizontal ">
+          <div className="flex basis-1/3 px-2 mx-2"><img src={logo} className="h-16 mix-blend-multiply p-2" alt="" ></img></div>
+          <div className="basis-2/3 hidden lg:block">
+            <ul className="menu menu-horizontal flex justify-around">
               {/* Navbar menu content here */}
-              <Link to='/'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider ">Home</a></li> </Link>
+              <Link to='/'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider  hover:font-semibold">Home</a></li> </Link>
               
-              <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider">About Us</a></li>
-              <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider">Our Service</a></li>
-              <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider">Technology</a></li>
-              <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider">Our Associates</a></li>
-              <Link to='/contact'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider">Contact</a></li></Link>
+              <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold">About Us</a></li>
+              <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold">Our Service</a></li>
+              <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold">Technology</a></li>
+              <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold">Our Associates</a></li>
+              <Link to='/contact'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold">Contact</a></li></Link>
 
               {/* Register */}
               <div className=" mx-2 dropdown dropdown-hover  w-fit">
-                  <li><a className="text-sm font-medium rounded tracking-wider border  bg-black text-white hover:bg-slate-100 hover:text-gray-800">Register</a></li>
+                  <li><a className="text-sm font-medium rounded tracking-wider border  bg-black text-white hover:bg-slate-100 hover:text-gray-800 hover:font-semibold">Register</a></li>
                    
                     <ul className="dropdown-content mt-[2px] z-[1] menu bg-base-100 rounded-box font-poppins w-52 border">
                      <li className="mb-1"><Link to="/signIn">SignIn</Link></li>
