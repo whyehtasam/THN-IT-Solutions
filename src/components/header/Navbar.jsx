@@ -39,27 +39,28 @@ const Navbar = () => {
           <div className="container flex justify-between w-10/12 mx-auto">
 
          
-          <div className="flex basis-1/3 px-2 mx-2"><img src={logo} className="h-16 mix-blend-multiply p-2" alt="" ></img></div>
+          <div className="flex basis-1/2 px-2 mx-2"><img src={logo} className="h-16 mix-blend-multiply p-2" alt="" ></img></div>
           <div className="basis-2/3 hidden lg:block">
             <ul className="menu menu-horizontal flex justify-around">
               {/* Navbar menu content here */}
               <Link to='/'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider  hover:font-semibold">Home</a></li> </Link>
+              <Link to='/aboutUs'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider  hover:font-semibold">About Us</a></li> </Link>
               
-              <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold">About Us</a></li>
+              
               <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold">Our Service</a></li>
               <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold">Technology</a></li>
               <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold">Our Associates</a></li>
-              <Link to='/contact'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold">Contact</a></li></Link>
+              <Link to='/contact'><li><a className="text-sm font-medium rounded tracking-wider border  bg-black text-white hover:bg-slate-100 hover:text-gray-800 hover:font-semibold">Contact</a></li></Link>
 
               {/* Register */}
-              <div className=" mx-2 dropdown dropdown-hover  w-fit">
+              {/* <div className=" mx-2 dropdown dropdown-hover  w-fit">
                   <li><a className="text-sm font-medium rounded tracking-wider border  bg-black text-white hover:bg-slate-100 hover:text-gray-800 hover:font-semibold">Register</a></li>
                    
                     <ul className="dropdown-content mt-[2px] z-[1] menu bg-base-100 rounded-box font-poppins w-52 border">
                      <li className="mb-1"><Link to="/signIn">SignIn</Link></li>
                      <li><Link to="/signUp">SignUp</Link></li>
                    </ul>
-             </div>
+             </div> */}
             </ul>
           </div>
 

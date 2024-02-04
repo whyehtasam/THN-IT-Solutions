@@ -3,26 +3,26 @@ import "./App.css"; // importing the App.css
 import Navbar from "./components/header/Navbar"; // importing the Navbar component
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // importing the routing components from react-router-dom
-
+import AboutUs  from "./components/about/AboutUs";
 import Contact from "./components/contact/Contact"; // importing the Contact component
 import SignIn from "./components/register.jsx/SignIn"; // importing the SignIn component
 import SignUp from "./components/register.jsx/SignUp"; // importing the SignUp component
 import Footer from "./components/footer/Footer"; // importing the Footer component
 import Hero from "./components/landing/Hero"; // importing the Hero component
 import Intro from "./components/landing/Intro";
-import Intro2 from "./components/landing/Intro2";
+import Intro2 from "./components/about/Intro2";
 import IntroBanner from "./components/landing/IntroBanner";
 import IntroCards from "./components/introCards/IntroCards";
-import Intro3 from "./components/landing/Intro3";
+import Intro3 from "./components/about/Intro3";
 import "./assets/bg.css";
 import svg from "./assets/Animated Shape.svg";
 // defining the App component
 function App() {
   return (
-    <div className=" svg">
-      {/* <img src={svg} className="w-full opacity-30 object-fill h-screen absolute" alt="" /> */}
+    <div className=" svg ">
+      {/* <div  className="w-full border  h-96 top-0 absolute" alt=""></div> */}
       <Router>
-        {" "}
+        
         {/* starting the routing configuration */}
         <Navbar /> {/* rendering the Navbar component */}
         <Routes>
@@ -34,17 +34,19 @@ function App() {
           {/* defining the route for the SignIn component */}
           <Route path="/signUp" element={<SignUp />} />{" "}
           {/* defining the route for the SignUp component */}
+          <Route path="/aboutUs" element={<AboutUs />} />
           <Route
             path="/"
             element={
-              <>
+              <div className="z-20">
                 <Hero /> {/* rendering the Hero component */}
+                <IntroBanner title="Unveiling THN IT Solutions: A Deep Dive"/>
                 <Intro />
-                <Intro2 />
+                {/* <Intro2 />
                 <IntroBanner />
                 <IntroCards />
-                <Intro3 />
-              </>
+                <Intro3 /> */}
+              </div>
             }
           />
           {/* defining the route for the home page */}

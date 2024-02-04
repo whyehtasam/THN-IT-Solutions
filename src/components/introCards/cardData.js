@@ -44,3 +44,26 @@ export const cardDetails = [
         description: "Our commitment to providing accurate information is unwavering. THN IT Solutions integrates credible sources to substantiate our content, ensuring you receive reliable insights."
     }
   ]
+
+  export const aboutCardData =[
+    {
+        id: 1,
+        title: "Innovation",
+        description: "We stay ahead of the curve, embracing the latest technologies to deliver innovative and future-ready solutions."
+    },
+    {
+        id: 2,
+        title: "Customization",
+        description: " Every business is unique, and so are our solutions. We tailor our software to meet your specific needs and challenges."
+    },
+    {
+        id: 3,
+        title: "Reliability",
+        description: "Trust is the foundation of our relationships. We are committed to delivering reliable and robust software solutions that you can depend on."
+    },
+    {
+        id: 4,
+        title: "Expert Team",
+        description: "Our team of skilled and experienced professionals is passionate about technology. We combine expertise with creativity to develop solutions that drive success."
+    }
+  ]

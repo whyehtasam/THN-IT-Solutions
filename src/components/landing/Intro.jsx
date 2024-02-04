@@ -8,14 +8,15 @@ const Intro = () => {
     <section className="intro pb-16 px-28 h-[90vh]">
       <Container className="flex flex-row-reverse justify-evenly w-full h-full  ">
         <div className="title grid w-5/12  h-full p-6">
-          <h1 className="text-4xl  h-fit font-bold drop-shadow-md leading-normal">
+          <h1 className="text-4xl   h-fit font-bold drop-shadow-md leading-normal">
           Crafting Tomorrow's <br /> Digital Solutions Today !
           </h1>
           
 
           <p className="pr-10 text-md text-justify font-medium leading-loose text-gray-500 drop-shadow-sm">
-          In the ever-evolving landscape of technology, THN IT Solutions stands as a beacon, offering unparalleled expertise in crafting tailored digital solutions. <br/><br/>
-          From on-demand software to Web applications, Content management systems (CMS), App development, and cutting-edge cloud services, we are committed to scaling businesses for success.
+          At THN IT Solutions, we believe in the power of technology to transform businesses and streamline operations. As a premier software startup, we specialize in delivering cutting-edge solutions tailored to meet the unique needs of your enterprise.
+          <br/>
+          From on-demand software to Web applications, Custom Software Development, Data Analytics, and IT Consulting, we are committed to scaling businesses for success.
           </p>
          
         </div>
