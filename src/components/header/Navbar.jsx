@@ -40,7 +40,7 @@ const Navbar = () => {
 
          
           <div className="flex basis-1/2 px-2 mx-2"><img src={logo} className="h-16 mix-blend-multiply p-2" alt="" ></img></div>
-          <div className="basis-2/3 hidden lg:block">
+          <div className="basis-2/3 hidden md:hidden lg:block">
             <ul className="menu menu-horizontal flex justify-around">
               {/* Navbar menu content here */}
               <Link to='/'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider  hover:font-semibold">Home</a></li> </Link>

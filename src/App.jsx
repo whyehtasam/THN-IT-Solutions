@@ -41,7 +41,7 @@ function App() {
           <Route
             path="/"
             element={
-              <div className="z-20">
+              <div className="">
                 <Hero /> {/* rendering the Hero component */}
                 <IntroBanner title="Unveiling THN IT Solutions: A Deep Dive"/>
                 <Intro />
@@ -49,6 +49,7 @@ function App() {
                 <IntroBanner />
                 <IntroCards />
                 <Intro3 /> */}
+                
               </div>
             }
           />
