@@ -1,5 +1,5 @@
 import { SocialIcon } from "react-social-icons"
-
+import logo from '../../assets/logo.jpg'
 const Footer = () => {
   return (
     <>
@@ -36,8 +36,8 @@ const Footer = () => {
 
 <footer className="footer px-10 py-4 border-t-[2px] bg-white text-base-content border-base-300">
   <aside className="items-center grid-flow-col w-[500px] ">
-    <img src="/logo.jpeg" alt="img" className="grayscale w-32 rounded-lg mr-8 obj" />
-    <div>
+    <img src={logo} alt="img" className="grayscale  rounded-lg mr-10 obj" />
+    <div className="pl-8">
     <h2 className="footer-title font-bold">THN IT Solutiond Pvt Ltd.</h2>
     <p className="text-justify">We constantly Endeavor our best to
        update our technological competence,
