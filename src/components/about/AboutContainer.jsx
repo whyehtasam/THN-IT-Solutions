@@ -9,7 +9,7 @@ const AboutContainer = ({ data,style }) => {
         <h1 className="text-3xl  font-bold drop-shadow leading-normal mt-10">
           {title}
         </h1>
-        <p className=" pt-10  text-sm text-justify font-medium leading-loose text-gray-500  ">
+        <p className=" pt-10  text-sm text-justify font-medium leading-loose text-gray-500">
           {description}
         </p>
       </div>

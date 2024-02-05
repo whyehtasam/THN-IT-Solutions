@@ -68,7 +68,8 @@ const Navbar = () => {
               
               
               <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold">Technology</a></li>
-              <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold">Our Associates</a></li>
+              <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold">Portfolio</a></li>
+              <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold">Career</a></li>
               <Link to='/contact'><li><a className="mx-2 text-sm font-medium rounded tracking-wider border  bg-black text-white hover:bg-slate-100 hover:text-gray-800 hover:font-semibold">Contact</a></li></Link>
 
               {/* Register */}
