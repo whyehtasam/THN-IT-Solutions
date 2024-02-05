@@ -23,9 +23,50 @@ const Navbar = () => {
   // if (isScrolled) {
   //   navbarClasses.push('blur-2');
   // }
+
+
+  //First Row Data
+  const serviceData = [
+    {
+      menuTitle: 'Web Development',
+      path:'/aboutUs',
+      items: ['React Js', 'Angular Js','Next Js'],
+    },
+    {
+      menuTitle: 'Backend Development',
+      path:'#service1',
+      items: ['Java', 'Python','Node JS'],
+    },
+    {
+      menuTitle: 'Cloud Service',
+      path:'#service1',
+      items: ['AWS', 'Azure', 'GCP'],
+    },
+    {
+      menuTitle: 'AI & ML Engineering',
+      path:'#service1',
+      items: ['Natural Language Processing', 'Large Languge Model', 'AI Integration Services'],
+    },
+
+  ];
+
+//Second Row Data only add up to four column
+  const serviceData2 = [
+    {
+      menuTitle: 'DevOps',
+      path:'#service1',
+      items: ['CI/CD', 'Infrastructure as Code (IaC)', 'Terraform'],
+    },
+    {
+      menuTitle: 'Quality Engineering',
+      path:'#service1',
+      items: ['Automated Testing', 'Performance Testing', 'Continuous Integration'],
+    },
+
+  ];
   
   return (
-    <div className={`drawer sticky top-0 z-10 ${isScrolled && 'bg-white '}`}>
+    <div className={`drawer sticky top-0 z-10 ${isScrolled && 'bg-white border-b-[1px]'} ${isVisible && 'bg-white'}`}>
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
         {/* Navbar */}
@@ -50,11 +91,11 @@ const Navbar = () => {
                 ></path>
               </svg>
             </label>
-          </div>
+          </div> 
 
 
 
-          <div className="container  flex justify-between w-10/12 mx-auto">
+          <div className="container  flex justify-between w-[80%] mx-auto z-5">
 
          
           <div className="flex px-2 mx-2"><img src={logo} className="h-16 mix-blend-multiply p-2" alt="" ></img></div>
@@ -63,7 +104,10 @@ const Navbar = () => {
               {/* Navbar menu content here */}
               <Link to='/'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider  hover:font-semibold">Home</a></li> </Link>
               <Link to='/aboutUs'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider  hover:font-semibold">About Us</a></li> </Link>
-              <Link to='/ourServices'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider  hover:font-semibold" onMouseMove={() => setIsVisible(true)}>Our Services</a></li> </Link>
+              <li onMouseMove={() => setIsVisible(true)} onMouseLeave={() => setIsVisible(false)}><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider h-[100%]  hover:font-semibold">
+                Our Services
+                </a>
+                </li>
               
               
               
@@ -87,10 +131,12 @@ const Navbar = () => {
         </div>
 
         <div >
+        {isVisible && <div className=" bg-white border-b-[1px] z-4 absolute w-[100%]" 
+          onMouseMove={() => setIsVisible(true)} 
+          onMouseLeave={() => setIsVisible(false)}>
 
-        
-        {isVisible && <div className="text-8xl text-center" >
-        hello
+        <ServicesMenu services={serviceData} />
+        <ServicesMenu services={serviceData2} />
       </div>}
         </div>
         
@@ -120,5 +166,31 @@ const Navbar = () => {
     </div>
   );
 };
+
+
+const ServicesMenu = ({ services }) => 
+{
+  return(
+    <div className="flex p-12 mx-[15%]">
+      {services.map((service, index) => (
+       
+       <div className="justify-normal">
+        <div key={index =="3"} className="border-r-[1px] border-slate-300 px-6 text-left">
+          <h3 className="text-lg pb-2">
+            <Link to={service.path}><span className="font-bold pr-2">{service.menuTitle}</span> <span className="p-1">{">"}</span></Link>
+          </h3>
+          <ul>
+            {service.items.map((item, itemIndex) => (
+              <li key={itemIndex} className="text-sm ">{item}</li>
+            ))}
+          </ul>
+        </div>
+       </div>
+        
+      ))}
+    </div>
+  );
+};
+
 
 export default Navbar;

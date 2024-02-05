@@ -27,7 +27,11 @@ const Contact = () => {
       title: 'Map',
       details: [
         'Click on the Google Map',
-        <a key="map" href="https://www.google.com/maps/place/TSNT+SOLUTIONS+PVT.+LTD.+Works/@22.7820465,88.5362415,18.5z/data=!4m6!3m5!1s0x39f8a3f11aafced1:0xf7931e3ad99b5d5b!8m2!3d22.7821151!4d88.5369854!16s%2Fg%2F11t7dp5_fy?entry=ttu" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "blue", fontSize: "40px" }}>🗺️</a>,
+        <a key="map" href="https://www.google.com/maps/place/TSNT+SOLUTIONS+PVT.+LTD.+Works/@22.7820465,88.5362415,18.5z/data=!4m6!3m5!1s0x39f8a3f11aafced1:0xf7931e3ad99b5d5b!8m2!3d22.7821151!4d88.5369854!16s%2Fg%2F11t7dp5_fy?entry=ttu" 
+            target="_blank" 
+            rel="noopener noreferrer" style={{ textDecoration: "none", color: "blue", fontSize: "40px" }}>
+              <img src="/google-maps.svg" alt="" className=" h-12 w-12 mt-2"/>
+        </a>,
       ],
     },
   ];
@@ -35,7 +39,7 @@ const Contact = () => {
   return (
     <div className="contact justify-center items-center flex my-16">
       <div className="flex rounded-[2vh] shadow-lg ">
-        <div className="bg-slate-50 rounded-[2vh] py-[2vh] px-[2vw]">
+        <div className="rounded-l-[2vh] py-[2vh] px-[2vw]" style={{backgroundColor:"#8db8fc"}}>
           <h2 className="font-bold mt-2 text-2xl">Reach Us</h2>
 
           <Contactaddress contacts={contactInfo} />
