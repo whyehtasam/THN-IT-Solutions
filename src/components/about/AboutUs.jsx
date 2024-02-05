@@ -10,13 +10,16 @@ import { aboutData } from "./aboutData"
  const AboutUs = () => {
   console.log(aboutData[0])
   return (
-    <section className="about-us border lg:max-w-7xl mx-auto">
+    <section className="about-us  lg:max-w-7xl mx-auto">
       {/* <SliderCheck /> */}
     <Intro2 />
     {/* <Intro3 /> */}
     <IntroBanner title='Why Choose THN IT Solutions?' />
     <IntroCards data={aboutCardData} containerStyle='' cardStyle=''/>
-    <AboutContainer data={aboutData[0]}/>
+    <AboutContainer data={aboutData[0]} style=''/> 
+    <AboutContainer data={aboutData[1]} style=' flex-row-reverse '/> 
+    <AboutContainer data={aboutData[2]} style=''/> 
+    <AboutContainer data={aboutData[3]} style=' flex-row-reverse '/> 
     
     <div className="p-20 mb-16 flex flex-col w-[500px] justify-center items-center mx-auto rounded-lg bg-white drop-shadow-lg mt-10">
       <h1 className="text-4xl text-center font-bold">Get in touch</h1>

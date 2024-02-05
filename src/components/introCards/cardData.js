@@ -88,7 +88,7 @@ export const cardDetails = [
   export const IntroServiceCardData =[
     {
         id: 1,
-        title: "🚀 Custom Software Development:",
+        title: "🚀 Custom Software Development",
         description: 'Our custom software development services are designed to address the unique needs of your business. We work closely with you to understand your business processes, goals, and challenges. Our team of experienced developers then designs and builds a custom software solution that aligns with your business objectives, enhances efficiency, and gives you a competitive edge. We ensure that our software solutions are scalable, secure, and easy to maintain.'
     },
     {

@@ -24,7 +24,7 @@ export const aboutData = [
     },
     {
       id: 4,
-      title: 'What We Offer"',
+      title: 'What We Offer',
       description:
         "Our comprehensive suite of services encompasses a wide range of software solutions designed to address the evolving needs of modern businesses. From custom software development and mobile app development to cloud computing solutions and cybersecurity services, we have the expertise and experience to tackle even the most complex projects.",
       path: svg,
