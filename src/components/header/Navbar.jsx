@@ -105,10 +105,11 @@ const Navbar = () => {
               {/* Navbar menu content here */}
               <Link to='/'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider  hover:font-semibold">Home</a></li> </Link>
               <Link to='/aboutUs'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider  hover:font-semibold">About Us</a></li> </Link>
-              <li onMouseMove={() => setIsVisible(true)} onMouseLeave={() => setIsVisible(false)}><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider h-[100%]  hover:font-semibold">
+              <Link to='/ourServices'><li onMouseMove={() => setIsVisible(true)} ><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider h-[100%]  hover:font-semibold">
                 Our Services
                 </a>
-                </li>
+                </li> </Link>
+              
               
               
               
@@ -174,10 +175,10 @@ const Navbar = () => {
 const ServicesMenu = ({ services }) => 
 {
   return(
-    <div className="flex p-12 mx-[15%]">
+    <div className="flex p-12 mx-[15%] " onMouseLeave={() => setIsVisible(false)}>
       {services.map((service, index) => (
        
-       <div className="justify-normal">
+       <div className="justify-normal" key={index}>
         <div key={index =="3"} className="border-r-[1px] border-slate-300 px-6 text-left">
           <h3 className="text-lg pb-2">
             <Link to={service.path}><span className="font-bold pr-2">{service.menuTitle}</span> <span className="p-1">{">"}</span></Link>
