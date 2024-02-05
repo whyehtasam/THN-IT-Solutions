@@ -2,6 +2,7 @@ import { useState,useEffect } from "react";
 import { Link } from "react-router-dom";
 // import logo from '../../assets/thnit.png'
 import logo from '../../assets/logo.jpg'
+
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isVisible,setIsVisible] = useState(false);
@@ -67,7 +68,9 @@ const Navbar = () => {
               
               
               
-              <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold">Technology</a></li>
+              <Link to='/portfolio'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold flex">Portfolio</a></li></Link>
+                
+            
               <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold">Our Associates</a></li>
               <Link to='/contact'><li><a className="mx-2 text-sm font-medium rounded tracking-wider border  bg-black text-white hover:bg-slate-100 hover:text-gray-800 hover:font-semibold">Contact</a></li></Link>
 
