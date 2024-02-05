@@ -25,7 +25,7 @@ const Navbar = () => {
   // }
   
   return (
-    <div className={`drawer sticky top-0 z-10 ${isScrolled && 'bg-white '}`}>
+    <div className={`drawer sticky top-0 z-10 relative ${isScrolled && 'bg-white '}`}>
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
         {/* Navbar */}
@@ -89,7 +89,7 @@ const Navbar = () => {
         <div >
 
         
-        {isVisible && <div className="text-8xl text-center" >
+        {isVisible && <div className=" absolute bg-white w-full text-8xl text-center" >
         hello
       </div>}
         </div>
