@@ -40,24 +40,25 @@ function App() {
           {/* defining the route for the SignIn component */}
           <Route path="/signUp" element={<SignUp />} />{" "}
           {/* defining the route for the SignUp component */}
-          <Route path="/aboutUs" element={<AboutUs />} />
-          <Route path="/aboutUs" element={<AboutUs />} />
+          {/* <Route path="/aboutUs" element={<AboutUs />} /> */}
+          {/* <Route path="/aboutUs" element={<AboutUs />} /> */}
           <Route path="/ourServices" element={<OurServices />} />
           <Route
             path="/"
             element={
               <div className="">
-                <Hero /> {/* rendering the Hero component */}
+                {/* <Hero /> rendering the Hero component */}
                 {/* <IntroBanner title="Unveiling THN IT Solutions: A Deep Dive"/> */}
-                <Intro />
+                {/* <Intro /> */}
                 {/* <Intro2 />
                 <IntroBanner />
                 <IntroCards />
                 <Intro3 /> */}
                 {/* <IntroBanner title="Our Services"/> */}
                 {/* <IntroCards data={IntroServiceCardData}/> */}
-                <ServiceIntro />
+                {/* <ServiceIntro /> */}
                 {/* <CenterMode /> */}
+                <AboutUs/>
                 
 
                 

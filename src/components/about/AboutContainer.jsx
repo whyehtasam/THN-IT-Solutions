@@ -1,17 +1,19 @@
-const AboutContainer = ({ id, title, description, path }) => {
+const AboutContainer = ({ data }) => {
+  const { id, title, description, path } = data;
   return (
-    <section className="about-container min-w-96 lg:w-full flex lg:grid md:grid-cols-2 md:gap-6">
-      <div className="info lg:flex flex-col">
-        <h1 className="text-3xl  h-fit font-bold drop-shadow leading-normal">
+    <section className="about-container mb-16 min-w-96 lg:max-w-6xl lg:flex  items-stretch mx-auto justify-evenly">
+        <div className="img flex justify-center items-center   flex-1 ">
+        <img src={path} alt="svg"  className="h-96 drop-shadow-md"/>
+      </div>
+      <div className="info flex  flex-col i flex-1 md:py-12 px-20">
+        <h1 className="text-3xl  font-bold drop-shadow leading-normal mt-10">
           {title}
         </h1>
-        <p className=" pt-10  text-sm text-justify font-medium leading-loose text-gray-500 ">
+        <p className=" pt-10  text-sm text-justify font-medium leading-loose text-gray-500 w-[p] ">
           {description}
         </p>
       </div>
-      <div className="img">
-        <img src={path} alt="svg" />
-      </div>
+      
     </section>
   );
 };
