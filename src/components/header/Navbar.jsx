@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import logo from '../../assets/logo.jpg'
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isVisible,setIsVisible] = useState(false);
 
   const handleScroll = () => {
     const offset = window.scrollY;
@@ -53,22 +54,22 @@ const Navbar = () => {
 
 
 
-          <div className="container flex justify-between w-10/12 mx-auto">
+          <div className="container  flex justify-between w-10/12 mx-auto">
 
          
-          <div className="flex basis-1/2 px-2 mx-2"><img src={logo} className="h-16 mix-blend-multiply p-2" alt="" ></img></div>
+          <div className="flex px-2 mx-2"><img src={logo} className="h-16 mix-blend-multiply p-2" alt="" ></img></div>
           <div className="basis-2/3 hidden md:hidden lg:block">
-            <ul className="menu menu-horizontal flex justify-around">
+            <ul className="menu menu-horizontal flex justify-end">
               {/* Navbar menu content here */}
               <Link to='/'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider  hover:font-semibold">Home</a></li> </Link>
               <Link to='/aboutUs'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider  hover:font-semibold">About Us</a></li> </Link>
-              <Link to='/ourServices'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider  hover:font-semibold">Our Services</a></li> </Link>
+              <Link to='/ourServices'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider  hover:font-semibold" onMouseMove={() => setIsVisible(true)}>Our Services</a></li> </Link>
               
               
               
               <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold">Technology</a></li>
               <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold">Our Associates</a></li>
-              <Link to='/contact'><li><a className="text-sm font-medium rounded tracking-wider border  bg-black text-white hover:bg-slate-100 hover:text-gray-800 hover:font-semibold">Contact</a></li></Link>
+              <Link to='/contact'><li><a className="mx-2 text-sm font-medium rounded tracking-wider border  bg-black text-white hover:bg-slate-100 hover:text-gray-800 hover:font-semibold">Contact</a></li></Link>
 
               {/* Register */}
               {/* <div className=" mx-2 dropdown dropdown-hover  w-fit">
@@ -84,8 +85,19 @@ const Navbar = () => {
 
           </div>
         </div>
+
+        <div >
+
+        
+        {isVisible && <div className="text-8xl text-center" >
+        hello
+      </div>}
+        </div>
+        
         {/* Page content here */}
       </div>
+
+      
 
         {/* Sidebar start */}
       <div className="drawer-side">

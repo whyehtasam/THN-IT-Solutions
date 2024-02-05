@@ -48,7 +48,7 @@ function App() {
             element={
               <div className="">
                 <Hero /> {/* rendering the Hero component */}
-                <IntroBanner title="Unveiling THN IT Solutions: A Deep Dive"/>
+                {/* <IntroBanner title="Unveiling THN IT Solutions: A Deep Dive"/> */}
                 <Intro />
                 {/* <Intro2 />
                 <IntroBanner />

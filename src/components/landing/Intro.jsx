@@ -13,7 +13,7 @@ const Intro = () => {
           </h1>
           
 
-          <p className="pr-10 text-md text-justify font-medium leading-loose text-gray-500 drop-shadow-sm">
+          <p className="pr-10 text-sm text-justify font-medium leading-loose text-gray-500 drop-shadow-sm">
           At THN IT Solutions, we believe in the power of technology to transform businesses and streamline operations. As a premier software startup, we specialize in delivering cutting-edge solutions tailored to meet the unique needs of your enterprise.
           <br/>
           From on-demand software to Web applications, Custom Software Development, Data Analytics, and IT Consulting, we are committed to scaling businesses for success.
