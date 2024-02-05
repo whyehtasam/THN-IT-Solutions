@@ -105,15 +105,17 @@ const Navbar = () => {
               {/* Navbar menu content here */}
               <Link to='/'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider  hover:font-semibold">Home</a></li> </Link>
               <Link to='/aboutUs'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider  hover:font-semibold">About Us</a></li> </Link>
-              <li onMouseMove={() => setIsVisible(true)} onMouseLeave={() => setIsVisible(false)}><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider h-[100%]  hover:font-semibold">
+              <Link to='/ourServices'><li onMouseMove={() => setIsVisible(true)} ><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider h-[100%]  hover:font-semibold">
                 Our Services
                 </a>
-                </li>
+                </li> </Link>
+              
               
               
               
               <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold">Technology</a></li>
-              <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold">Our Associates</a></li>
+              <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold">Portfolio</a></li>
+              <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold">Career</a></li>
               <Link to='/contact'><li><a className="mx-2 text-sm font-medium rounded tracking-wider border  bg-black text-white hover:bg-slate-100 hover:text-gray-800 hover:font-semibold">Contact</a></li></Link>
 
               {/* Register */}
@@ -177,6 +179,7 @@ const ServicesMenu = ({ services }) =>
       {services.map((service, index) => (
        
        <div className="">
+
         <div key={index =="3"} className="border-r-[1px] border-slate-300 px-6 text-left">
           <h3 className="text-lg pb-2">
             <Link to={service.path} className="font-bold pr-2">{service.menuTitle}{" >"}</Link>
