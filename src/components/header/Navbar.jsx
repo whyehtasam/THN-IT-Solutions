@@ -63,7 +63,7 @@ const Navbar = () => {
               {/* Navbar menu content here */}
               <Link to='/'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider  hover:font-semibold">Home</a></li> </Link>
               <Link to='/aboutUs'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider  hover:font-semibold">About Us</a></li> </Link>
-              <Link to='/ourServices'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider  hover:font-semibold" onMouseMove={() => setIsVisible(true)}>Our Services</a></li> </Link>
+              <Link to='/ourServices'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider  hover:font-semibold" onMouseMove={() => setIsVisible(false)}>Our Services</a></li> </Link>
               
               
               
