@@ -28,24 +28,24 @@ const Navbar = () => {
   //First Row Data
   const serviceData = [
     {
-      menuTitle: 'Web Development',
+      menuTitle: 'Application Development',
       path:'/aboutUs',
-      items: ['React Js', 'Angular Js','Next Js'],
-    },
-    {
-      menuTitle: 'Backend Development',
-      path:'#service1',
-      items: ['Java', 'Python','Node JS'],
+      items: ['Web Application Development', 'Mobile App Development','Custom Software Solutions'],
     },
     {
       menuTitle: 'Cloud Service',
       path:'#service1',
-      items: ['AWS', 'Azure', 'GCP'],
+      items: ['Cloud Migration Services', 'Cloud Solution Architecture','Cloud Storage Service'],
     },
     {
-      menuTitle: 'AI & ML Engineering',
+      menuTitle: 'Maintenance and Support',
       path:'#service1',
-      items: ['Natural Language Processing', 'Large Languge Model', 'AI Integration Services'],
+      items: ['Providing ongoing support', 'Maintenance for software applications', 'Feature enhancements'],
+    },
+    {
+      menuTitle: 'Data Analytics and Business Intelligence (BI)',
+      path:'#service1',
+      items: ['Data warehousing', 'Data visualization', 'Predictive analytics'],
     },
 
   ];
@@ -66,7 +66,7 @@ const Navbar = () => {
   ];
   
   return (
-    <div className={`drawer sticky top-0 z-10 relative ${isScrolled && 'bg-white border-b-[1px]'} ${isVisible && 'bg-white'}`}>
+    <div className={`drawer sticky top-0 z-10 ${isScrolled && 'bg-white border-b-[1px]'} ${isVisible && 'bg-white'}`}>
 
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
@@ -132,7 +132,7 @@ const Navbar = () => {
         </div>
 
         <div >
-        {isVisible && <div className=" bg-white border-b-[1px] z-4 absolute w-[100%]" 
+        {isVisible && <div className=" bg-white border-b-[1px] z-11 absolute w-[100%] top-0 mt-[8.5vh]" 
           onMouseMove={() => setIsVisible(true)} 
           onMouseLeave={() => setIsVisible(false)}>
 
@@ -173,13 +173,13 @@ const Navbar = () => {
 const ServicesMenu = ({ services }) => 
 {
   return(
-    <div className="flex p-12 mx-[15%]">
+    <div className="flex p-12 mx-[4%]">
       {services.map((service, index) => (
        
-       <div className="justify-normal">
+       <div className="">
         <div key={index =="3"} className="border-r-[1px] border-slate-300 px-6 text-left">
           <h3 className="text-lg pb-2">
-            <Link to={service.path}><span className="font-bold pr-2">{service.menuTitle}</span> <span className="p-1">{">"}</span></Link>
+            <Link to={service.path} className="font-bold pr-2">{service.menuTitle}{" >"}</Link>
           </h3>
           <ul>
             {service.items.map((item, itemIndex) => (
