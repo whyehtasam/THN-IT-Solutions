@@ -65,13 +65,30 @@ export const cardDetails = [
         id: 4,
         title: "💼 Expert Team",
         description: "Our team of skilled and experienced professionals is passionate about technology. We combine expertise with creativity to develop solutions that drive success."
-    }
+    },
+    {
+        id: 5,
+        title: "💼 Quality",
+        description: "We are dedicated to delivering the highest quality solutions that meet and exceed our clients' expectations. Our rigorous quality assurance processes ensure that every project we deliver is of the highest standard."
+    },
+    {
+        id: 6,
+        title: "💼 Customer-Centric Approach",
+        description: " At THN IT Solutions, our clients are our top priority. We take a customer-centric approach to every project, ensuring that we fully understand our clients' needs and objectives and delivering solutions that are tailored to meet their specific requirements."
+        
+    },
+    {
+        id: 7,
+        title: "💼 Commitment to Excellence",
+        description: "We are committed to excellence in everything we do. From the quality of our work to the level of customer service we provide, we strive for excellence in every aspect of our business."
+        
+    },
   ]
 
   export const IntroServiceCardData =[
     {
         id: 1,
-        title: "🚀 Custom Software Development:",
+        title: "🚀 Custom Software Development",
         description: 'Our custom software development services are designed to address the unique needs of your business. We work closely with you to understand your business processes, goals, and challenges. Our team of experienced developers then designs and builds a custom software solution that aligns with your business objectives, enhances efficiency, and gives you a competitive edge. We ensure that our software solutions are scalable, secure, and easy to maintain.'
     },
     {

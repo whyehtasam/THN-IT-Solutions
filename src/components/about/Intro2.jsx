@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Intro = () => {
   return (
-    <section className="intro pb-16 px-28 h-[90vh]">
+    <section className="intro pb-16   h-[90vh]">
           
       <Container className="flex  justify-evenly w-full h-full   ">
         <div className="title flex flex-col place-content-center w-5/12  h-full p-6">
