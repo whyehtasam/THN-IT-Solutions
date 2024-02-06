@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // im
 import AboutUs  from "./components/about/AboutUs";
 import Contact from "./components/contact/Contact"; // importing the Contact component
 import OurServices from "./components/ourService/OurServices";
+import Portfolio   from "./components/portfolio/portfolio";
 import SignIn from "./components/register.jsx/SignIn"; // importing the SignIn component
 import SignUp from "./components/register.jsx/SignUp"; // importing the SignUp component
 import Footer from "./components/footer/Footer"; // importing the Footer component
@@ -43,6 +44,7 @@ function App() {
           {/* <Route path="/aboutUs" element={<AboutUs />} /> */}
           {/* <Route path="/aboutUs" element={<AboutUs />} /> */}
           <Route path="/ourServices" element={<OurServices />} />
+          <Route path="/portfolio" element={<Portfolio />} />
           <Route
             path="/"
             element={
