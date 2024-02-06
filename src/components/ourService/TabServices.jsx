@@ -12,7 +12,7 @@ const TabServices = (props) => {
             key={item.id}
             onClick={() => setActiveTab(index)}
           >
-           <p className={`w-full rounded-lg flex justify-center items-center bg-black text-white cursor-pointer transition-all-all duration-300 hover:bg-black hover:text-white ${index === activeTab ? 'bg-black text-white' : 'bg-white text-black  border'}`}>{item.title}</p> 
+           <p className={`w-full rounded-lg flex justify-center items-center cursor-pointer transition-all-all duration-300 hover:bg-black hover:text-white ${index === activeTab ? 'bg-black text-white drop-shadow-md' : 'bg-white text-black  border'}`}>{item.title}</p> 
           </div>
         ))}
       </div>

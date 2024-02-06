@@ -16,9 +16,11 @@ const Navbar = () => {
   }
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll)
-  })
-
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   // let navbarClasses = ['drawer', 'sticky', 'top-0','z-10'];
   // if (isScrolled) {
   //   navbarClasses.push('blur-2');
@@ -105,7 +107,7 @@ const Navbar = () => {
               {/* Navbar menu content here */}
               <Link to='/'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider  hover:font-semibold">Home</a></li> </Link>
               <Link to='/aboutUs'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider  hover:font-semibold">About Us</a></li> </Link>
-              <Link to='/ourServices'><li onMouseMove={() => setIsVisible(true)} ><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider h-[100%]  hover:font-semibold">
+              <Link to='/ourServices'><li onMouseMove={() => setIsVisible(true)} onMouseLeave={() => setIsVisible(false)}><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider h-[100%]  hover:font-semibold">
                 Our Services
                 </a>
                 </li> </Link>
@@ -175,7 +177,7 @@ const Navbar = () => {
 const ServicesMenu = ({ services }) => 
 {
   return(
-    <div className="flex p-12 mx-[15%] " onMouseLeave={() => setIsVisible(false)}>
+    <div className="flex p-12 mx-[15%]">
       {services.map((service, index) => (
        
        <div className="justify-normal" key={index}>
