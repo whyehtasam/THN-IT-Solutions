@@ -29,7 +29,7 @@ import Carousel from '../carousel/Carousel'
     <IntroCards data={aboutCardData} containerStyle='' cardStyle=''/> 
     {/* <IntroBanner title='Get in touch' description={para}/> */}
     
-    <div className="p-20 mb-16 flex flex-col w-full justify-start  mx-auto rounded-lg bg-white drop-shadow-lg mt-10">
+    <div className="  p-20 mb-16 flex flex-col w-[calc(100%-8rem)] justify-start  mx-auto rounded-lg bg-white drop-shadow-lg  ">
       <h1 className="text-4xl text-start font-bold">Get in touch</h1>
       <p className="pt-10  text-sm text-justify font-medium leading-loose text-gray-500 ">
      {para}

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Button from "../button/Button";
 
 const TabServices = (props) => {
   const [activeTab, setActiveTab] = useState(0);
@@ -12,7 +13,15 @@ const TabServices = (props) => {
             key={item.id}
             onClick={() => setActiveTab(index)}
           >
-           <p className={`w-full rounded-lg flex justify-center items-center cursor-pointer transition-all-all duration-300 hover:bg-black hover:text-white ${index === activeTab ? 'bg-black text-white shadow-md' : 'bg-white text-black  border'}`}>{item.title}</p> 
+            <p
+              className={`w-full rounded-lg flex justify-center items-center cursor-pointer transition-all-all duration-300 hover:bg-black hover:text-white ${
+                index === activeTab
+                  ? "bg-black text-white shadow-md"
+                  : "bg-white text-black  border"
+              }`}
+            >
+              {item.title}
+            </p>
           </div>
         ))}
       </div>
@@ -30,6 +39,7 @@ const TabServices = (props) => {
                   <p className="text-justify text-xs lg:text-sm text-gray-800 ">
                     {description}
                   </p>
+                  <button className="btn btn-active btn-link text-gray-800 w-max pl-0 ">Read more</button>
                 </div>
               </div>
             )
