@@ -5,3 +5,39 @@
 body {
     font-family: 'Manrope', sans-serif;
 }
+
+.slick-list{
+    height: 80.5vh;
+    margin: 1rem 10.5rem;
+    border-radius: 2rem;
+}
+.slick-slider {
+    width: 100%;
+    position: relative;
+    left: 0;
+  }
+  .slick-slider > .slick-prev {
+    margin-left: -20px;
+  }
+  .slick-slider > .slick-prev::before {
+    font-size: 25px;
+  }
+  .slick-slider > .slick-next::before {
+    font-size: 25px;
+  }
+  .slick-slider > .slick-next {
+    margin-right: -20px;
+  }
+  .slick-dots {
+    bottom: 12px;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .slick-next:before {
+    content: "❯";
+  }
+  .slick-prev:before {
+    content: "❮";
+  }
+  

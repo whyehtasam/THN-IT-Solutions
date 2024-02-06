@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import { useState, useEffect } from "react";
-import { imagePath } from "../carousel/sliderImagePath";
+import { imagePath } from "./sliderImagePath";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -34,8 +34,8 @@ function SamplePrevArrow(props) {
   );
 }
 const Carousel = (props) => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [zoom, setZoom] = useState(false);
+  // const [currentSlide, setCurrentSlide] = useState(0);
+  // const [zoom, setZoom] = useState(false);
 
   const settings = {
     dots: false,
@@ -53,10 +53,10 @@ const Carousel = (props) => {
     cssEase: "linear",
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-    beforeChange: (current, next) => {
-      setCurrentSlide(next);
-      setZoom(true);
-    },
+    // beforeChange: (current, next) => {
+    //   setCurrentSlide(next);
+    //   setZoom(true);
+    // },
     responsive: [
       {
         breakpoint: 1024,
@@ -85,27 +85,27 @@ const Carousel = (props) => {
     ],
   };
 
-  useEffect(() => {
-    if (zoom) {
-      const timer = setTimeout(() => {
-        setZoom(false);
-      }, 3000); // Reset zoom after 2 seconds (the duration of your transition)
-      return () => clearTimeout(timer);
-    }
-  }, [zoom]);
+  // useEffect(() => {
+  //   if (zoom) {
+  //     const timer = setTimeout(() => {
+  //       setZoom(false);
+  //     }, 3000); // Reset zoom after 2 seconds (the duration of your transition)
+  //     return () => clearTimeout(timer);
+  //   }
+  // }, [zoom]);
   return (
-    <div className="w-full m-auto bg-white">
+    <div className="slider-container w-full m-auto bg-white  ">
       <Slider {...settings}>
         {imagePath.map((item, index) => {
           return (
             <div
               key={item.id}
-              className={`slow-transition-transform ${index === currentSlide && zoom ? "scale-125" : " "}`}
+              className="slow-transition-transform w-96"
             >
               <img
                 src={item.path}
                 alt="imgs"
-                className="object-fill m-auto w-full"
+                className="object-contain m-auto w-full"
               />
             </div>
           );
