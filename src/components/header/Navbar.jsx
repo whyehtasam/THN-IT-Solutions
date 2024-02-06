@@ -108,7 +108,7 @@ const Navbar = () => {
               {/* Navbar menu content here */}
               <Link to='/'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider  hover:font-semibold">Home</a></li> </Link>
               <Link to='/aboutUs'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider  hover:font-semibold">About Us</a></li> </Link>
-              <Link to='/ourServices'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider  hover:font-semibold" onMouseMove={() => setIsVisible(true)}>Our Services</a></li> </Link>
+              <Link to='/ourServices'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider  hover:font-semibold" onMouseMove={() => setIsVisible(true)} onMouseLeave={() => setIsVisible(false)}>Our Services</a></li> </Link>
               
               
               
@@ -134,7 +134,7 @@ const Navbar = () => {
         </div>
 
         <div >
-        {isVisible && <div className=" bg-white border-b-[1px] z-11 absolute w-[100%] top-0 mt-[8.5vh]" 
+        {isVisible && <div className=" bg-white border-b-[1px] z-11 absolute w-[100%] top-0 mt-[8.6vh]" 
           onMouseMove={() => setIsVisible(true)} 
           onMouseLeave={() => setIsVisible(false)}>
 
@@ -173,6 +173,33 @@ const Navbar = () => {
 
 
 const ServicesMenu = ({ services },index) => 
+{
+  return(
+    <div className="flex p-12 mx-[4%]">
+      {services.map((service, index) => (
+       
+       <div className="" key={index}>
+
+        <div key={index =="3"} className="border-r-[1px] border-slate-300 px-6 text-left">
+          <h3 className="text-lg pb-2">
+            <Link to={service.path} className="font-bold pr-2">{service.menuTitle}{" >"}</Link>
+          </h3>
+          <ul>
+            {service.items.map((item, itemIndex) => (
+              <li key={itemIndex} className="text-sm ">{item}</li>
+            ))}
+          </ul>
+        </div>
+       </div>
+        
+      ))}
+    </div>
+  );
+};
+
+
+
+const TechnologyMenu = ({ services },index) => 
 {
   return(
     <div className="flex p-12 mx-[4%]">

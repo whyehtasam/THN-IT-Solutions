@@ -2,7 +2,7 @@ import { SocialIcon } from "react-social-icons"
 const Footer = () => {
   return (
     <>
-   <footer className="footer justify-evenly p-10 bg-white text-base-content">
+   <footer className="footer justify-evenly p-10 bg-white text-base-content border-b-2">
   <nav>
     <h6 className="footer-title">Quick Link</h6> 
     <a className="link link-hover">Home</a>
@@ -25,7 +25,7 @@ const Footer = () => {
     <h6 className="footer-title">Office Inquiries</h6> 
     <a className="link link-hover">033-2500 5025</a>
     <a className="link link-hover">info@thnitsolutions.com</a>
-    <h6 className="footer-title">Customer Support</h6> 
+    <h6 className="footer-title mt-4">Customer Support</h6> 
     <a className="link link-hover">+91 9051959195</a>
     <a className="link link-hover">+91 9674183723</a>
   </nav>
