@@ -16,12 +16,12 @@ const TabServices = (props) => {
           </div>
         ))}
       </div>
-      <div className="tab-cards basis-2/3 justify-center items-center flex  ">
+      <div className="tab-cards basis-2/3  pl-8 py-3 ">
         {props.data.map(
           ({ id, title, description }, index) =>
             index === activeTab && (
               <div
-                className="w-10/12 card h-auto bg-base-100 shadow-xl hover:scale-105 hover:-translate-y-1 transition-all duration-300 "
+                className=" card h-auto w-full bg-base-100 shadow-xl hover:scale-105 hover:-translate-y-1 transition-all duration-300 "
                 key={id}
               >
                 <div className="card-body">

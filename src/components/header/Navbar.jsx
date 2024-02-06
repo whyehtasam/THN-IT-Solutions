@@ -69,7 +69,7 @@ const Navbar = () => {
   ];
   
   return (
-    <div className={`bg-slate-100 drawer sticky top-0 z-10 ${isScrolled && 'bg-white border-b-[1px]'} ${isVisible && 'bg-white'}`}>
+    <div className={`bg-slate-200 drawer sticky top-0 z-10 ${isScrolled && 'bg-slate-200 border-b-[1px]'} ${isVisible && 'bg-white'}`}>
 
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
