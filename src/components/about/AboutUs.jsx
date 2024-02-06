@@ -19,7 +19,7 @@ import { aboutData } from "./aboutData"
       
       {/* <SliderCheck /> */}
     <AboutContainer data={aboutData[0]} style=''/> 
-    <Intro2 />
+    {/* <Intro2 /> */}
     {/* <Intro3 /> */}
     <AboutContainer data={aboutData[1]} style=' flex-row-reverse '/> 
     <AboutContainer data={aboutData[2]} style=''/> 
