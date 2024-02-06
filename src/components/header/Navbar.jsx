@@ -43,12 +43,12 @@ const Navbar = () => {
       items: ['Cloud Migration Services', 'Cloud Solution Architecture','Cloud Storage Service'],
     },
     {
-      menuTitle: 'Maintenance and Support',
+      menuTitle: 'Maintenance & Support',
       path:'#service1',
       items: ['Providing ongoing support', 'Maintenance for software applications', 'Feature enhancements'],
     },
     {
-      menuTitle: 'Analytics and Business Intelligence',
+      menuTitle: 'Analytics & Business Intelligence',
       path:'#service1',
       items: ['Data warehousing', 'Data visualization', 'Predictive analytics'],
     },
