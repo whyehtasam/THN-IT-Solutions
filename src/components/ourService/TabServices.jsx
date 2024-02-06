@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Button from "../button/Button";
+import { Link } from "react-router-dom";
+
 
 const TabServices = (props) => {
   const [activeTab, setActiveTab] = useState(0);
@@ -27,7 +29,7 @@ const TabServices = (props) => {
       </div>
       <div className="tab-cards basis-2/3  pl-8 py-3 ">
         {props.data.map(
-          ({ id, title, description }, index) =>
+          ({ id, title, description,linkPath }, index) =>
             index === activeTab && (
               <div
                 className=" card h-auto w-full bg-base-100 shadow-xl hover:scale-105 hover:-translate-y-1 transition-all duration-300 "
@@ -39,8 +41,9 @@ const TabServices = (props) => {
                   <p className="text-justify text-xs lg:text-sm text-gray-800 ">
                     {description}
                   </p>
-                  <button className="btn btn-active btn-link text-gray-800 w-max pl-0 ">Read more</button>
+                  <button className="btn btn-active btn-link text-gray-800 w-max pl-0 "><Link to={`${linkPath}`}>Read more</Link></button>
                 </div>
+                
               </div>
             )
         )}
