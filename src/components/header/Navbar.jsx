@@ -213,7 +213,7 @@ const Navbar = () => {
         </div>
 
         <div >
-        {isVisibleTechnology && <div className="flex justify-center bg-white border-b-[1px] z-9 absolute w-[100%] top-0 mt-[8.3vh]" 
+        {isVisibleTechnology && <div className="flex justify-between bg-white border-b-[1px] z-9 absolute w-[100%] top-0 mt-[8.3vh] px-[12%]" 
           onMouseMove={() => setIsVisibleTechnology(true)} 
           onMouseLeave={() => setIsVisibleTechnology(false)}>
 
@@ -283,10 +283,10 @@ const ServicesMenu = ({ services },index) =>
 const TechnologyMenu = ({ technology },index) => 
 {
   return(
-    <div className=" p-10">
+    <div className="py-12">
       {technology.map((tech, No) => (
      
-    <div className="border-r-[2px] pr-16">
+    <div className="border-r-[2px] pr-8">
       <Link to={tech.path}><h3 className="p-[2vh] font-bold ">{tech.technologyName} {" >"}</h3></Link>
       
     </div>
