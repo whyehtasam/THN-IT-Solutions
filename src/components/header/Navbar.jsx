@@ -116,6 +116,17 @@ const Navbar = () => {
 
   ];
 
+  const TechnologyData4=[
+    {
+      No: '7',
+      path: '/',
+      technologyName: 'DevOps',
+
+    },
+    
+
+  ];
+
 
 
 
@@ -156,9 +167,9 @@ const Navbar = () => {
           <div className="container  flex justify-between w-[80%] mx-auto z-5">
 
          
-          <div className="flex px-2 mx-2"><img src={logo} className="h-16 mix-blend-multiply p-2" alt="" ></img></div>
+          <div className="flex px-2 mx-2"><img src={logo} className="h-16 mix-blend-multiply p-2 z-10" alt="" ></img></div>
           <div className=" hidden md:hidden lg:block">
-            <ul className="menu menu-horizontal  flex justify-end">
+            <ul className="menu menu-horizontal p-0 h-[100%]  flex justify-end z-10">
               {/* Navbar menu content here */}
               <Link to='/'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider  hover:font-semibold">Home</a></li> </Link>
 
@@ -191,7 +202,7 @@ const Navbar = () => {
         </div>
 
         <div >
-        {isVisibleServices && <div className=" bg-white border-b-[1px] z-11 absolute w-[100%] top-0 mt-[8.3vh]" 
+        {isVisibleServices && <div className=" bg-white border-b-[1px] z-9 absolute w-[100%] top-0 mt-[8.3vh]" 
           onMouseMove={() => setIsVisibleServices(true)} 
           onMouseLeave={() => setIsVisibleServices(false)}>
 
@@ -202,13 +213,14 @@ const Navbar = () => {
         </div>
 
         <div >
-        {isVisibleTechnology && <div className="flex justify-center bg-white border-b-[1px] z-11 absolute w-[100%] top-0 mt-[8.3vh]" 
+        {isVisibleTechnology && <div className="flex justify-center bg-white border-b-[1px] z-9 absolute w-[100%] top-0 mt-[8.3vh]" 
           onMouseMove={() => setIsVisibleTechnology(true)} 
           onMouseLeave={() => setIsVisibleTechnology(false)}>
 
         <TechnologyMenu technology={TechnologyData1} />
         <TechnologyMenu technology={TechnologyData2} />
         <TechnologyMenu technology={TechnologyData3} />
+        <TechnologyMenu technology={TechnologyData4} />
 
       </div>}
         </div>
@@ -275,7 +287,7 @@ const TechnologyMenu = ({ technology },index) =>
       {technology.map((tech, No) => (
      
     <div className="border-r-[2px] pr-16">
-      <Link to={tech.path}><h3 className="p-[2vh] font-bold underline">{tech.technologyName}</h3></Link>
+      <Link to={tech.path}><h3 className="p-[2vh] font-bold ">{tech.technologyName} {" >"}</h3></Link>
       
     </div>
         
