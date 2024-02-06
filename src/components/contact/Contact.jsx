@@ -38,7 +38,7 @@ const Contact = () => {
 
   return (
     <div className="contact justify-center items-center flex my-16">
-      <div className="flex rounded-[2vh] shadow-lg ">
+      <div className="flex rounded-[2vh] shadow-lg border-t-[1px] ">
         <div className="rounded-l-[2vh] py-[2vh] px-[2vw]" style={{backgroundColor:"#8db8fc"}}>
           <h2 className="font-bold mt-2 text-2xl">Reach Us</h2>
 

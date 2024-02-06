@@ -5,7 +5,9 @@ import logo from '../../assets/logo.jpg'
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isVisible,setIsVisible] = useState(false);
+  const [isVisibleServices,setIsVisibleServices] = useState(false);
+  const [isVisibleTechnology,setIsVisibleTechnology] = useState(false);
+
 
   const handleScroll = () => {
     const offset = window.scrollY;
@@ -41,12 +43,12 @@ const Navbar = () => {
       items: ['Cloud Migration Services', 'Cloud Solution Architecture','Cloud Storage Service'],
     },
     {
-      menuTitle: 'Maintenance and Support',
+      menuTitle: 'Maintenance & Support',
       path:'#service1',
       items: ['Providing ongoing support', 'Maintenance for software applications', 'Feature enhancements'],
     },
     {
-      menuTitle: 'Data Analytics and Business Intelligence (BI)',
+      menuTitle: 'Analytics & Business Intelligence',
       path:'#service1',
       items: ['Data warehousing', 'Data visualization', 'Predictive analytics'],
     },
@@ -68,8 +70,71 @@ const Navbar = () => {
 
   ];
   
+
+  const TechnologyData1=[
+    {
+      No: '1',
+      path: '/',
+      technologyName: 'Frontend Development',
+
+    },
+    {
+      No: '2',
+      path: '/',
+      technologyName: 'Backend Development ',
+
+    },
+  ]
+
+  const TechnologyData2=[
+    {
+      No: '3',
+      path: '/',
+      technologyName: 'Database',
+
+    },
+    {
+      No: '4',
+      path: '/',
+      technologyName: 'Cloud',
+
+    },
+  ]
+  const TechnologyData3=[
+    {
+      No: '5',
+      path: '/',
+      technologyName: 'Artificial intelligence',
+
+    },
+    {
+      No: '6',
+      path: '/',
+      technologyName: 'Infrastructure Development',
+
+    },
+
+  ];
+
+  const TechnologyData4=[
+    {
+      No: '7',
+      path: '/',
+      technologyName: 'DevOps',
+
+    },
+    
+
+  ];
+
+
+
+
+
   return (
-    <div className={`bg-slate-200 drawer sticky top-0 z-10 ${isScrolled && 'bg-slate-200 border-b-[1px]'} ${isVisible && 'bg-white'}`}>
+
+    <div className={`drawer sticky top-0 z-10 ${isScrolled && 'bg-white border-b-[1px]'} ${isVisibleServices && 'bg-white'} ${isVisibleTechnology && 'bg-white'}`}>
+
 
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
@@ -102,22 +167,24 @@ const Navbar = () => {
           <div className="container  flex justify-between w-[80%] mx-auto z-5">
 
          
-          <div className="flex px-2 mx-2"><img src={logo} className="h-16 mix-blend-multiply p-2" alt="" ></img></div>
+          <div className="flex px-2 mx-2"><img src={logo} className="h-16 mix-blend-multiply p-2 z-10" alt="" ></img></div>
           <div className=" hidden md:hidden lg:block">
-            <ul className="menu menu-horizontal  flex justify-end">
+            <ul className="menu menu-horizontal p-0 h-[100%]  flex justify-end z-10">
               {/* Navbar menu content here */}
-              <Link to='/'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider  hover:font-semibold">Home</a></li> </Link>
-              {/* <Link to='/aboutUs'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider  hover:font-semibold">About Us</a></li> </Link> */}
-              <Link to='/ourServices'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider  hover:font-semibold" onMouseMove={() => setIsVisible(true)}>Our Services</a></li> </Link>
+              <Link to='/'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider z-10 hover:font-semibold">Home</a></li> </Link>
+
+              <Link to='/aboutUs'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider z-10 hover:font-semibold">About Us</a></li> </Link>
+              <Link to='/ourServices'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider z-10 hover:font-semibold" onMouseMove={() => setIsVisibleServices(true)} onMouseLeave={() => setIsVisibleServices(false)}>Our Services</a></li> </Link>
+
               
               
               
-              <Link to=''><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold flex">Technology</a></li></Link>
+              <Link to=''><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider z-10 hover:font-semibold flex" onMouseMove={() => setIsVisibleTechnology(true)} onMouseLeave={() => setIsVisibleTechnology(false)}>Technology</a></li></Link>
               <Link to='/portfolio'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold flex">Portfolio</a></li></Link>
                 
             
-              <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold">Career</a></li>
-              <Link to='/contact'><li><a className="mx-2 text-sm font-medium rounded tracking-wider border  bg-black text-white hover:bg-slate-100 hover:text-gray-800 hover:font-semibold">Contact</a></li></Link>
+              <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider z-10 hover:font-semibold">Career</a></li>
+              <Link to='/contact'><li><a className="mx-2 text-sm font-medium rounded tracking-wider border z-10 bg-black text-white hover:bg-slate-100 hover:text-gray-800 hover:font-semibold">Contact</a></li></Link>
 
               {/* Register */}
               {/* <div className=" mx-2 dropdown dropdown-hover  w-fit">
@@ -135,12 +202,25 @@ const Navbar = () => {
         </div>
 
         <div >
-        {isVisible && <div className=" bg-white border-b-[1px] z-11 absolute w-[100%] top-0 mt-[8.5vh]" 
-          onMouseMove={() => setIsVisible(true)} 
-          onMouseLeave={() => setIsVisible(false)}>
+        {isVisibleServices && <div className=" bg-white border-b-[1px] z-9 absolute w-[100%] top-0 mt-[8.3vh]" 
+          onMouseMove={() => setIsVisibleServices(true)} 
+          onMouseLeave={() => setIsVisibleServices(false)}>
 
         <ServicesMenu services={serviceData} />
         <ServicesMenu services={serviceData2} />
+
+      </div>}
+        </div>
+
+        <div >
+        {isVisibleTechnology && <div className="flex justify-between bg-white border-b-[1px] z-9 absolute w-[100%] top-0 mt-[8.3vh] px-[12%]" 
+          onMouseMove={() => setIsVisibleTechnology(true)} 
+          onMouseLeave={() => setIsVisibleTechnology(false)}>
+
+        <TechnologyMenu technology={TechnologyData1} />
+        <TechnologyMenu technology={TechnologyData2} />
+        <TechnologyMenu technology={TechnologyData3} />
+        <TechnologyMenu technology={TechnologyData4} />
 
       </div>}
         </div>
@@ -192,6 +272,24 @@ const ServicesMenu = ({ services },index) =>
           </ul>
         </div>
        </div>
+        
+      ))}
+    </div>
+  );
+};
+
+
+
+const TechnologyMenu = ({ technology },index) => 
+{
+  return(
+    <div className="py-12">
+      {technology.map((tech, No) => (
+     
+    <div className="border-r-[2px] pr-8">
+      <Link to={tech.path}><h3 className="p-[2vh] font-bold ">{tech.technologyName} {" >"}</h3></Link>
+      
+    </div>
         
       ))}
     </div>
