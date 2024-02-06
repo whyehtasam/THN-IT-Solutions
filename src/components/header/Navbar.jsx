@@ -5,7 +5,9 @@ import logo from '../../assets/logo.jpg'
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isVisible,setIsVisible] = useState(false);
+  const [isVisibleServices,setIsVisibleServices] = useState(false);
+  const [isVisibleTechnology,setIsVisibleTechnology] = useState(false);
+
 
   const handleScroll = () => {
     const offset = window.scrollY;
@@ -68,8 +70,53 @@ const Navbar = () => {
 
   ];
   
+
+  const TechnologyData=[
+    {
+      No: '1',
+      path: '/',
+      technologyName: 'Frontend Development',
+
+    },
+    {
+      No: '2',
+      path: '/',
+      technologyName: 'Backend Development ',
+
+    },
+    {
+      No: '3',
+      path: '/',
+      technologyName: 'Database',
+
+    },
+    {
+      No: '4',
+      path: '/',
+      technologyName: 'Cloud',
+
+    },
+    {
+      No: '5',
+      path: '/',
+      technologyName: 'Artificial intelligence',
+
+    },
+    {
+      No: '6',
+      path: '/',
+      technologyName: 'Infrastructure Development',
+
+    },
+
+  ];
+
+
+
+
+
   return (
-    <div className={`drawer sticky top-0 z-10 ${isScrolled && 'bg-white border-b-[1px]'} ${isVisible && 'bg-white'}`}>
+    <div className={`drawer sticky top-0 z-10 ${isScrolled && 'bg-white border-b-[1px]'} ${isVisibleServices && 'bg-white'} ${isVisibleTechnology && 'bg-white'}`}>
 
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
@@ -109,12 +156,12 @@ const Navbar = () => {
               <Link to='/'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider  hover:font-semibold">Home</a></li> </Link>
 
               <Link to='/aboutUs'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider  hover:font-semibold">About Us</a></li> </Link>
-              <Link to='/ourServices'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider  hover:font-semibold" onMouseMove={() => setIsVisible(true)} onMouseLeave={() => setIsVisible(false)}>Our Services</a></li> </Link>
+              <Link to='/ourServices'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider  hover:font-semibold" onMouseMove={() => setIsVisibleServices(true)} onMouseLeave={() => setIsVisibleServices(false)}>Our Services</a></li> </Link>
 
               
               
               
-              <Link to=''><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold flex">Technology</a></li></Link>
+              <Link to=''><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold flex" onMouseMove={() => setIsVisibleTechnology(true)} onMouseLeave={() => setIsVisibleTechnology(false)}>Technology</a></li></Link>
               <Link to='/portfolio'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold flex">Portfolio</a></li></Link>
                 
             
@@ -137,12 +184,22 @@ const Navbar = () => {
         </div>
 
         <div >
-        {isVisible && <div className=" bg-white border-b-[1px] z-11 absolute w-[100%] top-0 mt-[8.6vh]" 
-          onMouseMove={() => setIsVisible(true)} 
-          onMouseLeave={() => setIsVisible(false)}>
+        {isVisibleServices && <div className=" bg-white border-b-[1px] z-11 absolute w-[100%] top-0 mt-[8.3vh]" 
+          onMouseMove={() => setIsVisibleServices(true)} 
+          onMouseLeave={() => setIsVisibleServices(false)}>
 
         <ServicesMenu services={serviceData} />
         <ServicesMenu services={serviceData2} />
+
+      </div>}
+        </div>
+
+        <div >
+        {isVisibleTechnology && <div className=" bg-white border-b-[1px] z-11 absolute w-[100%] top-0 mt-[8.3vh]" 
+          onMouseMove={() => setIsVisibleTechnology(true)} 
+          onMouseLeave={() => setIsVisibleTechnology(false)}>
+
+        <TechnologyMenu technology={TechnologyData} />
 
       </div>}
         </div>
@@ -202,25 +259,16 @@ const ServicesMenu = ({ services },index) =>
 
 
 
-const TechnologyMenu = ({ services },index) => 
+const TechnologyMenu = ({ technology },index) => 
 {
   return(
     <div className="flex p-12 mx-[4%]">
-      {services.map((service, index) => (
+      {technology.map((tech, No) => (
        
-       <div className="" key={index}>
+       <div className="" key={No}>
 
-        <div key={index =="3"} className="border-r-[1px] border-slate-300 px-6 text-left">
-          <h3 className="text-lg pb-2">
-            <Link to={service.path} className="font-bold pr-2">{service.menuTitle}{" >"}</Link>
-          </h3>
-          <ul>
-            {service.items.map((item, itemIndex) => (
-              <li key={itemIndex} className="text-sm ">{item}</li>
-            ))}
-          </ul>
+        {tech.technologyName}
         </div>
-       </div>
         
       ))}
     </div>
