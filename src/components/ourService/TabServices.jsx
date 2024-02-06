@@ -4,7 +4,7 @@ const TabServices = (props) => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <section className=" bg-white tabs-service max-w-6xl h-[26rem] mx-auto my-16 p-10 flex drop-shadow-md rounded-lg ">
+    <section className=" bg-white tabs-service max-w-6xl h-[35rem] mx-auto my-16 p-10 flex drop-shadow-md rounded-lg ">
       <div className="tab-contents w-max basis-1/3 flex flex-col cursor-pointer bg-slate-50 border rounded-md">
         {props.data.map((item, index) => (
           <div
@@ -12,7 +12,7 @@ const TabServices = (props) => {
             key={item.id}
             onClick={() => setActiveTab(index)}
           >
-           <p className={`w-full rounded-lg flex justify-center items-center cursor-pointer transition-all-all duration-300 hover:bg-black hover:text-white ${index === activeTab ? 'bg-black text-white drop-shadow-md' : 'bg-white text-black  border'}`}>{item.title}</p> 
+           <p className={`w-full rounded-lg flex justify-center items-center cursor-pointer transition-all-all duration-300 hover:bg-black hover:text-white ${index === activeTab ? 'bg-black text-white shadow-md' : 'bg-white text-black  border'}`}>{item.title}</p> 
           </div>
         ))}
       </div>

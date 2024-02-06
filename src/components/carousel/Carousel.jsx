@@ -38,7 +38,7 @@ const Carousel = (props) => {
   // const [zoom, setZoom] = useState(false);
 
   const settings = {
-    dots: false,
+    dots: true,
     fade: true,
     infinite: true,
     speed: 500,
@@ -49,7 +49,7 @@ const Carousel = (props) => {
 
     // Remove the duplicate key 'speed'
     // speed: 1000,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
     cssEase: "linear",
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
