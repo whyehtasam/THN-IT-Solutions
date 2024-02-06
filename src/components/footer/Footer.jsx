@@ -2,7 +2,7 @@ import { SocialIcon } from "react-social-icons"
 const Footer = () => {
   return (
     <>
-   <footer className="footer justify-evenly p-10 bg-white text-base-content border-b-2">
+   <footer className="footer justify-evenly p-10 bg-slate-50 text-base-content border-b-2">
 
   <nav>
     <h6 className="footer-title">Quick Link</h6> 
@@ -51,7 +51,7 @@ const Footer = () => {
 </footer> 
 
 
-<footer className="text-center bg-slate-100 ">
+<footer className="text-center bg-slate-200 ">
     <p className="text-sm text-slate-500" style={{ padding:"2vh 0"}}>Copyright © 2024 - THN IT SOLUTIONS PVT. LTD.</p>
 </footer>
     </>

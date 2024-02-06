@@ -133,7 +133,7 @@ const Navbar = () => {
 
   return (
 
-    <div className={`drawer bg-slate-100 sticky top-0 z-10 ${isScrolled && 'bg-slate-200 border-b-[1px]'} ${isVisibleServices && 'bg-slate-200'} ${isVisibleTechnology && 'bg-slate-200'}`}>
+    <div className={`drawer bg-slate-100 sticky top-0 z-10 ${isScrolled && 'bg-slate-200  border-b-[1px]'} ${isVisibleServices && 'bg-slate-200'} ${isVisibleTechnology && 'bg-slate-200'}`}>
 
 
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
