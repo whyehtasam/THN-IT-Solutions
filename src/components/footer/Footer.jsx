@@ -3,6 +3,7 @@ const Footer = () => {
   return (
     <>
    <footer className="footer justify-evenly p-10 bg-white text-base-content border-b-2">
+
   <nav>
     <h6 className="footer-title">Quick Link</h6> 
     <a className="link link-hover">Home</a>
@@ -50,7 +51,7 @@ const Footer = () => {
 </footer> 
 
 
-<footer className="text-center bg-white ">
+<footer className="text-center bg-slate-100 ">
     <p className="text-sm text-slate-500" style={{ padding:"2vh 0"}}>Copyright © 2024 - THN IT SOLUTIONS PVT. LTD.</p>
 </footer>
     </>

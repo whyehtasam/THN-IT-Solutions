@@ -71,7 +71,7 @@ const Navbar = () => {
   ];
   
 
-  const TechnologyData=[
+  const TechnologyData1=[
     {
       No: '1',
       path: '/',
@@ -84,6 +84,9 @@ const Navbar = () => {
       technologyName: 'Backend Development ',
 
     },
+  ]
+
+  const TechnologyData2=[
     {
       No: '3',
       path: '/',
@@ -96,6 +99,8 @@ const Navbar = () => {
       technologyName: 'Cloud',
 
     },
+  ]
+  const TechnologyData3=[
     {
       No: '5',
       path: '/',
@@ -116,7 +121,9 @@ const Navbar = () => {
 
 
   return (
+
     <div className={`drawer sticky top-0 z-10 ${isScrolled && 'bg-white border-b-[1px]'} ${isVisibleServices && 'bg-white'} ${isVisibleTechnology && 'bg-white'}`}>
+
 
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
@@ -195,11 +202,13 @@ const Navbar = () => {
         </div>
 
         <div >
-        {isVisibleTechnology && <div className=" bg-white border-b-[1px] z-11 absolute w-[100%] top-0 mt-[8.3vh]" 
+        {isVisibleTechnology && <div className="flex justify-center bg-white border-b-[1px] z-11 absolute w-[100%] top-0 mt-[8.3vh]" 
           onMouseMove={() => setIsVisibleTechnology(true)} 
           onMouseLeave={() => setIsVisibleTechnology(false)}>
 
-        <TechnologyMenu technology={TechnologyData} />
+        <TechnologyMenu technology={TechnologyData1} />
+        <TechnologyMenu technology={TechnologyData2} />
+        <TechnologyMenu technology={TechnologyData3} />
 
       </div>}
         </div>
@@ -262,13 +271,13 @@ const ServicesMenu = ({ services },index) =>
 const TechnologyMenu = ({ technology },index) => 
 {
   return(
-    <div className="flex p-12 mx-[4%]">
+    <div className=" p-10">
       {technology.map((tech, No) => (
-       
-       <div className="" key={No}>
-
-        {tech.technologyName}
-        </div>
+     
+    <div className="border-r-[2px] pr-16">
+      <Link to={tech.path}><h3 className="p-[2vh] font-bold underline">{tech.technologyName}</h3></Link>
+      
+    </div>
         
       ))}
     </div>
