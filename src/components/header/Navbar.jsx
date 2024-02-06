@@ -11,7 +11,7 @@ const Navbar = () => {
 
   const handleScroll = () => {
     const offset = window.scrollY;
-    if (offset > 70 ) {
+    if (offset > 10 ) {
       setIsScrolled(true);
     } else {
       setIsScrolled(false);
@@ -133,7 +133,7 @@ const Navbar = () => {
 
   return (
 
-    <div className={`drawer sticky top-0 z-10 ${isScrolled && 'bg-white border-b-[1px]'} ${isVisibleServices && 'bg-white'} ${isVisibleTechnology && 'bg-white'}`}>
+    <div className={`drawer bg-slate-100 sticky top-0 z-10 ${isScrolled && 'bg-slate-200 border-b-[1px]'} ${isVisibleServices && 'bg-slate-200'} ${isVisibleTechnology && 'bg-slate-200'}`}>
 
 
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
@@ -173,7 +173,7 @@ const Navbar = () => {
               {/* Navbar menu content here */}
               <Link to='/'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider z-10 hover:font-semibold">Home</a></li> </Link>
 
-              <Link to='/aboutUs'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider z-10 hover:font-semibold">About Us</a></li> </Link>
+              {/* <Link to='/aboutUs'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider z-10 hover:font-semibold">About Us</a></li> </Link> */}
               <Link to='/ourServices'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider z-10 hover:font-semibold" onMouseMove={() => setIsVisibleServices(true)} onMouseLeave={() => setIsVisibleServices(false)}>Our Services</a></li> </Link>
 
               
