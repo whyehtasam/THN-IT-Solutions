@@ -28,7 +28,7 @@ function Career(){
             </div>
         </div>
 
-        <div  className=" flex justify-center gap-4 my-8 mx-8">
+        <div  className=" flex justify-center gap-2 my-8 mx-[12%] ">
             <Careercard cData={careerCardData}/>
         </div>
         </>

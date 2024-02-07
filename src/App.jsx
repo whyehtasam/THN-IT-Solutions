@@ -11,6 +11,10 @@ import SignIn from "./components/register.jsx/SignIn"; // importing the SignIn c
 import SignUp from "./components/register.jsx/SignUp"; // importing the SignUp component
 import Footer from "./components/footer/Footer"; // importing the Footer component
 import Career from "./components/career/career";// importing the Carrer component
+import WebDeveloperCareer from "./components/career/CareerDeveloper/webDeveloper";
+import BackendDeveloperCareer from "./components/career/CareerDeveloper/backendDeveloper";
+import CloudDeveloperCareer from "./components/career/CareerDeveloper/cloudDeveloper";
+
 // import Hero from "./components/landing/Hero"; // importing the Hero component
 // import Intro from "./components/landing/Intro";
 // import Intro2 from "./components/about/Intro2";
@@ -48,7 +52,14 @@ function App() {
           {/* <Route path="/aboutUs" element={<AboutUs />} /> */}
           <Route path="/ourServices" element={<OurServices />} />
           <Route path="/portfolio" element={<Portfolio />} />
+
+          {/* Career page Routing and subpages of it  */}
           <Route path="/career" element={<Career />} />
+          <Route path="/career/web-developer" element={<WebDeveloperCareer />} />
+          <Route path="/career/backend-developer" element={<BackendDeveloperCareer />} />
+          <Route path="/career/cloud-developer" element={<CloudDeveloperCareer />} />
+          {/* Career page Routing and subpages of it */}
+
           <Route path="/serviceApplicationDevelopment" element={<Application />} />
           <Route
             path="/"
