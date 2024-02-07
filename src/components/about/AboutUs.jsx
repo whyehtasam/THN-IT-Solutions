@@ -16,7 +16,7 @@ import GetInTouch from "../wrappers/GetInTouch"
   return (
 
 
-    <section className="about-us  lg:max-w-7xl mx-auto relative">
+    <section className="about-us mt-16 lg:max-w-7xl mx-auto relative">
      
       
       {/* <SliderCheck /> */}
