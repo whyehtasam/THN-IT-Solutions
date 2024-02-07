@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 const GetInTouch = ({ para }) => {
   return (
     <div className="p-10 mb-16 grid w-[calc(100%-8rem)] mx-auto rounded-lg bg-white drop-shadow-lg">
@@ -9,6 +9,7 @@ const GetInTouch = ({ para }) => {
         {para}
       </p>
       <button className="btn w-fit text-sm font-medium rounded tracking-wider border z-10 bg-black text-white hover:bg-gray-800 hover:font-semibold mt-4">Contact Us</button>
+      <Link ></Link>
     </div>
   );
 };
