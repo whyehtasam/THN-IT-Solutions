@@ -24,7 +24,7 @@ import Footer from "./components/footer/Footer"; // importing the Footer compone
 // // import SliderCheck from "./components/wrappers/Slidercheck";
 // import CenterMode from "./components/Slider/CenterMode";
 import Carousel from "./components/carousel/Carousel";
-import Application from "./components/ourService/Application";
+import Application from "./components/ourService/ourServiceNavigation/Application";
 
 function App() {
   return (
@@ -47,7 +47,7 @@ function App() {
           {/* <Route path="/aboutUs" element={<AboutUs />} /> */}
           <Route path="/ourServices" element={<OurServices />} />
           <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/serviceApplicationDevelopment" element={<Application />} />
+          <Route path="/ourServices/serviceApplicationDevelopment" element={<Application />} />
           <Route
             path="/"
             element={
