@@ -65,8 +65,8 @@ const TabServiceWrapper = ({ data }) => {
 
   return (
     <>
-      <section className=" bg-white  tabs-service  h-auto mx-auto my-8 p-5 flex    rounded-lg ">
-        <div className="tab-contents  w-max basis-1/3 flex flex-col cursor-pointer bg-white shadow-lg rounded-lg">
+      <section className="   tabs-service  h-auto mx-auto my-8 p-5 flex    rounded-lg ">
+        <div className="tab-contents  w-max basis-1/3 flex flex-col cursor-pointer bg-slate-50 shadow-lg rounded-lg">
           {data.map((item, index) => (
             <div
               className="p-3 max-h-20 text-xl flex font-semibold flex-1 cursor-pointer"

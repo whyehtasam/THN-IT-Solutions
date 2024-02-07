@@ -21,13 +21,13 @@ import CloudDeveloperCareer from "./components/career/CareerDeveloper/cloudDevel
 // import IntroBanner from "./components/landing/IntroBanner";
 // import IntroCards from "./components/introCards/IntroCards";
 // import Intro3 from "./components/about/Intro3";
-// import "./assets/bg.css";
 // import svg from "./assets/Animated Shape.svg";
 // // defining the App component
 // import {IntroServiceCardData} from './components/introCards/cardData'
 // import ServiceIntro from "./components/trees/ServiceIntro";
 // // import SliderCheck from "./components/wrappers/Slidercheck";
 // import CenterMode from "./components/Slider/CenterMode";
+import "./assets/bg.css";
 import Carousel from "./components/carousel/Carousel";
 import Application from "./components/ourService/ourServiceNavigation/Application";
 
