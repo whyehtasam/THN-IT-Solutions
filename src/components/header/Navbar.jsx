@@ -167,7 +167,7 @@ const Navbar = () => {
           <div className="container  flex justify-between w-[80%] mx-auto z-5">
 
          
-          <div className="flex px-2 mx-2"><img src={logo} className="h-16 mix-blend-multiply p-2 z-10" alt="" ></img></div>
+          <div className="flex "><img src={logo} className="h-16 mix-blend-multiply py-2 z-10" alt="" ></img></div>
           <div className=" hidden md:hidden lg:block">
             <ul className="menu menu-horizontal p-0 h-[100%]  flex justify-end z-10">
               {/* Navbar menu content here */}
@@ -183,7 +183,7 @@ const Navbar = () => {
               <Link to='/portfolio'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold flex">Portfolio</a></li></Link>
                 
             
-              <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider z-10 hover:font-semibold">Career</a></li>
+              <Link to='/career'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider z-10 hover:font-semibold">Career</a></li></Link>
               <Link to='/contact'><li><a className="mx-2 text-sm font-medium rounded tracking-wider border z-10 bg-black text-white hover:bg-slate-100 hover:text-gray-800 hover:font-semibold">Contact</a></li></Link>
 
               {/* Register */}
