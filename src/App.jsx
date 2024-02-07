@@ -11,21 +11,25 @@ import SignIn from "./components/register.jsx/SignIn"; // importing the SignIn c
 import SignUp from "./components/register.jsx/SignUp"; // importing the SignUp component
 import Footer from "./components/footer/Footer"; // importing the Footer component
 import Career from "./components/career/career";// importing the Carrer component
+import WebDeveloperCareer from "./components/career/CareerDeveloper/webDeveloper";
+import BackendDeveloperCareer from "./components/career/CareerDeveloper/backendDeveloper";
+import CloudDeveloperCareer from "./components/career/CareerDeveloper/cloudDeveloper";
+
 // import Hero from "./components/landing/Hero"; // importing the Hero component
 // import Intro from "./components/landing/Intro";
 // import Intro2 from "./components/about/Intro2";
 // import IntroBanner from "./components/landing/IntroBanner";
 // import IntroCards from "./components/introCards/IntroCards";
 // import Intro3 from "./components/about/Intro3";
-// import "./assets/bg.css";
 // import svg from "./assets/Animated Shape.svg";
 // // defining the App component
 // import {IntroServiceCardData} from './components/introCards/cardData'
 // import ServiceIntro from "./components/trees/ServiceIntro";
 // // import SliderCheck from "./components/wrappers/Slidercheck";
 // import CenterMode from "./components/Slider/CenterMode";
+import "./assets/bg.css";
 import Carousel from "./components/carousel/Carousel";
-import Application from "./components/ourService/Application";
+import Application from "./components/ourService/ourServiceNavigation/Application";
 
 function App() {
   return (
@@ -48,8 +52,15 @@ function App() {
           {/* <Route path="/aboutUs" element={<AboutUs />} /> */}
           <Route path="/ourServices" element={<OurServices />} />
           <Route path="/portfolio" element={<Portfolio />} />
+
+          {/* Career page Routing and subpages of it  */}
           <Route path="/career" element={<Career />} />
-          <Route path="/serviceApplicationDevelopment" element={<Application />} />
+          <Route path="/career/web-developer" element={<WebDeveloperCareer />} />
+          <Route path="/career/backend-developer" element={<BackendDeveloperCareer />} />
+          <Route path="/career/cloud-developer" element={<CloudDeveloperCareer />} />
+          {/* Career page Routing and subpages of it */}
+
+          <Route path="/ourServices/ApplicationDevelopment" element={<Application />} />
           <Route
             path="/"
             element={

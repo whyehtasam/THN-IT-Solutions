@@ -28,6 +28,8 @@ const TabServices = (props) => {
         ))}
       </div>
       <div className="tab-cards basis-2/3  pl-8 py-3 ">
+
+        
         {props.data.map(
           ({ id, title, description,linkPath }, index) =>
             index === activeTab && (

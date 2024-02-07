@@ -5,7 +5,7 @@ const IntroCards = (props) => {
   const data = props.data;
   console.log(data);
   return (
-    <section className="intro-cards h-auto pb-16  relative">
+    <section className="intro-cards h-auto   relative">
         {/* <img src={lines} className="w-full opacity-50 absolute left-0 -top-50  " alt="svg" /> */}
         <img src={lines} className="w-full opacity-50 h-full absolute left-0 bottom-0  " alt="svg" />
       <Container className={"w-full h-full justify-items-center grid lg:grid-cols-2 gap-8 p-2 " + props.containerStyle}>
