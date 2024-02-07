@@ -16,6 +16,9 @@ body {
     position: relative;
     left: 0;
   }
+  .rating::after {
+    content: '⭐⭐⭐⭐⭐';
+  }
   .slick-slider > .slick-prev {
     margin-left: -20px;
   }
@@ -25,6 +28,7 @@ body {
   .slick-slider > .slick-next::before {
     font-size: 25px;
   }
+
   .slick-slider > .slick-next {
     margin-right: -20px;
   }
