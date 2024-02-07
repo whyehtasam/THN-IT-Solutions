@@ -60,7 +60,7 @@ function App() {
           <Route path="/career/cloud-developer" element={<CloudDeveloperCareer />} />
           {/* Career page Routing and subpages of it */}
 
-          <Route path="/serviceApplicationDevelopment" element={<Application />} />
+          <Route path="/ourServices/ApplicationDevelopment" element={<Application />} />
           <Route
             path="/"
             element={

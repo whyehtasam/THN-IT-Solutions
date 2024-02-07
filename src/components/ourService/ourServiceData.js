@@ -3,7 +3,7 @@ export const IntroServiceCardData = [
       id: 1,
       title: "📱 Application Development",
       description: "At THN IT Solutions, we understand that in today's dynamic digital landscape, having robust and innovative applications is imperative for the success of any business. That's why we specialize in providing cutting-edge Application Development services tailored to meet the unique needs of our clients. We understand that every business is unique, with its own set of goals, requirements, and challenges. That's why we take a collaborative and client-centric approach to application development, working closely with our clients to understand their needs, vision, and objectives. Our team of experienced developers, designers, and project managers collaborates closely with clients throughout the development process, ensuring that the final product exceeds expectations and delivers tangible value.",
-      linkPath : '/ourServices/serviceApplicationDevelopment'
+      linkPath : '/ourServices/ApplicationDevelopment'
     },
     {
       id: 2,
