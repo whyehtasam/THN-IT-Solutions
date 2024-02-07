@@ -10,6 +10,7 @@ import Portfolio   from "./components/portfolio/portfolio";
 import SignIn from "./components/register.jsx/SignIn"; // importing the SignIn component
 import SignUp from "./components/register.jsx/SignUp"; // importing the SignUp component
 import Footer from "./components/footer/Footer"; // importing the Footer component
+import Career from "./components/career/career";// importing the Carrer component
 // import Hero from "./components/landing/Hero"; // importing the Hero component
 // import Intro from "./components/landing/Intro";
 // import Intro2 from "./components/about/Intro2";
@@ -47,6 +48,7 @@ function App() {
           {/* <Route path="/aboutUs" element={<AboutUs />} /> */}
           <Route path="/ourServices" element={<OurServices />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/career" element={<Career />} />
           <Route path="/serviceApplicationDevelopment" element={<Application />} />
           <Route
             path="/"

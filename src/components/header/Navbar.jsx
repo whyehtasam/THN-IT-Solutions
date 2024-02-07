@@ -183,7 +183,7 @@ const Navbar = () => {
               <Link to='/portfolio'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold flex">Portfolio</a></li></Link>
                 
             
-              <li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider z-10 hover:font-semibold">Career</a></li>
+              <Link to='/career'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider z-10 hover:font-semibold">Career</a></li></Link>
               <Link to='/contact'><li><a className="mx-2 text-sm font-medium rounded tracking-wider border z-10 bg-black text-white hover:bg-slate-100 hover:text-gray-800 hover:font-semibold">Contact</a></li></Link>
 
               {/* Register */}
