@@ -30,7 +30,7 @@ import GetInTouch from "../wrappers/GetInTouch"
     <IntroCards data={aboutCardData} containerStyle='' cardStyle=''/> 
     {/* <IntroBanner title='Get in touch' description={para}/> */}
     
-    <GetInTouch para = 'Ready to take your business to the next level? Contact us today to learn more about our services and how we can help you achieve your goals. Let THN IT Solutions be your trusted technology partner, and together, we can unlock the full potential of your business.'/>
+    <GetInTouch className=' w-[calc(100%-8rem)]' para = 'Ready to take your business to the next level? Contact us today to learn more about our services and how we can help you achieve your goals. Let THN IT Solutions be your trusted technology partner, and together, we can unlock the full potential of your business.'/>
    
     </section>
   )

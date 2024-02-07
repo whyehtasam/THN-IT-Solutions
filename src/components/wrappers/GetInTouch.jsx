@@ -1,12 +1,10 @@
-import React,{useEffect} from 'react';
+
 import { Link } from 'react-router-dom';
-const GetInTouch = ({ para }) => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+const GetInTouch = ({ para,className }) => {
+ 
 
   return (
-    <div className="p-10 mb-16 grid w-[calc(100%-8rem)] mx-auto rounded-lg bg-white drop-shadow-lg">
+    <div className={"p-10 mb-16 grid  mx-auto rounded-lg bg-white drop-shadow-lg " + className}>
       <h1 className="text-4xl text-start font-semibold">Get in touch</h1>
       <div className="h-[0.5px] bg-opacity-30 my-2 bg-black w-10/12 "></div>
       <p className="text-sm text-justify font-medium leading-loose text-gray-500">
