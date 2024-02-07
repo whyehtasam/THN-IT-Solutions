@@ -2,7 +2,7 @@ import "./App.css"; // importing the App.css
 
 import Navbar from "./components/header/Navbar"; // importing the Navbar component
 
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // importing the routing components from react-router-dom
+import { BrowserRouter as Router, Route, Routes,useLocation } from "react-router-dom"; // importing the routing components from react-router-dom
 import AboutUs  from "./components/about/AboutUs";
 import Contact from "./components/contact/Contact"; // importing the Contact component
 import OurServices from "./components/ourService/OurServices";
@@ -30,13 +30,27 @@ import CloudDeveloperCareer from "./components/career/CareerDeveloper/cloudDevel
 import "./assets/bg.css";
 import Carousel from "./components/carousel/Carousel";
 import Application from "./components/ourService/ourServiceNavigation/Application";
+import { useEffect } from "react";
+
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
 
 function App() {
+
+  
   return (
     <div className=" svg ">
       {/* <div  className="w-full border  h-96 top-0 absolute" alt=""></div> */}
       <Router>
-        
+      <ScrollToTop />
         {/* starting the routing configuration */}
         <Navbar /> {/* rendering the Navbar component */}
         <Routes>
