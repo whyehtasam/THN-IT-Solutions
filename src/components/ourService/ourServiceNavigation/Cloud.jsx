@@ -2,7 +2,7 @@ import { IntroServiceCardData } from "../ourServiceData"
 
 
 import TabServiceWrapper from "./TabServiceWrapper"
-import {ApplicationDevelopmentServices} from './ourServiceNavData'
+import {CloudServices} from './ourServiceNavData'
 
 const Application = () => {
   return (
@@ -10,7 +10,7 @@ const Application = () => {
    
     <h1 className="text-5xl text-center font-bold ">Application Development</h1>
     {/* <TabServices  data={IntroServiceCardData}  /> */}
-    <TabServiceWrapper data={ApplicationDevelopmentServices} />
+    <TabServiceWrapper data={CloudServices} />
     </section>
   )
 }
