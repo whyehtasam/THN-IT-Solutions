@@ -5,7 +5,7 @@ return(
 
    <>
      <div className="justify-center">
-          <h3 className="text-4xl text-center">What Our Client say</h3>
+          <h3 className="text-4xl text-center ">What Our Client say</h3>
         </div>
         
         <div className="mx-4 py-[50px] grid lg:grid-cols-4 sm:grid-cols-2 gap-4">

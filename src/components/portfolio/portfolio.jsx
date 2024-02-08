@@ -1,3 +1,22 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // import "./global.css"
 import SimpleSlider from "./slider";
 import Testimonial from "./testimonial";
@@ -30,6 +49,7 @@ import Testimonial from "./testimonial";
 
 
         <div className="mx-4 py-[50px] grid lg:grid-cols-4 sm:grid-cols-2 gap-4 ">
+        
              <div className=" shadow-xl border-[2px] rounded-lg justify-center p-4">
                  <div className="justify-center">
                 <img src="./tsnt3.png" className=" w-25 h-25  flex "></img>
