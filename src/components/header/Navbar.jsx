@@ -34,22 +34,22 @@ const Navbar = () => {
   const serviceData = [
     {
       menuTitle: 'Application Development',
-      path:'/aboutUs',
+      path:'/ourServices/ApplicationDevelopment',
       items: ['Web Application Development', 'Mobile App Development','Custom Software Solutions'],
     },
     {
       menuTitle: 'Cloud Service',
-      path:'#service1',
+      path: '/ourServices/CloudService',
       items: ['Cloud Migration Services', 'Cloud Solution Architecture','Cloud Storage Service'],
     },
     {
       menuTitle: 'Maintenance & Support',
-      path:'#service1',
+      path:'/ourServices/MaintenanceSupport',
       items: ['Providing ongoing support', 'Maintenance for software applications', 'Feature enhancements'],
     },
     {
       menuTitle: 'Analytics & Business Intelligence',
-      path:'#service1',
+      path:'/ourServices/DataAnalytics',
       items: ['Data warehousing', 'Data visualization', 'Predictive analytics'],
     },
 
@@ -59,12 +59,12 @@ const Navbar = () => {
   const serviceData2 = [
     {
       menuTitle: 'DevOps',
-      path:'#service1',
+      path:'/ourServices/DevOps',
       items: ['CI/CD', 'Infrastructure as Code (IaC)', 'Terraform'],
     },
     {
       menuTitle: 'Quality Engineering',
-      path:'#service1',
+      path:'/ourServices/QualityEngineering',
       items: ['Automated Testing', 'Performance Testing', 'Continuous Integration'],
     },
 
