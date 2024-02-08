@@ -14,8 +14,7 @@ const TabServices = (props) => {
           <div
             className="p-3 text-lg flex font-semibold flex-1 cursor-pointer"
             key={item.id}
-            onClick={() => setActiveTab(index)}
-          >
+            onClick={() => setActiveTab(index)}>
             <p
               className={`w-full rounded-lg flex pl-3 items-center cursor-pointer transition-all-all duration-300 hover:bg-black hover:text-white ${
                 index === activeTab

@@ -1,62 +1,67 @@
 import React from "react";
-import TextInput from "../wrappers/textInput";
+import {contactInfo} from "./addressField"
+import { document } from "postcss";
 
 const Contact = () => {
 
 
-  const inputLabels = ["Phone Number", "Email"];
-  const NameLabels = ["First Name", "Last Name"];
 
-   // Lift side Address Details Area
-  const contactInfo = [
-    {
-      title: 'Office Address',
-      details: ['Rajibpur Road,Gangapur,Duttapukur-I,','Duttapukuar- 743248,West Bengal,India'],
-    },
-    {
-      title: 'Mobile Number',
-      details: ['☏ +91 9051959195', '☏ +91 9674183723', '☏ 033-2500 5025'], 
-    },
-    {
-      title: 'Email',
-      details: [
-        <a key="email2" href="mailto:info@thnitsolutions.com" style={{ textDecoration: "none" }}>✉ info@thnitsolutions.com</a>,
-      ],
-    },
-    {
-      title: 'Map',
-      details: [
-        'Click on the Google Map',
-        <a key="map" href="https://www.google.com/maps/place/TSNT+SOLUTIONS+PVT.+LTD.+Works/@22.7820465,88.5362415,18.5z/data=!4m6!3m5!1s0x39f8a3f11aafced1:0xf7931e3ad99b5d5b!8m2!3d22.7821151!4d88.5369854!16s%2Fg%2F11t7dp5_fy?entry=ttu" 
-            target="_blank" 
-            rel="noopener noreferrer" style={{ textDecoration: "none", color: "blue", fontSize: "40px" }}>
-              <img src="/google-maps.svg" alt="" className=" h-12 w-12 mt-2"/>
-        </a>,
-      ],
-    },
-  ];
+  const contactSubmit=()=>{
+
+        alert("Your message has been sent!");
+  }
+
 
   return (
-    <div className="contact justify-center items-center flex my-16">
+    <div className="contact justify-center items-center flex mt-4 mb-16">
       <div className="flex rounded-[2vh] shadow-lg border-t-[1px] ">
-        <div className="rounded-l-[2vh] py-[2vh] px-[2vw]" style={{backgroundColor:"#8db8fc"}}>
-          <h2 className="font-bold mt-2 text-2xl">Reach Us</h2>
+        <div className="rounded-l-[2vh]" style={{backgroundColor:"#8db8fc"}}>
+          <h2 className="font-bold mt-8 mx-8 text-2xl">Reach Us</h2>
 
+          <div className="py-[2vh] px-[2vw]">
           <Contactaddress contacts={contactInfo} />
+          </div>
+           
+           <div className="py-[2vh] px-[2vw] ">
+           <h3 className='font-bold mt-2'>Map</h3>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1839.2753912998028!2d88.5362415!3d22.7820465!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8a3f11aafced1%3A0xf7931e3ad99b5d5b!2sTSNT%20SOLUTIONS%20PVT.%20LTD.%20Works!5e0!3m2!1sen!2sin!4v1707376110558!5m2!1sen!2sin" 
+        className=" w-[100%] rounded mt-4" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           </div>
           
         </div>
 
         <div className="rounded-[2vh] p-4 bg-white">
           <h2 className="font-bold text-2xl pl-4 ">Drop Your Message</h2>
           <div className="flex mt-4">
-            {NameLabels.map((Name) => (
-              <TextInput>{Name}</TextInput>
-            ))}
+            <label className="form-control w-full max-w-xs" style={{margin:"0 1vw"}}>
+            <div className="label">
+                <span className="label-text">First Name</span>
+            </div>
+            <input type="text" placeholder={"Enter First Name"} className="input input-bordered w-full max-w-xs" />
+            </label>
+
+            <label className="form-control w-full max-w-xs" style={{margin:"0 1vw"}}>
+            <div className="label">
+                <span className="label-text">Last Name</span>
+            </div>
+            <input type="text" placeholder={"Enter Last Name"} className="input input-bordered w-full max-w-xs" />
+            </label>
+
+
           </div>
           <div>
-            {inputLabels.map((label) => (
-              <TextInput>{label}</TextInput>
-            ))}
+          <label className="form-control w-full max-w-xs" style={{margin:"0 1vw"}}>
+            <div className="label">
+                <span className="label-text">Phone Number</span>
+            </div>
+            <input type="numeric" placeholder={"eg.: +91 1234567890"} id="cont-phone" className="input input-bordered w-full max-w-xs" />
+            </label>
+            <label className="form-control w-full max-w-xs" style={{margin:"0 1vw"}}>
+            <div className="label">
+                <span className="label-text">Email</span>
+            </div>
+            <input type="email" placeholder={"eg.: jhon@gmail.com"} id="cont-email" className="input input-bordered w-full max-w-xs" />
+            </label>
             <label className="form-control" style={{ margin: "0 1vw" }}>
               <div className="label">
                 <span className="label-text">Message</span>
@@ -68,7 +73,8 @@ const Contact = () => {
             </label>
           </div>
 
-          <button className="bg-black hover:bg-gray-800 btn text-white font-bold px-6 drop-shadow-sm  rounded items-center justify-center ml-4 my-8">
+          <button className="bg-black hover:bg-gray-800 btn text-white font-bold px-6 drop-shadow-sm  rounded items-center justify-center ml-4 my-8"
+          onClick={contactSubmit}>
             Submit
           </button>
         </div>

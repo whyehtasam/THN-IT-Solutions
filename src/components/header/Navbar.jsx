@@ -132,14 +132,14 @@ const Navbar = () => {
 
 
   return (
-
+    
     <div className={`drawer bg-slate-100 sticky top-0 z-10 ${isScrolled && 'bg-slate-200  border-b-[1px]'} ${isVisibleServices && 'bg-slate-200'} ${isVisibleTechnology && 'bg-slate-200'}`}>
 
 
-      <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
+     <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
         {/* Navbar */}
-        <div className="w-full navbar">
+       <div className="w-full navbar">
           <div className="flex-none lg:hidden">
             <label
               htmlFor="my-drawer-3"
@@ -160,7 +160,7 @@ const Navbar = () => {
                 ></path>
               </svg>
             </label>
-          </div> 
+  </div>
 
 
 
@@ -174,27 +174,24 @@ const Navbar = () => {
               <Link to='/'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider z-10 hover:font-semibold">Home</a></li> </Link>
 
               {/* <Link to='/aboutUs'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider z-10 hover:font-semibold">About Us</a></li> </Link> */}
-              <Link to='/ourServices'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider z-10 hover:font-semibold" onMouseMove={() => setIsVisibleServices(true)} onMouseLeave={() => setIsVisibleServices(false)}>Our Services</a></li> </Link>
+              <Link to='/ourServices'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider z-10 hover:font-semibold" 
+              onMouseEnter={() => setIsVisibleServices(true)} onMouseLeave={() => setIsVisibleServices(false)} onClick={()=>setIsVisibleServices(false)}>
+              Our Services</a></li> </Link>
 
               
               
               
-              <Link to=''><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider z-10 hover:font-semibold flex" onMouseMove={() => setIsVisibleTechnology(true)} onMouseLeave={() => setIsVisibleTechnology(false)}>Technology</a></li></Link>
+              <Link to='/technology'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider z-10 hover:font-semibold flex" 
+              onMouseEnter={() => setIsVisibleTechnology(true)} onMouseLeave={() => setIsVisibleTechnology(false)} onClick={() => setIsVisibleTechnology(false)}>
+                Technology</a></li></Link>
+
+
               <Link to='/portfolio'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold flex">Portfolio</a></li></Link>
                 
             
               <Link to='/career'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider z-10 hover:font-semibold">Career</a></li></Link>
               <Link to='/contact'><li><a className="mx-2 text-sm font-medium rounded tracking-wider border z-10 bg-black text-white hover:bg-slate-100 hover:text-gray-800 hover:font-semibold">Contact</a></li></Link>
 
-              {/* Register */}
-              {/* <div className=" mx-2 dropdown dropdown-hover  w-fit">
-                  <li><a className="text-sm font-medium rounded tracking-wider border  bg-black text-white hover:bg-slate-100 hover:text-gray-800 hover:font-semibold">Register</a></li>
-                   
-                    <ul className="dropdown-content mt-[2px] z-[1] menu bg-base-100 rounded-box font-poppins w-52 border">
-                     <li className="mb-1"><Link to="/signIn">SignIn</Link></li>
-                     <li><Link to="/signUp">SignUp</Link></li>
-                   </ul>
-             </div> */}
             </ul>
           </div>
 
@@ -213,7 +210,7 @@ const Navbar = () => {
         </div>
 
         <div >
-        {isVisibleTechnology && <div className="flex justify-between bg-white border-b-[1px] z-9 absolute w-[100%] top-0 mt-[8.3vh] px-[12%]" 
+        {isVisibleTechnology && <div className="flex justify-between border-b-[1px] z-9 absolute w-[100%] top-0 mt-[8.3vh] px-[12%]" 
           onMouseMove={() => setIsVisibleTechnology(true)} 
           onMouseLeave={() => setIsVisibleTechnology(false)}>
 
