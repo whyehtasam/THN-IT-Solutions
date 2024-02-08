@@ -34,7 +34,7 @@ const TabServices = (props) => {
           ({ id, title, description,linkPath }, index) =>
             index === activeTab && (
               <div
-                className=" card h-auto w-full bg-base-100 shadow-xl hover:scale-105 hover:-translate-y-1 transition-all duration-300 "
+                className=" card h-auto w-full bg-base-100 shadow-xl hover:scale-[1.02] hover:-translate-y-1 transition-all duration-300 "
                 key={id}
               >
                 <div className="card-body">

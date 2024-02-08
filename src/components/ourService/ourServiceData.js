@@ -9,14 +9,14 @@ export const IntroServiceCardData = [
       id: 2,
       title: "☁️ Cloud Service",
       description: "At THN IT Solutions, we understand the importance of leveraging cloud technology to drive innovation, agility, and scalability in today's digital landscape. As your trusted partner in cloud services, we are committed to helping you harness the power of the cloud to transform your business, streamline operations, and achieve your strategic objectives. Cloud computing has revolutionized the way businesses access, store, and manage their data and applications. By migrating to the cloud, organizations can reduce infrastructure costs, improve flexibility, and gain access to a wide range of scalable and reliable services. Whether you're a startup looking to launch your first application or an enterprise seeking to modernize your IT infrastructure, cloud services offer a cost-effective and efficient solution to meet your evolving needs.",
-      linkPath : '/serviceCloudService'
+      linkPath : '/ourServices/CloudService'
 
     },
     {
       id: 3,
       title: "🔧 Maintenance and Support",
       description: "At THN IT Solutions, we understand that the successful deployment of a software solution is just the beginning of your journey. To ensure the ongoing success and performance of your applications, it's essential to have a reliable partner for maintenance and support. That's where we come in. Effective maintenance and support are crucial for ensuring the continued functionality, performance, and security of your software applications. From addressing technical issues and implementing updates to providing proactive monitoring and optimization, maintenance and support services help you maximize the value of your investment, minimize downtime, and ensure a seamless user experience for your customers.",
-      linkPath : '/serviceMaintenanceSupport'
+      linkPath : '/ourServices/MaintenanceSupport'
 
     },
     {
