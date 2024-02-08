@@ -26,9 +26,8 @@ function CloudDeveloperCareer(){
             <Criteria prop={CloudDeveloperCriteriaData}/>
             </div>
 
-            <div className=''>
-            <Link ><button className='btn btn-primary m-4 relative rigth-1' 
-                onClick={()=>alert('Contact the company for further information')}>
+            <div className='card-actions justify-end'>
+            <Link to='/contact'><button className='btn btn-primary my-4 mx-12 p-4'>
                 Apply Now</button></Link>
             </div>
             

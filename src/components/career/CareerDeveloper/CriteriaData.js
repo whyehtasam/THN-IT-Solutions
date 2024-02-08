@@ -23,7 +23,7 @@ export const WebDeveloperCriteriaData =[
     },
 
     {
-        Title:'What Sets You Apart:',
+        Title:'What Sets You Apart',
         Points:[
             'Previous projects showcasing your expertise in building responsive and visually appealing user interfaces.',
             'Experience with server-side rendering (SSR) and progressive web app (PWA) development.',
@@ -70,7 +70,7 @@ export const BackendDeveloperCriteriaData =[
 },
 
 {
-    Title:'What Sets You Apart:',
+    Title:'What Sets You Apart',
     Points:[
         'Previous projects demonstrating API integration and third-party service interactions.',
         'Familiarity with containerization technologies such as Docker.',
@@ -116,7 +116,7 @@ export const CloudDeveloperCriteriaData =[
     },
     
     {
-        Title:'What Sets You Apart:',
+        Title:'What Sets You Apart',
         Points:[
             'Previous projects demonstrating API integration and third-party service interactions within a cloud environment.',
             'Familiarity with containerization technologies such as Docker and orchestration tools like Kubernetes.',
