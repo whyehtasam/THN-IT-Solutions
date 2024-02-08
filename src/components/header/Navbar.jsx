@@ -174,7 +174,7 @@ const Navbar = () => {
               <Link to='/'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider z-10 hover:font-semibold">Home</a></li> </Link>
 
               {/* <Link to='/aboutUs'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider z-10 hover:font-semibold">About Us</a></li> </Link> */}
-              <Link to='/ourServices'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider z-10 hover:font-semibold" onMouseMove={() => setIsVisibleServices(true)} onMouseLeave={() => setIsVisibleServices(false)}>Our Services</a></li> </Link>
+              <Link to='/ourServices'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider z-10 hover:font-semibold" onMouseMove={() => setIsVisibleServices(true)} onMouseLeave={() => setIsVisibleServices(false)} onClick={() => setIsVisibleServices(false)}>Our Services</a></li> </Link>
 
               
               
@@ -262,7 +262,7 @@ const ServicesMenu = ({ services },index) =>
        <div className="" key={index}>
 
         <div key={index =="3"} className="border-r-[1px] border-slate-300 px-6 text-left">
-          <h3 className="text-lg pb-2">
+          <h3 className="text-lg pb-2" >
             <Link to={service.path} className="font-bold pr-2">{service.menuTitle}{" >"}</Link>
           </h3>
           <ul>
