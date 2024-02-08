@@ -32,7 +32,7 @@ import Carousel from "./components/carousel/Carousel";
 import Application from "./components/ourService/ourServiceNavigation/Application";
 import { useEffect } from "react";
 
-
+import Cloud from './components/ourService/ourServiceNavigation/Cloud'
 const ScrollToTop = () => {
   const { pathname } = useLocation();
 
@@ -75,6 +75,7 @@ function App() {
           {/* Career page Routing and subpages of it */}
 
           <Route path="/ourServices/ApplicationDevelopment" element={<Application />} />
+          <Route path="/ourServices/CloudService" element={<Cloud />} />
           <Route
             path="/"
             element={
