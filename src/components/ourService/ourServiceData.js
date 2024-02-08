@@ -16,7 +16,7 @@ export const IntroServiceCardData = [
       id: 3,
       title: "🔧 Maintenance and Support",
       description: "At THN IT Solutions, we understand that the successful deployment of a software solution is just the beginning of your journey. To ensure the ongoing success and performance of your applications, it's essential to have a reliable partner for maintenance and support. That's where we come in. Effective maintenance and support are crucial for ensuring the continued functionality, performance, and security of your software applications. From addressing technical issues and implementing updates to providing proactive monitoring and optimization, maintenance and support services help you maximize the value of your investment, minimize downtime, and ensure a seamless user experience for your customers.",
-      linkPath : '/serviceMaintenanceSupport'
+      linkPath : '/ourServices/MaintenanceSupport'
 
     },
     {

@@ -192,3 +192,103 @@ export const CloudServices = [
     ],
   },
 ];
+
+export const MaintenanceSupportServices = [
+  {
+    serviceType: "🛠️ Providing Ongoing Support",
+    description:
+      "We provide round-the-clock support to address any issues or concerns that may arise post-deployment, ensuring uninterrupted operation of your software applications. Our dedicated support team is available to assist with troubleshooting, bug fixes, performance optimization, and user assistance, ensuring that your applications remain operational and responsive.",
+    subHeading: "How it Works:",
+    steps: [
+      {
+        stepName: "🎫 Ticketing System",
+        description: "We utilize a ticketing system to prioritize and manage support requests, ensuring timely resolution and efficient communication with our clients.",
+      },
+      {
+        stepName: "⏱️ SLA Compliance",
+        description: "Our support services are governed by Service Level Agreements (SLAs) to ensure prompt response times and resolution of issues within agreed-upon timeframes.",
+      },
+      {
+        stepName: "🔍 Continuous Monitoring",
+        description: "We employ monitoring tools and techniques to proactively identify and address potential issues before they impact the performance or availability of your applications.",
+      },
+    ],
+    subHeading2: 'Latest Technologies:',
+    technologies: [
+      {
+        technologyType: "📡 Remote Monitoring and Management",
+        description: "We leverage RMM tools to monitor the health and performance of your applications in real-time, enabling proactive issue detection and resolution.",
+      },
+      {
+        technologyType: "🤝 Collaboration Platforms",
+        description: "We utilize collaboration platforms such as Slack and Microsoft Teams to facilitate seamless communication and collaboration between our support team and clients.",
+      },
+    ],
+  },
+  {
+    serviceType: "🔧 Maintenance for Applications",
+    description:
+      "Regular maintenance is essential to keep your software applications up-to-date, secure, and optimized for performance. Our maintenance services encompass software updates, security patches, database maintenance, and performance tuning to ensure that your applications remain reliable and efficient over time.",
+    subHeading: "How it Works:",
+    steps: [
+      {
+        stepName: "🩹 Patch Management",
+        description: "We regularly update your applications with the latest security patches, bug fixes, and feature enhancements to address vulnerabilities and improve functionality.",
+      },
+      {
+        stepName: "🗄️ Database Maintenance",
+        description: "We optimize and maintain your application databases to ensure optimal performance, data integrity, and scalability.",
+      },
+      {
+        stepName: "🚀 Performance Tuning",
+        description: "We analyze and optimize the performance of your applications, identifying and resolving bottlenecks to ensure optimal responsiveness and user experience.",
+      },
+    ],
+    subHeading2: 'Latest Technologies:',
+    technologies: [
+      {
+        technologyType: "🚀 Automated Deployment Pipelines",
+        description: "We implement automated deployment pipelines using tools like Jenkins and GitLab CI/CD to streamline the deployment of software updates and patches.",
+      },
+      {
+        technologyType: "📦 Containerization and Orchestration",
+        description: "We containerize and orchestrate your applications using Docker and Kubernetes to simplify deployment, improve scalability, and enhance reliability.",
+      },
+    ],
+  },
+  {
+    serviceType: "🚀 Feature Enhancements",
+    description:
+      "As your business evolves and grows, so do your software requirements. Our feature enhancement services enable you to adapt and extend your software applications to meet changing business needs, industry trends, and user expectations. Whether you need to add new features, integrate third-party APIs, or enhance existing functionality, we've got you covered.",
+    subHeading: "How it Works:",
+    steps: [
+      {
+        stepName: "📝 Requirement Analysis",
+        description: "We collaborate with your stakeholders to understand your evolving business needs and identify opportunities for feature enhancements.",
+      },
+      {
+        stepName: "🎨 Solution Design",
+        description: "Our experts design and prioritize feature enhancements based on business value, technical feasibility, and user feedback.",
+      },
+      {
+        stepName: "🔨 Implementation",
+        description: "We implement feature enhancements using agile development methodologies, ensuring rapid delivery and iterative improvements.",
+      },
+      {
+        stepName: "🔬 Testing and Validation",
+        description: "We conduct thorough testing and validation to ensure that new features meet quality standards and seamlessly integrate with existing functionality.",
+      },
+    ],
+    subHeading2: 'Latest Technologies:',
+    technologies: [
+      {
+        technologyType: "🔧 Microservices Architecture",
+        description: "We design and implement feature enhancements using microservices architecture to ensure modularity, scalability, and maintainability.",
+      },
+      {
+        technologyType: "🌐 API-first Development",
+        description: "We adopt an API-first approach to enable seamless integration with third-party services and future-proof your applications for interoperability and extensibility.",
+      },
+    ],
+  },
+];

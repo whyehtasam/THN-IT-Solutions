@@ -1,3 +1,5 @@
+import "./assets/bg.css";
+import { useEffect } from "react";
 import "./App.css"; // importing the App.css
 
 import Navbar from "./components/header/Navbar"; // importing the Navbar component
@@ -27,12 +29,12 @@ import CloudDeveloperCareer from "./components/career/CareerDeveloper/cloudDevel
 // import ServiceIntro from "./components/trees/ServiceIntro";
 // // import SliderCheck from "./components/wrappers/Slidercheck";
 // import CenterMode from "./components/Slider/CenterMode";
-import "./assets/bg.css";
 import Carousel from "./components/carousel/Carousel";
 import Application from "./components/ourService/ourServiceNavigation/Application";
-import { useEffect } from "react";
-
 import Cloud from './components/ourService/ourServiceNavigation/Cloud'
+import MaintainanceSupport from "./components/ourService/ourServiceNavigation/MaintainanceSupport";
+
+
 const ScrollToTop = () => {
   const { pathname } = useLocation();
 
@@ -54,16 +56,13 @@ function App() {
         {/* starting the routing configuration */}
         <Navbar /> {/* rendering the Navbar component */}
         <Routes>
-          {" "}
+         
           {/* starting the routing configuration */}
           <Route path="/contact" element={<Contact />} />{" "}
-          {/* defining the route for the Contact component */}
+        
           <Route path="/signIn" element={<SignIn />} />{" "}
-          {/* defining the route for the SignIn component */}
+         
           <Route path="/signUp" element={<SignUp />} />{" "}
-          {/* defining the route for the SignUp component */}
-          {/* <Route path="/aboutUs" element={<AboutUs />} /> */}
-          {/* <Route path="/aboutUs" element={<AboutUs />} /> */}
           <Route path="/ourServices" element={<OurServices />} />
           <Route path="/portfolio" element={<Portfolio />} />
 
@@ -72,10 +71,12 @@ function App() {
           <Route path="/career/web-developer" element={<WebDeveloperCareer />} />
           <Route path="/career/backend-developer" element={<BackendDeveloperCareer />} />
           <Route path="/career/cloud-developer" element={<CloudDeveloperCareer />} />
-          {/* Career page Routing and subpages of it */}
+         
 
           <Route path="/ourServices/ApplicationDevelopment" element={<Application />} />
           <Route path="/ourServices/CloudService" element={<Cloud />} />
+          <Route path="/ourServices/MaintenanceSupport" element={<MaintainanceSupport />} />
+
           <Route
             path="/"
             element={
