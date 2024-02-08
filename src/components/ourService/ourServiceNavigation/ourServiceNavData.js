@@ -77,8 +77,6 @@ export const ApplicationDevelopmentServices = [
 ];
 
 
-
-
 export const CloudServices = [
   {
     serviceType: "☁️ Cloud Migration Services",
@@ -288,6 +286,288 @@ export const MaintenanceSupportServices = [
       {
         technologyType: "🌐 API-first Development",
         description: "We adopt an API-first approach to enable seamless integration with third-party services and future-proof your applications for interoperability and extensibility.",
+      },
+    ],
+  },
+];
+
+export const DataAnalyticsServices = [
+  {
+    serviceType: "📊 Data Warehousing",
+    description:
+      "Data warehousing is the foundation of effective data analytics and BI initiatives, providing a centralized repository for storing, organizing, and managing your data. Our Data Warehousing services enable you to consolidate disparate data sources, streamline data integration, and create a unified view of your organization's data for reporting and analysis purposes.",
+    subHeading: "How it Works:",
+    steps: [
+      {
+        stepName: "🔄 Data Integration",
+        description: "We extract, transform, and load (ETL) data from various source systems into the data warehouse, ensuring data consistency and integrity.",
+      },
+      {
+        stepName: "📐 Data Modeling",
+        description: "We design dimensional models optimized for querying and analysis, facilitating fast and efficient access to your data.",
+      },
+      {
+        stepName: "🔒 Data Governance",
+        description: "We implement data governance policies and procedures to ensure data quality, security, and compliance with regulatory requirements.",
+      },
+    ],
+    subHeading2: "Latest Technologies:",
+    technologies: [
+      {
+        technologyType: "☁️ Cloud Data Warehousing",
+        description: "We leverage cloud-based data warehousing solutions such as Amazon Redshift, Google BigQuery, and Snowflake to provide scalable, cost-effective, and highly available data warehouse environments.",
+      },
+      {
+        technologyType: "🌊 Data Lake Integration",
+        description: "We integrate data lake technologies like Amazon S3 and Azure Data Lake Storage to accommodate diverse data types and support advanced analytics use cases.",
+      },
+    ],
+  },
+  {
+    serviceType: "📈 Data Visualization",
+    description:
+      "Data visualization transforms raw data into intuitive visualizations such as charts, graphs, and dashboards, enabling stakeholders to explore and understand complex datasets more effectively. Our Data Visualization services empower you to gain actionable insights from your data and communicate findings in a compelling and accessible manner.",
+    subHeading: "How it Works:",
+    steps: [
+      {
+        stepName: "🎨 Dashboard Design",
+        description: "We design interactive dashboards tailored to your business objectives and user requirements, incorporating drill-down capabilities, filters, and dynamic visualizations.",
+      },
+      {
+        stepName: "🔍 Data Exploration",
+        description: "We utilize interactive visualizations to facilitate exploratory analysis, enabling users to uncover patterns, trends, and outliers within their data.",
+      },
+      {
+        stepName: "📚 Storytelling",
+        description: "We craft data-driven narratives using visualizations to communicate key insights, trends, and recommendations to stakeholders effectively.",
+      },
+    ],
+    subHeading2: "Latest Technologies:",
+    technologies: [
+      {
+        technologyType: "📊 Business Intelligence Tools",
+        description: "We leverage leading BI tools such as Tableau, Power BI, and Qlik Sense to create interactive and insightful data visualizations and dashboards.",
+      },
+      {
+        technologyType: "🤖 Augmented Analytics",
+        description: "We harness the power of augmented analytics technologies to automate insights discovery, uncover hidden patterns, and generate actionable recommendations from your data.",
+      },
+    ],
+  },
+  {
+    serviceType: "🔮 Predictive Analytics",
+    description:
+      "Predictive analytics leverages statistical algorithms and machine learning techniques to forecast future outcomes and trends based on historical data. Our Predictive Analytics services enable you to anticipate customer behavior, optimize business processes, and mitigate risks more effectively, driving competitive advantage and business growth.",
+    subHeading: "How it Works:",
+    steps: [
+      {
+        stepName: "📈 Model Development",
+        description: "We build predictive models using advanced statistical techniques and machine learning algorithms, training them on historical data and validating their accuracy and performance.",
+      },
+      {
+        stepName: "🚀 Model Deployment",
+        description: "We deploy predictive models into production environments, integrating them with your existing systems and workflows to automate decision-making processes.",
+      },
+      {
+        stepName: "🔍 Model Monitoring",
+        description: "We continuously monitor model performance and recalibrate models as needed to ensure their accuracy and relevance over time.",
+      },
+    ],
+    subHeading2: "Latest Technologies:",
+    technologies: [
+      {
+        technologyType: "🔧 Machine Learning Frameworks",
+        description: "We leverage open-source machine learning frameworks such as TensorFlow, PyTorch, and scikit-learn to develop and deploy predictive models for various business use cases.",
+      },
+      {
+        technologyType: "🤖 AutoML",
+        description: "We utilize AutoML platforms and tools to automate the process of model selection, feature engineering, and hyperparameter tuning, accelerating the development and deployment of predictive analytics solutions.",
+      },
+    ],
+  },
+];
+
+
+export const DevOpsServices = [
+  {
+    serviceType: "🔄 CI/CD",
+    description:
+      "Continuous Integration (CI) and Continuous Deployment (CD) are essential practices in DevOps, enabling organizations to automate the process of building, testing, and deploying software changes. Our CI/CD services help streamline your development pipeline, reduce manual effort, and increase the speed and reliability of software delivery.",
+    subHeading: "How it Works:",
+    steps: [
+      {
+        stepName: "🔀 Continuous Integration",
+        description: "Developers regularly integrate their code changes into a shared repository, triggering automated builds and tests to detect integration errors early.",
+      },
+      {
+        stepName: "🚀 Continuous Deployment",
+        description: "Once code changes pass automated tests, they are automatically deployed to production or staging environments, reducing lead time and enabling faster feedback loops.",
+      },
+    ],
+    subHeading2: "Latest Technologies:",
+    technologies: [
+      {
+        technologyType: "🛠️ CI/CD Tools",
+        description: "We leverage popular CI/CD tools such as Jenkins, GitLab CI/CD, and CircleCI to automate build, test, and deployment pipelines.",
+      },
+      {
+        technologyType: "📦 Containerization",
+        description: "We containerize applications using Docker to create lightweight, portable, and consistent development and deployment environments.",
+      },
+    ],
+  },
+  {
+    serviceType: "🏗️ Infrastructure as Code (IaC)",
+    description:
+      "Infrastructure as Code (IaC) is a key principle in DevOps, enabling organizations to define and manage infrastructure using code rather than manual processes. Our IaC services help automate the provisioning, configuration, and management of infrastructure, ensuring consistency, repeatability, and scalability.",
+    subHeading: "How it Works:",
+    steps: [
+      {
+        stepName: "📝 Infrastructure Definition",
+        description: "Infrastructure components such as servers, networks, and databases are defined using declarative or imperative code, specifying desired state and configurations.",
+      },
+      {
+        stepName: "🔄 Automated Provisioning",
+        description: "IaC tools automate the provisioning of infrastructure resources, ensuring rapid and consistent deployment of environments across development, testing, and production.",
+      },
+    ],
+    subHeading2: "Latest Technologies:",
+    technologies: [
+      {
+        technologyType: "🌍 Terraform",
+        description: "We utilize Terraform, an open-source IaC tool by HashiCorp, to define and provision infrastructure resources across multiple cloud providers and on-premises environments.",
+      },
+      {
+        technologyType: "🔀 Infrastructure Orchestration",
+        description: "We orchestrate complex infrastructure deployments using Terraform modules, enabling reusable and scalable infrastructure configurations.",
+      },
+    ],
+  },
+  {
+    serviceType: "🌍 Terraform",
+    description:
+      "Terraform is an open-source infrastructure as code software tool that enables developers to use a high-level configuration language to manage infrastructure resources. At THN IT Solutions, we specialize in leveraging Terraform to automate infrastructure provisioning, manage cloud resources, and achieve infrastructure as code best practices.",
+    subHeading: "How it Works:",
+    steps: [
+      {
+        stepName: "📝 Declarative Configuration",
+        description: "Terraform uses a declarative language called HashiCorp Configuration Language (HCL) to define infrastructure configurations as code, specifying the desired state of resources.",
+      },
+      {
+        stepName: "🔄 Resource Provisioning",
+        description: "Terraform provisions and manages infrastructure resources across various cloud providers and on-premises environments, including virtual machines, networks, storage, and more.",
+      },
+      {
+        stepName: "🔍 State Management",
+        description: "Terraform maintains a state file to track the current state of infrastructure resources, enabling incremental changes and providing visibility into infrastructure drift.",
+      },
+    ],
+    subHeading2: "Latest Technologies:",
+    technologies: [
+      {
+        technologyType: "☁️ Terraform Cloud",
+        description: "We leverage Terraform Cloud, a hosted service by HashiCorp, to collaborate on infrastructure configurations, manage state files, and automate Terraform workflows.",
+      },
+      {
+        technologyType: "📦 Terraform Modules",
+        description: "We create reusable Terraform modules to encapsulate infrastructure configurations, promote consistency, and enable code reusability across projects.",
+      },
+    ],
+  },
+];
+
+
+export const QualityEngineeringService = [
+  {
+    serviceType: "🤖 Automated Testing",
+    description:
+      "Automated Testing is a cornerstone of modern software development, enabling organizations to accelerate testing cycles, improve test coverage, and detect defects early in the development process. Our Automated Testing services leverage industry-leading tools and frameworks to automate functional, regression, and integration testing across web, mobile, and desktop applications.",
+    subHeading: "How it Works:",
+    steps: [
+      {
+        stepName: "🔧 Test Automation Framework",
+        description: "We develop robust and maintainable test automation frameworks using tools like Selenium, Cypress, and Appium, enabling efficient test script creation, execution, and maintenance.",
+      },
+      {
+        stepName: "🔄 Continuous Integration",
+        description: "We integrate automated tests into CI/CD pipelines, ensuring that tests are executed automatically with each code change, providing fast feedback to developers and reducing time-to-market.",
+      },
+      {
+        stepName: "📊 Test Reporting and Analysis",
+        description: "We generate comprehensive test reports and dashboards using tools like Allure and TestNG, providing visibility into test results, trends, and defect metrics.",
+      },
+    ],
+    subHeading2: "Latest Technologies:",
+    technologies: [
+      {
+        technologyType: "👤 Headless Testing",
+        description: "We leverage headless browser automation to perform automated testing without a graphical user interface, improving test execution speed and efficiency.",
+      },
+      {
+        technologyType: "🧠 AI-powered Testing",
+        description: "We explore AI-driven testing solutions like Applitools and Testim to enhance test automation with visual validation, self-healing capabilities, and intelligent test generation.",
+      },
+    ],
+  },
+  {
+    serviceType: "🚀 Performance Testing",
+    description:
+      "Performance Testing is essential for ensuring the scalability, reliability, and responsiveness of software applications under various load conditions. Our Performance Testing services help identify and mitigate performance bottlenecks, optimize system performance, and ensure an exceptional user experience for your applications.",
+    subHeading: "How it Works:",
+    steps: [
+      {
+        stepName: "📝 Performance Test Planning",
+        description: "We collaborate with stakeholders to define performance objectives, scenarios, and success criteria, aligning performance testing efforts with business goals.",
+      },
+      {
+        stepName: "🔄 Load Generation",
+        description: "We simulate realistic user load and behavior using performance testing tools like JMeter, Gatling, and LoadRunner, measuring application response times, throughput, and resource utilization.",
+      },
+      {
+        stepName: "🔍 Analysis and Tuning",
+        description: "We analyze performance test results to identify performance bottlenecks, such as slow database queries or inefficient code, and provide actionable recommendations for optimization.",
+      },
+    ],
+    subHeading2: "Latest Technologies:",
+    technologies: [
+      {
+        technologyType: "☁️ Cloud-based Performance Testing",
+        description: "We leverage cloud-based performance testing platforms like BlazeMeter and Flood.io to scale load tests dynamically, simulate global user traffic, and optimize costs.",
+      },
+      {
+        technologyType: "👥 Real User Monitoring (RUM)",
+        description: "We incorporate RUM tools like New Relic and Dynatrace to capture real-time user data and performance metrics, enabling proactive performance monitoring and optimization.",
+      },
+    ],
+  },
+  {
+    serviceType: "🔄 Continuous Integration",
+    description:
+      "Continuous Integration (CI) is a fundamental DevOps practice that enables teams to automate the process of integrating code changes into a shared repository and validating them through automated builds and tests. Our Continuous Integration services help accelerate software delivery, improve code quality, and enhance collaboration across development teams.",
+    subHeading: "How it Works:",
+    steps: [
+      {
+        stepName: "🔀 Version Control Integration",
+        description: "We integrate CI pipelines with version control systems like Git, SVN, and Mercurial, enabling automatic triggering of builds and tests on code commits.",
+      },
+      {
+        stepName: "🚀 Automated Build and Test",
+        description: "We use CI/CD platforms like Jenkins, GitLab CI/CD, and Azure DevOps to automate build, test, and deployment pipelines, ensuring fast feedback and rapid iteration.",
+      },
+      {
+        stepName: "🔁 Continuous Feedback",
+        description: "We configure CI pipelines to generate automated test reports, code coverage metrics, and build artifacts, providing visibility into code quality and enabling continuous improvement.",
+      },
+    ],
+    subHeading2: "Latest Technologies:",
+    technologies: [
+      {
+        technologyType: "📚 GitOps",
+        description: "We adopt GitOps principles and practices to manage infrastructure and deployment configurations as code using Git repositories, enabling versioning, collaboration, and auditability.",
+      },
+      {
+        technologyType: "☁️ Serverless CI/CD",
+        description: "We explore serverless CI/CD platforms like AWS CodePipeline and Google Cloud Build to build and deploy applications without managing infrastructure, reducing operational overhead and costs.",
       },
     ],
   },

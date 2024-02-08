@@ -2,6 +2,9 @@ import { useState,useEffect } from "react";
 import { Link } from "react-router-dom";
 // import logo from '../../assets/thnit.png'
 import logo from '../../assets/logo.jpg'
+import ServicesMenu from './OurServicesMenu'
+import TechnologyMenu  from './TechnologyMenu';
+import {serviceData1, serviceData2, TechnologyData1, TechnologyData2, TechnologyData3, TechnologyData4, } from './ServicesTechnologyData'
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,101 +34,7 @@ const Navbar = () => {
 
 
   //First Row Data
-  const serviceData = [
-    {
-      menuTitle: 'Application Development',
-      path:'/aboutUs',
-      items: ['Web Application Development', 'Mobile App Development','Custom Software Solutions'],
-    },
-    {
-      menuTitle: 'Cloud Service',
-      path:'#service1',
-      items: ['Cloud Migration Services', 'Cloud Solution Architecture','Cloud Storage Service'],
-    },
-    {
-      menuTitle: 'Maintenance & Support',
-      path:'#service1',
-      items: ['Providing ongoing support', 'Maintenance for software applications', 'Feature enhancements'],
-    },
-    {
-      menuTitle: 'Analytics & Business Intelligence',
-      path:'#service1',
-      items: ['Data warehousing', 'Data visualization', 'Predictive analytics'],
-    },
-
-  ];
-
-//Second Row Data only add up to four column
-  const serviceData2 = [
-    {
-      menuTitle: 'DevOps',
-      path:'#service1',
-      items: ['CI/CD', 'Infrastructure as Code (IaC)', 'Terraform'],
-    },
-    {
-      menuTitle: 'Quality Engineering',
-      path:'#service1',
-      items: ['Automated Testing', 'Performance Testing', 'Continuous Integration'],
-    },
-
-  ];
   
-
-  const TechnologyData1=[
-    {
-      No: '1',
-      path: '/',
-      technologyName: 'Frontend Development',
-
-    },
-    {
-      No: '2',
-      path: '/',
-      technologyName: 'Backend Development ',
-
-    },
-  ]
-
-  const TechnologyData2=[
-    {
-      No: '3',
-      path: '/',
-      technologyName: 'Database',
-
-    },
-    {
-      No: '4',
-      path: '/',
-      technologyName: 'Cloud',
-
-    },
-  ]
-  const TechnologyData3=[
-    {
-      No: '5',
-      path: '/',
-      technologyName: 'Artificial intelligence',
-
-    },
-    {
-      No: '6',
-      path: '/',
-      technologyName: 'Infrastructure Development',
-
-    },
-
-  ];
-
-  const TechnologyData4=[
-    {
-      No: '7',
-      path: '/',
-      technologyName: 'DevOps',
-
-    },
-    
-
-  ];
 
 
 
@@ -174,9 +83,11 @@ const Navbar = () => {
               <Link to='/'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider z-10 hover:font-semibold">Home</a></li> </Link>
 
               {/* <Link to='/aboutUs'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider z-10 hover:font-semibold">About Us</a></li> </Link> */}
+
               <Link to='/ourServices'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider z-10 hover:font-semibold" 
               onMouseEnter={() => setIsVisibleServices(true)} onMouseLeave={() => setIsVisibleServices(false)} onClick={()=>setIsVisibleServices(false)}>
               Our Services</a></li> </Link>
+
 
               
               
@@ -203,7 +114,7 @@ const Navbar = () => {
           onMouseMove={() => setIsVisibleServices(true)} 
           onMouseLeave={() => setIsVisibleServices(false)}>
 
-        <ServicesMenu services={serviceData} />
+        <ServicesMenu services={serviceData1} />
         <ServicesMenu services={serviceData2} />
 
       </div>}
@@ -250,48 +161,7 @@ const Navbar = () => {
 };
 
 
-const ServicesMenu = ({ services },index) => 
-{
-  return(
-    <div className="flex p-12 mx-[4%]">
-      {services.map((service, index) => (
-       
-       <div className="" key={index}>
 
-        <div key={index =="3"} className="border-r-[1px] border-slate-300 px-6 text-left">
-          <h3 className="text-lg pb-2">
-            <Link to={service.path} className="font-bold pr-2">{service.menuTitle}{" >"}</Link>
-          </h3>
-          <ul>
-            {service.items.map((item, itemIndex) => (
-              <li key={itemIndex} className="text-sm ">{item}</li>
-            ))}
-          </ul>
-        </div>
-       </div>
-        
-      ))}
-    </div>
-  );
-};
-
-
-
-const TechnologyMenu = ({ technology },index) => 
-{
-  return(
-    <div className="py-12">
-      {technology.map((tech, No) => (
-     
-    <div className="border-r-[2px] pr-8">
-      <Link to={tech.path}><h3 className="p-[2vh] font-bold ">{tech.technologyName} {" >"}</h3></Link>
-      
-    </div>
-        
-      ))}
-    </div>
-  );
-};
 
 
 export default Navbar;
