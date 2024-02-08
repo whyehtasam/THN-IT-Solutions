@@ -4,7 +4,10 @@ import { Link } from "react-router-dom";
 import logo from '../../assets/logo.jpg'
 import ServicesMenu from './OurServicesMenu'
 import TechnologyMenu  from './TechnologyMenu';
-import {serviceData1, serviceData2, TechnologyData1, TechnologyData2, TechnologyData3, TechnologyData4, } from './ServicesTechnologyData'
+import {
+        serviceData1, serviceData2, 
+        TechnologyData1, TechnologyData2, 
+         TechnologyData3, TechnologyData4, } from './ServicesTechnologyData'
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -42,7 +45,7 @@ const Navbar = () => {
 
   return (
     
-    <div className={`drawer bg-slate-100 sticky top-0 z-10 ${isScrolled && 'bg-slate-200  border-b-[1px]'} ${isVisibleServices && 'bg-slate-200'} ${isVisibleTechnology && 'bg-slate-200'}`}>
+    <div className={`drawer bg-slate-100 sticky top-0 z-10 ${isScrolled && 'bg-slate-200  border-b-[1px]'} ${isVisibleServices && 'bg-white'} ${isVisibleTechnology && 'bg-white'}`}>
 
 
      <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
@@ -109,6 +112,8 @@ const Navbar = () => {
           </div>
         </div>
 
+        
+        </div>
         <div >
         {isVisibleServices && <div className=" bg-white border-b-[1px] z-9 absolute w-[100%] top-0 mt-[8.3vh]" 
           onMouseMove={() => setIsVisibleServices(true)} 
@@ -121,7 +126,7 @@ const Navbar = () => {
         </div>
 
         <div >
-        {isVisibleTechnology && <div className="flex justify-between border-b-[1px] z-9 absolute w-[100%] top-0 mt-[8.3vh] px-[12%]" 
+        {isVisibleTechnology && <div className="flex bg-white justify-between border-b-[1px] z-9 absolute w-[100%] top-0 mt-[8.3vh] px-[12%]" 
           onMouseMove={() => setIsVisibleTechnology(true)} 
           onMouseLeave={() => setIsVisibleTechnology(false)}>
 
@@ -131,8 +136,6 @@ const Navbar = () => {
         <TechnologyMenu technology={TechnologyData4} />
 
       </div>}
-        </div>
-        
         {/* Page content here */}
       </div>
 
