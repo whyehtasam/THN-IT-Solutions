@@ -33,6 +33,9 @@ import Carousel from "./components/carousel/Carousel";
 import Application from "./components/ourService/ourServiceNavigation/Application";
 import Cloud from './components/ourService/ourServiceNavigation/Cloud'
 import MaintainanceSupport from "./components/ourService/ourServiceNavigation/MaintainanceSupport";
+import DataAnalytics from "./components/ourService/ourServiceNavigation/DataAnalytics";
+import DevOps from "./components/ourService/ourServiceNavigation/DevOps";
+import QualityEngineering from "./components/ourService/ourServiceNavigation/QualityEngineering";
 
 
 const ScrollToTop = () => {
@@ -76,6 +79,10 @@ function App() {
           <Route path="/ourServices/ApplicationDevelopment" element={<Application />} />
           <Route path="/ourServices/CloudService" element={<Cloud />} />
           <Route path="/ourServices/MaintenanceSupport" element={<MaintainanceSupport />} />
+          <Route path="/ourServices/DataAnalytics" element={<DataAnalytics />} />
+          <Route path="/ourServices/DevOps" element={<DevOps />} />
+          <Route path="/ourServices/QualityEngineering" element={<QualityEngineering />} />
+
 
           <Route
             path="/"

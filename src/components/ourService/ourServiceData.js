@@ -23,19 +23,19 @@ export const IntroServiceCardData = [
       id: 4,
       title: "📈  Data Analytics and BI",
       description: "At THN IT Solutions, we believe that data is the key to unlocking valuable insights, driving informed decision-making, and gaining a competitive edge in today's digital landscape. That's why we're dedicated to helping businesses harness the power of data through our comprehensive Data Analytics and Business Intelligence services. In today's data-driven world, businesses have access to more data than ever before. However, without the right tools and strategies in place, this data can quickly become overwhelming and difficult to decipher. Data Analytics and Business Intelligence solutions enable organizations to make sense of their data, uncover hidden patterns and trends, and transform raw data into actionable insights that drive business growth and innovation.",
-      linkPath : '/serviceDataAnalytics'
+      linkPath : '/ourServices/DataAnalytics'
 
     },
     {
       id: 5,
       title: "🛠️ DevOps",
       description: "At THN IT Solutions, we understand the importance of agility, collaboration, and automation in today's fast-paced software development landscape. That's why we're dedicated to helping businesses adopt DevOps practices to accelerate delivery, improve quality, and drive innovation. Welcome to a new era of software development with THN IT Solutions. DevOps is more than just a set of practices or tools—it's a cultural shift that fosters collaboration and communication between development and operations teams, enabling organizations to deliver high-quality software faster and more efficiently. By breaking down silos, automating manual processes, and embracing a culture of continuous improvement, DevOps empowers teams to innovate, iterate, and deliver value to customers at speed.",
-      linkPath : '/serviceDevOps'
+      linkPath : '/ourServices/DevOps'
     },
     {
       id: 6,
       title: "🧪 Quality Engineering",
       description: "At THN IT Solutions, we understand that delivering high-quality software is essential for driving customer satisfaction, gaining a competitive edge, and achieving business success. That's why we're dedicated to helping businesses elevate their software quality through our comprehensive Quality Engineering services. Welcome to a new standard of excellence with THN IT Solutions. Quality Engineering is more than just testing—it's a strategic approach to ensuring that software meets the highest standards of quality, performance, and reliability throughout the development lifecycle. By implementing rigorous testing, automation, and quality assurance practices, Quality Engineering empowers organizations to detect and prevent defects early, optimize processes, and deliver exceptional user experiences.",
-      linkPath : '/serviceQualityEngineering'
+      linkPath : '/ourServices/QualityEngineering'
     }
   ];

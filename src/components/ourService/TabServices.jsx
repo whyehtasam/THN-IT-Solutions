@@ -1,7 +1,8 @@
 import { useState } from "react";
 import Button from "../button/Button";
 import { Link } from "react-router-dom";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
 
 const TabServices = (props) => {
   const [activeTab, setActiveTab] = useState(0);
@@ -43,7 +44,7 @@ const TabServices = (props) => {
                   <p className="text-justify text-xs lg:text-sm text-gray-800 ">
                     {description}
                   </p>
-                  <button className="btn btn-active btn-link text-gray-800 w-max pl-0 "><Link to={`${linkPath}`}>Read more</Link></button>
+                  <button className="btn btn-link no-underline text-gray-800 w-max pl-0 "><Link to={`${linkPath}`}>Explore <FontAwesomeIcon icon={faAngleRight} className="ml-1 text-xs" /></Link></button>
                 </div>
                 
               </div>
