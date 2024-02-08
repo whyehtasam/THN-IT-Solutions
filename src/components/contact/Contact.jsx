@@ -67,8 +67,8 @@ const Contact = () => {
            <h3 className='font-bold mt-2'>Map</h3>
            <p className=" w-[100%] rounded mt-2">Click the Map</p>
            
-           {isMapIcon && <img src="google-maps.svg" alt="" className="h-12 w-12 rounded mt-2" onClick={VisibleEmbed}/>} 
-           {isMapVisible && <><p className="text-4xl pt-4" onClick={VisibleIcon}>⤫</p>
+           {isMapIcon && <img src="google-maps.svg" alt="" className="h-12 w-12 rounded mt-2 hover:cursor-pointer" onClick={VisibleEmbed}/>} 
+           {isMapVisible && <><p className="text-4xl pt-4 hover:cursor-pointer" onClick={VisibleIcon}>⤫</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1839.2753912998028!2d88.5362415!3d22.7820465!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8a3f11aafced1%3A0xf7931e3ad99b5d5b!2sTSNT%20SOLUTIONS%20PVT.%20LTD.%20Works!5e0!3m2!1sen!2sin!4v1707376110558!5m2!1sen!2sin" 
             className=" w-[100%] rounded mt-4" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></>}
            </div>
