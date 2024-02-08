@@ -1,14 +1,55 @@
-import React from "react";
+import React, {useState} from "react";
 import {contactInfo} from "./addressField"
-import { document } from "postcss";
 
 const Contact = () => {
 
+  const [isMapVisible, setIsMapVisible] =useState(false);
+  const [isMapIcon, setIsMapIcon]=  useState(true);
 
+  const VisibleEmbed=()=>{
+    setIsMapIcon(false);
+    setIsMapVisible(true);
+  }
+  const VisibleIcon=()=>{
+    setIsMapIcon(true);
+    setIsMapVisible(false);
+  }
 
-  const contactSubmit=()=>{
+  const [formData, setFormData] = useState({
+    fname: '',
+    lname: '',
+    phone: '',
+    email: '',
+    message: '',
+  });
 
-        alert("Your message has been sent!");
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch('http://localhost:5000/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        const result = await response.json();
+        console.log(result); // handle success, e.g., 
+        alert("Your message has been sent!"); //show a success message
+      } else {
+        console.error('Failed to submit form');
+        alert("Your message has failed!");
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+    }
   }
 
 
@@ -24,8 +65,12 @@ const Contact = () => {
            
            <div className="py-[2vh] px-[2vw] ">
            <h3 className='font-bold mt-2'>Map</h3>
-           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1839.2753912998028!2d88.5362415!3d22.7820465!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8a3f11aafced1%3A0xf7931e3ad99b5d5b!2sTSNT%20SOLUTIONS%20PVT.%20LTD.%20Works!5e0!3m2!1sen!2sin!4v1707376110558!5m2!1sen!2sin" 
-        className=" w-[100%] rounded mt-4" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           <p className=" w-[100%] rounded mt-2">Click the Map</p>
+           
+           {isMapIcon && <img src="google-maps.svg" alt="" className="h-12 w-12 rounded mt-2" onClick={VisibleEmbed}/>} 
+           {isMapVisible && <><p className="text-4xl pt-4" onClick={VisibleIcon}>⤫</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1839.2753912998028!2d88.5362415!3d22.7820465!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8a3f11aafced1%3A0xf7931e3ad99b5d5b!2sTSNT%20SOLUTIONS%20PVT.%20LTD.%20Works!5e0!3m2!1sen!2sin!4v1707376110558!5m2!1sen!2sin" 
+            className=" w-[100%] rounded mt-4" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></>}
            </div>
           
         </div>
@@ -37,14 +82,28 @@ const Contact = () => {
             <div className="label">
                 <span className="label-text">First Name</span>
             </div>
-            <input type="text" placeholder={"Enter First Name"} className="input input-bordered w-full max-w-xs" />
+            <input type="text" 
+            placeholder={"Enter First Name"} 
+            className="input input-bordered w-full max-w-xs" 
+            id="fname"
+            name="FastName"
+            value={formData.fname}
+            onChange={handleChange}
+            required/>
             </label>
 
             <label className="form-control w-full max-w-xs" style={{margin:"0 1vw"}}>
             <div className="label">
                 <span className="label-text">Last Name</span>
             </div>
-            <input type="text" placeholder={"Enter Last Name"} className="input input-bordered w-full max-w-xs" />
+            <input type="text" 
+            placeholder={"Enter Last Name"} 
+            className="input input-bordered w-full max-w-xs" 
+            id="lname"
+            name="LastName"
+            value={formData.lname}
+            onChange={handleChange}
+            required/>
             </label>
 
 
@@ -54,13 +113,27 @@ const Contact = () => {
             <div className="label">
                 <span className="label-text">Phone Number</span>
             </div>
-            <input type="numeric" placeholder={"eg.: +91 1234567890"} id="cont-phone" className="input input-bordered w-full max-w-xs" />
+            <input type="numeric" 
+            placeholder={"eg.: +91 1234567890"} 
+              id="Phone"
+              name="PhoneNo"
+              value={formData.phone}
+              onChange={handleChange}
+            className="input input-bordered w-full max-w-xs" 
+            required/>
             </label>
             <label className="form-control w-full max-w-xs" style={{margin:"0 1vw"}}>
             <div className="label">
                 <span className="label-text">Email</span>
             </div>
-            <input type="email" placeholder={"eg.: jhon@gmail.com"} id="cont-email" className="input input-bordered w-full max-w-xs" />
+            <input type="email" 
+              placeholder={"eg.: jhon@gmail.com"} 
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              className="input input-bordered w-full max-w-xs" 
+              required/>
             </label>
             <label className="form-control" style={{ margin: "0 1vw" }}>
               <div className="label">
@@ -68,13 +141,18 @@ const Contact = () => {
               </div>
               <textarea
                 className="textarea textarea-bordered h-24"
-                placeholder="Your Message"
+                id="message"
+                name="message"
+                rows="4"
+                value={formData.message}
+                onChange={handleChange}
+                placeholder="Your Message" required
               ></textarea>
             </label>
           </div>
 
           <button className="bg-black hover:bg-gray-800 btn text-white font-bold px-6 drop-shadow-sm  rounded items-center justify-center ml-4 my-8"
-          onClick={contactSubmit}>
+          onClick={handleSubmit}>
             Submit
           </button>
         </div>
