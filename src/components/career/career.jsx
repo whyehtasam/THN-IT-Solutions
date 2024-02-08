@@ -24,7 +24,7 @@ function Career(){
                 </div>
                 </div>
             <div className="justify-center w-[40%] my-auto  h-[100%]">
-                <img src="/Job Opening.PNG" alt="" height={"90%"} width={"90%"} className=" bg-cover"/>
+                <img src="/Job Opening.PNG" alt="" height={"90%"} width={"90%"} className=" bg-cover mix-blend-multiply"/>
             </div>
         </div>
 
@@ -43,9 +43,9 @@ const Careercard = ({ cData }) =>
 {
   return(
     <>
-    {cData.map((data) => (
+    {cData.map((data,index) => (
      
-     <div className="card bg-base-100 shadow-xl border-[2px] rounded-box ">
+     <div className="card bg-base-100 shadow-xl border-[2px] rounded-box " key={index}>
      <div className="card-body">
        <h2 className="card-title font-bold text-2xl"> <img src={data.url} alt="" height={"50vh"} width={"50vw"}/> {data.name}</h2>
        <p className="text-sm pl-2 pt-4">{data.description}</p>
