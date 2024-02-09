@@ -8,7 +8,7 @@ const TabServices = (props) => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <section className=" bg-white tabs-service max-w-6xl h-[35rem] mx-auto my-16 p-10 flex drop-shadow-md rounded-lg ">
+    <section className=" bg-white tabs-service max-w-[76rem]  h-[35rem] mx-auto  p-8 flex drop-shadow-md rounded-lg ">
       <div className="flex flex-col border rounded-md cursor-pointer tab-contents w-max basis-1/3 bg-slate-50">
         {props.data.map((item, index) => (
           <div
