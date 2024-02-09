@@ -24,7 +24,7 @@ function Portcard() {
       
        <div className="">
         <Slider className="h-10" {...settings}>
-        <div className=" shadow-xl border-[2px] rounded-lg justify-center p-10  h-50 m-30">
+        <div className=" shadow-xl border-[2px] rounded-lg justify-center p-10  h-50 ">
                  <div className="justify-center">
                 <img src="./tsnt3.png" className=" w-25 h-25  flex "></img>
                 </div>
@@ -33,7 +33,7 @@ function Portcard() {
                  TSNT Solutions Pvt. Ltd. is to deliver best quality that meets and fulfill customer expectations and by leveraging knowledge, experience and technology.
                  </p>
              </div>
-             <div className=" shadow-xl border-[2px] rounded-lg justify-center p-10  h-50 m-30">
+             <div className=" shadow-xl border-[2px] rounded-lg justify-center p-10  h-50 ">
              <div className="justify-center">
              <img src="./tsntechno3.png" className=" w-25 h-25  flex"></img>
              </div>
@@ -42,7 +42,7 @@ function Portcard() {
                  TSNT Solutions Pvt. Ltd. provides Annual Maintenance for panels .We has a team of dedicated engineers and technicians for maintain the works and Maintenance services.
                  </p>
              </div>
-             <div className=" shadow-xl border-[2px] rounded-lg justify-center p-10  h-50 m-30">
+             <div className=" shadow-xl border-[2px] rounded-lg justify-center p-10  h-50 ">
               <div className="justify-center">
               <img src="./power.png" className=" w-25 h-25  flex"></img>
               </div>
@@ -51,7 +51,7 @@ function Portcard() {
                  Any generator set used for emergency or primary source must have periodic service and maintenance performed. Setting up a planned maintenance schedule. 
                  </p>
              </div>
-             <div className=" shadow-xl border-[2px] rounded-lg justify-center p-10  h-50 m-30">
+             <div className=" shadow-xl border-[2px] rounded-lg justify-center p-10  h-50 ">
              <div className="justify-center">
              <img src="./tsntf.png" className="w-25 h-25  flex"></img>
              </div>
