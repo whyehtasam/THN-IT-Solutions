@@ -2,7 +2,7 @@
 import { IntroServiceCardData } from "./ourServiceData"
 import TabServices from "./TabServices"
 import IntroBanner from "../landing/IntroBanner"
-import img from "../../assets/banner.jpg"
+import img from "../../assets/serviceBanner.jpg"
  const OurServices = () => {
   return (
     <section className="mx-auto mt-16 about-us lg:max-w-7xl">
