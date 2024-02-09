@@ -1,20 +1,11 @@
-import Slider from "react-slick";
+
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
 
 
 
 function Portcard() {
-    const settings = {
-        dots: false,
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 3000,
-    cssEase: "linear"
-    };
+    
     return (
 
         <>
@@ -22,11 +13,10 @@ function Portcard() {
      
 
       
-       <div className="">
-        <Slider className="h-10" {...settings}>
-        <div className=" shadow-xl border-[2px] rounded-lg justify-center p-10  h-50 ">
-                 <div className="justify-center">
-                <img src="./tsnt3.png" className=" w-25 h-25  flex "></img>
+       <div className="flex gap-4 mx-16">
+                <div className=" shadow-xl border-[2px] rounded-lg justify-center p-10  h-50 ">
+                 <div className="justify-center ">
+                    <img src="./tsnt3.png" className=" w-25 h-25  flex "></img>
                 </div>
                  <h3 className="text-left text-lg font-semibold mb-4">TSN Automation</h3>
                  <p className=" text-sm text-justify font-medium  text-gray-500">
@@ -51,7 +41,8 @@ function Portcard() {
                  Any generator set used for emergency or primary source must have periodic service and maintenance performed. Setting up a planned maintenance schedule. 
                  </p>
              </div>
-             <div className=" shadow-xl border-[2px] rounded-lg justify-center p-10  h-50 ">
+             
+            {/* <div className=" shadow-xl border-[2px] rounded-lg justify-center p-10  h-50 ">
              <div className="justify-center">
              <img src="./tsntf.png" className="w-25 h-25  flex"></img>
              </div>
@@ -59,9 +50,8 @@ function Portcard() {
                  <p className=" text-sm text-justify font-medium  text-gray-500">
                  THN IT Solutions, we believe in the power of technology to transform businesses and streamline operations.  As a premier software startup, it help our Business.
                  </p>
-             </div>
-
-        </Slider>
+             </div> */}
+        
       </div>
       </>
     );
