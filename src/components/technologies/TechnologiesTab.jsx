@@ -10,7 +10,7 @@ const TechnologiesTab = (props) => {
   return (
     <section className="px-8 technologies">
       <Container className="flex bg-white border rounded-xl lg:max-w-full lg:p-0 lg:m-0 x-auto tabs-service drop-shadow-sm">
-        <div className="h-full shadow-none basis-2/3 p-7 tab-cards">
+        <div className="h-full shadow-none basis-2/3  tab-cards">
           <div
             className=" card h-auto w-full bg-base-100  hover:scale-[1.01] hover:-translate-y-1 transition-all duration-300  shadow "
             key={""}
@@ -104,7 +104,7 @@ const TechnologiesTab = (props) => {
             </div>
           </div>
         
-        <div className="flex-1 pr-5 cursor-pointer py-7 prounded tab-contents w-max">
+        <div className="flex-1 pl-7 cursor-pointer  prounded tab-contents w-max">
           {props.dataR.map((item, index) => (
             <div
               className="mb-5 bg-white border rounded-md collapse collapse-arrow "
