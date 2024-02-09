@@ -8,40 +8,106 @@ const TechnologiesTab = (props) => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <section className="technologies">
-      <Container className="flex p-0 rounded-lg m x-auto tabs-service max-w-7xl">
-        <div className="h-full p-5 py-3 tab-cards basis-2/3 ">
-          {props.data.map(
-            ({ id, title, description, linkPath }, index) =>
-              index === activeTab && (
-                <div
-                  className=" card h-auto w-full bg-base-100 shadow-xl hover:scale-[1.02] hover:-translate-y-1 transition-all duration-300 "
-                  key={id}
-                >
-                  <div className="card-body">
-                    <h2 className="text-3xl card-title">{title}</h2>
-                    <div className="h-[0.5px] bg-opacity-30 bg-black w-10/12 "></div>
-                    <p className="text-xs text-justify text-gray-800 lg:text-sm ">
-                      {description}
-                    </p>
-                    {/* <button className="pl-0 text-gray-800 no-underline btn btn-link w-max ">
-                      <Link to={`${linkPath}`}>
-                        Explore{" "}
-                        <FontAwesomeIcon
-                          icon={faAngleRight}
-                          className="ml-1 text-xs"
-                        />
-                      </Link>
-                    </button> */}
-                  </div>
-                </div>
-              )
-          )}
-        </div>
-        <div className="grid gap-3 p-2 cursor-pointer garounded-md tab-contents w-max basis-1/2 ">
+    <section className="px-8 technologies">
+      <Container className="flex bg-white border rounded-xl lg:max-w-full lg:p-0 lg:m-0 x-auto tabs-service drop-shadow-sm">
+        <div className="h-full shadow-none basis-2/3 p-7 tab-cards">
+          <div
+            className=" card h-auto w-full bg-base-100  hover:scale-[1.01] hover:-translate-y-1 transition-all duration-300  shadow "
+            key={""}
+          >
+            
+              <div className="card-body">
+                <h2 className="text-2xl card-title">
+                  🚀 Welcome to THN IT Solutions
+                </h2>
+                <div className="h-[0.5px] bg-opacity-30 bg-black w-10/12 "></div>
+                <p className="text-xs text-justify text-gray-800 lg:text-sm">
+                  We harness the power of cutting-edge software technologies to
+                  provide innovative solutions tailored to your needs. Our
+                  approach integrates scientific knowledge, engineering
+                  principles, and computer science techniques to create,
+                  develop, maintain, and support robust software systems and
+                  applications.
+                </p>
+
+                <h2 className="text-xl card-title">🎯 Our Expertise</h2>
+                <p className="text-xs text-justify text-gray-800 lg:text-sm">
+                  At THN IT Solutions, we specialize in a diverse array of
+                  technologies, ensuring a comprehensive suite of solutions to
+                  meet your unique requirements. Our proficiency spans various
+                  programming languages, including Python, Java, and C++, as
+                  well as front-end technologies like HTML, CSS, JavaScript,
+                  ReactJS, React Native, AngularJS, and NextJS.
+                </p>
+
+                <h2 className="text-xl card-title">🔙 Back-end Excellence</h2>
+                <p className="text-xs text-justify text-gray-800 lg:text-sm">
+                  Experience the efficiency and reliability of our back-end
+                  solutions, crafted with technologies such as Node.js, Django,
+                  Spring Boot, PHP, and more. We leverage the strengths of these
+                  frameworks to build scalable and high-performance systems.
+                </p>
+
+                <h2 className="text-xl card-title">🗃️ Database Mastery</h2>
+                <p className="text-xs text-justify text-gray-800 lg:text-sm">
+                  Our expertise extends to various databases, including Oracle,
+                  MySQL, PostgreSQL, MongoDB, and others. Whether you require
+                  structured, unstructured, or NoSQL databases, we have the
+                  knowledge and experience to optimize data management for your
+                  business needs.
+                </p>
+
+                <h2 className="text-xl card-title">☁️ Cloud Technologies</h2>
+                <p className="text-xs text-justify text-gray-800 lg:text-sm">
+                  Embrace the flexibility and scalability of cloud computing
+                  with our proficiency in different cloud technologies. We can
+                  guide you through the integration and utilization of cloud
+                  services to enhance your software solutions.
+                </p>
+
+                <h2 className="text-xl card-title">🔄 Agile and DevOps</h2>
+                <p className="text-xs text-justify text-gray-800 lg:text-sm">
+                  Efficiency and collaboration are at the core of our software
+                  development methodologies. We employ Agile and DevOps
+                  practices to streamline the development lifecycle, ensuring
+                  faster releases, continuous improvement, and seamless
+                  collaboration.
+                </p>
+
+                <h2 className="text-xl card-title">
+                  🔧 Frameworks that Drive Innovation
+                </h2>
+                <p className="text-xs text-justify text-gray-800 lg:text-sm">
+                  Explore the capabilities of frameworks like React, Django, and
+                  TensorFlow, which empower us to deliver solutions that are not
+                  just functional but also innovative and future-ready.
+                </p>
+
+                <h2 className="text-xl card-title">
+                  🎁 Why Choose THN IT Solutions
+                </h2>
+                <ul className="text-xs text-justify text-gray-800 list-disc list-inside lg:text-sm">
+                  <li>Automation of Processes</li>
+                  <li>Enhanced Productivity</li>
+                  <li>Improved Efficiency</li>
+                  <li>Data Analysis Capabilities</li>
+                  <li>Innovation Across Industries</li>
+                </ul>
+
+                <p className="text-xs text-justify text-gray-800 lg:text-sm">
+                  Discover the potential of software technology with THN IT
+                  Solutions. We are committed to bringing automation,
+                  productivity, efficiency, and innovation to your business
+                  through the latest advancements in the world of technology.
+                </p>
+              </div>
+            </div>
+          </div>
+        
+        <div className="flex-1 pr-5 cursor-pointer py-7 prounded tab-contents w-max">
           {props.dataR.map((item, index) => (
             <div
-              className="bg-white shadow-md collapse collapse-arrow"
+              className="mb-5 bg-white border rounded-md collapse collapse-arrow "
               key={index}
               onClick={() => setActiveTab(index)}
             >
