@@ -1,15 +1,30 @@
+import Slider from "react-slick";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 
-function Testimonial(){
 
-return(
 
-   <>
-     <div className="justify-center">
-          <h3 className="text-4xl text-center ">What Our Client say</h3>
-        </div>
-        
-        <div className="mx-4 py-[50px] grid lg:grid-cols-4 sm:grid-cols-2 gap-4">
-             <div className="shadow-xl border-[2px] rounded-lg justify-center p-4">
+function Testimonial() {
+    const settings = {
+        dots: false,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 3000,
+    cssEase: "linear"
+    };
+    return (
+
+        <>
+       
+     
+
+      
+       <div className="">
+        <Slider className="h-10" {...settings}>
+        <div className="shadow-xl border-[2px] rounded-lg justify-center p-4">
               
                 <div className="flex gap-2">
                 <img src="./icin.png" alt="" className="h-[10vh] w-[5vw] rounded-[50%]"/>
@@ -26,26 +41,24 @@ return(
                  </p>
                  <div className="rating"></div>
              </div>
-           
              <div className="shadow-xl border-[2px] rounded-lg justify-center p-4">
               
-                <div className="flex gap-2">
-                <img src="./icin.png" alt="" className="h-[10vh] w-[5vw] rounded-[50%]"/>
-                <div className="justify-start">
-                <h3 className="text-left text-sm font-semibold">Pintu Choudhury  </h3>
-                <p className="text-xs">TSNT Solution</p>
-                <p className="text-xs">Director</p>
-                </div>
-                </div>
-                 <p className="py-4 px-2 text-sm text-justify font-medium  text-gray-500">
-                 Working with the THN IT Solutions was a breeze. They were responsive, creative, 
-                 and professional throughout the entire process. My website looks fantastic, and 
-                 I have already received compliments from my customers.
-                 </p>
-                 <div className="rating"></div>
-             </div>
-
-             <div className="shadow-xl border-[2px] rounded-lg justify-center p-4">
+              <div className="flex gap-2">
+              <img src="./icin.png" alt="" className="h-[10vh] w-[5vw] rounded-[50%]"/>
+              <div className="justify-start">
+              <h3 className="text-left text-sm font-semibold">Pintu Choudhury  </h3>
+              <p className="text-xs">TSNT Solution</p>
+              <p className="text-xs">Director</p>
+              </div>
+              </div>
+               <p className="py-4 px-2 text-sm text-justify font-medium  text-gray-500">
+               Working with the THN IT Solutions was a breeze. They were responsive, creative, 
+               and professional throughout the entire process. My website looks fantastic, and 
+               I have already received compliments.
+               </p>
+               <div className="rating"></div>
+           </div>
+           <div className="shadow-xl border-[2px] rounded-lg justify-center p-4">
               
               <div className="flex gap-2">
               <img src="./icin.png" alt="" className="h-[10vh] w-[5vw] rounded-[50%]"/>
@@ -62,7 +75,6 @@ return(
                </p>
                <div className="rating"></div>
            </div>
-        
            <div className="shadow-xl border-[2px] rounded-lg justify-center p-4">
               
               <div className="flex gap-2">
@@ -80,18 +92,14 @@ return(
                </p>
                <div className="rating"></div>
            </div>
-             
-        </div>
-   </>
-)
-}
+
+        </Slider>
+      </div>
+      </>
+    );
+  }
+  
+  export default Testimonial;
 
 
-
-
-
-
-
-
-
-export default Testimonial;
+// 
