@@ -16,6 +16,7 @@ import Career from "./components/career/career";// importing the Carrer componen
 import WebDeveloperCareer from "./components/career/CareerDeveloper/webDeveloper";
 import BackendDeveloperCareer from "./components/career/CareerDeveloper/backendDeveloper";
 import CloudDeveloperCareer from "./components/career/CareerDeveloper/cloudDeveloper";
+import Technology from "./components/technologies/Technology";
 
 // import Hero from "./components/landing/Hero"; // importing the Hero component
 // import Intro from "./components/landing/Intro";
@@ -52,8 +53,8 @@ function App() {
 
   
   return (
-    <div className=" svg ">
-      {/* <div  className="w-full border  h-96 top-0 absolute" alt=""></div> */}
+    <div className=" svg">
+      {/* <div  className="absolute top-0 w-full border h-96" alt=""></div> */}
       <Router>
       <ScrollToTop />
         {/* starting the routing configuration */}
@@ -67,6 +68,7 @@ function App() {
          
           <Route path="/signUp" element={<SignUp />} />{" "}
           <Route path="/ourServices" element={<OurServices />} />
+          <Route path="/technology" element={<Technology />} />
           <Route path="/portfolio" element={<Portfolio />} />
 
           {/* Career page Routing and subpages of it  */}

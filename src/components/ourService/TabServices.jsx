@@ -9,10 +9,10 @@ const TabServices = (props) => {
 
   return (
     <section className=" bg-white tabs-service max-w-6xl h-[35rem] mx-auto my-16 p-10 flex drop-shadow-md rounded-lg ">
-      <div className="tab-contents w-max basis-1/3 flex flex-col cursor-pointer bg-slate-50 border rounded-md">
+      <div className="flex flex-col border rounded-md cursor-pointer tab-contents w-max basis-1/3 bg-slate-50">
         {props.data.map((item, index) => (
           <div
-            className="p-3 text-lg flex font-semibold flex-1 cursor-pointer"
+            className="flex flex-1 p-3 text-lg font-semibold cursor-pointer"
             key={item.id}
             onClick={() => setActiveTab(index)}>
             <p
@@ -27,7 +27,7 @@ const TabServices = (props) => {
           </div>
         ))}
       </div>
-      <div className="tab-cards basis-2/3  pl-8 py-3 ">
+      <div className="py-3 pl-8 tab-cards basis-2/3 ">
 
         
         {props.data.map(
@@ -38,12 +38,12 @@ const TabServices = (props) => {
                 key={id}
               >
                 <div className="card-body">
-                  <h2 className="card-title text-3xl">{title}</h2>
+                  <h2 className="text-3xl card-title">{title}</h2>
                   <div className="h-[0.5px] bg-opacity-30 bg-black w-10/12 "></div>
-                  <p className="text-justify text-xs lg:text-sm text-gray-800 ">
+                  <p className="text-xs text-justify text-gray-800 lg:text-sm ">
                     {description}
                   </p>
-                  <button className="btn btn-link no-underline text-gray-800 w-max pl-0 "><Link to={`${linkPath}`}>Explore <FontAwesomeIcon icon={faAngleRight} className="ml-1 text-xs" /></Link></button>
+                  <button className="pl-0 text-gray-800 no-underline btn btn-link w-max "><Link to={`${linkPath}`}>Explore <FontAwesomeIcon icon={faAngleRight} className="ml-1 text-xs" /></Link></button>
                 </div>
                 
               </div>
