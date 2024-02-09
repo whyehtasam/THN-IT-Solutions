@@ -8,7 +8,7 @@ import AboutContainer from "./AboutContainer"
 import { aboutData } from "./aboutData"
 import Carousel from '../carousel/Carousel'
 import GetInTouch from "../wrappers/GetInTouch"
-
+import img from "../../assets/banner.svg";
  const AboutUs = () => {
   const para = 'Ready to take your business to the next level? Contact us today to learn more about our services and how we can help you achieve your goals. Let THN IT Solutions be your trusted technology partner, and together, we can unlock the full potential of your business.'
 
@@ -16,7 +16,7 @@ import GetInTouch from "../wrappers/GetInTouch"
   return (
 
 
-    <section className="about-us mt-16 lg:max-w-7xl mx-auto relative">
+    <section className="relative mx-auto mt-16 about-us lg:max-w-7xl">
      
       
       {/* <SliderCheck /> */}
@@ -26,7 +26,7 @@ import GetInTouch from "../wrappers/GetInTouch"
     <AboutContainer data={aboutData[1]} style=' flex-row-reverse '/> 
     <AboutContainer data={aboutData[2]} style=''/> 
     <AboutContainer data={aboutData[3]} style=' flex-row-reverse '/> 
-    <IntroBanner title='Why Choose THN IT Solutions?' />
+    <IntroBanner title='Why Choose THN IT Solutions?' img={img} style={'bg-gradient-to-r from-gray-900 via-gray-700 to-black  '}/>
     <IntroCards data={aboutCardData} containerStyle='' cardStyle=''/> 
     {/* <IntroBanner title='Get in touch' description={para}/> */}
     

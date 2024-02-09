@@ -1,7 +1,8 @@
 import { IntroServiceCardData } from "../ourService/ourServiceData";
 // import TabServices from "../ourService/TabServices";
 import TechnologiesTab from "./TechnologiesTab";
-
+import IntroBanner from "../landing/IntroBanner";
+import img from "../../assets/banner.jpg";
 const Technology = () => {
 
     const dataR = [
@@ -37,10 +38,8 @@ const Technology = () => {
 
     
   return (
-    <section className="mx-auto mt-16 about-us lg:max-w-7xl">
-      <h1 className="text-5xl font-bold text-center ">
-        Explore our Technologies
-      </h1>
+    <section className="mx-auto about-us lg:max-w-7xl">
+      <IntroBanner title='Explore Our Tecnologies' img={img} style={'bg-gradient-to-r from-gray-900 via-gray-700 to-black  '} opacity='absolute w-full h-full bg-black opacity-50'/>
       <TechnologiesTab data={IntroServiceCardData} dataR={dataR} />
     </section>
   );

@@ -9,7 +9,7 @@ const TechnologiesTab = (props) => {
 
   return (
     <section className="technologies">
-      <Container className="flex mx-auto my-16 bg-white rounded-lg shadow-md tabs-service max-w-7xl h-">
+      <Container className="flex p-0 rounded-lg m x-auto tabs-service max-w-7xl">
         <div className="h-full p-5 py-3 tab-cards basis-2/3 ">
           {props.data.map(
             ({ id, title, description, linkPath }, index) =>
@@ -24,7 +24,7 @@ const TechnologiesTab = (props) => {
                     <p className="text-xs text-justify text-gray-800 lg:text-sm ">
                       {description}
                     </p>
-                    <button className="pl-0 text-gray-800 no-underline btn btn-link w-max ">
+                    {/* <button className="pl-0 text-gray-800 no-underline btn btn-link w-max ">
                       <Link to={`${linkPath}`}>
                         Explore{" "}
                         <FontAwesomeIcon
@@ -32,7 +32,7 @@ const TechnologiesTab = (props) => {
                           className="ml-1 text-xs"
                         />
                       </Link>
-                    </button>
+                    </button> */}
                   </div>
                 </div>
               )
