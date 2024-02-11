@@ -45,7 +45,7 @@ const Navbar = () => {
 
   return (
     
-    <div className={`drawer bg-slate-100 sticky top-0 z-10 ${isScrolled && 'bg-slate-200  border-b-[1px]'} ${isVisibleServices && 'bg-white'} ${isVisibleTechnology && 'bg-white'}`}>
+    <div className={`drawer bg-slate-500 sticky top-0 z-10 `}>
 
 
      <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
@@ -83,11 +83,11 @@ const Navbar = () => {
           <div className=" hidden md:hidden lg:block">
             <ul className="menu menu-horizontal p-0 h-[100%]  flex justify-end z-10">
               {/* Navbar menu content here */}
-              <Link to='/'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider z-10 hover:font-semibold">Home</a></li> </Link>
+              <Link to='/'><li><a className="text-sm font-extrabold text-neutral-content rounded-sm tracking-wider z-10 hover:font-semibold">Home</a></li> </Link>
 
               {/* <Link to='/aboutUs'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider z-10 hover:font-semibold">About Us</a></li> </Link> */}
 
-              <Link to='/ourServices'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider z-10 hover:font-semibold" 
+              <Link to='/ourServices'><li><a className="text-sm font-extrabold text-neutral-content rounded-sm tracking-wider z-10 hover:font-semibold" 
               onMouseEnter={() => setIsVisibleServices(true)} onMouseLeave={() => setIsVisibleServices(false)} onClick={()=>setIsVisibleServices(false)}>
               Our Services</a></li> </Link>
 
@@ -95,16 +95,16 @@ const Navbar = () => {
               
               
               
-              <Link to='/technology'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider z-10 hover:font-semibold flex" 
+              <Link to='/technology'><li><a className="text-sm font-extrabold text-neutral-content rounded-sm tracking-wider z-10 hover:font-semibold flex" 
               onMouseEnter={() => setIsVisibleTechnology(true)} onMouseLeave={() => setIsVisibleTechnology(false)} onClick={() => setIsVisibleTechnology(false)}>
                 Technology</a></li></Link>
 
 
-              <Link to='/portfolio'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider hover:font-semibold flex">Portfolio</a></li></Link>
+              <Link to='/portfolio'><li><a className="text-sm font-extrabold text-neutral-content rounded-sm tracking-wider hover:font-semibold flex">Portfolio</a></li></Link>
                 
             
-              <Link to='/career'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider z-10 hover:font-semibold">Career</a></li></Link>
-              <Link to='/contact'><li><a className="mx-2 text-sm font-medium rounded tracking-wider border z-10 bg-black text-white hover:bg-slate-100 hover:text-gray-800 hover:font-semibold">Contact</a></li></Link>
+              <Link to='/career'><li><a className="text-sm font-extrabold text-neutral-content rounded-sm tracking-wider z-10 hover:font-semibold">Career</a></li></Link>
+              <Link to='/contact'><li><a className="mx-2 text-sm font-extrabold rounded tracking-wider border z-10 bg-black text-white hover:bg-slate-100 hover:text-neutral-content hover:font-semibold">Contact</a></li></Link>
 
             </ul>
           </div>
