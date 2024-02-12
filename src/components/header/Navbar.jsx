@@ -93,8 +93,12 @@ const Navbar = () => {
                   <li>
                     <a
                       className="text-lg font-extrabold text-slate-100 rounded-sm tracking-wider z-10 hover:font-bold"
-                      onMouseEnter={() => setIsVisibleServices(true)}
-                      onMouseLeave={() => setIsVisibleTechnology(false)}
+                      onMouseEnter={() => {
+                        setIsVisibleTechnology(false);
+                        setIsVisibleServices(true);
+                      }
+                      }
+                      // onMouseLeave={() => setIsVisibleTechnology(false)}
                       onClick={() => setIsVisibleServices(false)}
                     >
                       Our Services
@@ -106,8 +110,12 @@ const Navbar = () => {
                   <li>
                     <a
                       className="text-lg font-extrabold text-slate-100 rounded-sm tracking-wider z-10 hover:font-bold flex"
-                      onMouseEnter={() => setIsVisibleTechnology(true)}
-                      onMouseLeave={() => setIsVisibleServices(false)}
+                      onMouseEnter={() => {
+                        setIsVisibleTechnology(true);
+                        setIsVisibleServices(false);
+                      }
+                      }
+                      // onMouseLeave={() => setIsVisibleServices(false)}
                       onClick={() => setIsVisibleTechnology(false)}
                     >
                       Technology
