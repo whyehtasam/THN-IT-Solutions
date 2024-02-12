@@ -183,20 +183,21 @@ const Navbar = () => {
      
 
       {/* Sidebar start */}
-      <div className="drawer-side">
+      <div className="drawer-side z-20">
         <label
           htmlFor="my-drawer-3"
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
-        <ul className="menu p-4 w-80 min-h-full bg-base-200">
+        <ul className="menu p-4 gap-2 w-80 min-h-full bg-base-200">
           {/* Sidebar content here */}
-          <li>
-            <a>Sidebar Item 1</a>
-          </li>
-          <li>
-            <a>Sidebar Item 2</a>
-          </li>
+          <li className="p-2 text-gray-800 font-semibold text-base">Home</li>
+          <li className="p-2 text-gray-800 font-semibold text-base">Our Service</li>
+          <li className="p-2 text-gray-800 font-semibold text-base">Technology</li>
+          <li className="p-2 text-gray-800 font-semibold text-base">Portfolio</li>
+          <li className="p-2 text-gray-800 font-semibold text-base">Career</li>
+          <li className="p-2  font-semibold text-base rounded tracking-wider border z-10 bg-black text-white w-fit">Contact</li>
+          
         </ul>
       </div>
       {/* sidebar ends  */}
