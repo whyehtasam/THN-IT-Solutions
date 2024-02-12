@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { SocialIcon } from "react-social-icons"
 const Footer = () => {
   return (
@@ -5,21 +6,21 @@ const Footer = () => {
    <footer className="footer p-10 bg-slate-500 text-neutral-content">
    <nav>
     <h6 className="footer-title ">Quick Link</h6> 
-    <a className="link link-hover">Home</a>
-    <a className="link link-hover">Our Services</a>
-    <a className="link link-hover">Technology</a>
-    <a className="link link-hover">Portfolio</a>
-    <a className="link link-hover">Career</a>
-    <a className="link link-hover">Contact Us</a>
+    <Link to='/'><a className="link link-hover">Home</a></Link>
+    <Link to='/ourServices'><a className="link link-hover">Our Services</a></Link>
+    <Link to='/technology'><a className="link link-hover">Technology</a></Link>
+    <Link to='/portfolio'><a className="link link-hover">Portfolio</a></Link>
+    <Link to='/career'><a className="link link-hover">Career</a></Link>
+    <Link to='/contact'><a className="link link-hover">Contact Us</a></Link>
   </nav> 
   <nav>
     <h6 className="footer-title">Our Services</h6> 
-    <a className="link link-hover">Web Development</a>
-    <a className="link link-hover">Backend Development</a>
-    <a className="link link-hover">Cloud Service</a>
-    <a className="link link-hover">AI & ML Engineering</a>
-    <a className="link link-hover">DevOps</a>
-    <a className="link link-hover">Quality Engineering</a>
+    <Link to='/ourServices/ApplicationDevelopment'><a className="link link-hover">Web Development</a></Link>
+    <Link to='/ourServices/MaintenanceSupport'><a className="link link-hover">Backend Development</a></Link>
+    <Link to='/ourServices/CloudService'><a className="link link-hover">Cloud Service</a></Link>
+    <Link to='/ourServices/DataAnalytics'><a className="link link-hover">AI & ML Engineering</a></Link>
+    <Link to='/ourServices/DevOps'><a className="link link-hover">DevOps</a></Link>
+    <Link to='/ourServices/QualityEngineering'><a className="link link-hover">Quality Engineering</a></Link>
   </nav> 
   <nav>
     <h6 className="footer-title">Technology</h6> 

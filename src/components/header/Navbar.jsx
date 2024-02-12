@@ -69,23 +69,13 @@ const Navbar = () => {
           </div>
 
           <div className="container  flex justify-between w-[90%] mx-auto z-5">
-            <div className="flex ">
-              <img
-                src={logo}
-                className="h-16 mix-blend-multiply py-2 z-10"
-                alt=""
-              ></img>
-            </div>
-            <div className=" hidden md:hidden lg:block">
-              <ul className="menu menu-horizontal p-0 h-[100%]  flex justify-end z-10">
-                {/* Navbar menu content here */}
-                <Link to="/">
-                  <li>
-                    <a className="text-lg font-extrabold text-slate-100 rounded-sm tracking-wider z-10 hover:font-bold ">
-                      Home
-                    </a>
-                  </li>{" "}
-                </Link>
+
+         
+          <div className="flex "><Link to='/'><img src={logo} className="h-16 mix-blend-multiply py-2 z-10" alt="" ></img></Link></div>
+          <div className=" hidden md:hidden lg:block">
+            <ul className="menu menu-horizontal p-0 h-[100%]  flex justify-end z-10">
+              {/* Navbar menu content here */}
+              <Link to='/'><li><a className="text-lg font-extrabold text-slate-100 rounded-sm tracking-wider z-10 hover:font-bold ">Home</a></li> </Link>
 
                 {/* <Link to='/aboutUs'><li><a className="text-lg font-medium text-gray-800 rounded-sm tracking-wider z-10 hover:font-bold">About Us</a></li> </Link> */}
 
