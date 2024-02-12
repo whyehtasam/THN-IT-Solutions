@@ -100,11 +100,16 @@ const Navbar = () => {
                 Technology</a></li></Link>
 
 
+              <div className="dropdown dropdown-hover">
               <Link to='/portfolio'><li><a className="text-sm font-extrabold text-neutral-content rounded-sm tracking-wider hover:font-semibold flex">Portfolio</a></li></Link>
-                
+              <ul tabIndex={0} className="dropdown-content z-[11] menu p-2 shadow bg-base-100 rounded-box min-w-52">
+                <Link to='/portfolio/OurApproach'><li><a>Our Approach</a></li></Link>
+                <Link to='/portfolio/OurAchievement'><li><a>Our Achievement</a></li></Link>
+              </ul>
+            </div> 
             
               <Link to='/career'><li><a className="text-sm font-extrabold text-neutral-content rounded-sm tracking-wider z-10 hover:font-semibold">Career</a></li></Link>
-              <Link to='/contact'><li><a className="mx-2 text-sm font-extrabold rounded tracking-wider border z-10 bg-black text-white hover:bg-slate-100 hover:text-neutral-content hover:font-semibold">Contact</a></li></Link>
+              <Link to='/contact'><li><a className="mx-2 text-sm font-extrabold rounded tracking-wider border z-10 bg-black text-white hover:bg-slate-100 hover:font-semibold hover:text-zinc-950">Contact</a></li></Link>
 
             </ul>
           </div>
