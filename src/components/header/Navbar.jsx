@@ -76,18 +76,18 @@ const Navbar = () => {
 
 
 
-          <div className="container  flex justify-between w-[80%] mx-auto z-5">
+          <div className="container  flex justify-between w-[90%] mx-auto z-5">
 
          
           <div className="flex "><Link to='/'><img src={logo} className="h-16 mix-blend-multiply py-2 z-10" alt="" ></img></Link></div>
           <div className=" hidden md:hidden lg:block">
             <ul className="menu menu-horizontal p-0 h-[100%]  flex justify-end z-10">
               {/* Navbar menu content here */}
-              <Link to='/'><li><a className="text-sm font-extrabold text-neutral-content rounded-sm tracking-wider z-10 hover:font-semibold">Home</a></li> </Link>
+              <Link to='/'><li><a className="text-lg font-extrabold text-slate-100 rounded-sm tracking-wider z-10 hover:font-bold ">Home</a></li> </Link>
 
-              {/* <Link to='/aboutUs'><li><a className="text-sm font-medium text-gray-800 rounded-sm tracking-wider z-10 hover:font-semibold">About Us</a></li> </Link> */}
+              {/* <Link to='/aboutUs'><li><a className="text-lg font-medium text-gray-800 rounded-sm tracking-wider z-10 hover:font-bold">About Us</a></li> </Link> */}
 
-              <Link to='/ourServices'><li><a className="text-sm font-extrabold text-neutral-content rounded-sm tracking-wider z-10 hover:font-semibold" 
+              <Link to='/ourServices'><li><a className="text-lg font-extrabold text-slate-100 rounded-sm tracking-wider z-10 hover:font-bold" 
               onMouseEnter={() => setIsVisibleServices(true)} onMouseLeave={() => setIsVisibleServices(false)} onClick={()=>setIsVisibleServices(false)}>
               Our Services</a></li> </Link>
 
@@ -95,16 +95,16 @@ const Navbar = () => {
               
               
               
-              <Link to='/technology'><li><a className="text-sm font-extrabold text-neutral-content rounded-sm tracking-wider z-10 hover:font-semibold flex" 
+              <Link to='/technology'><li><a className="text-lg font-extrabold text-slate-100 rounded-sm tracking-wider z-10 hover:font-bold flex" 
               onMouseEnter={() => setIsVisibleTechnology(true)} onMouseLeave={() => setIsVisibleTechnology(false)} onClick={() => setIsVisibleTechnology(false)}>
                 Technology</a></li></Link>
 
 
-              <Link to='/portfolio'><li><a className="text-sm font-extrabold text-neutral-content rounded-sm tracking-wider hover:font-semibold flex">Portfolio</a></li></Link>
+              <Link to='/portfolio'><li><a className="text-lg font-extrabold text-slate-100 rounded-sm tracking-wider hover:font-bold flex">Portfolio</a></li></Link>
                 
             
-              <Link to='/career'><li><a className="text-sm font-extrabold text-neutral-content rounded-sm tracking-wider z-10 hover:font-semibold">Career</a></li></Link>
-              <Link to='/contact'><li><a className="mx-2 text-sm font-extrabold rounded tracking-wider border z-10 bg-black text-white hover:bg-slate-100 hover:text-neutral-content hover:font-semibold">Contact</a></li></Link>
+              <Link to='/career'><li><a className="text-lg font-extrabold text-slate-100 rounded-sm tracking-wider z-10 hover:font-bold">Career</a></li></Link>
+              <Link to='/contact'><li><a className="mx-2 text-lg font-extrabold rounded tracking-wider border z-10 bg-black text-white hover:bg-slate-100 hover:text-slate-100 hover:font-bold">Contact</a></li></Link>
 
             </ul>
           </div>
