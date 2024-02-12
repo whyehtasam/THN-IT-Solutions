@@ -79,7 +79,7 @@ const Navbar = () => {
           <div className="container  flex justify-between w-[80%] mx-auto z-5">
 
          
-          <div className="flex "><img src={logo} className="h-16 mix-blend-multiply py-2 z-10" alt="" ></img></div>
+          <div className="flex "><Link to='/'><img src={logo} className="h-16 mix-blend-multiply py-2 z-10" alt="" ></img></Link></div>
           <div className=" hidden md:hidden lg:block">
             <ul className="menu menu-horizontal p-0 h-[100%]  flex justify-end z-10">
               {/* Navbar menu content here */}
