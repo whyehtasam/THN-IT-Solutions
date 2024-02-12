@@ -39,7 +39,7 @@ import MaintainanceSupport from "./components/ourService/ourServiceNavigation/Ma
 import DataAnalytics from "./components/ourService/ourServiceNavigation/DataAnalytics";
 import DevOps from "./components/ourService/ourServiceNavigation/DevOps";
 import QualityEngineering from "./components/ourService/ourServiceNavigation/QualityEngineering";
-import ProcessOverView from "./components/portfolio/ProcessOverView"
+import ProcessOverView from "./components/portfolio/OurApproach/ProcessOverView"
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();

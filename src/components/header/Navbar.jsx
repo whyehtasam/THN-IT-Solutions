@@ -113,14 +113,16 @@ const Navbar = () => {
                   </li>
                 </Link>
 
-                <Link to="/portfolio">
-                  <li>
-                    <a className="text-lg font-extrabold text-slate-100 rounded-sm tracking-wider hover:font-bold flex">
-                      Portfolio
-                    </a>
-                  </li>
-                </Link>
 
+
+              <div className="dropdown dropdown-hover">
+              <Link to='/portfolio'><li><a className="text-lg font-extrabold text-slate-100 rounded-sm tracking-wider hover:font-bold flex">Portfolio</a></li></Link>
+              <ul tabIndex={0} className="dropdown-content z-[11] menu p-2 shadow bg-base-100 rounded-box min-w-52">
+                <Link to='/portfolio/OurApproach'><li><a>Our Approach</a></li></Link>
+                <Link to='/portfolio/OurAchievement'><li><a>Our Achievement</a></li></Link>
+              </ul>
+            </div> 
+            
                 <Link to="/career">
                   <li>
                     <a className="text-lg font-extrabold text-slate-100 rounded-sm tracking-wider z-10 hover:font-bold">
@@ -130,7 +132,7 @@ const Navbar = () => {
                 </Link>
                 <Link to="/contact">
                   <li>
-                    <a className="mx-2 text-lg font-extrabold rounded tracking-wider border z-10 bg-black text-white hover:bg-slate-100 hover:text-slate-100 hover:font-bold">
+                    <a className="mx-2 text-lg font-extrabold rounded tracking-wider border z-10 bg-black text-white hover:bg-slate-100 hover:text-zinc-950 hover:font-bold">
                       Contact
                     </a>
                   </li>
