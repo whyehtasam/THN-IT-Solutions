@@ -12,8 +12,10 @@ body {
 
 .slick-list{
     height: 80.5vh;
-    margin: 0rem 10.5rem;
-    border-radius: 2rem;
+    /* margin: 0rem 5.2rem; */
+    width: 90%;
+    margin: auto;
+    border-radius: 1rem;
 }
 .slick-slider {
     width: 100%;
@@ -24,7 +26,8 @@ body {
     content: '⭐⭐⭐⭐⭐';
   }
   .slick-slider > .slick-prev {
-    margin-left: -20px;
+    margin-left: 40px;
+    z-index: 2;
   }
   .slick-slider > .slick-prev::before {
     font-size: 25px;
@@ -34,7 +37,8 @@ body {
   }
 
   .slick-slider > .slick-next {
-    margin-right: -20px;
+    margin-right: 40px;
+    z-index: 2;
   }
   .slick-dots {
     bottom: 12px;
@@ -44,8 +48,10 @@ body {
   }
   .slick-next:before {
     content: "❯";
+    /* background: #000; */
   }
   .slick-prev:before {
     content: "❮";
+    /* background: #000; */
   }
   
