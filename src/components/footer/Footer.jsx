@@ -15,12 +15,12 @@ const Footer = () => {
   </nav> 
   <nav>
     <h6 className="footer-title">Our Services</h6> 
-    <a className="link link-hover">Web Development</a>
-    <a className="link link-hover">Backend Development</a>
-    <a className="link link-hover">Cloud Service</a>
-    <a className="link link-hover">AI & ML Engineering</a>
-    <a className="link link-hover">DevOps</a>
-    <a className="link link-hover">Quality Engineering</a>
+    <Link to='/ourServices/ApplicationDevelopment'><a className="link link-hover">Web Development</a></Link>
+    <Link to='/ourServices/MaintenanceSupport'><a className="link link-hover">Backend Development</a></Link>
+    <Link to='/ourServices/CloudService'><a className="link link-hover">Cloud Service</a></Link>
+    <Link to='/ourServices/DataAnalytics'><a className="link link-hover">AI & ML Engineering</a></Link>
+    <Link to='/ourServices/DevOps'><a className="link link-hover">DevOps</a></Link>
+    <Link to='/ourServices/QualityEngineering'><a className="link link-hover">Quality Engineering</a></Link>
   </nav> 
   <nav>
     <h6 className="footer-title">Technology</h6> 
