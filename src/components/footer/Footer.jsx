@@ -2,19 +2,16 @@ import { SocialIcon } from "react-social-icons"
 const Footer = () => {
   return (
     <>
-   <footer className="footer  justify-center gap-24 p-10 bg-slate-50 text-base-content border-b-2">
-
-  <nav>
-    <h6 className="footer-title">Quick Link</h6> 
+   <footer className="footer p-10 bg-slate-500 text-neutral-content">
+   <nav>
+    <h6 className="footer-title ">Quick Link</h6> 
     <a className="link link-hover">Home</a>
-    {/* <a className="link link-hover">About Us</a> */}
     <a className="link link-hover">Our Services</a>
     <a className="link link-hover">Technology</a>
     <a className="link link-hover">Portfolio</a>
     <a className="link link-hover">Career</a>
     <a className="link link-hover">Contact Us</a>
   </nav> 
-  
   <nav>
     <h6 className="footer-title">Our Services</h6> 
     <a className="link link-hover">Web Development</a>
@@ -57,15 +54,8 @@ const Footer = () => {
             <SocialIcon url="https://www.whatsapp.com/" style={{height:"4vh", width:"2vw", borderRadius:"2vw"}} />
             <SocialIcon url="https://www.linkedin.com/" style={{height:"4vh", width:"2vw", borderRadius:"2vw"}} />
       </div>
-      {/* <h6 className="footer-title mt-2">Google Map</h6>
-    <a href="https://www.google.com/maps/place/TSNT+SOLUTIONS+PVT.+LTD.+Works/@22.7820465,88.5362415,18.5z/data=!4m6!3m5!1s0x39f8a3f11aafced1:0xf7931e3ad99b5d5b!8m2!3d22.7821151!4d88.5369854!16s%2Fg%2F11t7dp5_fy?entry=ttu"
-                    target="_blank" rel="noopener noreferrer" style={{textDecoration: "none",  color:"blue", fontSize:"40px"}}>
-                      <img src="/google-maps.svg" alt="Map" className="h-12 w-12" />
-                    </a> */}
   </nav>
-</footer> 
-
-
+</footer>
 <footer className="text-center bg-slate-200 ">
     <p className="text-sm text-slate-500" style={{ padding:"2vh 0"}}>Copyright © 2024 - THN IT SOLUTIONS</p>
 </footer>

@@ -22,111 +22,156 @@ function Testimonial() {
      
 
       
-       <div className="mb-[5%] w-[100%]">
+       {/* <div className="mb-[5%] w-[100%]">
 
-        <div className="w-[80%] items-center mx-auto flex gap-4">
+        <div className="w-[90%] items-center mx-auto flex gap-4 ">
 
-          <div className="card bg-base-100 shadow-xl border-[2px] rounded-box h-[45vh] w-[30vw]">
-          <div className="card-body">
-          <div className="flex gap-2">
-                      <img src="./icin.png" alt="" className="h-[10vh] w-[5vw] rounded-[50%]"/>
-                      <div className="justify-start items-center my-auto">
-                      <h3 className="text-left text-sm font-semibold">Pintu Choudhury  </h3>
-                      <p className="text-xs">TSNT Solutions</p>
-                      <p className="text-xs">Director</p>
-                      </div>
-                      </div>
-            <p className="text-sm m-auto items-center p-4 text-gray-500">We are extremely pleased with the outcome of my website. THN IT Solutions delivered 
+          <div className="card w-96 bg-base-100  shadow-xl border-[2px] rounded-box h-[65vh] w-[30vw]">
+              <div className="card-body">
+              <div className="flex gap-2">
+                        <img src="./icin.png" alt="" className="h-[10vh] w-[5vw] rounded-[50%]"/>
+                        <div className="justify-start items-center my-auto">
+                        <h3 className="text-left text-sm font-semibold ">Pintu Choudhury</h3>
+                        <p className="text-xs">TSNT Solutions</p>
+                        <p className="text-xs">Director</p>
+                        </div>
+                        </div>
+                        <p className="text-sm m-auto items-center p-4 text-gray-500">We are extremely pleased with the outcome of my website. THN IT Solutions delivered 
                       exactly what I envisioned, and the attention to detail is impeccable. Highly recommend
-                      their services! </p>
-            <div className="rating  py-2">
-              
-            </div>
-            </div>
-            </div>
+                      their services!</p>
+              </div>
+              <div className="rating py-2 justify-center"></div>
+          </div>
 
-          <div className="card bg-base-100 shadow-xl border-[2px] rounded-box h-[45vh] w-[30vw]">
-          <div className="card-body">
-          <div className="flex gap-2">
-                      <img src="./icin.png" alt="" className="h-[10vh] w-[5vw] rounded-[50%]"/>
-                      <div className="justify-start items-center my-auto">
-                      <h3 className="text-left text-sm font-semibold">Abhijit Banerjee</h3>
-                      <p className="text-xs">TSN Automation</p>
-                      <p className="text-xs">Director</p>
-                      </div>
-                      </div>
-            <p className="text-sm m-auto items-center p-4 text-gray-500">Working with the THN IT Solutions was a breeze. They were responsive, creative, 
+            <div className="card w-96 bg-base-100  shadow-xl border-[2px] rounded-box h-[65vh] w-[30vw]">
+              <div className="card-body">
+              <div className="flex gap-2">
+                        <img src="./icin.png" alt="" className="h-[10vh] w-[5vw] rounded-[50%]"/>
+                        <div className="justify-start items-center my-auto">
+                        <h3 className="text-left text-sm font-semibold ">Abhijit Banerjee</h3>
+                        <p className="text-xs">TSN Automation</p>
+                        <p className="text-xs">Director</p>
+                        </div>
+                        </div>
+                        <p className="text-sm m-auto items-center p-4 text-gray-500">Working with the THN IT Solutions was a breeze. They were responsive, creative, 
                and professional throughout the entire process. My website looks fantastic, and 
-               I have already received compliments.</p>
-            <div className="rating  py-2">
-              
-            </div>
-            </div>
-            </div>
+               I have already received compliments. </p>
+              </div>
+              <div className="rating py-2 justify-center"></div>
+          </div>
 
-            <div className="card bg-base-100 shadow-xl border-[2px] rounded-box h-[45vh] w-[30vw]">
-          <div className="card-body">
-          <div className="flex gap-2">
-                      <img src="./icin.png" alt="" className="h-[10vh] w-[5vw] rounded-[50%]"/>
-                      <div className="justify-start items-center my-auto">
-                      <h3 className="text-left text-sm font-semibold">Tarun Adhikari</h3>
-                      <p className="text-xs">TSN Technosolutions</p>
-                      <p className="text-xs">Director</p>
-                      </div>
-                      </div>
-            <p className="text-sm m-auto items-center p-4 text-gray-500">We could not be happier with the results. The website not only looks great but also 
+            <div className="card w-96 bg-base-100  shadow-xl border-[2px] rounded-box h-[65vh] w-[30vw]">
+              <div className="card-body">
+              <div className="flex gap-2">
+                        <img src="./icin.png" alt="" className="h-[10vh] w-[5vw] rounded-[50%]"/>
+                        <div className="justify-start items-center my-auto">
+                        <h3 className="text-left text-sm font-semibold ">Tarun Adhikari</h3>
+                        <p className="text-xs">TSN Technosolutions</p>
+                        <p className="text-xs">Director</p>
+                        </div>
+                        </div>
+                        <p className="text-sm m-auto items-center p-4 text-gray-500">We could not be happier with the results. The website not only looks great but also 
                functions seamlessly. The THN IT Solutions went above and beyond to ensure everything 
                was perfect. Thank You!!</p>
-            <div className="rating  py-2">
-              
-            </div>
-            </div>
-            </div>
-           {/*<div className="shadow-xl border-[2px] rounded-lg justify-center p-4">
-              
+              </div>
+              <div className="rating py-2 justify-center"></div>
+          </div>
+
+          <div className="card w-96 bg-base-100  shadow-xl border-[2px] rounded-box h-[65vh] w-[30vw]">
+              <div className="card-body">
               <div className="flex gap-2">
-              <img src="./icin.png" alt="" className="h-[10vh] w-[5vw] rounded-[50%]"/>
-              <div className="justify-start">
-              <h3 className="text-left text-sm font-semibold">Firoz Ahmed  </h3>
-              <p className="text-xs">Altarnative Power Solutions</p>
-              <p className="text-xs">Director</p>
-              </div>
-              </div>
-               <p className="py-4 px-2 text-sm text-justify font-medium  text-gray-500">
-               From start to finish, the THN IT Solutions was dedicated to bringing my vision to life. 
+                        <img src="./icin.png" alt="" className="h-[10vh] w-[5vw] rounded-[50%]"/>
+                        <div className="justify-start items-center my-auto">
+                        <h3 className="text-left text-sm font-semibold ">Firoz Ahmed</h3>
+                        <p className="text-xs">Altarnative Power Solutions</p>
+                        <p className="text-xs">Director</p>
+                        </div>
+                        </div>
+                        <p className="text-sm m-auto items-center p-4 text-gray-500">From start to finish, the THN IT Solutions was dedicated to bringing my vision to life. 
                They were patient with my requests and provided valuable insights along the way.
-               Im thrilled with the end product! 
-               </p>
-               <div className="rating"></div>
-           </div>
-    */}
+               Im thrilled with the end product!</p>
+              </div>
+              <div className="rating py-2 justify-center"></div>
+          </div>
     </div>
+      </div> */}
+
+
+<div className="flex gap-4 mx-16 mb-[5%]">
+      <div className=" shadow-xl border-[2px] rounded-lg justify-center p-10  h-50 ">                 
+        <div className="flex gap-2">
+              <img src="./icin.png" alt="" className="h-[10vh] w-[5vw] rounded-[50%]"/>
+              <div className="justify-start items-center my-auto">
+                <h3 className="text-left text-sm font-semibold ">Firoz Ahmed</h3>
+                <p className="text-xs">Altarnative Power Solutions</p>
+                <p className="text-xs">Director</p>
+            </div>
       </div>
+
+          <p className=" text-sm text-justify font-medium  text-gray-500">
+          From start to finish, the THN IT Solutions was dedicated to bringing my vision to life. 
+          They were patient with my requests and provided valuable insights along the way.
+          Im thrilled with the end product!
+          </p>
+          <div className="rating py-2 justify-center"></div>
+      </div>
+      <div className=" shadow-xl border-[2px] rounded-lg justify-center p-10  h-50 ">                 
+          <div className="flex gap-2">
+                <img src="./icin.png" alt="" className="h-[10vh] w-[5vw] rounded-[50%]"/>
+                <div className="justify-start items-center my-auto">
+                  <h3 className="text-left text-sm font-semibold ">Tarun Adhikari</h3>
+                  <p className="text-xs">TSN Technosolutions</p>
+                  <p className="text-xs">Director</p>
+                </div>
+          </div>
+
+          <p className=" text-sm text-justify font-medium  text-gray-500">
+          We could not be happier with the results. The website not only looks great but also 
+          functions seamlessly. The THN IT Solutions went above and beyond to ensure everything 
+          was perfect. Thank You!!
+          </p>
+          <div className="rating py-2 justify-center"></div>
+      </div>
+      <div className=" shadow-xl border-[2px] rounded-lg justify-center p-10  h-50 ">                 
+          <div className="flex gap-2">
+                <img src="./icin.png" alt="" className="h-[10vh] w-[5vw] rounded-[50%]"/>
+                <div className="justify-start items-center my-auto">
+                  <h3 className="text-left text-sm font-semibold ">Abhijit Banerjee</h3>
+                  <p className="text-xs">TSN Automation</p>
+                  <p className="text-xs">CEO</p>
+              </div>
+          </div>
+
+          <p className=" text-sm text-justify font-medium  text-gray-500">
+          Working with the THN IT Solutions was a breeze. They were responsive, creative, 
+          and professional throughout the entire process. My website looks fantastic, and 
+          I have already received compliments.
+          </p>
+          <div className="rating py-2 justify-center"></div>
+      </div>   
+
+      <div className=" shadow-xl border-[2px] rounded-lg justify-center p-10  h-50 ">                 
+          <div className="flex gap-2">
+                <img src="./icin.png" alt="" className="h-[10vh] w-[5vw] rounded-[50%]"/>
+                <div className="justify-start items-center my-auto">
+                  <h3 className="text-left text-sm font-semibold ">Pintu Choudhury</h3>
+                  <p className="text-xs">TSNT Solutions</p>
+                  <p className="text-xs">CEO</p>
+              </div>
+          </div>
+
+          <p className=" text-sm text-justify font-medium  text-gray-500">
+              We are extremely pleased with the outcome of my website. THN IT Solutions delivered 
+              exactly what I envisioned, and the attention to detail is impeccable. Highly recommend
+              their services!
+          </p>
+          <div className="rating py-2 justify-center"></div>
+      </div>     
+      </div>
+
       </>
     );
   }
-/*
-  const reviewCard=((reviewData))=>{
-
-    return(
-      <div className="shadow-xl border-[2px] rounded-lg justify-center p-4">
-              
-              <div className="flex gap-2">
-              <img src="./icin.png" alt="" className="h-[10vh] w-[5vw] rounded-[50%]"/>
-              <div className="justify-start">
-              <h3 className="text-left text-sm font-semibold">{reviewer.name}</h3>
-              <p className="text-xs">{reviewer.company}</p>
-              <p className="text-xs">{reviewer.post}</p>
-              </div>
-              </div>
-               <p className="py-4 px-2 text-sm text-justify font-medium  text-gray-500">
-                {reviewer.comment}
-               </p>
-               <div className="rating"></div>
-           </div>
-    )
-
-  }*/
   
   export default Testimonial;
 
