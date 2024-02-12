@@ -14,7 +14,7 @@ const OurTech = ({ className, para, title }) => {
   return (
     <div
       className={
-        "p-10 mb-16 grid  mx-auto rounded-lg bg-white shadow-lg " + className
+        "p-10 mb-12 grid  mx-auto rounded-lg bg-white shadow-lg " + className
       }
     >
       <h1 className="text-4xl font-semibold text-center">{title}</h1>

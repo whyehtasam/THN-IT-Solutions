@@ -77,12 +77,12 @@ export const cardDetails = [
         description: " At THN IT Solutions, our clients are our top priority. We take a customer-centric approach to every project, ensuring that we fully understand our clients' needs and objectives and delivering solutions that are tailored to meet their specific requirements."
         
     },
-    {
-        id: 7,
-        title: "💼 Commitment to Excellence",
-        description: "We are committed to excellence in everything we do. From the quality of our work to the level of customer service we provide, we strive for excellence in every aspect of our business."
+    // {
+    //     id: 7,
+    //     title: "💼 Commitment to Excellence",
+    //     description: "We are committed to excellence in everything we do. From the quality of our work to the level of customer service we provide, we strive for excellence in every aspect of our business."
         
-    },
+    // },
   ]
 
  
