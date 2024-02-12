@@ -125,10 +125,10 @@ const Navbar = () => {
 
 
               <div className="dropdown dropdown-hover">
-              <Link to='/portfolio'><li onMouseEnter={() => {
+              <li onMouseEnter={() => {
                       setIsVisibleServices(false);
                       setIsVisibleTechnology(false);
-                    }}><a className="text-lg font-extrabold text-slate-100 rounded-sm tracking-wider hover:font-bold flex">Portfolio</a></li></Link>
+                    }}><a className="text-lg font-extrabold text-slate-100 rounded-sm tracking-wider hover:font-bold flex">Portfolio</a></li>
               <ul tabIndex={0} className="dropdown-content z-[11] menu p-2 shadow bg-base-100 rounded-box min-w-52">
                 <Link to='/portfolio/OurApproach'><li><a>Our Approach</a></li></Link>
                 <Link to='/portfolio/OurAchievement'><li><a>Our Achievement</a></li></Link>

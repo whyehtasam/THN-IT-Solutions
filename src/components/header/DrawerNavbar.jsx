@@ -33,13 +33,20 @@ const DrawerNavbar = () => {
             <li className="text-sm text-gray-600 p-2">Backend Development</li>
             <li className="text-sm text-gray-600 p-2">Database</li>
             <li className="text-sm text-gray-600 p-2">Cloud</li>
-            <li className="text-sm text-gray-600 p-2">
-              Artificial Intelligence
-            </li>
-            <li className="text-sm text-gray-600 p-2">
-              Infrastructure Development
-            </li>
+            <li className="text-sm text-gray-600 p-2">Artificial Intelligence</li>
+            <li  className="text-sm text-gray-600 p-2">Infrastructure Development</li>
             <li className="text-sm text-gray-600 p-2">DevOps</li>
+          </ul>
+        </details>
+      </li>
+      <li className="text-base font-semibold text-gray-800">
+        <details>
+          <summary>
+            <Link to="/technology">Technology</Link>
+          </summary>
+          <ul>
+          <Link to='/portfolio/OurApproach'><li className="text-sm text-gray-600 p-2">Our Approach</li></Link>
+          <Link to='/portfolio/OurAchievement'><li className="text-sm text-gray-600 p-2">Our Achievement</li></Link>
           </ul>
         </details>
       </li>
@@ -57,3 +64,4 @@ const DrawerNavbar = () => {
 };
 
 export default DrawerNavbar;
+                
