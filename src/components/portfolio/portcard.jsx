@@ -16,7 +16,7 @@ function Portcard() {
        <div className="flex gap-4 mx-16">
                 <div className=" shadow-xl border-[2px] rounded-lg justify-center p-10  h-50 ">
                  <div className="justify-center ">
-                    <img src="./tsnt3.png" className=" w-25 h-25  flex "></img>
+                    <img src="/tsnt3.png" className=" w-25 h-25  flex "></img>
                 </div>
                  <h3 className="text-left text-lg font-semibold mb-4">TSN Automation</h3>
                  <p className=" text-sm text-justify font-medium  text-gray-500">
@@ -25,7 +25,7 @@ function Portcard() {
              </div>
              <div className=" shadow-xl border-[2px] rounded-lg justify-center p-10  h-50 ">
              <div className="justify-center">
-             <img src="./tsntechno3.png" className=" w-25 h-25  flex"></img>
+             <img src="/tsntechno3.png" className=" w-25 h-25  flex"></img>
              </div>
                  <h3 className="text-left text-lg font-semibold mb-4">TSN Technosolutions</h3>
                  <p className=" text-sm text-justify font-medium  text-gray-500">
@@ -34,7 +34,7 @@ function Portcard() {
              </div>
              <div className=" shadow-xl border-[2px] rounded-lg justify-center p-10  h-50 ">
               <div className="justify-center">
-              <img src="./power.png" className=" w-25 h-25  flex"></img>
+              <img src="/power.png" className=" w-25 h-25  flex"></img>
               </div>
                  <h3 className="text-left text-lg font-semibold mb-4">Altarnative Power Solutions</h3>
                  <p className=" text-sm text-justify font-medium  text-gray-500">
