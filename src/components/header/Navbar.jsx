@@ -181,13 +181,58 @@ const Navbar = () => {
         ></label>
         <ul className="menu p-4 gap-2 w-80 min-h-full bg-base-200">
           {/* Sidebar content here */}
-          <li className="p-2 text-gray-800 font-semibold text-base">Home</li>
-          <li className="p-2 text-gray-800 font-semibold text-base">Our Service</li>
+          {/* <li className="p-2 text-gray-800 font-semibold text-base">Home</li>
+          <li className="collapse rounded-none collapse-arrow m-0">
+          <input type="checkbox" /> 
+          <div className="collapse-title text-base  font-semibold pl-2">
+           Our Services
+          </div>
+          <div className="collapse-content pl-4"> 
+            <p>hello</p>
+           </div>
+          </li>
           <li className="p-2 text-gray-800 font-semibold text-base">Technology</li>
           <li className="p-2 text-gray-800 font-semibold text-base">Portfolio</li>
           <li className="p-2 text-gray-800 font-semibold text-base">Career</li>
           <li className="p-2  font-semibold text-base rounded tracking-wider border z-10 bg-black text-white w-fit">Contact</li>
-          
+           */}
+
+<ul className="menu gap-4  rounded-box">
+  <li className="text-gray-800 font-semibold text-base"><a>Home</a></li>
+  <li className="text-gray-800 font-semibold text-base">
+    <details >
+      <summary>Our Services</summary>
+      <ul>
+        <li className="text-sm text-gray-600"><a>Application Development</a></li>
+        <li className="text-sm text-gray-600"><a>Cloud Service</a></li>
+        <li className="text-sm text-gray-600"><a>Maintaince & Support</a></li>
+        <li className="text-sm text-gray-600"><a>Data Analytics & BI</a></li>
+        <li className="text-sm text-gray-600"><a>DevOps</a></li>
+        <li className="text-sm text-gray-600"><a>Quality Engineering</a></li>
+        
+      </ul>
+    </details>
+  </li>
+  <li className="text-gray-800 font-semibold text-base">
+    <details >
+      <summary>Technology</summary>
+      <ul>
+      <li className="text-sm text-gray-600"><a>Frontend Development</a></li>
+        <li className="text-sm text-gray-600"><a>Backend Development</a></li>
+        <li className="text-sm text-gray-600"><a>Database</a></li>
+        <li className="text-sm text-gray-600"><a>Cloud</a></li>
+        <li className="text-sm text-gray-600"><a>Artificial Intelligence</a></li>
+        <li className="text-sm text-gray-600"><a>Infrstructure Development</a></li>
+        <li className="text-sm text-gray-600"><a>DevOps</a></li>
+        
+      </ul>
+    </details>
+  </li>
+  <li className="text-gray-800 font-semibold text-base"><a>Portfolio</a></li>
+  <li className="text-gray-800 font-semibold text-base"><a>Career</a></li>
+  <li className="text-white bg-gray-900 rounded w-fit font-semibold text-base"><a>Contact</a></li>
+  
+</ul>
         </ul>
       </div>
       {/* sidebar ends  */}
