@@ -42,7 +42,7 @@ const DrawerNavbar = () => {
       <li className="text-base font-semibold text-gray-800">
         <details>
           <summary>
-            <Link to="/technology">Technology</Link>
+            <Link to="/technology">Portfolio</Link>
           </summary>
           <ul>
           <Link to='/portfolio/OurApproach'><li className="text-sm text-gray-600 p-2">Our Approach</li></Link>
@@ -50,9 +50,7 @@ const DrawerNavbar = () => {
           </ul>
         </details>
       </li>
-      <li className="text-base font-semibold text-gray-800">
-        <Link to="/portfolio">Portfolio</Link>
-      </li>
+      
       <li className="text-base font-semibold text-gray-800">
         <Link to="/career">Career</Link>
       </li>
