@@ -10,7 +10,9 @@ const GetInTouch = ({ para,className }) => {
       <p className="text-sm text-justify font-medium leading-loose text-gray-500">
         {para}
       </p>
-      <button className="btn w-fit text-sm font-medium rounded tracking-wider border z-10 bg-black text-white hover:bg-gray-800 hover:font-semibold mt-4"><Link to='/contact'>Contact Us</Link></button>
+      <Link to='/contact'>
+      <button className="btn w-fit text-sm font-medium rounded tracking-wider border z-10 bg-black text-white hover:bg-gray-800 hover:font-semibold mt-4">Contact Us</button>
+      </Link>
       
     </div>
   );
