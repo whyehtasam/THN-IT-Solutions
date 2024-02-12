@@ -32,7 +32,7 @@ function ProcessOverView(){
 
 
           <div className="collapse collapse-arrow join-item border border-base-300 ">
-            <input type="radio" name="my-accordion-4" checked="checked" /> 
+            <input type="radio" name="my-accordion-4" /> 
             <div className="collapse-title text-xl font-medium bg-[#9fd4fc] h-[10vh]">
             <div className=" flex relative " >
                             <div className=" w-[100%] bg items-center my-auto mx-[5%] ">
@@ -50,7 +50,7 @@ function ProcessOverView(){
 
 
           <div className="collapse collapse-arrow join-item border border-base-300 ">
-            <input type="radio" name="my-accordion-4" checked="checked" /> 
+            <input type="radio" name="my-accordion-4" /> 
             <div className="collapse-title text-xl font-medium bg-[#9fd4fc] h-[10vh]">
             <div className=" flex relative " >
                             <div className=" w-[100%] bg items-center my-auto mx-[5%] ">
@@ -66,7 +66,7 @@ function ProcessOverView(){
           </div>
 
           <div className="collapse collapse-arrow join-item border border-base-300 ">
-            <input type="radio" name="my-accordion-4" checked="checked" /> 
+            <input type="radio" name="my-accordion-4"/> 
             <div className="collapse-title text-xl font-medium bg-[#9fd4fc] h-[10vh]">
             <div className=" flex relative " >
                             <div className=" w-[100%] bg items-center my-auto mx-[5%] ">
