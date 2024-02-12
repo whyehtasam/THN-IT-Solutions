@@ -5,10 +5,10 @@ import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 import Container from "../wrappers/Container";
 const TechnologiesTab = (props) => {
-  const [activeTab, setActiveTab] = useState(0);
+  // const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <section className="px-8 technologies">
+    <section className="px-8 technologies ">
       <Container className="flex bg-white border rounded-xl lg:max-w-full lg:p-0 lg:m-0 x-auto tabs-service drop-shadow-sm">
         <div className="h-full shadow-none basis-2/3  tab-cards">
           <div
@@ -104,12 +104,12 @@ const TechnologiesTab = (props) => {
             </div>
           </div>
         
-        <div className="flex-1 pl-7 cursor-pointer  prounded tab-contents w-max">
+        <div className="flex-1 pl-9 cursor-pointer rounded tab-contents w-max sticky ">
           {props.dataR.map((item, index) => (
             <div
               className="mb-5 bg-white border rounded-md collapse collapse-arrow "
               key={index}
-              onClick={() => setActiveTab(index)}
+             
             >
               <input type="checkbox" className="peer" />
               <div className="text-lg font-semibold cursor-pointer collapse-title peer-checked:bg-gray-800 peer-checked:text-white">
