@@ -45,18 +45,13 @@ const Carousel = (props) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
-    autoplay: true,
+    // autoplay: true,
 
-    // Remove the duplicate key 'speed'
-    // speed: 1000,
     autoplaySpeed: 3000,
     cssEase: "linear",
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-    // beforeChange: (current, next) => {
-    //   setCurrentSlide(next);
-    //   setZoom(true);
-    // },
+
     responsive: [
       {
         breakpoint: 1024,
@@ -85,27 +80,16 @@ const Carousel = (props) => {
     ],
   };
 
-  // useEffect(() => {
-  //   if (zoom) {
-  //     const timer = setTimeout(() => {
-  //       setZoom(false);
-  //     }, 3000); // Reset zoom after 2 seconds (the duration of your transition)
-  //     return () => clearTimeout(timer);
-  //   }
-  // }, [zoom]);
   return (
     <div className="slider-container w-full m-auto  ">
       <Slider {...settings}>
         {imagePath.map((item, index) => {
           return (
-            <div
-              key={item.id}
-              className="slow-transition-transform w-96"
-            >
+            <div key={item.id} className="img-wrapper">
               <img
                 src={item.path}
                 alt="imgs"
-                className="object-fill m-auto w-full"
+                className="object-cover h-full w-full"
               />
             </div>
           );
