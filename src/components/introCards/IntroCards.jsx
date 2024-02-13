@@ -5,16 +5,16 @@ const IntroCards = (props) => {
   const data = props.data;
   console.log(data);
   return (
-    <section className="intro-cards h-auto   relative">
-        {/* <img src={lines} className="w-full opacity-50 absolute left-0 -top-50  " alt="svg" /> */}
-        <img src={lines} className="w-full opacity-50 h-full absolute left-0 bottom-0  " alt="svg" />
+    <section className="relative h-auto intro-cards">
+        {/* <img src={lines} className="absolute left-0 w-full opacity-50 -top-50 " alt="svg" /> */}
+        <img src={lines} className="absolute bottom-0 left-0 w-full h-full opacity-50 " alt="svg" />
       <Container className={"w-full h-full justify-items-center grid lg:grid-cols-2 gap-5 p-2 " + props.containerStyle}>
 
-        {data.map(({id,title,description}) => <div className={"m-2 card h-auto bg-base-100 shadow-md hover:scale-[1.01] hover:-translate-y-1 transition-all duration-300 " + props.cardStyle} key={id}>
-          <div className="card-body">
-            <h2 className="card-title lg:text-2xl">{title}</h2>
+        {data.map(({id,title,description}) => <div className={"lg:m-2 mx-4 card h-auto bg-base-100 shadow-md md:hover:scale-[1.01] md:hover:-translate-y-1 transition-all duration-300 " + props.cardStyle} key={id}>
+          <div className="p-5 card-body">
+            <h2 className="text-lg card-title lg:text-2xl">{title}</h2>
             <div className="h-[0.5px] bg-opacity-30 bg-black w-10/12 "></div>
-            <p className="text-justify text-xs lg:text-sm text-gray-800 ">{description}</p>
+            <p className="text-xs text-justify text-gray-800 lg:text-sm ">{description}</p>
             
           </div>
         </div>)}

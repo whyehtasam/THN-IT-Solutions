@@ -3,18 +3,18 @@ const AboutContainer = ({ data, style }) => {
   return (
     <section
       className={
-        "about-container mb-16 min-w-96 lg:max-w-6xl lg:flex  items-stretch mx-auto justify-evenly " +
+        "about-container  lg:mb-16 min-w-60 lg:max-w-6xl p-5 lg:flex  lg:items-stretch mx-auto justify-evenly " +
         style
       }
     >
       <div className="img flex justify-center items-center   flex-1 ">
-        <img src={path} alt="svg" className="h-[22rem] drop-shadow-md" />
+        <img src={path} alt="svg" className="lg:h-[22rem] lg:drop-shadow-md w-11/12 lg:p-0 p-5" />
       </div>
-      <div className="info flex  flex-col   md: px-16 w-[700px]">
-        <h1 className="text-3xl  font-bold drop-shadow leading-normal mt-10">
+      <div className="info flex  flex-col   lg:px-16 lg:w-[700px]">
+        <h1 className="lg:text-3xl text-2xl font-bold drop-shadow leading-normal mt-10">
           {title}
         </h1>
-        <p className=" pt-10  text-sm text-justify font-medium leading-loose text-gray-500">
+        <p className=" lg:pt-10 pt-5  text-xs lg:text-sm text-justify font-medium leading-loose text-gray-500">
         {description.split('\n').map((line, i) => (
     <span key={i}>
       {line}

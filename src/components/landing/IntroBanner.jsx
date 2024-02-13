@@ -2,8 +2,8 @@ import Container from "../wrappers/Container";
 import svg from "../../assets/banner.svg";
 const IntroBanner = (props) => {
   return (
-    <section className="h-auto banner lg:pb- md:pb-8 md:px-14 lg:px-8">
-      <Container className={`relative flex flex-col items-center justify-center w-full overflow-hidden border-white rounded-lg h-28 lg:min-h-60 drop-shadow-md ` + props.style}>
+    <section className="h-auto banner px-5  md:pb-8 md:px-14 lg:px-8">
+      <Container className={`relative lg:mb-0 flex flex-col items-center justify-center w-full overflow-hidden border-white rounded-lg h-28 lg:min-h-60 drop-shadow-md ` + props.style}>
         <img
           src={props.img}
           className="absolute object-cover w-full h-full "
