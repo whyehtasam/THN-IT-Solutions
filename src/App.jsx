@@ -107,7 +107,7 @@ function App() {
                 {/* <IntroCards data={IntroServiceCardData}/> */}
                 {/* <ServiceIntro /> */}
                 {/* <CenterMode /> */}
-                <Carousel/>
+                {/* <Carousel/> */}
                 <AboutUs/>
                 
 
