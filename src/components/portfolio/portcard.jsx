@@ -18,12 +18,12 @@ function Portcard() {
                  <div className="justify-center ">
                     <img src="/tsnt3.png" className=" w-25 h-25  flex "></img>
                 </div>
-                 <h3 className="text-left text-lg font-semibold mb-4">TSNT Solutions</h3>
+                 <h3 className="text-left text-lg font-semibold mb-4">TSNT Solutions Pvt. Ltd.</h3>
                  <p className=" text-sm text-justify font-medium  text-gray-500">
                  TSNT Solutions Pvt. Ltd. is to deliver best quality that meets and fulfill customer expectations and by leveraging knowledge, experience and technology.
                  </p>
                  <div className="card-actions flex mt-4 hover:underline">
-                 <Link to='https://tsntsolutions.com/'><a className="ml-2">Explore </a>»</Link>
+                 <Link to='https://tsntsolutions.com/' target="_blank" style={{color:"blue"}}><a className="ml-2">Explore </a>»</Link>
                  </div>
              </div>
              <div className=" shadow-xl border-[2px] rounded-lg justify-center p-10  h-50  bg-white">
@@ -36,7 +36,7 @@ function Portcard() {
                  </p>
                  
                  <div className="card-actions flex mt-4 hover:underline">
-                 <Link to='https://tsntechno.in/'><a className="ml-2">Explore </a>»</Link>
+                 <Link to='https://tsntechno.in/' target="_blank" style={{color:"blue"}}><a className="ml-2">Explore </a>»</Link>
                  </div>
                  
              </div>
@@ -50,7 +50,7 @@ function Portcard() {
                  </p>
                  
                  <div className="card-actions flex mt-4 hover:underline">
-                 <Link to='https://www.alternativepower.in/'><a className="ml-2">Explore </a>»</Link>
+                 <Link to='https://www.alternativepower.in/' target="_blank" style={{color:"blue"}}><a className="ml-2">Explore </a>»</Link>
                  </div>
                  
              </div>
@@ -65,7 +65,7 @@ function Portcard() {
                  </p>
                  
                  <div className="card-actions flex mt-4 hover:underline">
-                 <Link to='https://tsnautomation.in/'><a className="ml-2">Explore </a>»</Link>
+                 <Link to='https://tsnautomation.in/' target="_blank" style={{color:"blue"}}><a className="ml-2">Explore </a>»</Link>
                  </div>
                  
              </div> 
