@@ -36,7 +36,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={`drawer bg-slate-500 sticky top-0 z-10 `}>
+    <div className={`drawer bg-slate-500 sticky top-0 z-10 font-sans`}>
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="flex flex-col drawer-content">
         {/* Navbar */}
@@ -74,7 +74,7 @@ const Navbar = () => {
               </Link>
             </div>
             <div className="hidden  md:hidden lg:block">
-              <ul className="menu menu-horizontal p-0 h-[100%]  flex justify-end z-10">
+              <ul className="menu menu-horizontal p-0 h-[100%]  flex justify-end z-10 items-center my-auto">
                 {/* Navbar menu content here */}
                 <Link to="/">
                   <li
@@ -83,18 +83,18 @@ const Navbar = () => {
                       setIsVisibleTechnology(false);
                     }}
                   >
-                    <a className="z-10 text-lg font-extrabold tracking-wider rounded-sm text-slate-100 hover:font-bold ">
-                      Home
+                    <a className="z-10 text-sm font-medium tracking-wider rounded-sm text-slate-100 hover:font-semibold ">
+                      HOME
                     </a>
                   </li>{" "}
                 </Link>
 
-                {/* <Link to='/aboutUs'><li><a className="z-10 text-lg font-medium tracking-wider text-gray-800 rounded-sm hover:font-bold">About Us</a></li> </Link> */}
+                {/* <Link to='/aboutUs'><li><a className="z-10 text-lg font-medium tracking-wider text-gray-800 rounded-sm hover:font-semibold">About Us</a></li> </Link> */}
 
-                <Link to="/ourServices">
+                <Link to="/ourServices" className="relative group">
                   <li>
                     <a
-                      className="z-10 text-lg font-extrabold tracking-wider rounded-sm text-slate-100 hover:font-bold"
+                      className="z-10 text-sm font-medium tracking-wider rounded-sm text-slate-100 hover:font-semibold relative group"
                       onMouseEnter={() => {
                         setIsVisibleTechnology(false);
                         setIsVisibleServices(true);
@@ -102,15 +102,32 @@ const Navbar = () => {
                       // onMouseLeave={() => setIsVisibleTechnology(false)}
                       onClick={() => setIsVisibleServices(false)}
                     >
-                      Our Services
+                      OUR SERVICES
+
+                      <span className=" rotate-[270] group-hover:rotate-180">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      className="h-4 w-4"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
+                      </span>
                     </a>
                   </li>{" "}
                 </Link>
 
-                <Link to="/technology">
+                <Link to="/technology" className=" relative group">
                   <li>
                     <a
-                      className="z-10 flex text-lg font-extrabold tracking-wider rounded-sm text-slate-100 hover:font-bold"
+                      className="z-10 flex text-sm font-medium tracking-wider rounded-sm text-slate-100 hover:font-semibold relative group"
                       onMouseEnter={() => {
                         setIsVisibleTechnology(true);
                         setIsVisibleServices(false);
@@ -118,33 +135,73 @@ const Navbar = () => {
                       // onMouseLeave={() => setIsVisibleServices(false)}
                       onClick={() => setIsVisibleTechnology(false)}
                     >
-                      Technology
+                      TECHNOLOGY
+                      <span className=" rotate-[270] group-hover:rotate-180">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      className="h-4 w-4"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
+                      </span>
+
                     </a>
                   </li>
                 </Link>
 
 
-              <div className="dropdown dropdown-hover">
+              <div className="dropdown dropdown-hover relative group">
+
+              
+              <Link to='/portfolio' className="relative group">
+
               <li onMouseEnter={() => {
                       setIsVisibleServices(false);
                       setIsVisibleTechnology(false);
-                    }}><a className="text-lg font-extrabold text-slate-100 rounded-sm tracking-wider hover:font-bold flex">Portfolio</a></li>
-              <ul tabIndex={0} className="dropdown-content z-[11] menu p-2 shadow bg-base-100 rounded-box min-w-52">
-                <Link to='/portfolio/OurApproach'><li><a>Our Approach</a></li></Link>
-                <Link to='/portfolio/OurAchievement'><li><a>Our Achievement</a></li></Link>
+                    }}><a className="text-sm font-medium text-slate-100 rounded-sm tracking-wider hover:font-semibold flex relative group">PORTFOLIO
+                    <span className=" rotate-[270] group-hover:rotate-180">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      className="h-4 w-4"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
+                      </span></a></li></Link>
+
+              <ul tabIndex={0} className="dropdown-content z-[11] menu p-2 shadow bg-base-100 rounded-box min-w-52 relative group">
+                <Link to='/portfolio/OurApproach' ><li><a>Our Approach</a></li></Link>
+                <Link to='/portfolio/OurAchievement' ><li><a>Our Achievement</a></li></Link>
               </ul>
             </div> 
-            
+
+
+
                 <Link to="/career">
                   <li>
-                    <a className="z-10 text-lg font-extrabold tracking-wider rounded-sm text-slate-100 hover:font-bold">
-                      Career
+                    <a className="z-10 text-sm font-medium tracking-wider rounded-sm text-slate-100 hover:font-semibold">
+                      CAREER
                     </a>
                   </li>
                 </Link>
                 <Link to="/contact">
                   <li>
-                    <a className="z-10 mx-2 text-lg font-extrabold tracking-wider text-white bg-black border rounded hover:bg-slate-100 hover:text-gray-800 hover:font-bold">
+                    <a className="z-10 mx-2 text-lg font-medium tracking-wider text-white bg-black border rounded hover:bg-slate-100 hover:text-gray-800 hover:font-bold">
 
                       Contact
                     </a>
