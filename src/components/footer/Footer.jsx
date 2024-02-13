@@ -15,8 +15,8 @@ const Footer = () => {
   </nav> 
   <nav>
     <h6 className="footer-title">Our Services</h6> 
-    <Link to='/ourServices/ApplicationDevelopment'><a className="link link-hover">Web Development</a></Link>
-    <Link to='/ourServices/MaintenanceSupport'><a className="link link-hover">Backend Development</a></Link>
+    <Link to='/ourServices/ApplicationDevelopment'><a className="link link-hover">Application Development</a></Link>
+    <Link to='/ourServices/MaintenanceSupport'><a className="link link-hover">Maintenance & Support</a></Link>
     <Link to='/ourServices/CloudService'><a className="link link-hover">Cloud Service</a></Link>
     <Link to='/ourServices/DataAnalytics'><a className="link link-hover">AI & ML Engineering</a></Link>
     <Link to='/ourServices/DevOps'><a className="link link-hover">DevOps</a></Link>
