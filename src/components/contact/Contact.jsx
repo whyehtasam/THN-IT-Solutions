@@ -86,7 +86,7 @@ const Contact = () => {
             placeholder={"Enter First Name"} 
             className="input input-bordered w-full max-w-xs" 
             id="fname"
-            name="FastName"
+            name="fname"
             value={formData.fname}
             onChange={handleChange}
             required/>
@@ -100,7 +100,7 @@ const Contact = () => {
             placeholder={"Enter Last Name"} 
             className="input input-bordered w-full max-w-xs" 
             id="lname"
-            name="LastName"
+            name="lname"
             value={formData.lname}
             onChange={handleChange}
             required/>
@@ -113,10 +113,10 @@ const Contact = () => {
             <div className="label">
                 <span className="label-text">Phone Number</span>
             </div>
-            <input type="numeric" 
+            <input type="text" 
             placeholder={"eg.: +91 1234567890"} 
               id="Phone"
-              name="PhoneNo"
+              name="phone"
               value={formData.phone}
               onChange={handleChange}
             className="input input-bordered w-full max-w-xs" 
