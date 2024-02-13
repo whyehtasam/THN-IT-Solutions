@@ -96,17 +96,7 @@ function App() {
             path="/"
             element={
               <div className="">
-                {/* <Hero /> rendering the Hero component */}
-                {/* <IntroBanner title="Unveiling THN IT Solutions: A Deep Dive"/> */}
-                {/* <Intro /> */}
-                {/* <Intro2 />
-                <IntroBanner />
-                <IntroCards />
-                <Intro3 /> */}
-                {/* <IntroBanner title="Our Services"/> */}
-                {/* <IntroCards data={IntroServiceCardData}/> */}
-                {/* <ServiceIntro /> */}
-                {/* <CenterMode /> */}
+                
                 <Carousel/>
                 <AboutUs/>
                 
