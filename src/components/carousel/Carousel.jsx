@@ -45,7 +45,7 @@ const Carousel = (props) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
-    // autoplay: true,
+    autoplay: true,
 
     autoplaySpeed: 3000,
     cssEase: "linear",
