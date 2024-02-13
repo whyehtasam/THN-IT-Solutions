@@ -21,12 +21,12 @@ import img from "../../assets/banner.svg";
      
       
       {/* <SliderCheck /> */}
-    <AboutContainer data={aboutData[0]} style='flex flex-col-reverse mb-4'/> 
+    <AboutContainer data={aboutData[0]} style='flex flex-col-reverse mb-4 lg:flex-row-reverse'/> 
     {/* <Intro2 /> */}
     {/* <Intro3 /> */}
     {/* <AboutContainer data={aboutData[1]} style=' flex-row-reverse '/>  */}
     {/* <AboutContainer data={aboutData[2]} style=''/>  */}
-    <AboutContainer data={aboutData[3]} style='flex flex-col-reverse   lg:flex-row-reverse'/> 
+    <AboutContainer data={aboutData[3]} style='flex flex-col-reverse   lg:flex-row'/> 
     <IntroBanner title='Why Choose THN IT Solutions?' img={img} style={'bg-gradient-to-r from-gray-900 via-gray-700 to-black  p-5 mb-4'}/>
     <IntroCards data={aboutCardData} containerStyle='mb-6' cardStyle='rounded-lg lg:p-5'/> 
     {/* <IntroBanner title='Get in touch' description={para}/> */}
