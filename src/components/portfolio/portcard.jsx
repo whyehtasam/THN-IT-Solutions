@@ -57,7 +57,7 @@ function Portcard() {
              
             { <div className=" shadow-xl border-[2px] rounded-lg justify-center p-10  h-50 ">
              <div className="justify-center">
-             <img src="./tsntauto3.png" className="w-25 h-25  flex"></img>
+             <img src="/tsntauto3.png" className="w-25 h-25  flex"></img>
              </div>
                  <h3 className="text-left text-lg font-semibold mb-4">TSN Automation</h3>
                  <p className=" text-sm text-justify font-medium  text-gray-500">
