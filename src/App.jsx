@@ -18,6 +18,8 @@ import BackendDeveloperCareer from "./components/career/CareerDeveloper/backendD
 import CloudDeveloperCareer from "./components/career/CareerDeveloper/cloudDeveloper";
 import Technology from "./components/technologies/Technology";
 
+import OurAchievement from "./components/portfolio/OurAchievement"
+
 // import Hero from "./components/landing/Hero"; // importing the Hero component
 // import Intro from "./components/landing/Intro";
 // import Intro2 from "./components/about/Intro2";
@@ -37,7 +39,7 @@ import MaintainanceSupport from "./components/ourService/ourServiceNavigation/Ma
 import DataAnalytics from "./components/ourService/ourServiceNavigation/DataAnalytics";
 import DevOps from "./components/ourService/ourServiceNavigation/DevOps";
 import QualityEngineering from "./components/ourService/ourServiceNavigation/QualityEngineering";
-
+import ProcessOverView from "./components/portfolio/OurApproach/ProcessOverView"
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -85,6 +87,10 @@ function App() {
           <Route path="/ourServices/DevOps" element={<DevOps />} />
           <Route path="/ourServices/QualityEngineering" element={<QualityEngineering />} />
 
+
+
+          <Route path="/portfolio/OurAchievement" element={<OurAchievement />} />
+          <Route path='/portfolio/OurApproach' element={<ProcessOverView />} />
 
           <Route
             path="/"

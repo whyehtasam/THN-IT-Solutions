@@ -59,25 +59,7 @@ import Portcard from "./portcard"
                
             </div>
 
-        <div>
-        <div className="items-center text-center mx-auto mt-[5%] mb-[3%] w-[30%]">
-          <div className="">
-          <h3 className="text-4xl font-bold p-2">Our Key Deliveries</h3>
-          </div>
-        </div>
-        <Portcard/>
-        </div>
-         
-        
-        <div>
-     
-        <div className="items-center text-center mx-auto mt-[5%] mb-[3%] w-[30%]">
-          <div className="">
-          <h3 className="text-4xl font-bold p-2">What Our Client say</h3>
-          </div>
-        </div>
-         <Testimonial/>
-          </div>
+      
  
 
     </>

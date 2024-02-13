@@ -4,13 +4,15 @@ const GetInTouch = ({ para,className }) => {
  
 
   return (
-    <div className={"p-10 mb-16 grid  mx-auto rounded-lg bg-white drop-shadow-lg " + className}>
-      <h1 className="text-4xl text-start font-semibold">Get in touch</h1>
+    <div className={"p-10 mb-16 grid  mx-auto rounded-lg bg-white shadow-lg " + className}>
+      <h1 className="text-4xl font-semibold text-start">Get in touch</h1>
       <div className="h-[0.5px] bg-opacity-30 my-2 bg-black w-10/12 "></div>
-      <p className="text-sm text-justify font-medium leading-loose text-gray-500">
+      <p className="text-sm font-medium leading-loose text-justify text-gray-500">
         {para}
       </p>
-      <button className="btn w-fit text-sm font-medium rounded tracking-wider border z-10 bg-black text-white hover:bg-gray-800 hover:font-semibold mt-4"><Link to='/contact'>Contact Us</Link></button>
+      <Link to='/contact'>
+      <button className="z-10 mt-4 text-sm font-medium tracking-wider text-white bg-black border rounded btn w-fit hover:bg-gray-800 hover:font-semibold">Contact Us</button>
+      </Link>
       
     </div>
   );

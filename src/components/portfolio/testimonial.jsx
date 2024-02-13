@@ -21,7 +21,7 @@ function Testimonial() {
 <div className="flex gap-4 mx-16 mb-[5%] bg-white">
       <div className=" shadow-xl border-[2px] rounded-lg justify-center p-10  h-50 ">                 
         <div className="flex gap-2">
-              <img src="./icin.png" alt="" className="h-[10vh] w-[5vw] rounded-[50%]"/>
+              <img src="/icin.png" alt="" className="h-[10vh] w-[5vw] rounded-[50%]"/>
               <div className="justify-start items-center my-auto">
                 <h3 className="text-left text-sm font-semibold ">Firoz Ahmed</h3>
                 <p className="text-xs">Altarnative Power Solutions</p>
@@ -38,7 +38,7 @@ function Testimonial() {
       </div>
       <div className=" shadow-xl border-[2px] rounded-lg justify-center p-10  h-50 ">                 
           <div className="flex gap-2">
-                <img src="./icin.png" alt="" className="h-[10vh] w-[5vw] rounded-[50%]"/>
+                <img src="/icin.png" alt="" className="h-[10vh] w-[5vw] rounded-[50%]"/>
                 <div className="justify-start items-center my-auto">
                   <h3 className="text-left text-sm font-semibold ">Tarun Adhikari</h3>
                   <p className="text-xs">TSN Technosolutions</p>
@@ -55,7 +55,7 @@ function Testimonial() {
       </div>
       <div className=" shadow-xl border-[2px] rounded-lg justify-center p-10  h-50 ">                 
           <div className="flex gap-2">
-                <img src="./icin.png" alt="" className="h-[10vh] w-[5vw] rounded-[50%]"/>
+                <img src="/icin.png" alt="" className="h-[10vh] w-[5vw] rounded-[50%]"/>
                 <div className="justify-start items-center my-auto">
                   <h3 className="text-left text-sm font-semibold ">Abhijit Banerjee</h3>
                   <p className="text-xs">TSN Automation</p>
@@ -73,7 +73,7 @@ function Testimonial() {
 
       <div className=" shadow-xl border-[2px] rounded-lg justify-center p-10  h-50 ">                 
           <div className="flex gap-2">
-                <img src="./icin.png" alt="" className="h-[10vh] w-[5vw] rounded-[50%]"/>
+                <img src="/icin.png" alt="" className="h-[10vh] w-[5vw] rounded-[50%]"/>
                 <div className="justify-start items-center my-auto">
                   <h3 className="text-left text-sm font-semibold ">Pintu Choudhury</h3>
                   <p className="text-xs">TSNT Solutions</p>
