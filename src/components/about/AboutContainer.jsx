@@ -11,10 +11,10 @@ const AboutContainer = ({ data, style }) => {
         <img src={path} alt="svg" className="lg:h-[22rem] lg:drop-shadow-md w-11/12 lg:p-0 p-5" />
       </div>
       <div className="info flex  flex-col   lg:px-16 lg:w-[700px]">
-        <h1 className="lg:text-3xl text-2xl font-bold drop-shadow leading-normal mt-10">
+        <h1 className="lg:text-3xl text-2xl font-bold drop-shadow leading-normal md:mt-10">
           {title}
         </h1>
-        <p className=" lg:pt-10 pt-5  text-xs lg:text-sm text-justify font-medium leading-loose text-gray-500">
+        <p className=" lg:pt-10 pt-5 sm:mb-0 mb-5 text-xs lg:text-sm text-justify font-medium leading-loose text-gray-500">
         {description.split('\n').map((line, i) => (
     <span key={i}>
       {line}
