@@ -36,7 +36,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={`drawer bg-slate-500 sticky top-0 z-10 `}>
+    <div className={`drawer bg-slate-500 sticky top-0 z-10`}>
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="flex flex-col drawer-content">
         {/* Navbar */}
@@ -138,13 +138,28 @@ const Navbar = () => {
 
 
               <div className="dropdown dropdown-hover">
-              <Link to='/portfolio'><li><a className="text-lg font-extrabold text-slate-100 rounded-sm tracking-wider hover:font-bold flex">Portfolio</a></li></Link>
+              
+              <Link to='/portfolio'><li><a className="text-lg font-extrabold text-slate-100 rounded-sm tracking-wider hover:font-bold flex"><summary>Portfolio</summary></a></li></Link>
               <ul tabIndex={0} className="dropdown-content z-[11] menu p-2 shadow bg-base-100 rounded-box min-w-52">
                 <Link to='/portfolio/OurApproach'><li><a>Our Approach</a></li></Link>
                 <Link to='/portfolio/OurAchievement'><li><a>Our Achievement</a></li></Link>
               </ul>
             </div> 
             
+
+            <li>
+        <details className="dropdown dropdown-hover">
+          <summary className="text-lg font-extrabold text-slate-100 rounded-sm tracking-wider hover:font-bold flex">Parent</summary>
+          <ul className="dropdown-content z-[11] menu p-2 shadow bg-base-100 rounded-box min-w-52">
+            <li><Link to='/portfolio/OurApproach'><a>Our Process Over View</a></Link></li>
+            <li><Link to='/portfolio/OurAchievement'><a>Our Achievement</a></Link></li>
+          </ul>
+        </details>
+      </li>
+
+
+
+
                 <Link to="/career">
                   <li>
                     <a className="z-10 text-lg font-extrabold tracking-wider rounded-sm text-slate-100 hover:font-bold">
