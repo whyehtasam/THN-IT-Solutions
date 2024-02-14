@@ -47,36 +47,35 @@ export const cardDetails = [
 
   export const aboutCardData =[
     {
-        id: 1,
-        title: "🚀 Innovation",
-        description: "We stay ahead of the curve, embracing the latest technologies to deliver innovative and future-ready solutions."
-    },
-    {
-        id: 2,
-        title: " 🛠️ Customization",
-        description: " Every business is unique, and so are our solutions. We tailor our software to meet your specific needs and challenges."
-    },
-    {
-        id: 3,
-        title: "🤝 Reliability",
-        description: "Trust is the foundation of our relationships. We are committed to delivering reliable and robust software solutions that you can depend on."
-    },
-    {
-        id: 4,
-        title: "💼 Expert Team",
-        description: "Our team of skilled and experienced professionals is passionate about technology. We combine expertise with creativity to develop solutions that drive success."
-    },
-    {
-        id: 5,
-        title: "💼 Quality",
-        description: "We are dedicated to delivering the highest quality solutions that meet and exceed our clients' expectations. Our rigorous quality assurance processes ensure that every project we deliver is of the highest standard."
-    },
-    {
-        id: 6,
-        title: "💼 Customer-Centric Approach",
-        description: " At THN IT Solutions, our clients are our top priority. We take a customer-centric approach to every project, ensuring that we fully understand our clients' needs and objectives and delivering solutions that are tailored to meet their specific requirements."
-        
-    },
+      id: 1,
+      title: "🚀 Innovation",
+      description: "We embrace the latest technologies to deliver innovative solutions. Our goal is to stay ahead of the curve and provide future-ready solutions."
+  },
+  {
+      id: 2,
+      title: " 🛠️ Customization",
+      description: "Every business is unique. We understand this and tailor our software to meet your specific needs, challenges, and business objectives."
+  },
+  {
+      id: 3,
+      title: "🤝 Reliability",
+      description: "Trust is our foundation. We are committed to delivering reliable and robust software solutions that you can depend on in your business."
+  },
+  {
+      id: 4,
+      title: "💼 Expert Team",
+      description: "Our team of skilled professionals is passionate about technology. We combine expertise with creativity to develop solutions that drive success."
+  },
+  {
+      id: 5,
+      title: "💼 Quality",
+      description: "We are dedicated to delivering high-quality solutions. Our rigorous quality assurance processes ensure that every project we deliver is of the highest standard."
+  },
+  {
+      id: 6,
+      title: "💼 Customer-Centric Approach",
+      description: "Our clients are our top priority. We take a customer-centric approach to every project, ensuring that we fully understand our clients' needs and objectives."
+  },
     // {
     //     id: 7,
     //     title: "💼 Commitment to Excellence",

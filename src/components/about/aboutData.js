@@ -1,4 +1,9 @@
-import svg from "../../assets/intro2.svg";
+// import svg from "../../assets/intro2.svg";
+import svg from "../../assets/aboutContainerSvg.svg";
+import img1 from "../../assets/WhatWeOffer1.png";
+import img2 from "../../assets/WhatWeOffer2.png";
+import img3 from "../../assets/WhatWeOffer3.png";
+import img4 from "../../assets/WhatWeOffer4.jpg";
 
 export const aboutData = [
   {
@@ -28,5 +33,24 @@ export const aboutData = [
     description:
       "Our comprehensive suite of services encompasses a wide range of software solutions designed to address the evolving needs of modern businesses. From custom software development and mobile app development to cloud computing solutions and cybersecurity services, we have the expertise and experience to tackle even the most complex projects.",
     path: svg,
+  },
+];
+
+export const WhatWeOfferData = [
+  {
+    tech: "Web & App Development",
+    path: img1,
+  },
+  {
+    tech: "Cloud Development",
+    path: img2,
+  },
+  {
+    tech: "Responsive Design",
+    path: img3,
+  },
+  {
+    tech: "E-commerce Solutions",
+    path: img4,
   },
 ];
