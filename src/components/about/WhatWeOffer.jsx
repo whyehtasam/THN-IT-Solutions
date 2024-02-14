@@ -1,4 +1,4 @@
-const WhatWeOffer = ({ data, style, imgStyle, contentStyle,imgData }) => {
+const WhatWeOffer = ({ data, style, imgStyle, contentStyle, imgData }) => {
   const { title, description } = data;
   return (
     <section
@@ -9,24 +9,26 @@ const WhatWeOffer = ({ data, style, imgStyle, contentStyle,imgData }) => {
     >
       <div className={"img flex justify-center items-center " + imgStyle}>
         <div className="grid gap-4 my-10  lg:grid-cols-4 md:grid-cols-3">
-          {imgData.map(({ tech, path },index) => (
+          {imgData.map(({ tech, path }, index) => (
             <div
-              className="card card-compact flex-1 bg-base-100 shadow-xl hover:scale-[1.01] max-h-72 p-0 hover:drop-shadow-lg cursor-pointer transition-all duration-200 rounded-md"
+              className="card card-compact flex-1 bg-base-100 border hover:scale-[1.01] lg:max-h-64 max-h-56 lg:max-w-56 p-0 hover:shadow-sm cursor-pointer transition-all duration-200 rounded-md"
               key={index}
             >
               <figure className="h-full">
-                <img src={path} alt="What we offer" className="object-cover h-full"/>
+                <img
+                  src={path}
+                  alt="What we offer"
+                  className="lg:object-cover w-full lg:h-full"
+                />
               </figure>
               <div className="flex items-center justify-center tracking-wider text-center card-body">
                 <h2 className="card-title text-sm text-gray-800">{tech}</h2>
-                
               </div>
             </div>
           ))}
         </div>
       </div>
 
-      
       <div className={"info flex  flex-col   " + contentStyle}>
         <h1 className="text-2xl font-bold leading-normal lg:text-4xl md:mt-10">
           {title}

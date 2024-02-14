@@ -17,8 +17,8 @@ const AboutUs = () => {
       {/* <SliderCheck /> */}
       <AboutContainer
         data={aboutData[0]}
-        style="flex flex-col-reverse mb-4 lg:flex-row-reverse"
-        contentStyle="lg:max-w-[600px] lg:mr-10"
+        style="flex flex-col-reverse mb-4 lg:flex-row-reverse bg-white rounded-md shadow"
+        contentStyle="lg:max-w-[600px] lg:m-10"
         descStyle="lg:pr-24 p-0"
         imgStyle="w-full"
       />
@@ -29,9 +29,9 @@ const AboutUs = () => {
       <WhatWeOffer
       data={aboutData[3]}
         imgData={WhatWeOfferData}
-        style="flex flex-col-reverse lg:flex-row "
+        style="flex flex-col-reverse lg:flex-row bg-white rounded-md shadow lg:px-12"
         imgStyle="w-full"
-        contentStyle="lg:ml-10 lg:w-[500px] lg:p-2"
+        contentStyle="lg:ml-10 lg:w-[480px] lg:p-2"
       />
       {/* <AboutContainer data={aboutData[3]} style='flex flex-col-reverse lg:flex-row ' imgStyle='w-full' contentStyle='lg:ml-10 lg:w-[500px]'/>  */}
       <IntroBanner
