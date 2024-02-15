@@ -43,7 +43,7 @@ const TabServiceWrapper = ({ data }) => {
                     <p className="text-xs text-justify text-gray-800 lg:text-sm ">
                       {service.description}
                     </p>
-                    <h2 className="mt-4 text-lg card-title">
+                    <h2 className="mt-2 md:mt-4 text-lg card-title">
                       {service.subHeading}
                     </h2>
                     <div className="h-[0.5px] bg-opacity-30 bg-black w-5/12 "></div>
