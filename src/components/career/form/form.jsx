@@ -312,9 +312,9 @@ const ApplyForm = () => {
 
                     <div className='w-[50%] mx-[3%]'>
 
-                        <div className='flex justify-between'><label htmlFor="">Technical skills : </label><input type="text" placeholder="Email" className="input input-bordered w-full max-w-xs" /></div>
-                        <div className='flex justify-between'><label htmlFor="">Soft skills : </label><input type="text" placeholder="Email" className="input input-bordered w-full max-w-xs" /></div>
-                        <div className='flex justify-between'><label htmlFor="">Certifications : </label><input type="text" placeholder="Email" className="input input-bordered w-full max-w-xs" /></div>
+                        <div className='flex justify-between pb-[1%] items-center my-auto'><label htmlFor="">Technical skills : </label><input type="text" placeholder="your tech Skills" className="input input-bordered w-full max-w-xs" /></div>
+                        <div className='flex justify-between pb-[1%] items-center my-auto'><label htmlFor="">Soft skills : </label><input type="text" placeholder="soft skills" className="input input-bordered w-full max-w-xs" /></div>
+                        <div className='flex justify-between pb-[1%] items-center my-auto'><label htmlFor="">Certifications : </label><input type="text" placeholder="Certificate details" className="input input-bordered w-full max-w-xs" /></div>
                     
 
                     </div>
