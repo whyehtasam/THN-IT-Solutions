@@ -1,6 +1,6 @@
 export const ApplicationDevelopmentServices = [
   {
-    serviceType: "💻 Web Application Development",
+    serviceType: "💻 Web App Development",
     description:
       "🚀 Web applications have revolutionized the way businesses operate by providing scalable, accessible, and user-friendly platforms accessible via web browsers. Our Web Application Development services leverage the latest technologies and frameworks to create dynamic, interactive, and feature-rich web applications tailored to your unique business requirements.",
     subHeading: " Our offered Technologies:",

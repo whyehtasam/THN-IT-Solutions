@@ -42,7 +42,7 @@ const TabServices = (props) => {
                   <p className="px-2 text-xs text-justify text-gray-800 md:p-0 md:text-sm ">
                     {description}
                   </p>
-                  <button className="pl-2 text-gray-800 no-underline  md:pl-0 btn btn-link w-max">
+                  <button className="pl-2 text-gray-800 no-underline md:pl-0 btn btn-link w-max">
                     <Link to={`${linkPath}`}>
                       Explore{" "}
                       <FontAwesomeIcon

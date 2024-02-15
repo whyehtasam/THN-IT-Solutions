@@ -10,7 +10,7 @@ const MaintainanceSupport = () => {
       <IntroBanner
         title="Maintainance & Support"
         img={img}
-        style={"bg-gradient-to-r from-gray-900 via-gray-700 to-black  "}
+        style={"bg-gradient-to-r from-gray-900 via-gray-700 to-black rounded-md mt-3 md:mt-0 md:rounded-lg   "}
         opacity="absolute w-full h-full bg-black opacity-50"
       />
    
