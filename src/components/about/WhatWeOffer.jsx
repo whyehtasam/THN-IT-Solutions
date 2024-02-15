@@ -22,7 +22,7 @@ const WhatWeOffer = ({ data, style, imgStyle, contentStyle, imgData }) => {
                 />
               </figure>
               <div className="flex items-center justify-center tracking-wider text-center card-body">
-                <h2 className="card-title text-sm text-gray-800">{tech}</h2>
+                <h2 className="card-title text-xs text-gray-800">{tech}</h2>
               </div>
             </div>
           ))}
