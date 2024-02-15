@@ -161,12 +161,12 @@ const Navbar = () => {
               <div className="dropdown dropdown-hover relative group">
 
               
-              <Link to='/portfolio' className="relative group">
+              <Link to='/portfolio' className=" group">
 
               <li onMouseEnter={() => {
                       setIsVisibleServices(false);
                       setIsVisibleTechnology(false);
-                    }}><a className="text-sm font-medium text-slate-100 rounded-sm tracking-wider hover:font-semibold flex relative group">PORTFOLIO
+                    }}><a className="text-sm font-medium text-slate-100 rounded-sm tracking-wider hover:font-semibold flex group">PORTFOLIO
                     <span className=" rotate-[270] group-hover:rotate-180">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -184,7 +184,7 @@ const Navbar = () => {
                     </svg>
                       </span></a></li></Link>
 
-              <ul tabIndex={0} className="dropdown-content z-[11] menu p-2 shadow bg-base-100 rounded-box min-w-52 relative group">
+              <ul tabIndex={0} className="dropdown-content z-[11] menu p-2 shadow bg-base-100 rounded-box min-w-52 group">
                 <Link to='/portfolio/OurApproach' ><li><a>Our Approach</a></li></Link>
                 <Link to='/portfolio/OurAchievement' ><li><a>Our Achievement</a></li></Link>
               </ul>

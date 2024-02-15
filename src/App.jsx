@@ -17,7 +17,7 @@ import WebDeveloperCareer from "./components/career/CareerDeveloper/webDeveloper
 import BackendDeveloperCareer from "./components/career/CareerDeveloper/backendDeveloper";
 import CloudDeveloperCareer from "./components/career/CareerDeveloper/cloudDeveloper";
 import Technology from "./components/technologies/Technology";
-
+import ApplyForm from './components/career/form/form'
 import OurAchievement from "./components/portfolio/OurAchievement"
 
 // import Hero from "./components/landing/Hero"; // importing the Hero component
@@ -87,7 +87,7 @@ function App() {
           <Route path="/ourServices/DevOps" element={<DevOps />} />
           <Route path="/ourServices/QualityEngineering" element={<QualityEngineering />} />
 
-
+          <Route path="/career/Apply" element={<ApplyForm />} />
 
           <Route path="/portfolio/OurAchievement" element={<OurAchievement />} />
           <Route path='/portfolio/OurApproach' element={<ProcessOverView />} />

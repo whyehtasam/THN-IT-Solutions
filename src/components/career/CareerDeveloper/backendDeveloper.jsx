@@ -27,7 +27,7 @@ function BackendDeveloperCareer(){
             </div>
 
             <div className='card-actions justify-end'>
-            <Link to='/contact'><button className='btn btn-primary my-4 mx-12 p-4'>
+            <Link to='/career/Apply'><button className='btn btn-primary my-4 mx-12 p-4'>
                 Apply Now</button></Link>
             </div>
             
