@@ -18,7 +18,7 @@ const OurTech = ({ className, para, title }) => {
         "lg:p-10 lg:mb-12 grid  lg:mx-auto rounded-lg bg-white shadow-lg " + className
       }
     >
-      <h1 className="md:text-4xl text-xl font-semibold text-center">{title}</h1>
+      <h1 className="md:text-4xl text-2xl font-semibold text-center">{title}</h1>
       <div className="h-[0.5px] bg-opacity-30 my-2 bg-black w-10/12 mx-auto "></div>
       <p className="mx-auto lg:mt-1 text-xs md:text-base font-medium leading-loose text-justify text-gray-500 w-fit">
         {para}

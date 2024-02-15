@@ -3,12 +3,12 @@ const WhatWeOffer = ({ data, style, imgStyle, contentStyle, imgData }) => {
   return (
     <section
       className={
-        "about-container  lg:mb-16 min-w-60  p-8 lg:flex  lg:items-stretch mx-auto justify-between " +
+        "about-container  lg:mb-16 min-w-60  md:p-8 lg:flex  lg:items-stretch md:mx-auto justify-between " +
         style
       }
     >
       <div className={"img flex justify-center items-center " + imgStyle}>
-        <div className="grid gap-4 my-10  lg:grid-cols-4 md:grid-cols-3">
+        <div className="grid gap-4 md:my-10  lg:grid-cols-4 md:grid-cols-3">
           {imgData.map(({ tech, path }, index) => (
             <div
               className="card card-compact flex-1 bg-base-100 border hover:scale-[1.01] lg:max-h-64 max-h-56 lg:max-w-56 p-0 hover:shadow-sm cursor-pointer transition-all duration-200 rounded-md"

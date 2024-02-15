@@ -17,7 +17,7 @@ const AboutUs = () => {
       {/* <SliderCheck /> */}
       <AboutContainer
         data={aboutData[0]}
-        style="flex flex-col-reverse mb-4 lg:flex-row-reverse bg-white rounded-md shadow"
+        style="flex flex-col-reverse mb-4 lg:flex-row-reverse bg-white rounded-md shadow-sm m-4 border"
         contentStyle="lg:max-w-[600px] lg:m-10"
         descStyle="lg:pr-24 p-0"
         imgStyle="w-full"
@@ -29,7 +29,7 @@ const AboutUs = () => {
       <WhatWeOffer
       data={aboutData[3]}
         imgData={WhatWeOfferData}
-        style="flex flex-col-reverse lg:flex-row bg-white rounded-md shadow lg:px-12"
+        style="flex flex-col-reverse lg:flex-row bg-white rounded-md shadow-sm lg:px-12 m-4 p-6 border"
         imgStyle="w-full"
         contentStyle="lg:ml-10 lg:w-[480px] lg:p-2"
       />

@@ -3,7 +3,7 @@ const AboutContainer = ({ data, style, imgStyle, contentStyle,descStyle }) => {
   return (
     <section
       className={
-        "about-container  lg:mb-16 min-w-60  p-8 lg:flex  lg:items-stretch mx-auto justify-between " +
+        "about-container  lg:mb-16 min-w-60  p-6 lg:flex  lg:items-stretch md:mx-auto justify-between " +
         style
       }
     >
