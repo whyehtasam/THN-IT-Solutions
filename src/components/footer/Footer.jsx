@@ -39,21 +39,26 @@ const Footer = () => {
     <a className="opacity-70 text-xs link link-hover">+91 9051959195</a>
     <a className="opacity-70 text-xs link link-hover">+91 9674183723</a>
   </nav>
-  <nav>
+  <nav className="w-80 md:w-fit">
+    <div  className="flex justify-between w-full mt-4 md:block">
+    <div className="w-min">
     <h6 className="footer-title opacity-90">Office Address</h6> 
-    <a className="text-xs opacity-70 link link-hover w-min tracking-wider">THN IT Solutions, Rajibpur Road, 
+    <a className="text-xs opacity-70 link link-hover  tracking-wider">THN IT Solutions, Rajibpur Road, 
      Gangapur,Duttapukur-I, 
      Duttapukur- 743248
      West Bengal, India
     </a>
-
+    </div>
+    <div>
     <h6 className="mt-2 footer-title opacity-90"></h6>
     <div className="grid grid-flow-col gap-1">
             <SocialIcon url="https://www.instagram.com/"  style={{height:"2rem", width:"2rem", borderRadius:"2vw"}} />
-            <SocialIcon url="https://www.twitter.com/" style={{height:"2rem", width:"2rem", borderRadius:"2vw"}} />
+            {/* <SocialIcon url="https://www.twitter.com/" style={{height:"2rem", width:"2rem", borderRadius:"2vw"}} /> */}
             <SocialIcon url="https://www.facebook.com/" style={{height:"2rem", width:"2rem", borderRadius:"2vw"}} />
             <SocialIcon url="https://www.whatsapp.com/" style={{height:"2rem", width:"2rem", borderRadius:"2vw"}} />
             <SocialIcon url="https://www.linkedin.com/" style={{height:"2rem", width:"2rem", borderRadius:"2vw"}} />
+      </div>
+      </div>
       </div>
   </nav>
 </footer>
