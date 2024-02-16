@@ -1,14 +1,12 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import DrawerNavbar from "./DrawerNavbar";
-// import logo from '../../assets/thnit.png'
+// import logo from "../../assets/thnit.png";
 import logo from "../../assets/logo.jpg";
+// import logo from "../../assets/logoo.png";
 import ServicesMenu from "./OurServicesMenu";
 import TechnologyMenu from "./TechnologyMenu";
-import {
-  serviceData,
-  TechnologyData,
-} from "./ServicesTechnologyData";
+import { serviceData, TechnologyData } from "./ServicesTechnologyData";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -99,22 +97,21 @@ const Navbar = () => {
                       onClick={() => setIsVisibleServices(false)}
                     >
                       OUR SERVICES
-
                       <span className=" rotate-[270] group-hover:rotate-180">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      className="h-4 w-4"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M19 9l-7 7-7-7"
-                      />
-                    </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          className="h-4 w-4"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M19 9l-7 7-7-7"
+                          />
+                        </svg>
                       </span>
                     </a>
                   </li>{" "}
@@ -133,61 +130,76 @@ const Navbar = () => {
                     >
                       TECHNOLOGY
                       <span className=" rotate-[270] group-hover:rotate-180">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      className="h-4 w-4"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M19 9l-7 7-7-7"
-                      />
-                    </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          className="h-4 w-4"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M19 9l-7 7-7-7"
+                          />
+                        </svg>
                       </span>
-
                     </a>
                   </li>
                 </Link>
 
-
-              <div className="dropdown dropdown-hover relative group">
-
-              
-              <Link to='/portfolio' className=" group">
-
-              <li onMouseEnter={() => {
-                      setIsVisibleServices(false);
-                      setIsVisibleTechnology(false);
-                    }}><a className="text-sm font-medium text-slate-100 rounded-sm tracking-wider hover:font-semibold flex group">PORTFOLIO
-                    <span className=" rotate-[270] group-hover:rotate-180">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      className="h-4 w-4"
+                <div className="dropdown dropdown-hover relative group">
+                  {/* <Link to="" className=" group"> */}
+                    <li
+                      onMouseEnter={() => {
+                        setIsVisibleServices(false);
+                        setIsVisibleTechnology(false);
+                      }}
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M19 9l-7 7-7-7"
-                      />
-                    </svg>
-                      </span></a></li></Link>
+                      <a className="text-sm font-medium text-slate-100 rounded-sm tracking-wider hover:font-semibold flex group">
+                        PORTFOLIO
+                        <span className=" rotate-[270] group-hover:rotate-180">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            className="h-4 w-4"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </span>
+                      </a>
+                    </li>
+                  {/* </Link> */}
 
-              <ul tabIndex={0} className="dropdown-content z-[11] menu p-2 shadow bg-base-100 rounded-box min-w-52 group">
-              <Link to='/portfolio/profile' ><li><a>Our Profile</a></li></Link>
-                <Link to='/portfolio/OurApproach' ><li><a>Our Approach</a></li></Link>
-                <Link to='/portfolio/OurAchievement' ><li><a>Our Achievement</a></li></Link>
-              </ul>
-            </div> 
-
-
+                  <ul
+                    tabIndex={0}
+                    className="dropdown-content z-[11] menu p-2 shadow bg-base-100 rounded-box min-w-52 group"
+                  >
+                    <Link to="/portfolio/profile">
+                      <li>
+                        <a>Our Profile</a>
+                      </li>
+                    </Link>
+                    <Link to="/portfolio/OurApproach">
+                      <li>
+                        <a>Our Approach</a>
+                      </li>
+                    </Link>
+                    <Link to="/portfolio/OurAchievement">
+                      <li>
+                        <a>Our Achievement</a>
+                      </li>
+                    </Link>
+                  </ul>
+                </div>
 
                 <Link to="/career">
                   <li>
@@ -199,7 +211,6 @@ const Navbar = () => {
                 <Link to="/contact">
                   <li>
                     <a className="z-10 mx-2 text-lg font-medium tracking-wider text-white bg-black border rounded hover:bg-slate-100 hover:text-gray-800 hover:font-bold">
-
                       Contact
                     </a>
                   </li>
