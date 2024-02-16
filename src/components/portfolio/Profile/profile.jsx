@@ -32,7 +32,7 @@ function Profile() {
           Technical Team Members
         </h2>
       </div>
-      <div className="grid grid-cols-4 place-content-center mx-[10%] gap-12">
+      <div className="grid grid-cols-4 place-content-center mx-[10%] my-[5vh] gap-12">
         <ProfileCards TeamData={TeamDatas}/>
       </div>
     </div>

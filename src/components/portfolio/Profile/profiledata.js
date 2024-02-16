@@ -89,7 +89,7 @@ export const TeamDatas=[
         ImageUrl: SumanGhosh,
         YearOfExp:'3',
         Designation:'SoftWare Developer',
-        skills:'Python',
+        skills:'Python, PHP',
 
     },
     {
@@ -101,8 +101,8 @@ export const TeamDatas=[
 
     },
     {
-        Name:'Ehtasam ',
-        ImageUrl: Ehtasamfile,
+        Name:'Ehtasam Ahmad Raza',
+        ImageUrl: Ehtasam,
         YearOfExp:'5',
         Designation:'SoftWare Developer',
         skills:'ReactJS, React Native, AngularJS',
