@@ -94,8 +94,7 @@ function InputData()
           message: '',
         });
         setIsVisible(true);
-        
-        setSentSuccess('Message Sent Successfully! Thank you for contacting us.')
+        setSentSuccess('Message Sent Successfully! Thank you for contacting us.');
         console.log(result); // handle success, e.g., show a success message
       } 
       else {
@@ -217,7 +216,7 @@ function InputData()
           {isVisible && (
           <div id="Message-Status" className={`mt-2 flex `}>
             <p className={`gap-[1vw] flex items-center mx-auto mt-[2vh]`}> 
-            <span className={`${sentSuccess ? 'text-green-500' : 'text-gray-300'} ${ sentError ? 'text-red-500' : 'text-gray-300'}`}>{sentSuccess}{sentError}</span>
+            <span className={`${sentSuccess ? 'text-green-500' : 'text-red-500' }`}>{sentSuccess}{sentError}</span>
             <span onClick={() => setIsVisible(false)} className="text-xl">⤫</span></p>
            
           </div>
