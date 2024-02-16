@@ -47,6 +47,7 @@ const DrawerNavbar = () => {
           <ul>
           <Link to='/portfolio/OurApproach'><li className="text-sm text-gray-600 p-2">Our Approach</li></Link>
           <Link to='/portfolio/OurAchievement'><li className="text-sm text-gray-600 p-2">Our Achievement</li></Link>
+          <Link to='/portfolio/profile' ><li className="text-sm text-gray-600 p-2">Our Profile</li></Link>
           </ul>
         </details>
       </li>

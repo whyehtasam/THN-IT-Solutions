@@ -1,89 +1,42 @@
-//import ProfileCards from './ProfileCard'
-import ceopic from './images/CEO.jpg';
-import DirectorPic from './images/Director.jpg';
-import TechnicalHeadPic from './images/Technical-Head.jpg'
+import ProfileCards from "./ProfileCard";
+import LeaderProfileCard from "./LeaderProfilecard";
+import { CEOdata, DirectorTechnicalHead, TechnicalExpartDatas, TeamDatas } from "./profiledata";
+import TechnicalExpartCard from './TechnicalExpart'
 
-function Profile()
-{
-    return(
-        <div className="profile bg-[#00000006]">
+function Profile() {
+  return (
+    <div className="profile">
+      <div className="my-6 mx-16 border-[2px] bg-[url('/Banner.png')] bg-cover rounded-2xl">
+        <h2 className="text-4xl text-center text-white font-[1000] py-6">
+          Messages from the Top Leaders
+        </h2>
+      </div>
 
-            <h2 className='text-4xl text-center font-[1000] py-[3%]' >Messages from the Top Leaders</h2> 
-        
-        <div class="mx-auto flex items-center rounded-2xl bg-base-100 drop-shadow-lg w-[70%] border-[1px]">
-            <div className='flex gap-[2%]'>
+      <div className="w-[70%] flex items-center mx-auto">
+        <LeaderProfileCard leadermsgData={CEOdata} />
+      </div>
 
-            
-            <figure className='w-[35%]'>
-            <div className="rounded-2xl bg-base-100 ">
-            <img src={ceopic} alt="CEO" className='h-[80%] rounded-t-2xl' />
-            <div className="px-[2vw] py-[2vh]">
-                <h2 className="card-title">Mr. Nazrul Islam Mallick</h2>
-                <p>CEO</p>
-            </div>
-            </div>
-            </figure>
-            <div class=" w-[60%]">
-                <h2 class="font-semibold py-[2vh]">Message from CEO :</h2>
-                <p className='text-sm px-2 py-1'>As CEO of THN IT Solutions, I wanted to take a moment to express my heartfelt appreciation for our clients' continued trust and partnership with us. Your support has been instrumental in our journey, and we are truly grateful for the opportunity to serve you.As your dedicated technology solutions provider, we remain committed to delivering excellence and innovation in every aspect of our collaboration. Our goal is to exceed your expectations and drive your success through our services.</p>
-                <p className='text-sm px-2 py-1'>Finally, I want to extend my heartfelt congratulations to our dynamic team members who work tirelessly to ensure our clients' satisfaction. Their dedication, expertise, and hard work are the driving force behind our success, and I am immensely proud of each and every one of them.</p>
-                <p className='text-sm px-2 py-1'>Thank you once again for your continued support and partnership. We look forward to serving you and helping you achieve your business objectives.</p>
-            
-            </div>
-            </div>
-        </div>
-
-        <div className='flex justify-between mx-[5%] gap-[3%] my-[3%]'>
-        <div class="flex rounded-2xl bg-base-100 drop-shadow-lg w-[50%] border-[1px]">
-            <div className='flex gap-[2%]'>
-            <figure className='w-[35%]'>
-            <div className="rounded-2xl bg-base-100 ">
-            <img src={DirectorPic} alt="DirectorPic" className='h-[40vh] w-full rounded-t-2xl' />
-            <div className="px-[2vw] py-[2vh]">
-                <h2 className="card-title">Mrs. Sureba Khatun</h2>
-                <p>Director</p>
-            </div>
-            </div>
-            </figure>
-            <div class=" w-[60%] ">
-                <h2 class="font-semibold text-lg pt-[2vh]">Director's Message :</h2>
-                <p className='text-sm px-2 py-1'>As Director of THN IT Solutions, I am honored to extend my warmest greetings and appreciation for our client's continued trust in our services. Your partnership is the cornerstone of our success, and we are deeply grateful for the opportunity to collaborate with you.</p>
-                <p className='text-sm px-2 py-1'>I also want to take this opportunity to extend my heartfelt congratulations to our exceptional team members. Their unwavering dedication, expertise, and passion for excellence are the driving forces behind our success, and I am immensely proud of each and every one of them.</p>
-                
-            </div>
-            </div>
-        </div>
-        <div class=" flex rounded-2xl bg-base-100 drop-shadow-lg w-[50%] border-[1px]">
-            <div className='flex gap-[2%]'>
-
-          
-            <figure className='w-[35%]'>
-            <div className="rounded-2xl bg-base-100 ">
-            <img src={TechnicalHeadPic} alt="TechnicalHeadPic" className='h-[40vh] rounded-t-2xl' />
-            <div className="px-[2vw] py-[2vh]">
-                <h2 className="card-title">Mrs. Sk Mohumita Mousum</h2>
-                <p>Technical Head</p>
-            </div>
-            </div>
-            </figure>
-            <div class=" w-[60%] ">
-                <h2 class="font-semibold py-[2vh]">Message from Technical Head :</h2>
-                <p className='text-sm px-2 py-1'>As Technical Head of THN IT Solutions, I am honored to have the opportunity to work alongside such a talented and dedicated group of individuals. Your commitment to excellence and passion for innovation are truly inspiring, and I am immensely proud to be part of this team.</p>
-                <p className='text-sm px-2 py-1'>I want to extend my sincerest thanks to each and every one of you for your unwavering dedication and commitment to our team and to our company's mission. Together, we have achieved great things, and I am confident that with our continued collaboration and determination, we will accomplish even more in the days ahead.</p>
-                
-            </div>
-            </div>
-        </div>
-        </div>
-
-        
-
-
-        
-     </div>
-
-    )
+      <div className="grid grid-cols-2 gap-[2%] place-content-center mx-[5vh] mt-[2vh] mb-[10vh]">
+        <LeaderProfileCard leadermsgData={DirectorTechnicalHead} />
+      </div>
+      <div className="my-6 mx-16 border-[2px] bg-[url('/Banner.png')] bg-cover rounded-2xl">
+        <h2 className="text-4xl text-center text-white font-[1000] py-6">
+          Technical Expert
+        </h2>
+      </div>
+      <div className="grid grid-cols-2 place-content-center gap-20 my-[8vh] mx-[12vh]">
+        <TechnicalExpartCard TechnicalExpartData={TechnicalExpartDatas}/>
+      </div>
+      <div className="my-6 mx-16 border-[2px] bg-[url('/Banner.png')] bg-cover rounded-2xl">
+        <h2 className="text-4xl text-center text-white font-[1000] py-6">
+          Technical Team
+        </h2>
+      </div>
+      <div className="grid grid-cols-4 place-content-center mx-[10%] gap-12">
+        <ProfileCards TeamData={TeamDatas}/>
+      </div>
+    </div>
+  );
 }
-
 
 export default Profile;
