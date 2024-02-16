@@ -1,4 +1,4 @@
-export const serviceData1 = [
+export const serviceData = [
     {
       menuTitle: 'Application Development',
       path:'/ourServices/ApplicationDevelopment',
@@ -19,6 +19,16 @@ export const serviceData1 = [
       path:'/ourServices/DataAnalytics',
       items: ['Data warehousing', 'Data visualization', 'Predictive analytics'],
     },
+    {
+      menuTitle: 'DevOps',
+      path:'/ourServices/DevOps',
+      items: ['CI/CD', 'Infrastructure as Code (IaC)', 'Terraform'],
+    },
+    {
+      menuTitle: 'Quality Engineering',
+      path:'/ourServices/QualityEngineering',
+      items: ['Automated Testing', 'Performance Testing', 'Continuous Integration'],
+    },
 
   ];
 
@@ -38,7 +48,7 @@ export  const serviceData2 = [
   ];
   
 
-export const TechnologyData1=[
+export const TechnologyData=[
     {
       No: '1',
       path: '/',
@@ -51,9 +61,6 @@ export const TechnologyData1=[
       technologyName: 'Backend Development ',
 
     },
-  ]
-
-  export const TechnologyData2=[
     {
       No: '3',
       path: '/',
@@ -66,9 +73,6 @@ export const TechnologyData1=[
       technologyName: 'Cloud',
 
     },
-  ]
-
-export const TechnologyData3=[
     {
       No: '5',
       path: '/',
@@ -81,16 +85,10 @@ export const TechnologyData3=[
       technologyName: 'Infrastructure Development',
 
     },
-
-  ];
-
- export const TechnologyData4=[
     {
       No: '7',
       path: '/',
       technologyName: 'DevOps',
 
     },
-    
-
-  ];
+  ]

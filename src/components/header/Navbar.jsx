@@ -6,12 +6,8 @@ import logo from "../../assets/logo.jpg";
 import ServicesMenu from "./OurServicesMenu";
 import TechnologyMenu from "./TechnologyMenu";
 import {
-  serviceData1,
-  serviceData2,
-  TechnologyData1,
-  TechnologyData2,
-  TechnologyData3,
-  TechnologyData4,
+  serviceData,
+  TechnologyData,
 } from "./ServicesTechnologyData";
 
 const Navbar = () => {
@@ -219,8 +215,7 @@ const Navbar = () => {
               className=" bg-white border-b-[1px] z-9 absolute w-[100%] top-0 mt-20"
               onMouseLeave={() => setIsVisibleServices(false)}
             >
-              <ServicesMenu services={serviceData1} />
-              <ServicesMenu services={serviceData2} />
+              <ServicesMenu services={serviceData} />
             </div>
           )}
           <div>
@@ -229,10 +224,7 @@ const Navbar = () => {
                 className="flex bg-white justify-between border-b-[1px] z-9 absolute w-[100%] top-0 mt-20 px-[12%]"
                 onMouseLeave={() => setIsVisibleTechnology(false)}
               >
-                <TechnologyMenu technology={TechnologyData1} />
-                <TechnologyMenu technology={TechnologyData2} />
-                <TechnologyMenu technology={TechnologyData3} />
-                <TechnologyMenu technology={TechnologyData4} />
+                <TechnologyMenu technology={TechnologyData} />
               </div>
             )}
             {/* Page content here */}

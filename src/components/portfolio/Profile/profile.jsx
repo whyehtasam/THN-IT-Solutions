@@ -8,9 +8,9 @@ function Profile()
     return(
         <div className="profile bg-[#00000006]">
 
-            <h2 className='text-4xl text-center font-[1000] my-[3%]' >Messages from the Top Leaders</h2> 
+            <h2 className='text-4xl text-center font-[1000] py-[3%]' >Messages from the Top Leaders</h2> 
         
-        <div class="mx-auto flex items-center rounded-2xl bg-base-100 drop-shadow-lg w-[70%]">
+        <div class="mx-auto flex items-center rounded-2xl bg-base-100 drop-shadow-lg w-[70%] border-[1px]">
             <div className='flex gap-[2%]'>
 
             
@@ -34,11 +34,11 @@ function Profile()
         </div>
 
         <div className='flex justify-between mx-[5%] gap-[3%] my-[3%]'>
-        <div class="flex rounded-2xl bg-base-100 drop-shadow-lg w-[50%]">
+        <div class="flex rounded-2xl bg-base-100 drop-shadow-lg w-[50%] border-[1px]">
             <div className='flex gap-[2%]'>
             <figure className='w-[35%]'>
             <div className="rounded-2xl bg-base-100 ">
-            <img src={DirectorPic} alt="DirectorPic" className='h-[80%] rounded-t-2xl' />
+            <img src={DirectorPic} alt="DirectorPic" className='h-[40vh] w-full rounded-t-2xl' />
             <div className="px-[2vw] py-[2vh]">
                 <h2 className="card-title">Mrs. Sureba Khatun</h2>
                 <p>Director</p>
@@ -46,20 +46,20 @@ function Profile()
             </div>
             </figure>
             <div class=" w-[60%] ">
-                <h2 class="font-semibold text-lg pt-[2vh]">Director Message :</h2>
+                <h2 class="font-semibold text-lg pt-[2vh]">Director's Message :</h2>
                 <p className='text-sm px-2 py-1'>As Director of THN IT Solutions, I am honored to extend my warmest greetings and appreciation for our client's continued trust in our services. Your partnership is the cornerstone of our success, and we are deeply grateful for the opportunity to collaborate with you.</p>
                 <p className='text-sm px-2 py-1'>I also want to take this opportunity to extend my heartfelt congratulations to our exceptional team members. Their unwavering dedication, expertise, and passion for excellence are the driving forces behind our success, and I am immensely proud of each and every one of them.</p>
                 
             </div>
             </div>
         </div>
-        <div class=" flex rounded-2xl bg-base-100 drop-shadow-lg w-[50%]">
+        <div class=" flex rounded-2xl bg-base-100 drop-shadow-lg w-[50%] border-[1px]">
             <div className='flex gap-[2%]'>
 
           
             <figure className='w-[35%]'>
             <div className="rounded-2xl bg-base-100 ">
-            <img src={TechnicalHeadPic} alt="TechnicalHeadPic" className='h-[80%] rounded-t-2xl' />
+            <img src={TechnicalHeadPic} alt="TechnicalHeadPic" className='h-[40vh] rounded-t-2xl' />
             <div className="px-[2vw] py-[2vh]">
                 <h2 className="card-title">Mrs. Sk Mohumita Mousum</h2>
                 <p>Technical Head</p>
@@ -67,14 +67,18 @@ function Profile()
             </div>
             </figure>
             <div class=" w-[60%] ">
-                <h2 class="font-semibold py-[2vh]">Technical Head Message :</h2>
-                <p className='text-sm px-2'>As Technical Head of THN IT Solutions, I am honored to have the opportunity to work alongside such a talented and dedicated group of individuals. Your commitment to excellence and passion for innovation are truly inspiring, and I am immensely proud to be part of this team.</p>
-                <p className='text-sm px-2'>I want to extend my sincerest thanks to each and every one of you for your unwavering dedication and commitment to our team and to our company's mission. Together, we have achieved great things, and I am confident that with our continued collaboration and determination, we will accomplish even more in the days ahead.</p>
+                <h2 class="font-semibold py-[2vh]">Message from Technical Head :</h2>
+                <p className='text-sm px-2 py-1'>As Technical Head of THN IT Solutions, I am honored to have the opportunity to work alongside such a talented and dedicated group of individuals. Your commitment to excellence and passion for innovation are truly inspiring, and I am immensely proud to be part of this team.</p>
+                <p className='text-sm px-2 py-1'>I want to extend my sincerest thanks to each and every one of you for your unwavering dedication and commitment to our team and to our company's mission. Together, we have achieved great things, and I am confident that with our continued collaboration and determination, we will accomplish even more in the days ahead.</p>
                 
             </div>
             </div>
         </div>
         </div>
+
+        
+
+
         
      </div>
 
