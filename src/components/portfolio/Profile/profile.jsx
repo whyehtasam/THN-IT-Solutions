@@ -29,7 +29,7 @@ function Profile() {
       </div>
       <div className="my-6 mx-16 border-[2px] bg-[url('/Banner.png')] bg-cover rounded-2xl">
         <h2 className="text-4xl text-center text-white font-[1000] py-6">
-          Technical Team
+          Technical Team Members
         </h2>
       </div>
       <div className="grid grid-cols-4 place-content-center mx-[10%] gap-12">
