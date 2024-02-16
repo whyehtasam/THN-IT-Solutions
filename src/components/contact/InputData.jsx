@@ -5,8 +5,8 @@ function InputData()
 
     
   const [isVisible, setIsVisible] = useState(false);
-  const [isError, setError] =useState(false);
-  const [isSuccess, setSuccess] =useState(false);
+  const [sentSuccess, setSentSuccess] = useState('');
+  const [sentError, setSentError] = useState('');
 
   const [formData, setFormData] = useState({
     fname: '',
@@ -39,12 +39,16 @@ function InputData()
       ...prevErrors,
       [name]: '',
     }));
+
+    setStatusMessage((prevMessage) => ({
+      ...prevMessage,
+      [name]: '',
+    }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    
     const validationErrors = {};
 
     if (formData.fname.trim() === '') {
@@ -82,17 +86,26 @@ function InputData()
 
       if (response.ok) {
         const result = await response.json();
-        setIsVisible(true)
-        setSuccess(true);
+        setFormData({
+          fname: '',
+          lname: '',
+          phone: '',
+          email: '',
+          message: '',
+        });
+        setIsVisible(true);
+        
+        setSentSuccess('Message Sent Successfully! Thank you for contacting us.')
         console.log(result); // handle success, e.g., show a success message
       } 
       else {
         console.error('Failed to submit form');
-        setIsVisible(true)
-        setError(true);
+        setIsVisible(true);
+        setSentError("Something went wrong while submitting your request.");
       }
     } catch (error) {
       console.error('Error submitting form:', error);
+      console.log(error)
     }
   }
   };
@@ -202,8 +215,11 @@ function InputData()
           </div>
 
           {isVisible && (
-          <div id="Message-Status" className="my-4 flex">
-           <span onClick={() => setIsVisible(false)} className="ml-8">⤫</span>
+          <div id="Message-Status" className={`mt-2 flex `}>
+            <p className={`gap-[1vw] flex items-center mx-auto mt-[2vh]`}> 
+            <span className={`${sentSuccess ? 'text-green-500' : 'text-gray-300'} ${ sentError ? 'text-red-500' : 'text-gray-300'}`}>{sentSuccess}{sentError}</span>
+            <span onClick={() => setIsVisible(false)} className="text-xl">⤫</span></p>
+           
           </div>
         )}
 

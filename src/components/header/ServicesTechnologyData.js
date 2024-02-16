@@ -1,3 +1,7 @@
+
+
+
+/* Enter Data for Our Service Menu for Navbar*/
 export const serviceData = [
     {
       menuTitle: 'Application Development',
@@ -32,22 +36,9 @@ export const serviceData = [
 
   ];
 
-//Second Row Data only add up to four column
-export  const serviceData2 = [
-    {
-      menuTitle: 'DevOps',
-      path:'/ourServices/DevOps',
-      items: ['CI/CD', 'Infrastructure as Code (IaC)', 'Terraform'],
-    },
-    {
-      menuTitle: 'Quality Engineering',
-      path:'/ourServices/QualityEngineering',
-      items: ['Automated Testing', 'Performance Testing', 'Continuous Integration'],
-    },
 
-  ];
   
-
+/* Enter Data for Our Technology Menu for Navbar*/
 export const TechnologyData=[
     {
       No: '1',
