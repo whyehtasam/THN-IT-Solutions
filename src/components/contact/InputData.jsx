@@ -114,13 +114,14 @@ function InputData()
         <>
         <form method="post" onSubmit={handleSubmit}>
           <div className="flex mt-4">
+
             <label className="form-control w-full max-w-xs" style={{margin:"0 1vw"}}>
             <div className="label">
                 <span className="label-text">First Name</span>
             </div>
               <input type="text" 
               placeholder={"Enter First Name"} 
-              className={`input input-bordered w-full max-w-xs ${
+              className={`input input-md input-bordered w-full max-w-xs ${
             errors.fname ? 'border-red-500' : 'border-gray-300'
           }`} 
               id="fname"
@@ -131,6 +132,7 @@ function InputData()
               {errors.fname && (
           <p className="text-red-500 text-xs mt-1">{errors.fname}</p>
         )}
+
             </label>
 
             <label className="form-control w-full max-w-xs" style={{margin:"0 1vw"}}>
@@ -139,7 +141,7 @@ function InputData()
             </div>
               <input type="text" 
                 placeholder={"Enter Last Name"} 
-                className={`input input-bordered w-full max-w-xs ${
+                className={`input  input-md input-bordered w-full max-w-xs ${
             errors.lname ? 'border-red-500' : 'border-gray-300'
           }`} 
                 id="lname"
@@ -150,6 +152,8 @@ function InputData()
                 {errors.lname && (
           <p className="text-red-500 text-xs mt-1">{errors.lname}</p>
         )}
+
+
             </label>
 
 
@@ -165,13 +169,15 @@ function InputData()
               name="phone"
               value={formData.phone}
               onChange={handleChange}
-              className={`input input-bordered w-full max-w-xs ${
+              className={`input  input-md input-bordered w-full md:max-w-xs ${
             errors.phone ? 'border-red-500' : 'border-gray-300'
           }`} 
               />
               {errors.phone && (
           <p className="text-red-500 text-xs mt-1">{errors.phone}</p>
         )}
+
+
             </label>
             <label className="form-control w-full max-w-xs" style={{margin:"0 1vw"}}>
             <div className="label">
@@ -183,7 +189,7 @@ function InputData()
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className={`input input-bordered w-full max-w-xs ${
+              className={`input  input-md input-bordered w-full max-w-xs ${
             errors.email ? 'border-red-500' : 'border-gray-300'
           }`} 
               />
