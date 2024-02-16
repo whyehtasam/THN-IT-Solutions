@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import DrawerNavbar from "./DrawerNavbar";
-// import logo from '../../assets/thnit.png'
+// import logo from "../../assets/thnit.png";
 import logo from "../../assets/logo.jpg";
+// import logo from "../../assets/logoo.png";
 import ServicesMenu from "./OurServicesMenu";
 import TechnologyMenu from "./TechnologyMenu";
 import { serviceData, TechnologyData } from "./ServicesTechnologyData";
@@ -148,57 +149,41 @@ const Navbar = () => {
                   </li>
                 </Link>
 
-                <div className="dropdown dropdown-hover group">
-                  <Link to="/portfolio" className=" group">
-                    <li
-                      onMouseEnter={() => {
-                        setIsVisibleServices(false);
-                        setIsVisibleTechnology(false);
-                      }}
-                    >
-                      <a className="text-sm font-medium text-slate-100 rounded-sm tracking-wider hover:font-semibold flex group hover:border-b-[5px]">
-                        PORTFOLIO
-                        <span className=" rotate-[270] group-hover:rotate-180">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            className="h-4 w-4"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth="2"
-                              d="M19 9l-7 7-7-7"
-                            />
-                          </svg>
-                        </span>
-                      </a>
-                    </li>
-                  </Link>
 
-                  <ul
-                    tabIndex={0}
-                    className="dropdown-content rounded-none z-[11] mt-[1px] p-none bg-base-100 min-w-52 max-w-[68] group"
-                  >
-                    <Link to="/portfolio/OurApproach">
-                      <li className=" hover:bg-base-200">
-                        <a>Our Approach</a>
-                      </li>
-                    </Link>
-                    <Link to="/portfolio/OurAchievement">
-                      <li>
-                        <a>Our Achievement</a>
-                      </li>
-                    </Link>
-                    <Link to="/portfolio/profile">
-                      <li>
-                        <a>Our Profile</a>
-                      </li>
-                    </Link>
-                  </ul>
-                </div>
+              <div className="dropdown dropdown-hover relative group">
+
+              
+              <Link to='/portfolio' className=" group">
+
+              <li onMouseEnter={() => {
+                      setIsVisibleServices(false);
+                      setIsVisibleTechnology(false);
+                    }}><a className="text-sm font-medium text-slate-100 rounded-sm tracking-wider hover:font-semibold flex group">PORTFOLIO
+                    <span className=" rotate-[270] group-hover:rotate-180">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      className="h-4 w-4"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
+                      </span></a></li></Link>
+
+              <ul tabIndex={0} className="dropdown-content z-[11] menu p-2 shadow bg-base-100 rounded-box min-w-52 group">
+              <Link to='/portfolio/profile' ><li><a>Our Profile</a></li></Link>
+                <Link to='/portfolio/OurApproach' ><li><a>Our Approach</a></li></Link>
+                <Link to='/portfolio/OurAchievement' ><li><a>Our Achievement</a></li></Link>
+              </ul>
+            </div> 
+
+
 
                 <Link to="/career">
                   <li>
