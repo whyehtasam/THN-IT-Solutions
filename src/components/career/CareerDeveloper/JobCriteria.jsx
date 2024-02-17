@@ -10,7 +10,7 @@ const Criteria = ({ prop }) => {
           <div className="md:pl-4">
             <ul className="pl-5 list-disc list-outside">
               {data.Points.map((point, pointIndex) => (
-                <li key={pointIndex} className="p-1 text-xs text-justify  md:text-sm text-slate-800">
+                <li key={pointIndex} className="p-1 text-xs text-justify md:text-sm text-slate-800">
                   {point}
                 </li>
               ))}
