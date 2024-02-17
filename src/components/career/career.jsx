@@ -10,12 +10,12 @@ function Career() {
             <h2 className="pb-4 text-2xl font-bold text-gray-800 md:text-2xl lg:text-3xl">
               Shape Your Future with THN IT Solutions ?{" "}
             </h2>
-            <p className="pb-2 text-justify md:text-sm lg:text-base">
+            <p className="pb-2 text-justify text-sm lg:text-base">
               Are you passionate about software development and eager to
               contribute to cutting-edge technology solutions? THN IT Solutions
               is looking for talented individuals to join our dynamic team!
             </p>
-            <p className="text-justify md:text-sm lg:text-base">
+            <p className="text-justify text-sm lg:text-base">
               At THN IT Solutions, we are at the forefront of innovation,
               crafting cutting-edge software solutions that empower businesses
               and individuals alike. Our commitment to excellence, coupled with
@@ -25,7 +25,7 @@ function Career() {
               journey.
             </p>
           </div>
-          <div className="py-4  md:py-8">
+          <div className="py-4 md:py-8">
             <h3 className="pb-4 text-lg font-bold">
               Why Join THN IT Solutions
             </h3>
@@ -47,11 +47,11 @@ function Career() {
             </ul>
           </div>
         </div>
-        <div className="justify-center w-full flex-1 md:p-5">
+        <div className="justify-center flex-1 w-full md:p-5">
           <img
             src={svg}
             alt="svg image"
-            className="md:h-full h-80 mix-blend-multiply mx-auto"
+            className="mx-auto md:h-full h-80 mix-blend-multiply"
           />
         </div>
       </div>
