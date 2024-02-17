@@ -92,7 +92,7 @@ function App() {
 
           <Route path="/portfolio/profile" element={<Profile />} />
           <Route path="/portfolio/OurAchievement" element={<OurAchievement />} />
-          <Route path='/portfolio/OurApproach' element={<ProcessOverView />} />
+          <Route path='/portfolio/ProcessOverView' element={<ProcessOverView />} />
 
           <Route
             path="/"
