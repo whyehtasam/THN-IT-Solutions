@@ -58,7 +58,7 @@ export const TechnologyData = [
   {
     No: "2",
     path: "/",
-    technologyName: "Backend Development ",
+    technologyName: "Backend Development",
   },
   {
     No: "3",
