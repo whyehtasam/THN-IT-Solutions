@@ -19,7 +19,7 @@ const ApplyForm = () => {
 
     <div className="bg-[#d6d6d6]  text-[#282828] font-semibold">
         <div className=' bg-[#ffffff] shadow-xl md:rounded-2xl  p-5 md:p-8 md:max-w-6xl md:mx-auto'>
-            <div className='flex bg-slate-200 items-center justify-between rounded my-auto px-[5vw] py-[1vh]'>
+            <div className='flex bg-slate-200 items-center md:justify-between rounded my-auto px-2 md:px-[5vw] py-[1vh]'>
                 <div>
                 <img src="/logo.jpg"
                   className="h-16 mix-blend-multiply hidden md:block"
@@ -46,7 +46,7 @@ const ApplyForm = () => {
                 
 
                 <div className='container px-[2%]'>
-                    <h2  className='mb-4 text-lg font-bold text-left underline'>Personal Information</h2>
+                    <h2  className='mb-4 text-lg font-bold text-left md:underline'>Personal Information</h2>
 
                 <div className='grid grid-cols-1 md:flex mb-[2vh] md:justify-between '>
                     <label className="w-full md:max-w-xs  form-control ">
@@ -116,7 +116,7 @@ const ApplyForm = () => {
 
             
                 <div className='container'>
-                <h2 className='px-4 mb-4 text-lg font-bold text-left underline'>Address Information</h2>
+                <h2 className='px-4 mb-4 text-lg font-bold text-left md:underline'>Address Information</h2>
 
                     <div className=' px-[2%] my-[2%]'>
                         <div>
@@ -234,7 +234,7 @@ const ApplyForm = () => {
                 </div>
 
                 <div className='container'>
-                <h2  className='px-4 mb-4 text-lg font-bold text-left underline'>Education Qualification</h2>
+                <h2  className='px-4 mb-4 text-lg font-bold text-left md:underline'>Education Qualification</h2>
                         
                         <div className='grid grid-cols-1 md:flex justify-between mx-[2%] my-[1%]'>
 
@@ -262,13 +262,13 @@ const ApplyForm = () => {
                     </div>
                     <div className='md:flex my-auto items-center py-[1%] mx-[2%] gap-[2%]'>
                         <label className='label'>Training certifications, If any : </label>
-                    <input type="file" className="file-input file- input-md input-bordered md:min-w-[5vw] h-[6vh] md:max-w-xs" />
+                    <input type="file" className="file-input file- input-md input-bordered w-full md:min-w-[5vw] md:h-[6vh] md:max-w-xs" />
                 </div>
 
                 </div>
 
                 <div className='container '>
-                <h2  className='mt-[3%] mb-[2%] px-4 text-left text-lg font-bold underline'>Work Experience</h2>
+                <h2  className='mt-[3%] mb-[2%] px-4 text-left text-lg font-bold md:underline'>Work Experience</h2>
 
                 <div className='flex items-center my-auto mx-[1vw] gap-[2%]'>
                     <label className='label'>Fresher </label>
@@ -308,7 +308,7 @@ const ApplyForm = () => {
                 </div>
 
                 <div className='container'>
-                <h2  className='mt-[3%] mb-[2%] px-4 text-left text-lg font-bold underline'>Skills & Qualification</h2>
+                <h2  className='mt-[3%] mb-[2%] px-4 text-left text-lg font-bold md:underline'>Skills & Qualification</h2>
 
                     <div className='md:w-[50%] mx-[3%]'>
 
