@@ -4,13 +4,13 @@ import svg from "../../assets/WeAreHiring.svg";
 function Career() {
   return (
     <section className="mx-auto career-page md:mb-8 about-us lg:max-w-7xl">
-      <div className="grid md:my-8 md:grid-cols-2 md:pt-16">
-        <div className="flex-1 h-full p-5 lg:pr-16">
+      <div className="flex flex-col-reverse md:grid md:mb-8 md:grid-cols-2 md:pt-8">
+        <div className="flex-1 h-full p-5 lg:pr-16 ">
           <div className="">
-            <h2 className="md:font-bold font-semibold text-xl md:text-2xl lg:text-3xl pb-4">
-              Looking for new job opportunities at THN IT Solutions ?{" "}
+            <h2 className="pb-4 text-2xl font-bold text-gray-800 md:text-2xl lg:text-3xl">
+              Shape Your Future with THN IT Solutions ?{" "}
             </h2>
-            <p className="pb-2 text-justify  md:text-sm lg:text-base">
+            <p className="pb-2 text-justify md:text-sm lg:text-base">
               Are you passionate about software development and eager to
               contribute to cutting-edge technology solutions? THN IT Solutions
               is looking for talented individuals to join our dynamic team!
@@ -25,37 +25,40 @@ function Career() {
               journey.
             </p>
           </div>
-          <div className="py-8">
+          <div className="py-4  md:py-8">
             <h3 className="pb-4 text-lg font-bold">
               Why Join THN IT Solutions
             </h3>
-            <ul className="list-disc pl-4 space-y-2">
-            <li className="text-sm">
-              Exciting and challenging projects that push the boundaries of
-              technology.
-            </li>
-            <li className="text-sm">
-              Competitive salary and benefits package.
-            </li>
-            <li className="text-sm">
-              Opportunities for professional development and growth.
-            </li>
-            <li className="text-sm">
-              A collaborative and inclusive work culture that values innovation.
-            </li>
+            <ul className="pl-4 space-y-2 list-disc">
+              <li className="text-sm">
+                Exciting and challenging projects that push the boundaries of
+                technology.
+              </li>
+              <li className="text-sm">
+                Competitive salary and benefits package.
+              </li>
+              <li className="text-sm">
+                Opportunities for professional development and growth.
+              </li>
+              <li className="text-sm">
+                A collaborative and inclusive work culture that values
+                innovation.
+              </li>
             </ul>
           </div>
         </div>
-        <div className="justify-center flex-1 p-5">
+        <div className="justify-center w-full flex-1 md:p-5">
           <img
             src={svg}
             alt="svg image"
-            className="h-full bg-cover mix-blend-multiply"
+            className="md:h-full h-80 mix-blend-multiply mx-auto"
           />
         </div>
       </div>
-
-      <div className="grid gap-5 p-5 mb-8 lg:p-0 md:grid-cols-2 lg:grid-cols-3 ">
+      <h2 className="p-4 mx-5 mb-4 text-2xl font-bold text-center text-gray-800 bg-white border-2 rounded-lg shadow-sm md:p-10 md:mx-0 md:text-2xl lg:text-3xl md:rounded-box md:hidden">
+        Current Openings
+      </h2>
+      <div className="grid gap-5 px-5 mb-8 lg:p-0 md:grid-cols-2 lg:grid-cols-3 ">
         <Careercard cData={careerCardData} />
       </div>
     </section>
@@ -67,19 +70,20 @@ const Careercard = ({ cData }) => {
     <>
       {cData.map((data, index) => (
         <div
-          className="card bg-base-100 shadow-xl border-[2px] rounded-box "
+          className="card bg-base-100  shadow-sm md:shadow-xl border-[2px] md:rounded-box rounded-lg "
           key={index}
         >
           <div className="card-body">
-            <h2 className="text-2xl font-bold card-title">
-              {" "}
+            <h2 className="text-xl font-bold md:text-2xl card-title">
               <img src={data.url} alt="" height={"50vh"} width={"50vw"} />{" "}
               {data.name}
             </h2>
-            <p className="pt-4 pl-2 text-sm text-justify">{data.description}</p>
+            <p className="pt-2 pl-2 text-xs text-justify md:pt-4 md:text-sm">
+              {data.description}
+            </p>
             <div className="flex mt-4 card-actions ">
               <Link to={data.path}>
-                <a className="px-4 py-2 ml-2 text-white no-underline bg-gray-800 rounded-full hover:bg-gray-700 hover:shadow">
+                <a className="px-4 py-2 ml-2 text-xs text-white no-underline bg-gray-800 rounded-full md:text-base hover:bg-gray-700 hover:shadow">
                   Explore »
                 </a>
               </Link>
