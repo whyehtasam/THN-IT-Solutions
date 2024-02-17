@@ -33,9 +33,9 @@ const ApplyForm = () => {
             </div>
 
             <form action="" method="post">
-            <div className='flex px-[2%] py-[2%] items-center my-auto'>
-                <h3><span className='text-[red]'>*</span>Position Applying for :</h3>
-                <select name="" id="position" className='ml-4 border-[1px] p-1 rounded-lg selection:border-[1px]'>
+            <div className='flex px-[2%] py-[2%] justify-between md:justify-start items-center my-auto'>
+                <h3 className='text-sm'><span className='text-[red] '>*</span>Position Applying for :</h3>
+                <select name="" id="position" className='ml-4 border-[1px] p-1 md:rounded-lg rounded-md selection:border-[1px] text-sm'>
                     <option value="Web Developer" className='p-4 border-none'>Web Developer</option>
                     <option value="Backend Developer" className='p-4 border-none'>Backend Developer</option>
                     <option value="Cloud Developer" className='p-4 border-none'>Cloud Developer</option>
@@ -123,7 +123,7 @@ const ApplyForm = () => {
                         <h3 className='font-bold'><span className='text-[red]'>*</span> Present Address :</h3>
                         </div>
                             
-                            <div className='flex justify-between '>
+                            <div className='md:flex md:justify-between '>
                             <label className="w-full md:max-w-xs form-control ">
                             <div className="label">
                                 <span className="label-text">Address Line 1<span className='text-[red]'>*</span></span>
@@ -146,7 +146,7 @@ const ApplyForm = () => {
                             
                             </label>
                             </div>
-                            <div className='flex justify-between '>
+                            <div className='md:flex justify-between '>
                             <label className="w-full md:max-w-xs form-control ">
                             <div className="label">
                                 <span className="label-text">State<span className='text-[red]'>*</span></span>
@@ -182,7 +182,7 @@ const ApplyForm = () => {
                       
                             
                             <div className=''>
-                            <div className='flex justify-between'>
+                            <div className='md:flex justify-between'>
                             <label className="w-full md:max-w-xs form-control ">
                             <div className="label">
                                 <span className="label-text">Address Line 1<span className='text-[red]'>*</span></span>
@@ -205,7 +205,7 @@ const ApplyForm = () => {
                             
                             </label>
                             </div>
-                            <div className='flex justify-between'>
+                            <div className='md:flex justify-between'>
                             <label className="w-full md:max-w-xs form-control ">
                             <div className="label">
                                 <span className="label-text">State<span className='text-[red]'>*</span></span>
@@ -260,7 +260,7 @@ const ApplyForm = () => {
                             <input type="text" placeholder="YYYY" className="w-full md:max-w-xs input  input-md input-bordered" disabled={isSameAsPresent}/>
                             </label>
                     </div>
-                    <div className='flex my-auto items-center py-[1%] mx-[2%] gap-[2%]'>
+                    <div className='md:flex my-auto items-center py-[1%] mx-[2%] gap-[2%]'>
                         <label className='label'>Training certifications, If any : </label>
                     <input type="file" className="file-input file- input-md input-bordered min-w-[5vw] h-[6vh] md:max-w-xs" />
                 </div>
@@ -275,7 +275,7 @@ const ApplyForm = () => {
                     <input type="checkbox" className=" border-[#000] mx-[1vh]" onChange={handelFresher}/> 
                 </div>
 
-                <div className='flex justify-between mx-[2%] gap-[1%] my-[2vh]'>
+                <div className='md:flex justify-between mx-[2%] gap-[1%] my-[2vh]'>
                 <label className="w-full md:max-w-xs form-control">
                     <div className="label">
                         <span className="label-text">Company Name : <span className='text-[red]'>*</span></span>
@@ -310,11 +310,11 @@ const ApplyForm = () => {
                 <div className='container'>
                 <h2  className='mt-[3%] mb-[2%] px-4 text-left text-lg font-bold underline'>Skills & Qualification</h2>
 
-                    <div className='w-[50%] mx-[3%]'>
+                    <div className='md:w-[50%] mx-[3%]'>
 
-                        <div className='flex justify-between pb-[1%] items-center my-auto'><label htmlFor="">Technical skills : </label><input type="text" placeholder="Write your tech Skills, use comma to separate" className="w-full md:max-w-xs input  input-md input-bordered" /></div>
-                        <div className='flex justify-between pb-[1%] items-center my-auto'><label htmlFor="">Soft skills : </label><input type="text" placeholder="Write your soft skills, use comma to separate" className="w-full md:max-w-xs input  input-md input-bordered" /></div>
-                        <div className='flex justify-between pb-[1%] items-center my-auto'><label htmlFor="">Certifications : </label><input type="text" placeholder="Certificate details, use comma to separate" className="w-full md:max-w-xs input  input-md input-bordered" /></div>
+                        <div className='md:flex justify-between pb-[1%] items-center my-auto'><label htmlFor="">Technical skills : </label><input type="text" placeholder="Write your tech Skills, use comma to separate" className="w-full md:max-w-xs input  input-md input-bordered" /></div>
+                        <div className='md:flex justify-between pb-[1%] items-center my-auto'><label htmlFor="">Soft skills : </label><input type="text" placeholder="Write your soft skills, use comma to separate" className="w-full md:max-w-xs input  input-md input-bordered" /></div>
+                        <div className='md:flex justify-between pb-[1%] items-center my-auto'><label htmlFor="">Certifications : </label><input type="text" placeholder="Certificate details, use comma to separate" className="w-full md:max-w-xs input  input-md input-bordered" /></div>
                     
 
                     </div>
@@ -333,7 +333,7 @@ const ApplyForm = () => {
                 </div>  
 
                 <div className="card-actions justify-end border-t-[2px] pt-[1%]">
-      <button className="btn font-bold text-white bg-[#014aaa] hover:bg-[#4886b5] w-[8vw] text-lg">Submit</button>
+      <button className="btn font-bold text-white bg-[#014aaa] hover:bg-[#4886b5] md:w-[8vw] text-lg">Submit</button>
     </div>
                 </form>
         </div>
