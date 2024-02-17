@@ -9,7 +9,7 @@ function WebDeveloperCareer(){
         <div className="flex justify-between md:py-6 px-3 py-5 md:px-8 border-b-[2px]">
           <div className="flex gap-2 min-w-24">
             <h1 className="text-sm font-semibold text-slate-500 md:font-bold md:text-base min-w-max">Job Title : </h1>
-            <p className="text-sm font-bold text-slate-800 md:text-base w-fit">
+            <p className="text-sm font-bold text-slate-800 md:text-base md:w-fit min-w-40 ">
               Web and Mobile App Developer
             </p>
           </div>
