@@ -92,7 +92,7 @@ const Navbar = () => {
                 onClick={() => setIsVisibleServices(false)} 
                 
                 
-                className="group-hover:border-b-[4px] group-hover:border-[#000000]">
+                className="group-hover:border-b-[4px] group-hover:border-[#4e8e9b]">
                   <a className="text-sm font-medium text-slate-100 rounded-sm tracking-wider hover:font-semibold flex group">
                       OUR SERVICES
                     <span className=" rotate-[270] group-hover:rotate-180">
@@ -168,7 +168,7 @@ const Navbar = () => {
                 onClick={() => setIsVisibleTechnology(false)} 
                 
                 
-                className="group-hover:border-b-[4px] group-hover:border-[#000000]">
+                className="group-hover:border-b-[4px] group-hover:border-[#4e8e9b]">
                   <a className="text-sm font-medium text-slate-100 rounded-sm tracking-wider hover:font-semibold flex group">
                       TECHNOLOGY
                     <span className=" rotate-[270] group-hover:rotate-180">
@@ -188,7 +188,7 @@ const Navbar = () => {
                     </svg>
                       </span></a></li></Link>
 
-              {isVisibleTechnology && ( <li className="absolute shadow bg-base-100 rounded-none min-w-64 group"
+              {/* isVisibleTechnology && ( <li className="absolute shadow bg-base-100 rounded-none min-w-64 group"
               onMouseMove={()=> setIsVisibleTechnology(true)}
               onMouseLeave={()=> setIsVisibleTechnology(false)}>
                 <Link to='/' className={ItemStyle} onClick={() => setIsVisibleTechnology(false)} ><a>Frontend Development</a></Link>
@@ -197,7 +197,6 @@ const Navbar = () => {
                 <Link to='/' className={ItemStyle} onClick={() => setIsVisibleTechnology(false)} ><a>Cloud</a></Link>
                 <Link to='/' className={ItemStyle} onClick={() => setIsVisibleTechnology(false)} ><a>Artificial intelligence</a></Link>
                 <Link to='/' className={ItemStyle} onClick={() => setIsVisibleTechnology(false)} ><a>Infrastructure Development</a></Link>
-                <Link to='/' className={ItemStyle} onClick={() => setIsVisibleTechnology(false)} ><a>DevOps</a></Link>
               </li>)}
             </div> 
 
@@ -239,7 +238,7 @@ const Navbar = () => {
               
               <Link to='/portfolio' className=" group">
 
-              <li className="group-hover:border-b-[4px] group-hover:border-[#2d5965]"
+              <li className="group-hover:border-b-[4px] group-hover:border-[#4e8e9b]"
               onMouseMove={()=> setIsVisiblePortfolio(true)}
               onMouseLeave={()=> setIsVisiblePortfolio(false)}
               onClick={() => setIsVisiblePortfolio(false)}
