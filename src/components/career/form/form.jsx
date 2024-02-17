@@ -262,7 +262,7 @@ const ApplyForm = () => {
                     </div>
                     <div className='md:flex my-auto items-center py-[1%] mx-[2%] gap-[2%]'>
                         <label className='label'>Training certifications, If any : </label>
-                    <input type="file" className="file-input file- input-md input-bordered min-w-[5vw] h-[6vh] md:max-w-xs" />
+                    <input type="file" className="file-input file- input-md input-bordered md:min-w-[5vw] h-[6vh] md:max-w-xs" />
                 </div>
 
                 </div>
