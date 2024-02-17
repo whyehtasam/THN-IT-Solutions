@@ -94,7 +94,7 @@ const Navbar = () => {
                 
                 className="group-hover:border-b-[4px] group-hover:border-[#000000]">
                   <a className="text-sm font-medium text-slate-100 rounded-sm tracking-wider hover:font-semibold flex group">
-                      Our Services
+                      OUR SERVICES
                     <span className=" rotate-[270] group-hover:rotate-180">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
