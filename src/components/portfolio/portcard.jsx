@@ -1,82 +1,51 @@
-
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
 
+const cardData = [
+  {
+    imgSrc: "/tsnt3.png",
+    title: "TSNT Solutions Pvt. Ltd.",
+    description: "TSNT Solutions Pvt. Ltd. is to deliver best quality that meets and fulfill customer expectations and by leveraging knowledge, experience and technology.",
+    link: "https://tsntsolutions.com/"
+  },
+  {
+    imgSrc: "/tsntechno3.png",
+    title: "TSN Technosolutions",
+    description: "TSNT Solutions Pvt. Ltd. provides Annual Maintenance for panels .We has a team of dedicated engineers and technicians for maintain the works and Maintenance services.",
+    link: "https://tsntechno.in/"
+  },
+  {
+    imgSrc: "/power.png",
+    title: "Altarnative Power Solutions",
+    description: "Any generator set used for emergency or primary source must have periodic service and maintenance performed. Setting up a planned maintenance schedule.",
+    link: "https://www.alternativepower.in/"
+  },
+  {
+    imgSrc: "/tsntauto3.png",
+    title: "TSN Automation",
+    description: "THN IT Solutions, we believe in the power of technology to transform businesses and streamline operations. As a premier software startup, it help our Business.",
+    link: "https://tsnautomation.in/"
+  }
+];
 
 function Portcard() {
-    
-    return (
-
-        <>
-       
-     
-
-      
-       <div className="flex gap-4 mx-16">
-                <div className=" shadow-xl border-[2px] rounded-lg justify-center p-10  h-50 bg-white ">
-                 <div className="justify-center ">
-                    <img src="/tsnt3.png" className=" w-25 h-25  flex "></img>
-                </div>
-                 <h3 className="text-left text-lg font-semibold mb-4">TSNT Solutions Pvt. Ltd.</h3>
-                 <p className=" text-sm text-justify font-medium  text-gray-500">
-                 TSNT Solutions Pvt. Ltd. is to deliver best quality that meets and fulfill customer expectations and by leveraging knowledge, experience and technology.
-                 </p>
-                 <div className="card-actions flex mt-4 hover:underline">
-                 <Link to='https://tsntsolutions.com/' target="_blank" style={{color:"blue"}}><a className="ml-2">Explore </a>»</Link>
-                 </div>
-             </div>
-             <div className=" shadow-xl border-[2px] rounded-lg justify-center p-10  h-50  bg-white">
-             <div className="justify-center">
-             <img src="/tsntechno3.png" className=" w-25 h-25  flex"></img>
-             </div>
-                 <h3 className="text-left text-lg font-semibold mb-4">TSN Technosolutions</h3>
-                 <p className=" text-sm text-justify font-medium  text-gray-500">
-                 TSNT Solutions Pvt. Ltd. provides Annual Maintenance for panels .We has a team of dedicated engineers and technicians for maintain the works and Maintenance services.
-                 </p>
-                 
-                 <div className="card-actions flex mt-4 hover:underline">
-                 <Link to='https://tsntechno.in/' target="_blank" style={{color:"blue"}}><a className="ml-2">Explore </a>»</Link>
-                 </div>
-                 
-             </div>
-             <div className=" shadow-xl border-[2px] rounded-lg justify-center p-10  h-50 bg-white">
-              <div className="justify-center">
-              <img src="/power.png" className=" w-25 h-25  flex"></img>
-              </div>
-                 <h3 className="text-left text-lg font-semibold mb-4">Altarnative Power Solutions</h3>
-                 <p className=" text-sm text-justify font-medium  text-gray-500">
-                 Any generator set used for emergency or primary source must have periodic service and maintenance performed. Setting up a planned maintenance schedule. 
-                 </p>
-                 
-                 <div className="card-actions flex mt-4 hover:underline">
-                 <Link to='https://www.alternativepower.in/' target="_blank" style={{color:"blue"}}><a className="ml-2">Explore </a>»</Link>
-                 </div>
-                 
-             </div>
-             
-            { <div className=" shadow-xl border-[2px] rounded-lg justify-center p-10  h-50 ">
-             <div className="justify-center">
-             <img src="/tsntauto3.png" className="w-25 h-25  flex"></img>
-             </div>
-                 <h3 className="text-left text-lg font-semibold mb-4">TSN Automation</h3>
-                 <p className=" text-sm text-justify font-medium  text-gray-500">
-                 THN IT Solutions, we believe in the power of technology to transform businesses and streamline operations.  As a premier software startup, it help our Business.
-                 </p>
-                 
-                 <div className="card-actions flex mt-4 hover:underline">
-                 <Link to='https://tsnautomation.in/' target="_blank" style={{color:"blue"}}><a className="ml-2">Explore </a>»</Link>
-                 </div>
-                 
-             </div> 
-             }
+  return (
+    <div className="flex gap-4 ">
+      {cardData.map((card, index) => (
+        <div key={index} className="shadow-xl border-[2px] rounded-lg justify-center p-10 h-50 bg-white">
+          <div className="justify-center">
+            <img src={card.imgSrc} className="flex w-25 h-25" alt={card.title} />
+          </div>
+          <h3 className="mb-4 text-lg font-semibold text-left">{card.title}</h3>
+          <p className="text-sm font-medium text-justify text-gray-500">{card.description}</p>
+          <div className="flex mt-4 card-actions hover:underline">
+            <Link to={card.link} target="_blank" style={{ color: "blue" }}>
+              <a className="ml-2">Explore </a>»
+            </Link>
+          </div>
         </div>
-      
-      </>
-    );
-  }
-  
-  export default Portcard;
+      ))}
+    </div>
+  );
+}
 
-
-// 
+export default Portcard;
