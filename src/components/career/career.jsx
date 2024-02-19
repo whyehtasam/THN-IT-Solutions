@@ -4,8 +4,8 @@ import svg from "../../assets/WeAreHiring.svg";
 function Career() {
   return (
     <section className="mx-auto career-page md:mb-8 about-us lg:max-w-7xl">
-      <div className="flex flex-col-reverse md:grid md:mb-8 md:grid-cols-2 md:pt-8">
-        <div className="flex-1 h-full p-5 lg:pr-16 ">
+      <div className="flex flex-col-reverse md:grid md:mb-8 md:grid-cols-2 md:pt-0">
+        <div className="flex-1 h-full p-5 lg:p-16 ">
           <div className="">
             <h2 className="pb-4 text-2xl font-bold text-gray-800 md:text-2xl lg:text-3xl">
               Shape Your Future with THN IT Solutions ?{" "}
@@ -47,7 +47,7 @@ function Career() {
             </ul>
           </div>
         </div>
-        <div className="justify-center flex-1 w-full md:p-5">
+        <div className="justify-center flex-1 w-full md:p-16">
           <img
             src={svg}
             alt="svg image"
