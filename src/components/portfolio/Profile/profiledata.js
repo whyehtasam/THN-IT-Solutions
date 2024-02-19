@@ -50,7 +50,7 @@ export const DirectorTechnicalHead = [
 
 export const TechnicalExpartDatas =[
     {
-        Name:'Tuhin Akhter',
+        Name:'Tushar Mondal',
         YearOfExp:'14',
         Designation:'Solutions Architect & Backend Application',
         expdetials:[`Banking, Insurance, Retail, Health Care`],
@@ -66,7 +66,7 @@ export const TechnicalExpartDatas =[
         ],
     },
     {
-        Name:'Habib Sekh',
+        Name:'Nasif Ahamed',
         YearOfExp:'13',
         Designation:'Solutions Architect & Front-End Application',
         expdetials:[`Banking, Insurance, Retail, Health Care, Telecom`],

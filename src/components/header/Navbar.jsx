@@ -6,7 +6,7 @@ import logo from "../../assets/logo.jpg";
 // import logo from "../../assets/logoo.png";
 // import ServicesMenu from "./OurServicesMenu";
 // import TechnologyMenu from "./TechnologyMenu";
-import { serviceData, TechnologyData } from "./ServicesTechnologyData";
+//import { serviceData, TechnologyData } from "./ServicesTechnologyData";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -238,7 +238,7 @@ const Navbar = () => {
               <div className="group">
 
               
-              <Link to='/portfolio' className=" group">
+              <Link to='/portfolio/profile' className=" group">
 
               <li className="group-hover:border-b-[4px] group-hover:border-[#4e8e9b]"
               onMouseMove={()=> setIsVisiblePortfolio(true)}
@@ -269,7 +269,7 @@ const Navbar = () => {
                         onMouseMove={()=> setIsVisiblePortfolio(true)}
                         onMouseLeave={()=> setIsVisiblePortfolio(false)}>
                           <Link to='/portfolio/profile' className={ItemStyle} onClick={() => setIsVisiblePortfolio(false)} ><a>Our Profile</a></Link>
-                          <Link to='/portfolio/ProcessOverView' className={ItemStyle} onClick={() => setIsVisiblePortfolio(false)} ><a>Process over View</a></Link>
+                          <Link to='/portfolio/ProcessOverView' className={ItemStyle} onClick={() => setIsVisiblePortfolio(false)} ><a>Process Over View</a></Link>
                           <Link to='/portfolio/OurAchievement' className={ItemStyle} onClick={() => setIsVisiblePortfolio(false)} ><a>Our Achievement</a></Link>
                         </li>)}
             </div> 
