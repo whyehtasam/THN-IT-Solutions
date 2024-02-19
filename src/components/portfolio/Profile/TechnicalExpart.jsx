@@ -1,10 +1,10 @@
 import userimage from "./images/userImage.jpg";
 
-const TechnicalExpartCard = ({TechnicalExpartData}, index) => {
+const TechnicalExpartCard = ({TechnicalExpartData}) => {
   return (
     <>
     {TechnicalExpartData.map((data, index) => (
-    <div className="card card-side bg-base-100 shadow-xl">
+    <div className="card card-side bg-base-100 shadow-xl" key={index}>
       <div className="card card-compact bg-base-100 border-r-[1px] w-[20vw]">
         <div className="avatar px-[1vw] border-b-[1px] bg-[#98c2ef] card">
           <div className="w-full rounded-full ring ring-[#397284] ring-offset-base-100 ring-offset-2 my-[2vh] ">
