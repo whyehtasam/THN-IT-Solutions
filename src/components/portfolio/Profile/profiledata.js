@@ -47,22 +47,6 @@ export const DirectorTechnicalHead = [
 
 export const TechnicalExpartDatas = [
   {
-    Name: "Tushar Mondal",
-    YearOfExp: "14",
-    Designation: "Solutions Architect & Backend Application",
-    expdetials: [`Banking, Insurance, Retail, Health Care`],
-    skils: [
-      ` Programming Languages: Java, Python`,
-      ` Frameworks: Spring Boot, Django`,
-      `  Database Management: MySQL,Oracle,Redshift,Aurora, MongoDB,DynamoDB`,
-      " Version Control: Git",
-      " Software Development Methodologies: Agile, Scrum",
-      "Tools and Platforms: AWS, Docker,Kubernetes",
-      " Testing and Debugging: JUnit, Mockito",
-      " Other Relevant Skills: RESTful API development, Microservices architecture",
-    ],
-  },
-  {
     Name: "Nasif Ahamed",
     YearOfExp: "13",
     Designation: "Solutions Architect & Front-End Application",
@@ -78,6 +62,23 @@ export const TechnicalExpartDatas = [
       ` Version Control: Git`,
     ],
   },
+  {
+    Name: "Tushar Mondal",
+    YearOfExp: "14",
+    Designation: "Solutions Architect & Backend Application",
+    expdetials: [`Banking, Insurance, Retail, Health Care`],
+    skils: [
+      ` Programming Languages: Java, Python`,
+      ` Frameworks: Spring Boot, Django`,
+      `  Database Management: MySQL,Oracle,Redshift,Aurora, MongoDB,DynamoDB`,
+      " Version Control: Git",
+      " Software Development Methodologies: Agile, Scrum",
+      "Tools and Platforms: AWS, Docker,Kubernetes",
+      " Testing and Debugging: JUnit, Mockito",
+      " Other Relevant Skills: RESTful API development, Microservices architecture",
+    ],
+  },
+ 
 ];
 
 export const TeamDatas = [

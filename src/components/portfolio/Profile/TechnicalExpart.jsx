@@ -7,7 +7,7 @@ const TechnicalExpartCard = ({TechnicalExpartData}) => {
     <div className="card card-side bg-base-100 shadow-lg border" key={index}>
       
       
-      <div className="flex card-body">
+      <div className="flex  card-body">
       <div className="flex justify-between items-center my-auto py-2">
             <h2 className="card-title">{data.Name}</h2>
             <div className="text-center text-xs font-semibold">
