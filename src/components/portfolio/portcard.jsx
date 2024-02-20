@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom";
-
+import CenterMode from "../Slider/CenterMode";
 import {cardData} from './achievementData'
 function Portcard() {
   return (
-    <div className=" grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-4 ">
+    // <div className=" grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-4 ">
+    <div className="postcard-container">
+
+    <CenterMode>
       {cardData.map((card, index) => (
-        <div key={index} className="md:shadow-xl border-[2px] rounded-lg justify-center p-6 md:p-10 h-50 bg-white">
+        <div key={index} className=" border-[2px] rounded-lg justify-center p-6 md:p-10  bg-white  h-full">
           <div className="justify-center">
             <img src={card.imgSrc} className="flex w-25 h-25" alt={card.title} />
           </div>
@@ -18,7 +21,13 @@ function Portcard() {
           </div>
         </div>
       ))}
-    </div>
+    </CenterMode>
+      </div>
+
+
+
+      
+    // </div>
   );
 }
 
