@@ -89,7 +89,7 @@ const Carousel = (props) => {
               <img
                 src={item.path}
                 alt="imgs"
-                className="object-cover h-full w-full"
+                className="h-full w-full"
               />
             </div>
           );
