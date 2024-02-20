@@ -3,7 +3,7 @@ import CenterMode from "../Slider/CenterMode";
 import { cardData } from "./achievementData";
 function Portcard() {
   return (
-    // <div className=" grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-4 ">
+    // <div className="grid grid-cols-1 gap-4  lg:grid-cols-4 md:grid-cols-3">
     <div className="postcard-container">
       <CenterMode>
         {cardData.map((card, index) => (
@@ -19,16 +19,16 @@ function Portcard() {
               />
             </div>
             <div>
-              <h3 className="mb-4 mt-1 text-lg font-semibold text-left">
+              <h3 className="mt-1 mb-4 text-lg font-semibold text-left">
                 {card.title}
               </h3>
-              <p className="text-xs py-2 md:text-sm font-medium text-justify text-gray-500">
+              <p className="py-2 text-xs font-medium text-justify text-gray-500 md:text-sm">
                 {card.description}
               </p>
             </div>
             <div className="flex md:absolute bottom-8 card-actions hover:underline">
               <Link to={card.link} target="_blank">
-                <a className=" text-sm md:ml-0">Explore </a>»
+                <a className="text-sm  md:ml-0">Explore </a>»
               </Link>
             </div>
           </div>

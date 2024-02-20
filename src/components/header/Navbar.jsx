@@ -14,8 +14,8 @@ const Navbar = () => {
   const [isVisibleTechnology, setIsVisibleTechnology] = useState(false);
   const [isVisiblePortfolio, setIsVisiblePortfolio] = useState(false);
 
-  const ItemStyle = 'border-b-[3px] rounded-none px-[2vw] py-[2vh] hover:bg-gray-100 hover:border-b-[3px] hover:border-cyan-300';
-
+  const ItemStyle =
+    "border-b-[3px] rounded-none px-[2vw] py-[2vh] hover:bg-gray-100 hover:border-b-[3px] hover:border-gray-500";
 
   const handleScroll = () => {
     const offset = window.scrollY;
@@ -83,49 +83,89 @@ const Navbar = () => {
                 </Link>
 
                 <div className=" group">
-
-              
-              <Link to='/technology' className=" group">
-
-              <li onMouseMove={()=> setIsVisibleServices(true)}
-                onMouseLeave={()=> setIsVisibleServices(false)}
-                onClick={() => setIsVisibleServices(false)} 
-                
-                
-                className="group-hover:border-b-[4px] group-hover:border-[#4e8e9b]">
-                  <a className="text-sm font-medium text-slate-100 rounded-sm tracking-wider hover:font-semibold flex group">
-                      OUR SERVICES
-                    <span className=" rotate-[270] group-hover:rotate-180">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      className="h-4 w-4"
+                  <Link to="/ourServices" className=" group">
+                    <li
+                      onMouseMove={() => setIsVisibleServices(true)}
+                      onMouseLeave={() => setIsVisibleServices(false)}
+                      onClick={() => setIsVisibleServices(false)}
+                      className=""
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M19 9l-7 7-7-7"
-                      />
-                    </svg>
-                      </span></a></li></Link>
+                      <a className="text-sm font-medium text-slate-100 rounded-sm tracking-wider hover:font-semibold flex group">
+                        OUR SERVICES
+                        <span className=" rotate-[270] group-hover:rotate-180">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            className="h-4 w-4"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </span>
+                      </a>
+                    </li>
+                  </Link>
 
-              {isVisibleServices && ( <li className="absolute shadow bg-base-100 rounded-none min-w-64 group"
-              onMouseMove={()=> setIsVisibleServices(true)}
-              onMouseLeave={()=> setIsVisibleServices(false)}>
-                <Link to='/ourServices/ApplicationDevelopment' className={ItemStyle} onClick={() => setIsVisibleServices(false)} ><a>Application Development</a></Link>
-                <Link to='/ourServices/CloudService' className={ItemStyle} onClick={() => setIsVisibleServices(false)} ><a>Cloud Service</a></Link>
-                <Link to='/ourServices/MaintenanceSupport' className={ItemStyle} onClick={() => setIsVisibleServices(false)} ><a>Maintenance & Support</a></Link>
-                <Link to='/ourServices/DataAnalytics' className={ItemStyle} onClick={() => setIsVisibleServices(false)} ><a>Analytics & Business Intelligence</a></Link>
-                <Link to='/ourServices/DevOps' className={ItemStyle} onClick={() => setIsVisibleServices(false)} ><a>DevOps</a></Link>
-                <Link to='/ourServices/QualityEngineering' className={ItemStyle} onClick={() => setIsVisibleServices(false)} ><a>Quality Engineering</a></Link>
-              </li>)}
-            </div> 
+                  {isVisibleServices && (
+                    <li
+                      className="  absolute shadow bg-base-100 rounded-none min-w-64 group"
+                      onMouseMove={() => setIsVisibleServices(true)}
+                      onMouseLeave={() => setIsVisibleServices(false)}
+                    >
+                      <Link
+                        to="/ourServices/ApplicationDevelopment"
+                        className={ItemStyle}
+                        onClick={() => setIsVisibleServices(false)}
+                      >
+                        <a>Application Development</a>
+                      </Link>
+                      <Link
+                        to="/ourServices/CloudService"
+                        className={ItemStyle}
+                        onClick={() => setIsVisibleServices(false)}
+                      >
+                        <a>Cloud Service</a>
+                      </Link>
+                      <Link
+                        to="/ourServices/MaintenanceSupport"
+                        className={ItemStyle}
+                        onClick={() => setIsVisibleServices(false)}
+                      >
+                        <a>Maintenance & Support</a>
+                      </Link>
+                      <Link
+                        to="/ourServices/DataAnalytics"
+                        className={ItemStyle}
+                        onClick={() => setIsVisibleServices(false)}
+                      >
+                        <a>Analytics & Business Intelligence</a>
+                      </Link>
+                      <Link
+                        to="/ourServices/DevOps"
+                        className={ItemStyle}
+                        onClick={() => setIsVisibleServices(false)}
+                      >
+                        <a>DevOps</a>
+                      </Link>
+                      <Link
+                        to="/ourServices/QualityEngineering"
+                        className={ItemStyle}
+                        onClick={() => setIsVisibleServices(false)}
+                      >
+                        <a>Quality Engineering</a>
+                      </Link>
+                    </li>
+                  )}
+                </div>
 
                 {/* <Link to='/aboutUs'><li><a className="z-10 text-lg font-medium tracking-wider text-gray-800 rounded-sm hover:font-semibold">About Us</a></li> </Link> */}
-                    
+
                 {/* <Link to="/ourServices" className="relative group">
                   <li>
                     <a
@@ -159,20 +199,17 @@ const Navbar = () => {
                 </Link> */}
 
                 <div className=" group">
+                  <Link to="/technology" className=" group">
+                    <li
+                      onMouseMove={() => setIsVisibleTechnology(true)}
+                      onMouseLeave={() => setIsVisibleTechnology(false)}
+                      onClick={() => setIsVisibleTechnology(false)}
 
-              
-              <Link to='/technology' className=" group">
-
-              <li onMouseMove={()=> setIsVisibleTechnology(true)}
-                onMouseLeave={()=> setIsVisibleTechnology(false)}
-                onClick={() => setIsVisibleTechnology(false)} 
-                
-                
-                //className="group-hover:border-b-[4px] group-hover:border-[#4e8e9b]"
-                >
-                  <a className="text-sm font-medium text-slate-100 rounded-sm tracking-wider hover:font-semibold flex group">
-                      TECHNOLOGY
-                    {/* <span className=" rotate-[270] group-hover:rotate-180">
+                      //className="group-hover:border-b-[4px] group-hover:border-[#4e8e9b]"
+                    >
+                      <a className="text-sm font-medium text-slate-100 rounded-sm tracking-wider hover:font-semibold flex group">
+                        TECHNOLOGY
+                        {/* <span className=" rotate-[270] group-hover:rotate-180">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -188,9 +225,11 @@ const Navbar = () => {
                       />
                     </svg>
                       </span> */}
-                      </a></li></Link>
+                      </a>
+                    </li>
+                  </Link>
 
-              {/* isVisibleTechnology && ( <li className="absolute shadow bg-base-100 rounded-none min-w-64 group"
+                  {/* isVisibleTechnology && ( <li className="absolute shadow bg-base-100 rounded-none min-w-64 group"
               onMouseMove={()=> setIsVisibleTechnology(true)}
               onMouseLeave={()=> setIsVisibleTechnology(false)}>
                 <Link to='/' className={ItemStyle} onClick={() => setIsVisibleTechnology(false)} ><a>Frontend Development</a></Link>
@@ -200,7 +239,7 @@ const Navbar = () => {
                 <Link to='/' className={ItemStyle} onClick={() => setIsVisibleTechnology(false)} ><a>Artificial intelligence</a></Link>
                 <Link to='/' className={ItemStyle} onClick={() => setIsVisibleTechnology(false)} ><a>Infrastructure Development</a></Link>
               </li>)*/}
-            </div> 
+                </div>
 
                 {/* <Link to="/technology" className=" relative group">
                   <li>
@@ -234,47 +273,66 @@ const Navbar = () => {
                   </li>
                 </Link> */}
 
-
-              <div className="group">
-
-              
-              <Link to='/portfolio/profile' className=" group">
-
-              <li className="group-hover:border-b-[4px] group-hover:border-[#4e8e9b]"
-              onMouseMove={()=> setIsVisiblePortfolio(true)}
-              onMouseLeave={()=> setIsVisiblePortfolio(false)}
-              onClick={() => setIsVisiblePortfolio(false)}
-              
-              >
-                <a className="text-sm font-medium text-slate-100 rounded-sm tracking-wider hover:font-semibold flex group">
-                      PORTFOLIO
-                    <span className=" rotate-[270] group-hover:rotate-180">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      className="h-4 w-4"
+                <div className="group">
+                  <Link to="/portfolio/profile" className=" group">
+                    <li
+                      className=""
+                      onMouseMove={() => setIsVisiblePortfolio(true)}
+                      onMouseLeave={() => setIsVisiblePortfolio(false)}
+                      onClick={() => setIsVisiblePortfolio(false)}
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M19 9l-7 7-7-7"
-                      />
-                    </svg>
-                      </span></a></li></Link>
+                      <a className="text-sm font-medium text-slate-100 rounded-sm tracking-wider hover:font-semibold flex group">
+                        PORTFOLIO
+                        <span className=" rotate-[270] group-hover:rotate-180">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            className="h-4 w-4"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </span>
+                      </a>
+                    </li>
+                  </Link>
 
-                      {isVisiblePortfolio && ( <li className="absolute shadow bg-base-100 rounded-none min-w-52 group"
-                        onMouseMove={()=> setIsVisiblePortfolio(true)}
-                        onMouseLeave={()=> setIsVisiblePortfolio(false)}>
-                          <Link to='/portfolio/profile' className={ItemStyle} onClick={() => setIsVisiblePortfolio(false)} ><a>Our Profile</a></Link>
-                          <Link to='/portfolio/ProcessOverView' className={ItemStyle} onClick={() => setIsVisiblePortfolio(false)} ><a>Process Over View</a></Link>
-                          <Link to='/portfolio/OurAchievement' className={ItemStyle} onClick={() => setIsVisiblePortfolio(false)} ><a>Our Achievement</a></Link>
-                        </li>)}
-            </div> 
-
-
+                  {isVisiblePortfolio && (
+                    <li
+                      className="absolute shadow bg-base-100 rounded-none min-w-52 group"
+                      onMouseMove={() => setIsVisiblePortfolio(true)}
+                      onMouseLeave={() => setIsVisiblePortfolio(false)}
+                    >
+                      <Link
+                        to="/portfolio/profile"
+                        className={ItemStyle}
+                        onClick={() => setIsVisiblePortfolio(false)}
+                      >
+                        <a>Our Profile</a>
+                      </Link>
+                      <Link
+                        to="/portfolio/ProcessOverView"
+                        className={ItemStyle}
+                        onClick={() => setIsVisiblePortfolio(false)}
+                      >
+                        <a>Process Overview</a>
+                      </Link>
+                      <Link
+                        to="/portfolio/OurAchievement"
+                        className={ItemStyle}
+                        onClick={() => setIsVisiblePortfolio(false)}
+                      >
+                        <a>Our Achievement</a>
+                      </Link>
+                    </li>
+                  )}
+                </div>
 
                 <Link to="/career">
                   <li>
@@ -283,7 +341,7 @@ const Navbar = () => {
                     </a>
                   </li>
                 </Link>
-                
+
                 <Link to="/contact">
                   <li>
                     <a className="z-10 mx-2 text-lg font-medium tracking-wider text-white bg-black border rounded hover:bg-slate-100 hover:text-gray-800 hover:font-bold">

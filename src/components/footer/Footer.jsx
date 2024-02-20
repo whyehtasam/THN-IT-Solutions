@@ -9,7 +9,7 @@ const Footer = () => {
     <Link to='/'><a className="opacity-70 text-xs link link-hover">Home</a></Link>
     <Link to='/ourServices'><a className="opacity-70 text-xs link link-hover">Our Services</a></Link>
     <Link to='/technology'><a className="opacity-70 text-xs link link-hover">Technology</a></Link>
-    <Link to='/portfolio'><a className="opacity-70 text-xs link link-hover">Portfolio</a></Link>
+    <Link to='/portfolio/profile'><a className="opacity-70 text-xs link link-hover">Portfolio</a></Link>
     <Link to='/career'><a className="opacity-70 text-xs link link-hover">Career</a></Link>
     <Link to='/contact'><a className="opacity-70 text-xs link link-hover">Contact Us</a></Link>
   </nav> 
@@ -53,7 +53,7 @@ const Footer = () => {
       </div>
     <div>
     
-    <div className="flex-1 flex flex-wrap w-full  gap-1">
+    <div className="flex-1 flex flex-wrap w-full md:mt-5 gap-1">
 
            <span> <SocialIcon url="https://www.instagram.com/"  style={{height:"2rem", width:"2rem", borderRadius:"2vw"}} /></span>
             {/* <SocialIcon url="https://www.twitter.com/" style={{height:"2rem", width:"2rem", borderRadius:"2vw"}} /> */}
