@@ -10,10 +10,10 @@ function SoftwareMethodology()
         
         <div className="my-[2%] mx-[5%]">
 
-            <img src="/methogoly.jpeg" alt="methogoly.jpeg" className="rounded mx-auto items-center h-[60vh]" />
+            <img src="/methogoly.jpeg" alt="methogoly.jpeg" className="rounded mx-auto items-center " />
         
 
-        <div className="flex justify-between gap-[4%]">
+        <div className="md:flex justify-between gap-[4%]">
 
         <div className="">
         <h2 className="text-[32px] text-start px-4 py-4 font-bold">Waterfall Methodology</h2>

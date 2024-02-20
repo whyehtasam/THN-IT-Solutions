@@ -10,16 +10,16 @@ function CICD()
             <p className="mt-[2%] mb-[4%] mx-[5%]">CI/CD stands for Continuous Integration and Continuous Delivery (or Continuous Deployment), and it's a set of practices and principles aimed at automating the software delivery process to ensure rapid and reliable delivery of high-quality software.</p>
         
 
-        <div className=" flex gap-4">
-            <div className="w-[20%] items-center my-auto text-start">
+        <div className=" md:flex gap-4">
+            <div className="md:w-[20%] items-center my-auto text-start">
             <h1 className="font-bold text-[20px] pb-[2vh]">Continuous Integration (CI)</h1>
             <p>Continuous Integration is the practice of frequently integrating code changes into a shared repository, such as Git, where automated build and test processes are triggered</p>
             </div>
 
-            <div className="w-[60%]">
+            <div className="md:w-[60%]">
                 <img src="/cicd.png" alt="CICD" />
             </div>
-            <div className="w-[20%] items-center my-auto text-end">
+            <div className="md:w-[20%] items-center my-auto md:text-end">
             <h1 className="font-bold text-[20px] pb-[2vh]">Continuous Delivery (CD)</h1>
             <p>Continuous Delivery is the practice of automating the deployment process to ensure that software can be reliably released at any time.</p>
             </div>
@@ -30,10 +30,10 @@ function CICD()
 
 
 
-            <div className="flex justify-between gap-[4%]">
+            <div className="md:flex justify-between gap-[4%]">
 
 <div className="">
-<h2 className="text-[32px] text-center px-4 py-4 font-bold">Continuous Integration (CI)</h2>
+<h2 className="md:text-[32px] text-center px-4 py-4 font-bold">Continuous Integration (CI)</h2>
 
 <div className=" text-justify">
     <li className="text-[15px] font-semibold py-[4%] text-slate-600"><b className="text-[18px] text-slate-800">Frequent Code Integration :</b> 
@@ -45,7 +45,7 @@ function CICD()
 </div>
 
 <div className="">
-<h2 className="text-[32px] text-center px-4 py-4 font-bold">Continuous Delivery (CD)</h2>
+<h2 className="md:text-[32px] text-center px-4 py-4 font-bold">Continuous Delivery (CD)</h2>
 
 <div className="text-justify">
     <li className="text-[15px] font-semibold py-[4%] text-slate-600"><b className="text-[18px] text-slate-800">Automated Deployment :</b> 
