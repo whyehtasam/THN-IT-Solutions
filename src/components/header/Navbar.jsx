@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 import DrawerNavbar from "./DrawerNavbar";
 // import logo from "../../assets/thnit.png";
 // import logo from "../../assets/logo.jpg";
+import logo from "../../assets/flogo.png";
 // import logo from "../../assets/logooo.png";
-import logo from "../../assets/logoo.png";
+// import logo from "../../assets/logoo.png";
 // import ServicesMenu from "./OurServicesMenu";
 // import TechnologyMenu from "./TechnologyMenu";
 //import { serviceData, TechnologyData } from "./ServicesTechnologyData";
@@ -83,7 +84,7 @@ const Navbar = () => {
               <Link to="/">
                 <img
                   src={logo}
-                  className="z-10 h-16 py-2 w-5/12 object-contain"
+                  className="z-10 h-16 py-2 ml-2 sm:ml-0 w-8/12 md:w-10/12 object-contain "
                   alt=""
                 ></img>
               </Link>
