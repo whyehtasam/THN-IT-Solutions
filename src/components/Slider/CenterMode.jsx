@@ -16,7 +16,6 @@ function CenterMode(props) {
     centerMode: true,
     arrows: true,
     swipeToSlide: true,
-    
     centerPadding: "60px",
     responsive: [
       {
