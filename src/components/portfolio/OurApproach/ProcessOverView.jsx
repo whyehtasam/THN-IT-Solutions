@@ -19,7 +19,7 @@ function ProcessOverView() {
 
   return (
     <section className="max-w-7xl mx-auto">
-      <div className="join join-vertical md:mx-[5%] md:gap-5 md:mb-8 mb-5 rounded-md gap-3 px-4">
+      <div className="join join-vertical  md:gap-5 md:mb-8 mb-5 rounded-md gap-3 px-4">
         <div className="  md:mx-0 md:my-0  bg-[url('/Banner.png')] bg-cover rounded-lg md:p-10">
           <h2 className="p-6 text-2xl font-semibold text-center text-white md:font-bold md:text-4xl">
             Process Overview
