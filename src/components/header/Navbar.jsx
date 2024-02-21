@@ -3,12 +3,14 @@ import { Link } from "react-router-dom";
 import DrawerNavbar from "./DrawerNavbar";
 // import logo from "../../assets/thnit.png";
 import logo from "../../assets/logo.jpg";
+// import logo from "../../assets/logooo.png";
 // import logo from "../../assets/logoo.png";
 // import ServicesMenu from "./OurServicesMenu";
 // import TechnologyMenu from "./TechnologyMenu";
 //import { serviceData, TechnologyData } from "./ServicesTechnologyData";
 
 const Navbar = () => {
+  const [isDrawerVisible, setIsDrawerVisible] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isVisibleServices, setIsVisibleServices] = useState(false);
   const [isVisibleTechnology, setIsVisibleTechnology] = useState(false);
@@ -33,9 +35,23 @@ const Navbar = () => {
     };
   }, []);
 
+  const handleDrawerClick = () => {
+    setIsDrawerVisible(!isDrawerVisible);
+  };
+
+  const handleLinkClick = () => {
+    setIsDrawerVisible(false);
+  };
+
   return (
     <div className={`drawer bg-slate-500 sticky top-0 z-10 font-sans`}>
-      <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
+      <input
+        id="my-drawer-3"
+        type="checkbox"
+        className="drawer-toggle"
+        checked={isDrawerVisible}
+        onChange={handleDrawerClick}
+      />
       <div className="flex flex-col drawer-content">
         {/* Navbar */}
         <div className="w-full navbar">
@@ -48,6 +64,7 @@ const Navbar = () => {
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
+                color="white"
                 viewBox="0 0 24 24"
                 className="inline-block w-6 h-6 stroke-current"
               >
@@ -383,9 +400,10 @@ const Navbar = () => {
           htmlFor="my-drawer-3"
           aria-label="close sidebar"
           className="drawer-overlay"
+          onClick={handleLinkClick}
         ></label>
         <ul className="min-h-full gap-2 p-4 menu w-80 bg-base-200">
-          <DrawerNavbar />
+          <DrawerNavbar onLinkClick={handleLinkClick} />
         </ul>
       </div>
       {/* sidebar ends  */}
