@@ -11,7 +11,7 @@ import TechnicalExpartCard from "./TechnicalExpart";
 function Profile() {
   return (
     <section className="mx-auto profile career-page md:mb-8 about-us lg:max-w-7xl">
-      <div className="m-5 md:mt-0 bg-[url('/Banner.png')] bg-cover rounded-lg md:p-10">
+      <div className="mx-5 mt-3 md:mt-0 bg-[url('/Banner.png')] bg-cover rounded-lg md:p-10">
         <h2 className="p-6 text-2xl font-semibold md:font-bold text-center text-white md:text-4xl">
           Messages from the Top Leaders
         </h2>

@@ -362,8 +362,8 @@ const Navbar = () => {
 
                 <Link to="/contact">
                   <li>
-                    <a className="z-10 mx-2 text-lg font-medium tracking-wider text-white bg-black border rounded hover:bg-slate-100 hover:text-gray-800 hover:font-bold">
-                      Contact
+                    <a className="z-10 mx-2  font-medium tracking-wider text-white bg-black border rounded hover:bg-slate-100 hover:text-gray-800 ">
+                      CONTACT
                     </a>
                   </li>
                 </Link>
