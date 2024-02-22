@@ -42,7 +42,10 @@ const DrawerNavbar = ({ onLinkClick }) => {
           </ul>
         </details>
       </li>
-      <li className="text-base font-semibold text-gray-800" >
+      <li className="text-base font-semibold text-gray-800" onClick={onLinkClick} >
+        <Link to="/technology">Technology</Link>
+      </li>
+      {/* <li className="text-base font-semibold text-gray-800" >
         <details>
           <summary>
             <Link to="/technology" onClick={onLinkClick}>Technology</Link>
@@ -57,7 +60,7 @@ const DrawerNavbar = ({ onLinkClick }) => {
             <li className="text-sm text-gray-600 p-2" onClick={onLinkClick}>DevOps</li>
           </ul>
         </details>
-      </li>
+      </li> */}
       <li className="text-base font-semibold text-gray-800" >
         <details>
           <summary>
