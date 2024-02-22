@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import DrawerNavbar from "./DrawerNavbar";
+import contactSvg from '../../assets/a-Contact.svg'
 // import logo from "../../assets/thnit.png";
 // import logo from "../../assets/logo.jpg";
 import logo from "../../assets/flogo.png";
@@ -45,7 +46,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className={`drawer bg-slate-500 sticky top-0 z-10 font-sans`}>
+    <div className={`drawer bg-gray-800 sticky top-0 z-10 font-sans`}>
       <input
         id="my-drawer-3"
         type="checkbox"
@@ -110,7 +111,7 @@ const Navbar = () => {
                     >
                       <a className="text-sm font-medium text-slate-100 rounded-sm tracking-wider hover:font-semibold flex group">
                         OUR SERVICES
-                        <span className=" rotate-[270] group-hover:rotate-180">
+                        <span className=" rotate-[270] group-hover:rotate-180 transition-all duration-200">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -301,7 +302,7 @@ const Navbar = () => {
                     >
                       <a className="text-sm font-medium text-slate-100 rounded-sm tracking-wider hover:font-semibold flex group">
                         PORTFOLIO
-                        <span className=" rotate-[270] group-hover:rotate-180">
+                        <span className=" rotate-[270] group-hover:rotate-180 transition-all duration-200">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -362,9 +363,11 @@ const Navbar = () => {
 
                 <Link to="/contact">
                   <li>
-                    <a className="z-10 mx-2  font-medium tracking-wider text-white bg-black border rounded hover:bg-slate-100 hover:text-gray-800 ">
+                    <a className=" mx-2  font-medium tracking-wider text-white  rounded-full outline-2 outline-offset-2 bg-sky-700  outline hover:bg-slate-100 hover:text-gray-800 hover:shadow-lg">
                       CONTACT
+                     
                     </a>
+                   
                   </li>
                 </Link>
               </ul>
