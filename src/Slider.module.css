@@ -1,0 +1,96 @@
+.slick-list {
+    height: 80.5vh;
+    /* margin: 0rem 5.2rem; */
+    width: 90%;
+    margin: auto;
+    border-radius: 1rem;
+  }
+  .slick-slider {
+    width: 100%;
+    position: relative;
+    left: 0;
+  }
+  .rating::after {
+    content: "⭐⭐⭐⭐⭐";
+  }
+  .slick-slider > .slick-prev {
+    margin-left: 40px;
+    z-index: 2;
+  }
+  .slick-slider > .slick-prev::before {
+    font-size: 25px;
+  }
+  .slick-slider > .slick-next::before {
+    font-size: 25px;
+  }
+  
+  .slick-slider > .slick-next {
+    margin-right: 40px;
+    z-index: 2;
+  }
+  .slick-dots {
+    bottom: 12px;
+    
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  .slick-next:before {
+    content: "❯";
+    /* background: #000; */
+  }
+  .slick-prev:before {
+    content: "❮";
+    /* background: #000; */
+  }
+  @media (max-width: 450px) {
+    /* Your CSS code for this media query goes here */
+   
+    .slick-list {
+      height: 80.5vh;
+      /* margin: 0rem 5.2rem; */
+      width: 100%;
+      margin:   auto;
+      border-radius: 0rem;
+    }
+    .slick-slider {
+      width: 100%;
+      position: relative;
+      left: 0;
+    }
+   
+    .slick-slider > .slick-prev {
+      margin-left: -40px;
+      z-index: 2;
+    }
+    .slick-slider > .slick-prev::before {
+      font-size: 20px;
+      opacity: 0.5;
+    }
+    .slick-slider > .slick-next::before {
+      font-size: 20px;
+      opacity: 0.5;
+    }
+  
+    .slick-slider > .slick-next {
+      margin-right: -40px;
+      z-index: 2;
+    }
+    .slick-dots {
+      bottom: 12px;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    .slick-next:before {
+      content: "❯";
+      
+      /* background: #000; */
+    }
+    .slick-prev:before {
+      content: "❮";
+      /* background: #000; */
+    }
+  }
+  

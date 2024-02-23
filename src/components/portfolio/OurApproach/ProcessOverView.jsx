@@ -1,88 +1,51 @@
+import React, { useState } from "react";
 import SDLC from "./SDLC";
-import SoftwareMethodology from './SoftwareMethodology'
-import CICD from './CICD'
-import WebDevelopmentProcess from './WebDevelopmentProcess'
+import SoftwareMethodology from "./SoftwareMethodology";
+import CICD from "./CICD";
+import WebDevelopmentProcess from "./WebDevelopmentProcess";
 
-function ProcessOverView(){
+function ProcessOverView() {
+  const sections = [
+    { title: "Software Development Life Cycle", content: <SDLC /> },
+    { title: "Software Methodology", content: <SoftwareMethodology /> },
+    { title: "Web Development Process", content: <WebDevelopmentProcess /> },
+    {
+      title: "Continuous Integration & Continuous Delivery",
+      content: <CICD />,
+    },
+  ];
 
-    return(
-        <>
-        <div className=" items-center ">
+  const [activeIndex, setActiveIndex] = useState(0);
 
-        
-          <div className="join join-vertical items-center justify-center mx-[5%]">
-          <div className="collapse collapse-arrow join-item border border-base-300 ">
-            <input type="radio" name="my-accordion-4" checked="checked" className="peer"/> 
-            <div className="collapse-title text-xl font-medium bg-[#e3eeff] peer-checked:bg-gray-800 peer-checked:text-white h-[10vh]">
-            <div className=" flex relative " >
-                            <div className=" w-[100%] bg items-center my-auto mx-[5%] ">
-                            <h2 className=" text-2xl font-bold ">Software Development Life Cycle (SDLC)</h2>
-                              </div>
-                          
-                          </div>
-            
+  return (
+    <section className="max-w-7xl mx-auto">
+      <div className="join join-vertical  md:gap-5 md:mb-8 mb-5 rounded-md gap-3 px-4">
+        <div className="  md:mx-0 md:my-0 mt-3 bg-[url('/Banner.png')] bg-cover rounded-md md:p-10">
+          <h2 className="p-6 text-2xl font-semibold text-center text-white md:font-bold md:text-4xl">
+            Process Overview
+          </h2>
+        </div>
+        {sections.map((section, index) => (
+          <div
+            key={index}
+            className=" collapse collapse-arrow join-item border-base-300 rounded-md drop-shadow-sm"
+          >
+            <input
+              className="rounded-md "
+              type="radio"
+              name="my-accordion-4"
+              checked={index === activeIndex}
+              onChange={() => setActiveIndex(index)}
+            />
+            <div className="collapse-title text-xl font-semibold md:font-bold bg-gray-800 text-white  md:h-[10vh] md:px-[5%] p-4 rounded-md ">
+              {section.title}
             </div>
-            <div className="collapse-content"> 
-                <SDLC />
-            </div>
+            <div className="collapse-content bg-white ">{section.content}</div>
           </div>
-
-
-
-
-
-          <div className="collapse collapse-arrow join-item border border-base-300 ">
-            <input type="radio" name="my-accordion-4" className="peer"/> 
-            <div className="collapse-title text-xl font-medium bg-[#e3eeff] peer-checked:bg-gray-800 peer-checked:text-white h-[10vh]">
-            <div className=" flex relative " >
-                            <div className=" w-[100%] bg items-center my-auto mx-[5%] ">
-                            <h2 className=" text-2xl font-bold ">Software Methodology</h2>
-                              </div>
-                          
-                          </div>
-            
-            </div>
-            <div className="collapse-content"> 
-                <SoftwareMethodology />
-            </div>
-          </div>
-
-          <div className="collapse collapse-arrow join-item border border-base-300 ">
-            <input type="radio" name="my-accordion-4 " className="peer"/> 
-            <div className="collapse-title text-xl bg-[#e3eeff] font-medium peer-checked:bg-gray-800 peer-checked:text-white h-[10vh]">
-            <div className=" flex relative " >
-                            <div className=" w-[100%] bg items-center my-auto mx-[5%] ">
-                            <h2 className=" text-2xl font-bold ">Web Development Process</h2>
-                              </div>
-                          
-                          </div>
-            
-            </div>
-            <div className="collapse-content"> 
-                <WebDevelopmentProcess />
-            </div>
-          </div>
-
-          <div className="collapse collapse-arrow join-item border border-base-300 ">
-            <input type="radio" name="my-accordion-4" className="peer" /> 
-            <div className="collapse-title text-xl bg-[#e3eeff] font-medium peer-checked:bg-gray-800 peer-checked:text-white h-[10vh]">
-            <div className=" flex relative " >
-                            <div className=" w-[100%] bg items-center my-auto mx-[5%] ">
-                            <h2 className=" text-2xl font-bold ">Continuous Integration and Continuous Delivery (CICD)</h2>
-                              </div>
-                          
-                          </div>
-            
-            </div>
-            <div className="collapse-content"> 
-                <CICD />
-            </div>
-          </div>
-
-</div>
-</div>
-        </>
-    )
+        ))}
+      </div>
+    </section>
+  );
 }
 
 export default ProcessOverView;

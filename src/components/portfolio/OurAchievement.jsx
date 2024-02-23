@@ -1,32 +1,27 @@
-import Portcard from "./portcard"
-import Testimonial from "./testimonial"
+import Portcard from "./portcard";
+import Testimonial from "./testimonial";
 
-function OurAchievement(){
-    
-    return(
-        
-        <>
-        <div>
-        <div className="items-center text-center mx-auto mt-[5%] mb-[3%] w-[30%]">
-          <div className="">
-          <h3 className="text-4xl font-bold p-2">Our Key Deliveries</h3>
-          </div>
+function OurAchievement() {
+  return (
+    <section className="mx-auto our-achievement md:mb-8 about-us lg:max-w-7xl">
+      <div className="mx-5 mt-3 md:mt-0">
+        <div className="md:m-5 md:mt-0 mb-6 md:mx-0 md:m  bg-[url('/Banner.png')] bg-cover rounded-lg md:p-10">
+          <h2 className="p-6 text-2xl font-semibold text-center text-white md:font-bold md:text-4xl">
+            Our Key Deliveries
+          </h2>
         </div>
-        <Portcard/>
+        <Portcard />
+      </div>
+      <div className="m-5">
+        <div className="md:m-5 md:mx-0  mb-6 md:my-10 md:mt-20 bg-[url('/Banner.png')] bg-cover rounded-lg md:p-10">
+          <h2 className="p-6 text-2xl font-semibold text-center text-white md:font-bold md:text-4xl">
+            What Our Client say
+          </h2>
         </div>
-         
-        
-        <div>
-     
-        <div className="items-center text-center mx-auto mt-[5%] mb-[3%] w-[30%]">
-          <div className="">
-          <h3 className="text-4xl font-bold p-2">What Our Client say</h3>
-          </div>
-        </div>
-         <Testimonial/>
-          </div>
-        </>
-    )
+        <Testimonial />
+      </div>
+    </section>
+  );
 }
 
 export default OurAchievement;
