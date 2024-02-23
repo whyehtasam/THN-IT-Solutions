@@ -5,7 +5,7 @@ import slider3 from "../../assets/sliderbanner/slider3.jpg";
 import slider4 from "../../assets/sliderbanner/slider4.jpg";
 import slider5 from "../../assets/sliderbanner/slider5.jpg";
 import slider6 from "../../assets/sliderbanner/slider6.jpg";
-// import slider3 from '../../assets/Slider3.png';
+
 
 export const imagePath = [
   { id: 1, path: slider1 },

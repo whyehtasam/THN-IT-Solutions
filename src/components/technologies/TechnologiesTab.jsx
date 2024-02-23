@@ -122,8 +122,8 @@ const TechnologiesTab = (props) => {
                 {item.title}
               </div>
               <div className="transition-all collapse-content peer-checked:bg-gray-800 peer-checked:text-white">
-                <p className="text-xs md:text-sm">{item.description}</p>
-                <button className="pl-0 text-white md:no-underline underline btn btn-link w-max ">
+                <p className="text-xs md:text-sm text-justify">{item.description}</p>
+                {/* <button className="pl-0 text-white md:no-underline underline btn btn-link w-max ">
                   <Link to={`${""}`}>
                     Explore{" "}
                     <FontAwesomeIcon
@@ -131,7 +131,7 @@ const TechnologiesTab = (props) => {
                       className="ml-1 text-xs"
                     />
                   </Link>
-                </button>
+                </button> */}
               </div>
             </div>
           ))}

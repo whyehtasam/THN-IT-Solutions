@@ -1,54 +1,5 @@
-// export const testimonialData = [
-//     {
-//       imgSrc: "/icin.png",
-//       name: "Firoz Ahmed",
-//       company: "Altarnative Power Solutions",
-//       position: "Director",
-//       testimonial: "From start to finish, the THN IT Solutions was dedicated to bringing my vision to life. They were patient with my requests and provided valuable insights along the way. I'm thrilled with the end product!"
-//     },
-//     {
-//       imgSrc: "/icin.png",
-//       name: "Tarun Adhikari",
-//       company: "TSN Technosolutions",
-//       position: "Director",
-//       testimonial: "We could not be happier with the results. The website not only looks great but also functions seamlessly. The THN IT Solutions went above and beyond to ensure everything was perfect. Thank You!!"
-//     },
-//     {
-//       imgSrc: "/icin.png",
-//       name: "Abhijit Banerjee",
-//       company: "TSN Automation",
-//       position: "CEO",
-//       testimonial: "Working with the THN IT Solutions was a breeze. They were responsive, creative, and professional throughout the entire process. My website looks fantastic, and I have already received compliments."
-//     },
-//     {
-//       imgSrc: "/icin.png",
-//       name: "Pintu Choudhury",
-//       company: "TSNT Solutions",
-//       position: "CEO",
-//       testimonial: "We are extremely pleased with the outcome of my website. THN IT Solutions delivered exactly what I envisioned, and the attention to detail is impeccable. Highly recommend their services!"
-//     },
-//     {
-//       imgSrc: "/icin.png",
-//       name: "Sunita Sharma",
-//       company: "Tech Innovations",
-//       position: "Director",
-//       testimonial: "We could not be happier with the results. The website not only looks great but also functions seamlessly. The THN IT Solutions went above and beyond to ensure everything was perfect. Thank You!!"
-//     },
-//     {
-//       imgSrc: "/icin.png",
-//       name: "Amit Patel",
-//       company: "Automation Solutions",
-//       position: "CEO",
-//       testimonial: "Working with the THN IT Solutions was a breeze. They were responsive, creative, and professional throughout the entire process. My website looks fantastic, and I have already received compliments."
-//     },
-//     {
-//       imgSrc: "/icin.png",
-//       name: "Geeta Singh",
-//       company: "Tech Solutions",
-//       position: "CEO",
-//       testimonial: "We are extremely pleased with the outcome of my website. THN IT Solutions delivered exactly what I envisioned, and the attention to detail is impeccable. Highly recommend their services!"
-//     }
-//   ];
+
+
 
   export const cardData = [
     {
@@ -87,5 +38,8 @@
       description: "Overall, power plant automation service is essential for modern power generation facilities, allowing operators to optimize their operations, reduce costs, and ensure maximum uptime and reliability",
       // link: "https://tsnautomation.in/"
     },
-  ];
+  ]
+
+
+
   

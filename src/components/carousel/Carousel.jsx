@@ -2,7 +2,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import "../../Slider.module.css";
 import { useState, useEffect } from "react";
 import { imagePath } from "./sliderImagePath";
 
@@ -46,6 +46,7 @@ const Carousel = (props) => {
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
+    
 
     autoplaySpeed: 3000,
     cssEase: "linear",
@@ -86,11 +87,7 @@ const Carousel = (props) => {
         {imagePath.map((item, index) => {
           return (
             <div key={item.id} className="img-wrapper">
-              <img
-                src={item.path}
-                alt="imgs"
-                className="object-cover h-full w-full"
-              />
+              <img src={item.path} alt="imgs" className="h-full w-full" />
             </div>
           );
         })}
