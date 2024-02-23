@@ -8,16 +8,16 @@ import img4 from "../../assets/WhatWeOffer4.jpg";
 export const aboutData = [
   {
     id: 1,
-    title: "Welcome to THN IT Solutions",
+    title: "About Us",
     description:
-      "Welcome to Tech Horizon Nexus IT Solutions, also known as THN IT Solutions, where we believe in the transformative power of technology. As a dynamic software startup, we're committed to delivering innovative solutions that are precisely tailored to meet the diverse needs of modern businesses.\n Our mission is straightforward yet profound: we aim to empower organizations with cutting-edge software solutions that not only enhance efficiency and productivity but also foster sustainable growth in today's rapidly evolving digital landscape.\n However, THN IT Solutions is more than just a software company. we're a cohesive team of passionate individuals united by a shared vision of harnessing technology to overcome complex challenges. With a diverse range of expertise spanning software development, data analytics, cybersecurity, and project management, we possess the comprehensive skill set required to tackle any project with confidence and precision.",
-    path: svg,
+      "TSN Technosolutions is a leading electrical engineering based firm in Northeast India. We specialize in providing comprehensive solutions for industrial automation and control systems, as well as power generation and distribution systems. As a channel partner of Woodward India Pvt. Ltd for the Eastern Zone of India, we are committed to delivering high-quality products and services to our clients. We work  with Woodward to provide our clients , latest technology and innovations in the industry. In addition to our partnership with Woodward, we also provide  after-sales support to ensure that our client’s systems are always operating at peak performance. Our team of experienced engineers and technicians is available 24/7 to provide technical assistance and support to our clients, ensuring maximum uptime and reliability. At TSN Technosolutions, we believe in delivering personalized service to every client. We work closely with our clients to understand their unique needs and requirements, and we develop customized solutions to meet those needs. We take pride in our commitment to quality, safety, and reliability in every project we undertake. Our goal is to provide the highest level of service to our clients and to help them achieve their goals through innovative solutions and exceptional customer service. Thank you for considering TSN Technosolutions for your electrical engineering needs. We look forward to the opportunity to work with you and provide the solutions you need.",
+      path: svg,
   },
   {
     id: 2,
     title: "Who We Are",
     description:
-      "THN IT Solutions is more than just a software company; we are a team of passionate individuals driven by a shared vision of leveraging technology to solve complex challenges. With a diverse blend of expertise spanning software development, data analytics, cybersecurity, and project management, we possess the skill set necessary to tackle any project with confidence and precision.",
+      "As a channel partner of Woodward India Pvt. Ltd for the Eastern Zone of India, we are committed to delivering high-quality products and services to our clients. We work  with Woodward to provide our clients , latest technology and innovations in the industry.",
     path: svg,
   },
   {
