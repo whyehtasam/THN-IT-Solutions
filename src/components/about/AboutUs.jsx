@@ -3,7 +3,6 @@ import Intro3 from "./Intro3";
 import IntroBanner from "../landing/IntroBanner";
 import IntroCards from "../introCards/IntroCards";
 import { aboutCardData } from "../introCards/cardData";
-import SliderCheck from "../wrappers/Slidercheck";
 import AboutContainer from "./AboutContainer";
 import { aboutData,WhatWeOfferData } from "./aboutData";
 import Carousel from "../carousel/Carousel";
@@ -26,15 +25,15 @@ const AboutUs = () => {
       {/* <Intro3 /> */}
       {/* <AboutContainer data={aboutData[1]} style=' flex-row-reverse '/>  */}
       {/* <AboutContainer data={aboutData[2]} style=''/>  */}
-      <WhatWeOffer
+      {/* <WhatWeOffer
       data={aboutData[3]}
         imgData={WhatWeOfferData}
         style="flex flex-col-reverse lg:flex-row bg-white rounded-md shadow-sm lg:px-12 m-4 p-6 border"
         imgStyle="w-full"
         contentStyle="lg:ml-10 lg:w-[480px] lg:p-2"
-      />
+      /> */}
       {/* <AboutContainer data={aboutData[3]} style='flex flex-col-reverse lg:flex-row ' imgStyle='w-full' contentStyle='lg:ml-10 lg:w-[500px]'/>  */}
-      <IntroBanner
+      {/* <IntroBanner
         title="Why Choose THN IT Solutions?"
         img={img}
         style={"bg-gradient-to-r from-gray-900 via-gray-700 to-black  p-5 mb-4"}
@@ -43,19 +42,19 @@ const AboutUs = () => {
         data={aboutCardData}
         containerStyle="mb-6"
         cardStyle="rounded-lg lg:p-3"
-      />
+      /> */}
       {/* <IntroBanner title='Get in touch' description={para}/> */}
 
-      <OurTech
+      {/* <OurTech
         className=" lg:w-[calc(100%-6rem)] mx-6 p-6 mb-6"
         title="Our Tech Stack"
         para="We focus on emerging technologies for building high performing web & mobile products that can be securely deployed on the cloud."
-      />
+      /> */}
 
-      <GetInTouch
+      {/* <GetInTouch
         className="lg:w-[calc(100%-6rem)] mx-6 p-6 mb-6"
         para="Ready to take your business to the next level? Contact us today to learn more about our services and how we can help you achieve your goals. Let THN IT Solutions be your trusted technology partner, and together, we can unlock the full potential of your business."
-      />
+      /> */}
     </section>
   );
 };

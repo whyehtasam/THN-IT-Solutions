@@ -9,7 +9,7 @@ const AboutContainer = ({ data, style, imgStyle, contentStyle,descStyle }) => {
     >
       <div className={"img flex justify-center items-center " + imgStyle}>
         <img
-          src={path}
+          src={"/banner-2.jpg"}
           alt="svg"
           className="w-full  lg:drop-shadow-md lg:p-0 lg:max-w-3xl"
         />
