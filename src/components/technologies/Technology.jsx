@@ -2,7 +2,7 @@ import { IntroServiceCardData } from "../ourService/ourServiceData";
 // import TabServices from "../ourService/TabServices";
 import TechnologiesTab from "./TechnologiesTab";
 import IntroBanner from "../landing/IntroBanner";
-import img from "../../assets/banner.jpg";
+import img from "../../assets/banner.webp";
 const Technology = () => {
 
     const dataR = [

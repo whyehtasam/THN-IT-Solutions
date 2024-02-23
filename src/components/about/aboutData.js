@@ -1,9 +1,9 @@
 // import svg from "../../assets/intro2.svg";
 import svg from "../../assets/aboutContainerSvg.svg";
-import img1 from "../../assets/WhatWeOffer1.png";
-import img2 from "../../assets/WhatWeOffer2.png";
-import img3 from "../../assets/WhatWeOffer3.png";
-import img4 from "../../assets/WhatWeOffer4.jpg";
+import img1 from "../../assets/WhatWeOffer1.webp";
+import img2 from "../../assets/WhatWeOffer2.webp";
+import img3 from "../../assets/WhatWeOffer3.webp";
+import img4 from "../../assets/WhatWeOffer4.webp";
 
 export const aboutData = [
   {

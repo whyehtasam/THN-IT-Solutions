@@ -1,4 +1,4 @@
-import userimage from "./images/userImage.jpg";
+// import userimage from "./images/userImage.jpg";
 
 const TechnicalExpartCard = ({TechnicalExpartData}) => {
   return (

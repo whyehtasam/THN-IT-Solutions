@@ -45,7 +45,7 @@ const Carousel = (props) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
-    autoplay: true,
+    // autoplay: true,
     
 
     autoplaySpeed: 3000,
@@ -86,8 +86,8 @@ const Carousel = (props) => {
       <Slider {...settings}>
         {imagePath.map((item, index) => {
           return (
-            <div key={item.id} className="img-wrapper">
-              <img src={item.path} alt="imgs" className="h-full w-full" />
+            <div key={item.id} className="img-wrapper h-full">
+              <img src={item.path} alt="imgs" className=" h-full w-full object-cover" />
             </div>
           );
         })}

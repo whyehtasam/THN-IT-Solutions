@@ -1,14 +1,14 @@
 // Importing the images for  use in the Profile
 
-import ceopic from "./images/CEO.jpg";
-import DirectorPic from "./images/Director.jpg";
-import TechnicalHeadPic from "./images/Technical-Head.jpg";
-import AnthonyRozario from "./images/AnthonyRozario.png";
-import SumanGhosh from "./images/SumanGhosh.jpg";
-import RoniMurad from "./images/RoniMurad.jpg";
-import SKSakib from "./images/SKSakib.jpg";
-import SanjoyParui from "./images/SanjoyParui.jpg";
-import Ehtasam from "./images/Ehtasam.jpg";
+import ceopic from "./images/CEO.webp";
+import DirectorPic from "./images/Director.webp";
+import TechnicalHeadPic from "./images/Technical-Head.webp";
+import AnthonyRozario from "./images/AnthonyRozario.webp";
+import SumanGhosh from "./images/SumanGhosh.webp";
+import RoniMurad from "./images/RoniMurad.webp";
+import SKSakib from "./images/SKSakib.webp";
+import SanjoyParui from "./images/SanjoyParui.webp";
+import Ehtasam from "./images/Ehtasam.webp";
 
 export const CEOdata = [
   {
