@@ -27,7 +27,7 @@ function Profile() {
           style=" md:grid-cols-2"
         />
       </div> */}
-      <div className="mx-5 md:mt-10  bg-[url('/Banner.png')] bg-cover rounded-lg md:p-10">
+      <div className="mx-5 mt-3 md:mt-0 bg-[url('/Banner.png')] bg-cover rounded md:rounded-lg md:p-10">
         <h2 className="p-6 text-2xl font-semibold md:font-bold text-center text-white md:text-4xl">
           Technical Expert
         </h2>
@@ -35,12 +35,12 @@ function Profile() {
       <div className="grid grid-cols-1 gap-5 m-5 md:grid-cols-2 place-content-center">
         <TechnicalExpartCard TechnicalExpartData={TechnicalExpartDatas} />
       </div>
-      <div className="m-5 md:mt-10  bg-[url('/Banner.png')] bg-cover rounded-lg md:p-10">
+      <div className="m-5 md:mt-10  bg-[url('/Banner.png')] bg-cover  rounded md:rounded-lg md:p-10">
         <h2 className="p-6 text-2xl font-semibold md:font-bold text-center text-white md:text-4xl">
           Technical Team Members
         </h2>
       </div>
-      <div className="grid gap-5 m-5 md:gap-10 md:grid-cols-3 lg:grid-cols-4 place-content-center">
+      <div className="grid gap-5 m-5 grid-cols-1 md:gap-10 md:grid-cols-3 lg:grid-cols-4 place-content-center">
         <ProfileCards TeamData={TeamDatas} />
       </div>
     </section>
