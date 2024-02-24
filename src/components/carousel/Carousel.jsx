@@ -75,6 +75,7 @@ const Carousel = (props) => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          dots:false,
         },
       },
     ],
@@ -82,7 +83,7 @@ const Carousel = (props) => {
 
   return (
     <div className="slider-container w-full m-auto  ">
-      <div className="md:block lg:block hidden">
+      <div className="md:block lg:block ">
         <Slider {...settings}>
           {imagePath.map((item, index) => {
             return (
@@ -97,7 +98,7 @@ const Carousel = (props) => {
           })}
         </Slider>
       </div>
-      <div className="block md:hidden lg:hidden">
+      {/* <div className="block md:hidden lg:hidden">
         <Slider {...settings}>
           {imagePath2.map((item, index) => {
             return (
@@ -111,7 +112,7 @@ const Carousel = (props) => {
             );
           })}
         </Slider>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -48,7 +48,7 @@ body {
   width: 90%;
   margin: 1.8rem auto;
   border-radius: 6px;
-  border: 1px solid #e5e5e5;
+ 
   box-shadow: 0px 0px 10px 0px #e5e5e5;
 }
 .slider-container > div > .slick-slider {
@@ -93,11 +93,13 @@ body {
   /* Your CSS code for this media query goes here */
 
   .slider-container > div > .slick-slider > .slick-list {
-    height: 80.5vh;
+    height: 50.5vW;
     /* margin: 0rem 5.2rem; */
     width: 100%;
     margin: auto;
+    /* padding: 1rem; */
     border-radius: 0rem;
+    border:none;
   }
   .slider-container > div > .slick-slider {
     width: 100%;
