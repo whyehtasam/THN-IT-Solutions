@@ -12,13 +12,19 @@ body {
 
 /* home page slider start */
 
-.slider-container > .slick-slider > .slick-list > .slick-track {
-  height: 100%;
-}
-.slider-container > .slick-slider > .slick-list > .slick-track > .slick-slide {
+.slider-container > div > .slick-slider > .slick-list > .slick-track {
   height: 100%;
 }
 .slider-container
+  > div
+  > .slick-slider
+  > .slick-list
+  > .slick-track
+  > .slick-slide {
+  height: 100%;
+}
+.slider-container
+  > div
   > .slick-slider
   > .slick-list
   > .slick-track
@@ -27,6 +33,7 @@ body {
   height: 100%;
 }
 .slider-container
+> div
   > .slick-slider
   > .slick-list
   > .slick-track
@@ -35,7 +42,7 @@ body {
   > .img-wrapper {
   height: 100%;
 }
-.slider-container > .slick-slider > .slick-list {
+.slider-container > div> .slick-slider > .slick-list {
   height: 80.5vh;
   /* margin: 0rem 5.2rem; */
   width: 90%;
@@ -44,7 +51,7 @@ body {
   border: 1px solid #e5e5e5;
   box-shadow: 0px 0px 10px 0px #e5e5e5;
 }
-.slider-container > .slick-slider {
+.slider-container > div > .slick-slider {
   width: 100%;
   position: relative;
   left: 0;
@@ -52,18 +59,18 @@ body {
 .rating::after {
   content: "⭐⭐⭐⭐⭐";
 }
-.slider-container > .slick-slider > .slick-prev {
+.slider-container > div > .slick-slider > .slick-prev {
   margin-left: 40px;
   z-index: 2;
 }
-.slider-container > .slick-slider > .slick-prev::before {
+.slider-container > div > .slick-slider > .slick-prev::before {
   font-size: 25px;
 }
-.slider-container > .slick-slider > .slick-next::before {
+.slider-container > div > .slick-slider > .slick-next::before {
   font-size: 25px;
 }
 
-.slider-container > .slick-slider > .slick-next {
+.slider-container > div > .slick-slider > .slick-next {
   margin-right: 40px;
   z-index: 2;
 }
@@ -85,33 +92,33 @@ body {
 @media (max-width: 450px) {
   /* Your CSS code for this media query goes here */
 
-  .slider-container > .slick-slider > .slick-list {
+  .slider-container > div > .slick-slider > .slick-list {
     height: 80.5vh;
     /* margin: 0rem 5.2rem; */
     width: 100%;
     margin: auto;
     border-radius: 0rem;
   }
-  .slider-container > .slick-slider {
+  .slider-container > div > .slick-slider {
     width: 100%;
     position: relative;
     left: 0;
   }
 
-  .slider-container > .slick-slider > .slick-prev {
+  .slider-container > div > .slick-slider > .slick-prev {
     margin-left: -40px;
     z-index: 2;
   }
-  .slider-container > .slick-slider > .slick-prev::before {
+  .slider-container > div > .slick-slider > .slick-prev::before {
     font-size: 20px;
     opacity: 0.5;
   }
-  .slider-container > .slick-slider > .slick-next::before {
+  .slider-container > div > .slick-slider > .slick-next::before {
     font-size: 20px;
     opacity: 0.5;
   }
 
-  .slider-container > .slick-slider > .slick-next {
+  .slider-container > div > .slick-slider > .slick-next {
     margin-right: -40px;
     z-index: 2;
   }
@@ -171,7 +178,7 @@ body {
     > .slick-list
     .slick-track
     > .slick-slide {
-    margin: 0 ;
+    margin: 0;
     /* width: 400px !important; */
   }
   .testimonial-container

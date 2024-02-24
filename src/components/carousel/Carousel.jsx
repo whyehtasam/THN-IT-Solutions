@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../../Slider.module.css";
 import { useState, useEffect } from "react";
-import { imagePath } from "./sliderImagePath";
+import { imagePath, imagePath2 } from "./sliderImagePath";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -46,7 +46,6 @@ const Carousel = (props) => {
     slidesToScroll: 1,
     initialSlide: 0,
     // autoplay: true,
-    
 
     autoplaySpeed: 3000,
     cssEase: "linear",
@@ -83,15 +82,36 @@ const Carousel = (props) => {
 
   return (
     <div className="slider-container w-full m-auto  ">
-      <Slider {...settings}>
-        {imagePath.map((item, index) => {
-          return (
-            <div key={item.id} className="img-wrapper h-full">
-              <img src={item.path} alt="imgs" className=" h-full w-full object-cover" />
-            </div>
-          );
-        })}
-      </Slider>
+      <div className="md:block lg:block hidden">
+        <Slider {...settings}>
+          {imagePath.map((item, index) => {
+            return (
+              <div key={item.id} className="img-wrapper h-full">
+                <img
+                  src={item.path}
+                  alt="imgs"
+                  className=" h-full w-full object-cover"
+                />
+              </div>
+            );
+          })}
+        </Slider>
+      </div>
+      <div className="block md:hidden lg:hidden">
+        <Slider {...settings}>
+          {imagePath2.map((item, index) => {
+            return (
+              <div key={item.id} className="img-wrapper h-full">
+                <img
+                  src={item.path}
+                  alt="imgs"
+                  className=" h-full w-full object-cover"
+                />
+              </div>
+            );
+          })}
+        </Slider>
+      </div>
     </div>
   );
 };
