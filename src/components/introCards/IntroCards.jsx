@@ -3,7 +3,7 @@ import Container from "../wrappers/Container";
 import lines from "../../assets/cardsLine.svg";
 const IntroCards = (props) => {
   const data = props.data;
-  console.log(data);
+ 
   return (
     <section className="relative h-auto intro-cards">
         {/* <img src={lines} className="absolute left-0 w-full opacity-50 -top-50 " alt="svg" /> */}

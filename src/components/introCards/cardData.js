@@ -73,7 +73,7 @@ export const cardDetails = [
   },
   {
       id: 6,
-      title: "💼 Customer-Centric Approach",
+      title: "💼 Client-Centric ",
       description: "Our clients are our top priority. We take a customer-centric approach to every project, ensuring that we fully understand our clients' needs and objectives."
   },
     // {
