@@ -17,7 +17,7 @@ const ApplyForm = () => {
 
   return (
 
-    <div className="bg-[#d6d6d6]  text-[#282828] font-semibold">
+    <div className="bg-[#d6d6d6]  text-[#282828] font-semibold p-8">
         <div className=' bg-[#ffffff] shadow-xl md:rounded-2xl  p-5 md:p-8 md:max-w-6xl md:mx-auto'>
             <div className='flex bg-slate-200 items-center md:justify-between rounded my-auto px-2 md:px-[5vw] py-[1vh]'>
                 <div>

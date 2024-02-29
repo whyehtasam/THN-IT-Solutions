@@ -42,7 +42,7 @@ const Footer = () => {
           </Link>
           <Link to="/ourServices/DataAnalytics">
             <a className="opacity-70 text-xs link link-hover">
-              Analytics & Business Intelligence
+              Analytics & BI
             </a>
           </Link>
           <Link to="/ourServices/DevOps">
